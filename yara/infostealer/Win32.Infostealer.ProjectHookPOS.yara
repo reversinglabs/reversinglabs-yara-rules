@@ -3,6 +3,13 @@ rule Win32_Infostealer_ProjectHookPOS : tc_detection malicious
     meta:
 
         author              = "ReversingLabs"
+
+        source              = "ReversingLabs"
+        status              = "RELEASED"
+        sharing             = "TLP:WHITE"
+        category            = "MALWARE"
+        description         = "Yara rule that detects ProjectHookPOS infostealer."
+
         tc_detection_type   = "Infostealer"
         tc_detection_name   = "ProjectHookPOS"
         tc_detection_factor = 5

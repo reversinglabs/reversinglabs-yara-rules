@@ -3,6 +3,13 @@ rule Linux_Ransomware_Kraken : tc_detection malicious
     meta:
 
         author              = "ReversingLabs"
+
+        source              = "ReversingLabs"
+        status              = "RELEASED"
+        sharing             = "TLP:WHITE"
+        category            = "MALWARE"
+        description         = "Yara rule that detects Kraken ransomware."
+
         tc_detection_type   = "Ransomware"
         tc_detection_name   = "Kraken"
         tc_detection_factor = 5

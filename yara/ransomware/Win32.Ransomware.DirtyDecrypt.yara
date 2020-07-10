@@ -5,6 +5,13 @@ rule Win32_Ransomware_DirtyDecrypt : tc_detection malicious
     meta:
 
         author              = "ReversingLabs"
+
+        source              = "ReversingLabs"
+        status              = "RELEASED"
+        sharing             = "TLP:WHITE"
+        category            = "MALWARE"
+        description         = "Yara rule that detects DirtyDecrypt ransomware."
+
         tc_detection_type   = "Ransomware"
         tc_detection_name   = "DirtyDecrypt"
         tc_detection_factor = 5

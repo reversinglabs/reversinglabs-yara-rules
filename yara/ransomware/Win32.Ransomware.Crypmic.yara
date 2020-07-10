@@ -3,6 +3,13 @@ rule Win32_Ransomware_Crypmic : tc_detection malicious
     meta:
 
         author              = "ReversingLabs"
+
+        source              = "ReversingLabs"
+        status              = "RELEASED"
+        sharing             = "TLP:WHITE"
+        category            = "MALWARE"
+        description         = "Yara rule that detects Crypmic ransomware."
+
         tc_detection_type   = "Ransomware"
         tc_detection_name   = "Crypmic"
         tc_detection_factor = 5

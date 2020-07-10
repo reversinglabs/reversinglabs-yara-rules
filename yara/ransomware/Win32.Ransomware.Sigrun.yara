@@ -3,6 +3,13 @@ rule Win32_Ransomware_Sigrun : tc_detection malicious
     meta:
 
         author              = "ReversingLabs"
+
+        source              = "ReversingLabs"
+        status              = "RELEASED"
+        sharing             = "TLP:WHITE"
+        category            = "MALWARE"
+        description         = "Yara rule that detects Sigrun ransomware."
+
         tc_detection_type   = "Ransomware"
         tc_detection_name   = "Sigrun"
         tc_detection_factor = 5

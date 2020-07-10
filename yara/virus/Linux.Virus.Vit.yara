@@ -5,6 +5,13 @@ rule Linux_Virus_Vit : tc_detection malicious
     meta:
 
         author              = "ReversingLabs"
+
+        source              = "ReversingLabs"
+        status              = "RELEASED"
+        sharing             = "TLP:WHITE"
+        category            = "MALWARE"
+        description         = "Yara rule that detects Vit virus."
+
         tc_detection_type   = "Virus"
         tc_detection_name   = "Vit"
         tc_detection_factor = 5

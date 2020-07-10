@@ -5,6 +5,13 @@ rule Win32_Virus_Mocket : tc_detection malicious
     meta:
 
         author              = "ReversingLabs"
+
+        source              = "ReversingLabs"
+        status              = "RELEASED"
+        sharing             = "TLP:WHITE"
+        category            = "MALWARE"
+        description         = "Yara rule that detects Mocket virus."
+
         tc_detection_type   = "Virus"
         tc_detection_name   = "Mocket"
         tc_detection_factor = 5

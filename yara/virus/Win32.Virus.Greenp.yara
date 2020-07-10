@@ -5,6 +5,13 @@ rule Win32_Virus_Greenp : tc_detection malicious
     meta:
 
         author              = "ReversingLabs"
+
+        source              = "ReversingLabs"
+        status              = "RELEASED"
+        sharing             = "TLP:WHITE"
+        category            = "MALWARE"
+        description         = "Yara rule that detects Greenp virus."
+
         tc_detection_type   = "Virus"
         tc_detection_name   = "Greenp"
         tc_detection_factor = 5

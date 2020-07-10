@@ -3,6 +3,13 @@ rule Win32_Trojan_TrickBot : tc_detection malicious
     meta:
 
         author              = "ReversingLabs"
+
+        source              = "ReversingLabs"
+        status              = "RELEASED"
+        sharing             = "TLP:WHITE"
+        category            = "MALWARE"
+        description         = "Yara rule that detects TrickBot trojan."
+
         tc_detection_type   = "Trojan"
         tc_detection_name   = "TrickBot"
         tc_detection_factor = 5

@@ -3,6 +3,13 @@ rule Win64_Ransomware_SeedLocker : tc_detection malicious
     meta:
 
         author              = "ReversingLabs"
+
+        source              = "ReversingLabs"
+        status              = "RELEASED"
+        sharing             = "TLP:WHITE"
+        category            = "MALWARE"
+        description         = "Yara rule that detects SeedLocker ransomware."
+
         tc_detection_type   = "Ransomware"
         tc_detection_name   = "SeedLocker"
         tc_detection_factor = 5

@@ -3,6 +3,13 @@ rule Win32_Ransomware_Ferrlock : tc_detection malicious
     meta:
 
         author              = "ReversingLabs"
+
+        source              = "ReversingLabs"
+        status              = "RELEASED"
+        sharing             = "TLP:WHITE"
+        category            = "MALWARE"
+        description         = "Yara rule that detects Ferrlock ransomware."
+
         tc_detection_type   = "Ransomware"
         tc_detection_name   = "Ferrlock"
         tc_detection_factor = 5

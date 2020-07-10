@@ -3,6 +3,13 @@ rule Win32_Trojan_Dridex : tc_detection malicious
     meta:
 
         author              = "ReversingLabs"
+
+        source              = "ReversingLabs"
+        status              = "RELEASED"
+        sharing             = "TLP:WHITE"
+        category            = "MALWARE"
+        description         = "Yara rule that detects Dridex trojan."
+
         tc_detection_type   = "Trojan"
         tc_detection_name   = "Dridex"
         tc_detection_factor = 5

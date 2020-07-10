@@ -3,6 +3,13 @@ rule Win32_Ransomware_MarsJoke : tc_detection malicious
     meta:
 
         author              = "ReversingLabs"
+
+        source              = "ReversingLabs"
+        status              = "RELEASED"
+        sharing             = "TLP:WHITE"
+        category            = "MALWARE"
+        description         = "Yara rule that detects MarsJoke ransomware."
+
         tc_detection_type   = "Ransomware"
         tc_detection_name   = "MarsJoke"
         tc_detection_factor = 5

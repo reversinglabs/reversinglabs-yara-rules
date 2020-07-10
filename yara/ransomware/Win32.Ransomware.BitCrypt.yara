@@ -5,6 +5,13 @@ rule Win32_Ransomware_BitCrypt : tc_detection malicious
     meta:
 
         author              = "ReversingLabs"
+
+        source              = "ReversingLabs"
+        status              = "RELEASED"
+        sharing             = "TLP:WHITE"
+        category            = "MALWARE"
+        description         = "Yara rule that detects BitCrypt ransomware."
+
         tc_detection_type   = "Ransomware"
         tc_detection_name   = "BitCrypt"
         tc_detection_factor = 5
