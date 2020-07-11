@@ -12,7 +12,8 @@ rule Win32_Ransomware_Petya : tc_detection malicious
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
         description         = "Yara rule that detects Petya ransomware."
-
+		malware				= "Petya"
+		malware_type		= "Ransomware"
         tc_detection_type   = "Ransomware"
         tc_detection_name   = "Petya"
         tc_detection_factor = 5

@@ -1,17 +1,21 @@
 rule Win32_Trojan_Emotet : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Emotet trojan."
-
-        tc_detection_type   = "Trojan"
-        tc_detection_name   = "Emotet"
+        id = "6rxNMlUDeBszEkDWJ9e9eL"
+        fingerprint = "b1d1a38fccdf4d2ddef833cee5360d13432ab4f6f05ad6cef17ae91659057ecc"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Emotet trojan."
+        category = "MALWARE"
+        malware = "EMOTET"
+        malware_type = "TROJAN"
+        tc_detection_type = "Trojan"
+        tc_detection_name = "Emotet"
         tc_detection_factor = 5
 
     strings:

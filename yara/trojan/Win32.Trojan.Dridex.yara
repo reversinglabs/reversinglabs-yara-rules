@@ -1,17 +1,21 @@
 rule Win32_Trojan_Dridex : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Dridex trojan."
-
-        tc_detection_type   = "Trojan"
-        tc_detection_name   = "Dridex"
+        id = "79PiKFWb5H1uEOzcVMuxqg"
+        fingerprint = "a8b0cd1024aa0b2c7001a8ff039ae4b634cfd543759b388e415eec23078f9eed"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Dridex trojan."
+        category = "MALWARE"
+        malware = "DRIDEX"
+        malware_type = "TROJAN"
+        tc_detection_type = "Trojan"
+        tc_detection_name = "Dridex"
         tc_detection_factor = 5
 
     strings:

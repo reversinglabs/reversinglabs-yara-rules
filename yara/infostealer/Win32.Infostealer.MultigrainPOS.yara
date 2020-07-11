@@ -1,17 +1,21 @@
 rule Win32_Infostealer_MultigrainPOS : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects MultigrainPOS infostealer."
-
-        tc_detection_type   = "Infostealer"
-        tc_detection_name   = "MultigrainPOS"
+        id = "4DD8Ll97baGkuEHc0udTrS"
+        fingerprint = "4322a4d32bebff9c525d5cd668c07ea8a65a53c954f01fa493925ca5ea7baa99"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects MultigrainPOS infostealer."
+        category = "MALWARE"
+        malware = "MULTIGRAINPOS"
+        malware_type = "INFOSTEALER"
+        tc_detection_type = "Infostealer"
+        tc_detection_name = "MultigrainPOS"
         tc_detection_factor = 5
 
     strings:

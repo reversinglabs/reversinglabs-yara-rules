@@ -3,17 +3,21 @@ import "pe"
 rule Win32_Virus_DeadCode : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects DeadCode virus."
-
-        tc_detection_type   = "Virus"
-        tc_detection_name   = "DeadCode"
+        id = "7BPAozf476ofO11Yspftz6"
+        fingerprint = "f6d94505c732c894e2a2991b973f7b25a0a63d4a6c1b379bccef9e15579a8abf"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects DeadCode virus."
+        category = "MALWARE"
+        malware = "DEADCODE"
+        malware_type = "VIRUS"
+        tc_detection_type = "Virus"
+        tc_detection_name = "DeadCode"
         tc_detection_factor = 5
 
     strings:
@@ -21,18 +25,18 @@ rule Win32_Virus_DeadCode : tc_detection malicious
             64 67 FF 36 30 00 58 8B 40 08 FF 70 48 5B FF 70 4C 5A 03 40 44 
             FF E0 
         }
-        
+                
         $deadcode_marker = {
             DE C0 AD DE
         }
-  
+    
         $deadcode_ep_2 = {
             2B C0 85 C0 74 0E 64 67 FF 36 00 00 64 67 89 26 00 00 89 00 E8 
             ED FF FF FF 8B 74 24 0C 64 67 A1 30 00 8B 40 08 8B 58 48 8B 50 
             4C 03 40 44 89 86 B8 00 00 00 89 86 B0 00 00 00 89 9E A4 00 00 
             00 89 96 A8 00 00 00 2B C0 C3
         }
-  
+    
         $deadcode_ep_3 = {
             B8 DE C0 AD DE 50 5A 64 67 A1 30 00 8B 40 08 8B 58 48 8B 50 4C
             03 40 44 FF D0
@@ -65,7 +69,7 @@ rule Win32_Virus_DeadCode : tc_detection malicious
             00 10 00 00 68 40 01 00 00 6A 00 FF 55 08 85 C0 74 18 89 45 78 E8 63 01 00 00 68 00 
             40 00 00 68 40 01 00 00 FF 75 78 FF 55 28 6A 00 FF 55 40 C3 
         }   
-  
+    
     condition:
         uint16(0) == 0x5A4D and 
         ((($deadcode_ep_1 at pe.entry_point) and ($deadcode_marker at 0x40)) or

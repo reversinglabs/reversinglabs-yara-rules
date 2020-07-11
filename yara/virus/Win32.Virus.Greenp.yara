@@ -3,17 +3,21 @@ import "pe"
 rule Win32_Virus_Greenp : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Greenp virus."
-
-        tc_detection_type   = "Virus"
-        tc_detection_name   = "Greenp"
+        id = "3KnuaCiWtdxkgC6AqjZ4bu"
+        fingerprint = "f20a39838b149d6524e176a1e0a8956c9d8b954f495655d5102130f478486fda"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Greenp virus."
+        category = "MALWARE"
+        malware = "GREENP"
+        malware_type = "VIRUS"
+        tc_detection_type = "Virus"
+        tc_detection_name = "Greenp"
         tc_detection_factor = 5
 
     strings:

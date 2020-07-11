@@ -3,17 +3,21 @@ import "pe"
 rule Win32_Virus_Mocket : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Mocket virus."
-
-        tc_detection_type   = "Virus"
-        tc_detection_name   = "Mocket"
+        id = "1OWjTxI9E05dFXITLtXzEN"
+        fingerprint = "b5c7d1edf84bbe99a362c956d57a5881b6940d9976fdfec1f5c6dbd0a09644f5"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Mocket virus."
+        category = "MALWARE"
+        malware = "MOCKET"
+        malware_type = "VIRUS"
+        tc_detection_type = "Virus"
+        tc_detection_name = "Mocket"
         tc_detection_factor = 5
 
     strings:

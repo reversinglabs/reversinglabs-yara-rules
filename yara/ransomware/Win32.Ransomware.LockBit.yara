@@ -9,7 +9,8 @@ rule Win32_Ransomware_LockBit : tc_detection malicious
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
         description         = "Yara rule that detects LockBit ransomware."
-
+		malware				= "LockBit"
+		malware_type		= "Ransomware"
         tc_detection_type   = "Ransomware"
         tc_detection_name   = "LockBit"
         tc_detection_factor = 5

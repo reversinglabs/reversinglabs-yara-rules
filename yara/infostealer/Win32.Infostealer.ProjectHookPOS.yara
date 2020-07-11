@@ -1,17 +1,21 @@
 rule Win32_Infostealer_ProjectHookPOS : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects ProjectHookPOS infostealer."
-
-        tc_detection_type   = "Infostealer"
-        tc_detection_name   = "ProjectHookPOS"
+        id = "7Ip4N6ZAU9DtvQ3oBi7Utp"
+        fingerprint = "4baaf2523f940688178ab09ba231c4da4f98ce2ce0445c19e4ed201ae1e3342c"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects ProjectHookPOS infostealer."
+        category = "MALWARE"
+        malware = "PROJECTHOOKPOS"
+        malware_type = "INFOSTEALER"
+        tc_detection_type = "Infostealer"
+        tc_detection_name = "ProjectHookPOS"
         tc_detection_factor = 5
 
     strings:

@@ -3,17 +3,21 @@ import "pe"
 rule Win32_Virus_Negt : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Negt virus."
-
-        tc_detection_type   = "Virus"
-        tc_detection_name   = "Negt"
+        id = "48B1W6PYjGYZ6skSzi3Hjx"
+        fingerprint = "9df6ff0f779331e100b3c0cbebb746905f39a818d528774270852865cf8fa77a"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Negt virus."
+        category = "MALWARE"
+        malware = "NEGT"
+        malware_type = "VIRUS"
+        tc_detection_type = "Virus"
+        tc_detection_name = "Negt"
         tc_detection_factor = 5
 
     strings:

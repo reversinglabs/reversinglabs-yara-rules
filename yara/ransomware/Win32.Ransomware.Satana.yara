@@ -9,7 +9,8 @@ rule Win32_Ransomware_Satana : tc_detection malicious
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
         description         = "Yara rule that detects Satana ransomware."
-
+		malware				= "Satana"
+		malware_type		= "Ransomware"
         tc_detection_type   = "Ransomware"
         tc_detection_name   = "Satana"
         tc_detection_factor = 5

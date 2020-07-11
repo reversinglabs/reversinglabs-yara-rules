@@ -9,7 +9,8 @@ rule Win32_Ransomware_Nefilim : tc_detection malicious
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
         description         = "Yara rule that detects Nefilim ransomware."
-
+		malware				= "Nefilim"
+		malware_type		= "Ransomware"
         tc_detection_type   = "Ransomware"
         tc_detection_name   = "Nefilim"
         tc_detection_factor = 5

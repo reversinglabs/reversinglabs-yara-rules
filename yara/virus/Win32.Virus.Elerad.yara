@@ -3,17 +3,21 @@ import "pe"
 rule Win32_Virus_Elerad : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Elerad virus."
-
-        tc_detection_type   = "Virus"
-        tc_detection_name   = "Elerad"
+        id = "3YzodQvPKDPoNvll2VPS9P"
+        fingerprint = "7647abe9bce2e316f76f493fe20e800dcc3f8e7b8e7f733a750e3472a9a91390"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Elerad virus."
+        category = "MALWARE"
+        malware = "ELERAD"
+        malware_type = "VIRUS"
+        tc_detection_type = "Virus"
+        tc_detection_name = "Elerad"
         tc_detection_factor = 5
 
     strings:

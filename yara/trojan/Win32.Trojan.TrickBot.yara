@@ -1,17 +1,21 @@
 rule Win32_Trojan_TrickBot : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects TrickBot trojan."
-
-        tc_detection_type   = "Trojan"
-        tc_detection_name   = "TrickBot"
+        id = "OiCL2Ty0AjKxNUSgDaHGs"
+        fingerprint = "dd0748a5458e1940656b8de92f80b56d814750ed590398c8cf983d564ba9e72d"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects TrickBot trojan."
+        category = "MALWARE"
+        malware = "TRICKBOT"
+        malware_type = "TROJAN"
+        tc_detection_type = "Trojan"
+        tc_detection_name = "TrickBot"
         tc_detection_factor = 5
 
     strings:

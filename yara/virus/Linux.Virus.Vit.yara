@@ -3,17 +3,21 @@ import "elf"
 rule Linux_Virus_Vit : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Vit virus."
-
-        tc_detection_type   = "Virus"
-        tc_detection_name   = "Vit"
+        id = "23szdGvaR1Ol4McIkoYgOq"
+        fingerprint = "6aa6c906b5e717076c74af1db8f4a57395c56623e2d5373a9eff1c434a69cf7b"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Vit virus."
+        category = "MALWARE"
+        malware = "VIT"
+        malware_type = "VIRUS"
+        tc_detection_type = "Virus"
+        tc_detection_name = "Vit"
         tc_detection_factor = 5
 
     strings:

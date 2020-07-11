@@ -9,7 +9,8 @@ rule Win32_Ransomware_RetMyData : tc_detection malicious
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
         description         = "Yara rule that detects RetMyData ransomware."
-
+		malware				= "RetMyData"
+		malware_type		= "Ransomware"
         tc_detection_type   = "Ransomware"
         tc_detection_name   = "RetMyData"
         tc_detection_factor = 5

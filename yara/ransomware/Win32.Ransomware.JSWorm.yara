@@ -9,7 +9,8 @@ rule Win32_Ransomware_JSWorm : tc_detection malicious
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
         description         = "Yara rule that detects JSWorm ransomware."
-
+		malware				= "JSWorm"
+		malware_type		= "Ransomware"
         tc_detection_type   = "Ransomware"
         tc_detection_name   = "JSWorm"
         tc_detection_factor = 5

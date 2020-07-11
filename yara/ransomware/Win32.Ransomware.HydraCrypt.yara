@@ -9,7 +9,8 @@ rule Win32_Ransomware_HydraCrypt : tc_detection malicious
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
         description         = "Yara rule that detects HydraCrypt ransomware."
-
+		malware				= "HydraCrypt"
+		malware_type		= "Ransomware"
         tc_detection_type   = "Ransomware"
         tc_detection_name   = "HydraCrypt"
         tc_detection_factor = 5

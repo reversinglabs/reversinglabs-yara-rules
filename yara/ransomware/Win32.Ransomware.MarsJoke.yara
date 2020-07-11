@@ -9,7 +9,8 @@ rule Win32_Ransomware_MarsJoke : tc_detection malicious
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
         description         = "Yara rule that detects MarsJoke ransomware."
-
+		malware				= "MarsJoke"
+		malware_type		= "Ransomware"
         tc_detection_type   = "Ransomware"
         tc_detection_name   = "MarsJoke"
         tc_detection_factor = 5
