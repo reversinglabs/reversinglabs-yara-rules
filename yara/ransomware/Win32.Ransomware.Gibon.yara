@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Gibon : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Gibon ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Gibon"
+        id = "3xqFn1zfL3tRnxspXXn3KE"
+        fingerprint = "ae41cfa02ede8f7a8e782cf78a4aee613e980b5a1fd7d9d43c7f545119ebb775"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Gibon ransomware."
+        category = "MALWARE"
+        malware = "GIBON"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Gibon"
         tc_detection_factor = 5
 
     strings:

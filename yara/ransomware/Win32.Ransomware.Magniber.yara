@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Magniber : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Magniber ransomware."
-		malware				= "Magniber"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Magniber"
+        id = "6pXKb1I8mTkOm1sepTge0o"
+        fingerprint = "41fd4faf439507939753f5e93f53a1b4abce9c8c50f32975b433073bf2948c7f"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Magniber ransomware."
+        category = "MALWARE"
+        malware = "MAGNIBER"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Magniber"
         tc_detection_factor = 5
 
     strings:

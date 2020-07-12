@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Ryuk : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Ryuk ransomware."
-		malware				= "Ryuk"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Ryuk"
+        id = "4KolqHACLKf1R3Gx3AovOI"
+        fingerprint = "05c4a5db7579c3b3cc7e1b1fa591890780ce3a37735d0726b813354e69621ed9"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Ryuk ransomware."
+        category = "MALWARE"
+        malware = "RYUK"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Ryuk"
         tc_detection_factor = 5
 
     strings:

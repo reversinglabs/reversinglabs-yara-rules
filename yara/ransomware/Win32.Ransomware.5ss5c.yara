@@ -1,17 +1,21 @@
 rule Win32_Ransomware_5ss5c : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects 5ss5c ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "5ss5c"
+        id = "3mJdkaauoZRTFI7G7Vli8K"
+        fingerprint = "ebbd137de2273e18a2b3b170d57854fae8393496c219ab27ec6f459d8a207d8f"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects 5ss5c ransomware."
+        category = "MALWARE"
+        malware = "5SS5C"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "5ss5c"
         tc_detection_factor = 5
 
     strings:

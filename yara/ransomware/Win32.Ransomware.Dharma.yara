@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Dharma : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Dharma ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Dharma"
+        id = "68aCBzNw5nt2Y4PXoIdToQ"
+        fingerprint = "d5ff8bc6726c76fb19d436ff5a96de8ff4c4b08b09bb0655800d28a80c14364d"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Dharma ransomware."
+        category = "MALWARE"
+        malware = "DHARMA"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Dharma"
         tc_detection_factor = 5
 
     strings:

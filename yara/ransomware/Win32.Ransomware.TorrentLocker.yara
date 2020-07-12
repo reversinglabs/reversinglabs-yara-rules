@@ -1,17 +1,21 @@
 rule Win32_Ransomware_TorrentLocker : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects TorrentLocker ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "TorrentLocker"
+        id = "4YyPpMwziIOjc4rK2z5IxT"
+        fingerprint = "9a103ca583a99c99415167b02c04fb165084accde50923914f52f5989c2a2ba3"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects TorrentLocker ransomware."
+        category = "MALWARE"
+        malware = "TORRENTLOCKER"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "TorrentLocker"
         tc_detection_factor = 5
 
     strings:
@@ -89,7 +93,7 @@ rule Win32_Ransomware_TorrentLocker : tc_detection malicious
           15 ?? ?? ?? ?? 85 C0 0F 85 EB FE FF FF 8B 85 ?? ?? ?? ?? 8B 0D ?? ?? ?? ?? 50 6A ?? 51 FF 15 ?? ?? ?? ?? 8B B5 ?? ?? ?? 
           ?? 8B 15 ?? ?? ?? ?? 53 6A ?? 52 FF 15 ?? ?? ?? ?? 8B 4D ?? 5F 8B C6 5E 33 CD 5B E8 ?? ?? ?? ?? 8B E5 5D C3 
       }
-        
+                
     condition:
         uint16(0) == 0x5A4D and
         (($tlocker_ep and $tlocker_get_server_data and $tlocker_remove_shadow_copies and $tlocker_find_files) and

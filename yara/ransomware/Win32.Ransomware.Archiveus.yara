@@ -3,17 +3,21 @@ import "pe"
 rule Win32_Ransomware_Archiveus : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Archiveus ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Archiveus"
+        id = "7gukU1phIPklaznHvQ4Ybm"
+        fingerprint = "f1ba472ab753aecadb8de09b0a16a897739c169e523b9bbc4d6d5f2569ae1d2a"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Archiveus ransomware."
+        category = "MALWARE"
+        malware = "ARCHIVEUS"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Archiveus"
         tc_detection_factor = 5
 
     strings:

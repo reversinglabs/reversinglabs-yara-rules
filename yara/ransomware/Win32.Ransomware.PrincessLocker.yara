@@ -1,18 +1,21 @@
 rule Win32_Ransomware_PrincessLocker : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects PrincessLocker ransomware."
-		malware				= "PrincessLocker"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "PrincessLocker"
+        id = "5o0nQ0Dwx9aTFiwuRudcj9"
+        fingerprint = "b2d9f3c3f3be88638377ac3052735f74c0f993bebd8dffd087a2acd053b69bb6"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects PrincessLocker ransomware."
+        category = "MALWARE"
+        malware = "PRINCESSLOCKER"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "PrincessLocker"
         tc_detection_factor = 5
 
     strings:

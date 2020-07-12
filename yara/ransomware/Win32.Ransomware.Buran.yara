@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Buran : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Buran ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Buran"
+        id = "4PqkFUMLvoDdvZ3O6g0Sfn"
+        fingerprint = "7c1d5629312fc85bfbfa06ad5803f0f0e8f2798923b2a9f31a2bc48c3fb38f7c"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Buran ransomware."
+        category = "MALWARE"
+        malware = "BURAN"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Buran"
         tc_detection_factor = 5
 
     strings:

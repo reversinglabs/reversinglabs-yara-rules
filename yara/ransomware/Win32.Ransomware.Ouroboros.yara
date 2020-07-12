@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Ouroboros : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Ouroboros ransomware."
-		malware				= "Ouroboros"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Ouroboros"
+        id = "1VmOgj4DhigfLIYoOcfIfd"
+        fingerprint = "156a02c3560dbdb2b440ab9d90a0e05f3682b690de991eece314896277fafe47"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Ouroboros ransomware."
+        category = "MALWARE"
+        malware = "OUROBOROS"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Ouroboros"
         tc_detection_factor = 5
 
     strings:
@@ -44,7 +47,7 @@ rule Win32_Ransomware_Ouroboros : tc_detection malicious
             ?? ?? ?? ?? 50 8B CE C7 06 ?? ?? ?? ?? C6 46 ?? ?? E8 ?? ?? ?? ?? 8B 55 ?? 83 FA ?? 
             72 ?? 8B 4D ?? 42 8B C1 81 FA ?? ?? ?? ?? 72 ?? 8B 49 ?? 83 C2 ?? 2B C1 83 C0 ?? 83
         }
-            
+                        
         $remote_connection_p3 = {
             F8 ?? 0F 87 ?? ?? ?? ?? 52 51 E8 ?? ?? ?? ?? 83 C4 ?? 8B 45 ?? C7 45 ?? ?? ?? ?? ?? 
             C7 45 ?? ?? ?? ?? ?? C6 45 ?? ?? FF 70 ?? 8D 45 ?? 50 8B C8 E8 ?? ?? ?? ?? 6A ?? FF 
@@ -155,7 +158,7 @@ rule Win32_Ransomware_Ouroboros : tc_detection malicious
             ?? ?? C6 45 ?? ?? E8 ?? ?? ?? ?? 8D 8D ?? ?? ?? ?? C6 45 ?? ?? E8 ?? ?? ?? ?? 8D 8D 
             ?? ?? ?? ?? C6 45 ?? ?? E8 ?? ?? ?? ?? C6 45 ?? ?? E8
         }
-        
+                
     condition:
         uint16(0) == 0x5A4D and
         (

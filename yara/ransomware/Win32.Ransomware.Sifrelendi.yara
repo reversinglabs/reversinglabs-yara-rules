@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Sifrelendi : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Sifrelendi ransomware."
-		malware				= "Sifrelendi"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Sifrelendi"
+        id = "2HMT1nGQ1ojANKLi9BXvwK"
+        fingerprint = "a4cd22ca3ceb24a40645f9c72ffce19cf26a6536c8a1d55f459bb4747977e98f"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Sifrelendi ransomware."
+        category = "MALWARE"
+        malware = "SIFRELENDI"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Sifrelendi"
         tc_detection_factor = 5
 
     strings:

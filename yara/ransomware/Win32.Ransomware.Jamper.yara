@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Jamper : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Jamper ransomware."
-		malware				= "Jamper"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Jamper"
+        id = "3z6SMFw9rcyU6pSOmKZMOn"
+        fingerprint = "118bbb02edca3db79bafa88a56878689ff22ff1d5ae8b96503e553875b4957c9"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Jamper ransomware."
+        category = "MALWARE"
+        malware = "JAMPER"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Jamper"
         tc_detection_factor = 5
 
     strings:

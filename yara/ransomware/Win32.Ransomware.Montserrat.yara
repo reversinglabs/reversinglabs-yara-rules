@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Montserrat : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Montserrat ransomware."
-		malware				= "Montserrat"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Montserrat"
+        id = "2KA78UuhPBSkQoOHgvHiIG"
+        fingerprint = "50e5d8c0e3facc478a648fea6a5fc9590f86bff5dc9ff1b9caae259860aa4d82"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Montserrat ransomware."
+        category = "MALWARE"
+        malware = "MONTSERRAT"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Montserrat"
         tc_detection_factor = 5
 
     strings:

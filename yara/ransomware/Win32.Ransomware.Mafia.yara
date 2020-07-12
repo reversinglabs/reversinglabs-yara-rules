@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Mafia : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Mafia ransomware."
-		malware				= "Mafia"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Mafia"
+        id = "55XxF94Gb5AhjuOcxjySRK"
+        fingerprint = "6612924b6d41bd5f9648b5295fb236e6fb2acc47c2901b104209cc98fa10c31e"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Mafia ransomware."
+        category = "MALWARE"
+        malware = "MAFIA"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Mafia"
         tc_detection_factor = 5
 
     strings:

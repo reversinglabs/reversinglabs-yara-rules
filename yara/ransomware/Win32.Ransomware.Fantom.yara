@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Fantom : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Fantom ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Fantom"
+        id = "6NK59n6hK03G5rdgJ0OZP5"
+        fingerprint = "e596706771d45f23c1b261c0bb5f677efdca852806938642c55d533f11ee9199"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Fantom ransomware."
+        category = "MALWARE"
+        malware = "FANTOM"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Fantom"
         tc_detection_factor = 5
 
     strings:

@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Crypren : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Crypren ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Crypren"
+        id = "4abg9K7P0zOmdCSv1N07Sw"
+        fingerprint = "055c97d8142cf2e9c48f2fb27ae7238c076f2f7d0b7bd232fddc0493fa0530b4"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Crypren ransomware."
+        category = "MALWARE"
+        malware = "CRYPREN"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Crypren"
         tc_detection_factor = 5
 
     strings:

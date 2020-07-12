@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Afrodita : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Afrodita ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Afrodita"
+        id = "6kuX9vu5rKRE5Roi9SrjKI"
+        fingerprint = "ae88dd6d5d3b5f1850772b29241117e8c9513229d8b3dd15510d9d2ef4244986"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Afrodita ransomware."
+        category = "MALWARE"
+        malware = "AFRODITA"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Afrodita"
         tc_detection_factor = 5
 
     strings:
@@ -52,7 +56,7 @@ rule Win32_Ransomware_Afrodita : tc_detection malicious
             ?? ?? ?? ?? 8B 95 ?? ?? ?? ?? 52 FF 15 ?? ?? ?? ?? 8D 4D ?? E8 ?? ?? ?? ?? EB ?? 8B 
             5D ?? B8 ?? ?? ?? ?? C3 C7 45
         }
-        
+                
         $find_files_p1 = {
             8B FF 55 8B EC 81 EC ?? ?? ?? ?? A1 ?? ?? ?? ?? 33 C5 89 45 ?? 8B 4D ?? 8B 55 ?? 53 
             57 8B 7D ?? 89 95 ?? ?? ?? ?? 3B CF 74 ?? 8A 01 3C ?? 74 ?? 3C ?? 74 ?? 3C ?? 74 ?? 
@@ -80,7 +84,7 @@ rule Win32_Ransomware_Afrodita : tc_detection malicious
             ?? 80 BD ?? ?? ?? ?? ?? 5E 74 ?? FF B5 ?? ?? ?? ?? E8 ?? ?? ?? ?? 59 8B C3 8B 4D ?? 
             5F 33 CD 5B E8 ?? ?? ?? ?? C9 C3 
         }
-        
+                
         $encrypt_files = {
             53 8B DC 83 EC ?? 83 E4 ?? 83 C4 ?? 55 8B 6B ?? 89 6C 24 ?? 8B EC 6A ?? 68 ?? ?? ?? 
             ?? 64 A1 ?? ?? ?? ?? 50 53 81 EC ?? ?? ?? ?? A1 ?? ?? ?? ?? 33 C5 89 45 ?? 50 8D 45 
@@ -98,7 +102,7 @@ rule Win32_Ransomware_Afrodita : tc_detection malicious
             ?? ?? ?? 8D 8D ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 4D ?? 64 89 0D ?? ?? ?? ?? 59 8B 4D ?? 
             33 CD E8 ?? ?? ?? ?? 8B E5 5D 8B E3 5B C2
         }
-        
+                
     condition:
         uint16(0) == 0x5A4D and
         (

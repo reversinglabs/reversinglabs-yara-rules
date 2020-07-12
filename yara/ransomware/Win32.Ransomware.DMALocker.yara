@@ -1,17 +1,21 @@
 rule Win32_Ransomware_DMALocker : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects DMALocker ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "DMALocker"
+        id = "38vpndouRm7UhzfrlLPLiu"
+        fingerprint = "7649e72fc062e23db9f88d81f733e51045fbd3cea4585bc7d5bad58b3f910464"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects DMALocker ransomware."
+        category = "MALWARE"
+        malware = "DMALOCKER"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "DMALocker"
         tc_detection_factor = 5
 
     strings:

@@ -1,17 +1,21 @@
 rule Win32_Ransomware_DMR : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects DMR ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "DMR"
+        id = "7dZD4U5fuwEj0nD4baY7IO"
+        fingerprint = "01dcb12033fd210a84b557399f88a154e1f719d20e99f4d02eb21d85a3f9dae9"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects DMR ransomware."
+        category = "MALWARE"
+        malware = "DMR"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "DMR"
         tc_detection_factor = 5
 
     strings:

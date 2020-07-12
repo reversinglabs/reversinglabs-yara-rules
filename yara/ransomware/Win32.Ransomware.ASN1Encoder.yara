@@ -1,17 +1,21 @@
 rule Win32_Ransomware_ASN1Encoder : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects ASN1Encoder ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "ASN1Encoder"
+        id = "5BcM72gYQ5blNTKDvVQREP"
+        fingerprint = "3090fb51a4a87be45aa64c5f37aacdde18b8473420bdcb2fdca0429e7b699573"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects ASN1Encoder ransomware."
+        category = "MALWARE"
+        malware = "ASN1ENCODER"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "ASN1Encoder"
         tc_detection_factor = 5
 
     strings:

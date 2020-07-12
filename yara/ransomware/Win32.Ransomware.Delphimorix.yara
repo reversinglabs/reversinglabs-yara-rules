@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Delphimorix : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Delphimorix ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Delphimorix"
+        id = "7feaTU8lJqp0ZzQYszp8gB"
+        fingerprint = "dfefd7a2056255875bd9a7b6662854c75d8285063e74f70bdfc817a8e072dc00"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Delphimorix ransomware."
+        category = "MALWARE"
+        malware = "DELPHIMORIX"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Delphimorix"
         tc_detection_factor = 5
 
     strings:

@@ -1,17 +1,21 @@
 rule Win32_Ransomware_TBLocker : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects TBLocker ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "TBLocker"
+        id = "T92yGcKe4artHIGruq2p5"
+        fingerprint = "9fa8c51f84fe2d058deffcb4fa81a02594ac49a0dac461f9e698f8779bd2d08a"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects TBLocker ransomware."
+        category = "MALWARE"
+        malware = "TBLOCKER"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "TBLocker"
         tc_detection_factor = 5
 
     strings:

@@ -1,18 +1,21 @@
 rule Win32_Ransomware_LeChiffre : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects LeChiffre ransomware."
-		malware				= "LeChiffre"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "LeChiffre"
+        id = "1EiPP9mP4TuMuuXjzcSWc5"
+        fingerprint = "c72e8bdea730a1c257528fef80b8608f9f2fc672b95d7f1c00fc452a67defe91"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects LeChiffre ransomware."
+        category = "MALWARE"
+        malware = "LECHIFFRE"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "LeChiffre"
         tc_detection_factor = 5
 
     strings:

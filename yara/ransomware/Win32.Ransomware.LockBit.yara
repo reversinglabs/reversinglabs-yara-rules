@@ -1,18 +1,21 @@
 rule Win32_Ransomware_LockBit : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects LockBit ransomware."
-		malware				= "LockBit"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "LockBit"
+        id = "37P4TjTftVD82AYybdLocp"
+        fingerprint = "62986fddd2d67cfee52c4abb83d7802db8c47bcd0e46ed51d8f4cf02f056d805"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects LockBit ransomware."
+        category = "MALWARE"
+        malware = "LOCKBIT"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "LockBit"
         tc_detection_factor = 5
 
     strings:
@@ -51,7 +54,7 @@ rule Win32_Ransomware_LockBit : tc_detection malicious
             ?? ?? FF D3 85 C0 0F 84 ?? ?? ?? ?? 56 68 ?? ?? ?? ?? FF D3 85 C0 0F 84 ?? ?? ?? ?? 
             56 68 ?? ?? ?? ?? FF D3 85 C0 0F 84 ?? ?? ?? ?? 56 68 ?? ?? ?? ?? FF D3 85 C0 0F 84
         }
-            
+                        
         $find_files_3 = {
             85 C0 0F 84 ?? ?? ?? ?? 56 68 ?? ?? ?? ?? FF D3 85 C0 0F 84 ?? ?? ?? ?? 56 68 ?? ?? 
             ?? ?? FF D3 85 C0 0F 84 ?? ?? ?? ?? 56 68 ?? ?? ?? ?? FF D3 85 C0 0F 84 ?? ?? ?? ?? 
@@ -93,7 +96,7 @@ rule Win32_Ransomware_LockBit : tc_detection malicious
             85 C0 74 ?? 8D 85 ?? ?? ?? ?? 50 57 FF 15 ?? ?? ?? ?? 85 C0 75 ?? FF D3 83 F8 ?? 75
             ?? 8B CF E8 ?? ?? ?? ?? 83 F8 ?? 74 ?? 8B
         }
-            
+                        
         $encrypt_files_3 = {
             CF E8 ?? ?? ?? ?? 83 F8 ?? 75 ?? 83 FE ?? 7D ?? 46 EB ?? 6A ?? 68 ?? ?? ?? ?? 6A ?? 
             6A ?? 6A ?? 68 ?? ?? ?? ?? 8D 85 ?? ?? ?? ?? 50 FF 15 ?? ?? ?? ?? 8B D8 89 5D ?? 83 

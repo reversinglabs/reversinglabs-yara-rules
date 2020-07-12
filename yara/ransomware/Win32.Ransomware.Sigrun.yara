@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Sigrun : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Sigrun ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Sigrun"
+        id = "7YFCl4iQZ74JUQecwgZ4W2"
+        fingerprint = "4437cb511790b7f9b6a106f48c72502825f66861d62c32a1d141329b141a17de"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Sigrun ransomware."
+        category = "MALWARE"
+        malware = "SIGRUN"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Sigrun"
         tc_detection_factor = 5
 
     strings:

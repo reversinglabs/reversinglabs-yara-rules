@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Blitzkrieg : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Blitzkrieg ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Blitzkrieg"
+        id = "1arPSegwdyXhAHevkvt13c"
+        fingerprint = "dca730cd8eaa4933c6f3593226919fade9660dad34b03aa3e27685a0ef0b6fce"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Blitzkrieg ransomware."
+        category = "MALWARE"
+        malware = "BLITZKRIEG"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Blitzkrieg"
         tc_detection_factor = 5
 
     strings:

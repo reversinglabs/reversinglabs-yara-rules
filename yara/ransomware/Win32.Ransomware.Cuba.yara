@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Cuba : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Cuba ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Cuba"
+        id = "4mIq51lsKDOswUMxKpztwr"
+        fingerprint = "98d3772c399e21184f077a38b8c6b5c39b1aa06f22054b00343b4db2d7017c77"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Cuba ransomware."
+        category = "MALWARE"
+        malware = "CUBA"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Cuba"
         tc_detection_factor = 5
 
     strings:
@@ -110,7 +114,7 @@ rule Win32_Ransomware_Cuba : tc_detection malicious
             FF D6 89 43 ?? 32 C0 5F 5E 5B 8B 8C 24 ?? ?? ?? ?? 33 CC E8 ?? ?? ?? ?? 8B E5 5D C2 
             ?? ?? 8B 8C 24 ?? ?? ?? ?? B0 ?? 5F 5E 5B 33 CC E8 ?? ?? ?? ?? 8B E5 5D C2
         }
-        
+                
     condition:
         uint16(0) == 0x5A4D and
         (

@@ -1,17 +1,21 @@
 rule Win32_Ransomware_BrainCrypt : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects BrainCrypt ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "BrainCrypt"
+        id = "44dqhM8fF42CAbvyE0RCgh"
+        fingerprint = "404f0f9747977b3131c9dfe5af454db1ac4e47af25452da3a0dedaad7b33e6d4"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects BrainCrypt ransomware."
+        category = "MALWARE"
+        malware = "BRAINCRYPT"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "BrainCrypt"
         tc_detection_factor = 5
 
     strings:

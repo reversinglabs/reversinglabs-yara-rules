@@ -3,17 +3,21 @@ import "pe"
 rule Win32_Ransomware_BitCrypt : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects BitCrypt ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "BitCrypt"
+        id = "4K24gp3XlaY7SCau1f5AcO"
+        fingerprint = "944a4889d7ab810cbaf45b4884e78c4743bcdeddf91052fb2fee9a317084b7f7"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects BitCrypt ransomware."
+        category = "MALWARE"
+        malware = "BITCRYPT"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "BitCrypt"
         tc_detection_factor = 5
 
     strings:

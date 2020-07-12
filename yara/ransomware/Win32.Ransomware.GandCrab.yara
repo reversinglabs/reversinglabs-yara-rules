@@ -1,17 +1,21 @@
 rule Win32_Ransomware_GandCrab : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects GandCrab ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "GandCrab"
+        id = "3p6Pl1RDUcg9M35oPGlbQ8"
+        fingerprint = "a199cb2b0814dc9d9353d031fcd331f8107a21ae46fbd55fa4d1cdf4a2881d1d"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects GandCrab ransomware."
+        category = "MALWARE"
+        malware = "GANDCRAB"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "GandCrab"
         tc_detection_factor = 5
 
     strings:

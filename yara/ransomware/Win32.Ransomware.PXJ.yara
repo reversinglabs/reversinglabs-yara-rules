@@ -1,18 +1,21 @@
 rule Win32_Ransomware_PXJ : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects PXJ ransomware."
-		malware				= "PXJ"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "PXJ"
+        id = "6R8W9lcCV9WuQvYuzawbld"
+        fingerprint = "970c7c732e932c1fc179191cb4383a6c01a77a74c1fe905d0a79cd3124db116f"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects PXJ ransomware."
+        category = "MALWARE"
+        malware = "PXJ"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "PXJ"
         tc_detection_factor = 5
 
     strings:
@@ -80,7 +83,7 @@ rule Win32_Ransomware_PXJ : tc_detection malicious
             ?? ?? ?? ?? 8B 83 ?? ?? ?? ?? 83 F8 ?? 0F 84 ?? ?? ?? ?? 33 D2 52 52 52 33 C9 51 50 
             FF 15 ?? ?? ?? ?? 8B 83 ?? ?? ?? ?? 50 FF 15 ?? ?? ?? ?? 8B B5 ?? ?? ?? ?? 8B C6 8D
         }
-            
+                        
         $encrypt_files_p3 = {
             48 ?? 8B FF 66 8B 10 83 C0 ?? 66 85 D2 75 ?? 2B C1 6A ?? D1 F8 8D 8D ?? ?? ?? ?? 51 
             8D 14 00 8B 83 ?? ?? ?? ?? 52 56 50 FF D7 8B 93 ?? ?? ?? ?? 6A ?? 8D 8D ?? ?? ?? ?? 
@@ -143,7 +146,7 @@ rule Win32_Ransomware_PXJ : tc_detection malicious
             8D 9F ?? ?? ?? ?? E8 ?? ?? ?? ?? B0 ?? 8B 4D ?? 64 89 0D ?? ?? ?? ?? 59 5F 5E 5B 8B 
             4D ?? 33 CD E8 ?? ?? ?? ?? 8B E5 5D C2
         }
-        
+                
     condition:
         uint16(0) == 0x5A4D and
         (

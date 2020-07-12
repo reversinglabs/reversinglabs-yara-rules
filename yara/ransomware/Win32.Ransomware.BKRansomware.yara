@@ -1,17 +1,21 @@
 rule Win32_Ransomware_BKRansomware : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects BKRansomware ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "BKRansomware"
+        id = "vBZx36teqHmgW3dOyDdv7"
+        fingerprint = "b3ce81498a4018dbff50dc157f18e5a357cfca321bdb29afe8d5419fc1a4a772"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects BKRansomware ransomware."
+        category = "MALWARE"
+        malware = "BKRANSOMWARE"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "BKRansomware"
         tc_detection_factor = 5
 
     strings:

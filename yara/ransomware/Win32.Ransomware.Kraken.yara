@@ -1,18 +1,21 @@
 rule Linux_Ransomware_Kraken : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Kraken ransomware."
-		malware				= "Kraken"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Kraken"
+        id = "gpqhQHCQaUlc8mofLAJCl"
+        fingerprint = "5308d06cdb8000a395bf86c409868c6fd861c8bccbb52607f3ddd55cc86a3b49"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Kraken ransomware."
+        category = "MALWARE"
+        malware = "KRAKEN"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Kraken"
         tc_detection_factor = 5
 
     strings:
@@ -147,5 +150,5 @@ rule Linux_Ransomware_Kraken : tc_detection malicious
                 all of ($encrypt_files_p*)
             )
         )
-        
+                
 }

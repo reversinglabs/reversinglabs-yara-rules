@@ -1,17 +1,21 @@
 rule Win32_Ransomware_DenizKizi : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects DenizKizi ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "DenizKizi"
+        id = "15DY22PhQtHHLHgwNTTcDs"
+        fingerprint = "9a2fe37c13e59eec437e3ac539c486f49cd82319b26efcfa952fa4258b17c637"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects DenizKizi ransomware."
+        category = "MALWARE"
+        malware = "DENIZKIZI"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "DenizKizi"
         tc_detection_factor = 5
 
     strings:

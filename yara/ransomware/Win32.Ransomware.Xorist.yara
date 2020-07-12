@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Xorist : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Xorist ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Xorist"
+        id = "1NNrC8CuOejo56inliDIzD"
+        fingerprint = "602a17b8f5d4db7fc8865b6cee56c3993d3f4ebc828c4aba4f417871c101a40a"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Xorist ransomware."
+        category = "MALWARE"
+        malware = "XORIST"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Xorist"
         tc_detection_factor = 5
 
     strings:

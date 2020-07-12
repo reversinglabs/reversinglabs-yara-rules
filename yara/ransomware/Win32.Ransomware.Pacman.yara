@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Pacman : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Pacman ransomware."
-		malware				= "Pacman"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Pacman"
+        id = "420qpgpIe5FwNAWEufR3GC"
+        fingerprint = "8980de0ccd61c26ee9fc7b4ba0e97c4d36fc57be51974d02581ab4fa8833d7a8"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Pacman ransomware."
+        category = "MALWARE"
+        malware = "PACMAN"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Pacman"
         tc_detection_factor = 5
 
     strings:

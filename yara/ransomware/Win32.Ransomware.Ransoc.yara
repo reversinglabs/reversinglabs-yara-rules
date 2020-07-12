@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Ransoc : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Ransoc ransomware."
-		malware				= "Ransoc"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Ransoc"
+        id = "6EQsd5WdKjEUXSbsYGg4IE"
+        fingerprint = "3d3914dcc7f3c2339607de0649de2c1396b147b6e296accbe2fd07d9d5f709c2"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Ransoc ransomware."
+        category = "MALWARE"
+        malware = "RANSOC"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Ransoc"
         tc_detection_factor = 5
 
     strings:

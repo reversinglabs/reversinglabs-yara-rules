@@ -3,17 +3,21 @@ import "pe"
 rule Win32_Ransomware_CryptoLocker : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects CryptoLocker ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "CryptoLocker"
+        id = "sr28AiO9GaFEaCwkD9PE6"
+        fingerprint = "f262b2eb41708585dd9033a47df7ba43408e2562587a46211ee5bd578dcbfea8"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects CryptoLocker ransomware."
+        category = "MALWARE"
+        malware = "CRYPTOLOCKER"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "CryptoLocker"
         tc_detection_factor = 5
 
     strings:

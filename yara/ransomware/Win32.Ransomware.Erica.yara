@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Erica : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Erica ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Erica"
+        id = "38tRH0WrMtB9phC2k64nUh"
+        fingerprint = "54d63bc7caa71b397793b28b640ca74d0ff7819eab48c960135104851286daa6"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Erica ransomware."
+        category = "MALWARE"
+        malware = "ERICA"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Erica"
         tc_detection_factor = 5
 
     strings:
@@ -63,7 +67,7 @@ rule Win32_Ransomware_Erica : tc_detection malicious
             ?? ?? F7 D8 1B C0 F7 D8 84 C0 75 ?? 56 E8 ?? ?? ?? ?? 33 C0 5A 59 59 64 89 10 68 ?? 
             ?? ?? ?? 8D 85 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8D 45 ?? BA ?? ?? ?? ?? E8 ?? ?? ?? ?? C3 
         }
-        
+                
     condition:
         uint16(0) == 0x5A4D and
         (

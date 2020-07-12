@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Ferrlock : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Ferrlock ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Ferrlock"
+        id = "5Z0Yw1S2qiIvsZFRJhSxr3"
+        fingerprint = "c5820645d915017385cadcfce14022d25e64ebd4993985d7e56b1049dbbb1f47"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Ferrlock ransomware."
+        category = "MALWARE"
+        malware = "FERRLOCK"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Ferrlock"
         tc_detection_factor = 5
 
     strings:

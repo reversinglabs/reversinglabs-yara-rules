@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Atlas : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Atlas ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Atlas"
+        id = "3R2YRu2npml7OEussh3zXv"
+        fingerprint = "db96c5eacb41ab21443806e91891d6d4a34e0ba8ac9b62959a0be2d5acba9807"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Atlas ransomware."
+        category = "MALWARE"
+        malware = "ATLAS"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Atlas"
         tc_detection_factor = 5
 
     strings:

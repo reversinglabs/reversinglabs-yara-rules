@@ -1,23 +1,26 @@
 rule Win32_Ransomware_NotPetya : tc_detection malicious
 {
-    
+        
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects NotPetya ransomware."
-		malware				= "NotPetya"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "NotPetya"
+        id = "2fLMzesxd3DmCpsrhdHqlM"
+        fingerprint = "909b403ef41fc8bcdcb89a2da41e0dd636ac3b7d89744f2fc8b7dc4c39d1fd09"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects NotPetya ransomware."
+        category = "MALWARE"
+        malware = "NOTPETYA"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "NotPetya"
         tc_detection_factor = 5
 
     strings:
-    	$encrypt_file = {
+        $encrypt_file = {
             8B EC 83 EC ?? 53 56 57 33 F6 56 56 6A ?? 56 56 68 ?? ?? ?? ?? FF 75 ?? FF 15 ?? ?? 
             ?? ?? 8B F8 89 7D ?? 83 FF ?? 0F 84 ?? ?? ?? ?? 8D 45 ?? 50 57 FF 15 ?? ?? ?? ?? 89 
             75 ?? 39 75 ?? 7C ?? B8 ?? ?? ?? ?? 7F ?? 39 45 ?? 76 ?? 89 45 ?? 8B D8 56 53 56 6A 
@@ -69,5 +72,5 @@ rule Win32_Ransomware_NotPetya : tc_detection malicious
 
     condition:
         uint16(0) == 0x5A4D and $encrypt_file and $main and $encryption_loop and $shutdown
-            
+                        
 }

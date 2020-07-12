@@ -1,17 +1,21 @@
 rule Win32_Ransomware_WildFire : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects WildFire ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "WildFire"
+        id = "3HKgacdKbPmWJV8KGHifxF"
+        fingerprint = "bef372f4d1a2720e6fc1a4558ad229b8e294b3decf2e886405fcbbb85eb761f0"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects WildFire ransomware."
+        category = "MALWARE"
+        malware = "WILDFIRE"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "WildFire"
         tc_detection_factor = 5
 
     strings:

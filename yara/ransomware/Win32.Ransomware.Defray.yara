@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Defray : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Defray ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Defray"
+        id = "72pYIb9IfoPfTsULU2E8Mj"
+        fingerprint = "4856a8f7ea11bdc9ecb5067ef3d38e52ade6ba0b346290d4799dfc1741ff6efc"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Defray ransomware."
+        category = "MALWARE"
+        malware = "DEFRAY"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Defray"
         tc_detection_factor = 5
 
     strings:

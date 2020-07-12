@@ -1,17 +1,21 @@
 rule Win32_Ransomware_FLKR : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects FLKR ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "FLKR"
+        id = "6X047SSYW6yHYUxXXL9Ffx"
+        fingerprint = "df98701a1e6c53cd0ad0e3d6025d85c9fd8942c6c8ced75f7d252949fe4a74f6"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects FLKR ransomware."
+        category = "MALWARE"
+        malware = "FLKR"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "FLKR"
         tc_detection_factor = 5
 
     strings:

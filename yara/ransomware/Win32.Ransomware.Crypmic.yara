@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Crypmic : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Crypmic ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Crypmic"
+        id = "ENvjsStjT6j99GjMqkioY"
+        fingerprint = "8f712d6e612234e178cc3da59d3aa6405636f75f5fa9580198b3ebc1df6da84d"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Crypmic ransomware."
+        category = "MALWARE"
+        malware = "CRYPMIC"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Crypmic"
         tc_detection_factor = 5
 
     strings:

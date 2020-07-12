@@ -3,17 +3,21 @@ import "pe"
 rule Win32_Ransomware_DirtyDecrypt : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects DirtyDecrypt ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "DirtyDecrypt"
+        id = "I3t2KADAOy5LztZHZZcbV"
+        fingerprint = "c99ad9121836eb7011cc348744be23f264dc679ede91d7b93c315bcd1bb6a7cd"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects DirtyDecrypt ransomware."
+        category = "MALWARE"
+        malware = "DIRTYDECRYPT"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "DirtyDecrypt"
         tc_detection_factor = 5
 
     strings:

@@ -1,18 +1,21 @@
 rule Win32_Ransomware_RagnarLocker : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects RagnarLocker ransomware."
-		malware				= "RagnarLocker"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "RagnarLocker"
+        id = "5bKI9haQmCgMUyV1b61Xa8"
+        fingerprint = "7004662b33ce8bb0146d68dfd8208717bf71fa04c13891b3ce70aea9b54eaeee"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects RagnarLocker ransomware."
+        category = "MALWARE"
+        malware = "RAGNARLOCKER"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "RagnarLocker"
         tc_detection_factor = 5
 
     strings:
@@ -62,7 +65,7 @@ rule Win32_Ransomware_RagnarLocker : tc_detection malicious
             ?? ?? 8B F8 C7 45 ?? ?? ?? ?? ?? 8D 45 ?? 50 6A ?? 68 ?? ?? ?? ?? 56 8D 85 ?? ?? ?? 
             ?? 50 FF 15 ?? ?? ?? ?? 85 C0 74 ?? FF 75 ?? 6A ?? FF 15 ?? ?? ?? ?? 50 FF 15
         }
-        
+                
         $encrypt_files_p2 = {
             8D 45 ?? 50 57 68 ?? ?? ?? ?? 56 8D 85 ?? ?? ?? ?? 50 FF 15 ?? ?? ?? ?? 85 C0 75 ?? 
             57 50 FF 15 ?? ?? ?? ?? 50 FF 15 ?? ?? ?? ?? 6A ?? 68 ?? ?? ?? ?? 6A ?? 6A ?? 6A ?? 
@@ -96,7 +99,7 @@ rule Win32_Ransomware_RagnarLocker : tc_detection malicious
             6A ?? 6A ?? 8D 85 ?? ?? ?? ?? 50 8D 85 ?? ?? ?? ?? 50 FF 75 ?? FF 15 ?? ?? ?? ?? 85 
             C0 74 ?? FF 75 ?? 8B 35 ?? ?? ?? ?? FF D6 FF 75 ?? FF D6 6A ?? FF 15
         }
-        
+                
     condition:
         uint16(0) == 0x5A4D and
         (

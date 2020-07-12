@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Revil : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Revil ransomware."
-		malware				= "Revil"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Revil"
+        id = "RpnYXIYgoBro0VXozz79N"
+        fingerprint = "4d96d71ee55ae635f06562f5bb8f05f9f5116dcc2d83f9f6facf0f13b32517d9"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Revil ransomware."
+        category = "MALWARE"
+        malware = "REVIL"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Revil"
         tc_detection_factor = 5
 
     strings:

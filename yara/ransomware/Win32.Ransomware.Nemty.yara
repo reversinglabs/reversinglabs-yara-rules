@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Nemty : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Nemty ransomware."
-		malware				= "Nemty"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Nemty"
+        id = "3tSRvllDyqJ2h3aJWy4pQL"
+        fingerprint = "a0dea6019d9bc99d1fa089bbd5623123c2067245582aee194573b1ac6eac086b"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Nemty ransomware."
+        category = "MALWARE"
+        malware = "NEMTY"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Nemty"
         tc_detection_factor = 5
 
     strings:

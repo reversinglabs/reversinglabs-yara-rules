@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Retis : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Retis ransomware."
-		malware				= "Retis"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Retis"
+        id = "7EsEGf6BQatRsdFBjgiYUV"
+        fingerprint = "38fee535cdb4fcfa39da682260781c52a622ccb1701e03f08d9f65d60bc15969"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Retis ransomware."
+        category = "MALWARE"
+        malware = "RETIS"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Retis"
         tc_detection_factor = 5
 
     strings:

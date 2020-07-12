@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Hermes : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Hermes ransomware."
-		malware				= "Hermes"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Hermes"
+        id = "4g76Xmv9Wrc8W7ubHoCGPF"
+        fingerprint = "778366f560f015d2b525ce89d284fd830119002785b0c546e1ab6f9ed3213614"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Hermes ransomware."
+        category = "MALWARE"
+        malware = "HERMES"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Hermes"
         tc_detection_factor = 5
 
     strings:

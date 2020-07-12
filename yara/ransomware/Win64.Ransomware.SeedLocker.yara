@@ -1,17 +1,21 @@
 rule Win64_Ransomware_SeedLocker : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects SeedLocker ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "SeedLocker"
+        id = "3LmOMz121EAASteEgZsd6r"
+        fingerprint = "f4d5507fb8e6b8582e7116306bb49f3e0908d4940f7f1a03ea096fba7a2cc150"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects SeedLocker ransomware."
+        category = "MALWARE"
+        malware = "SEEDLOCKER"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "SeedLocker"
         tc_detection_factor = 5
 
     strings:

@@ -1,18 +1,21 @@
 rule Win32_Ransomware_IFN643 : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects IFN643 ransomware."
-		malware				= "IFN643"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "IFN643"
+        id = "1edWIHNOggdGIPoOYCuGta"
+        fingerprint = "e4768caa54ba98ed765c34ab1b710bfa18610ca6992d1c7c4d70ec743f264909"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects IFN643 ransomware."
+        category = "MALWARE"
+        malware = "IFN643"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "IFN643"
         tc_detection_factor = 5
 
     strings:

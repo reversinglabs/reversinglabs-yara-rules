@@ -1,18 +1,21 @@
 rule Win32_Ransomware_GPCode : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Gpcode ransomware."
-		malware				= "GPCode"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "GPCode"
+        id = "4c1OnhZaCdsnUtM4SaMUkB"
+        fingerprint = "835c3d98cefae26888e54eb14b97fdfcaee11ea88c7093ffdadde2f1c100724d"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Gpcode ransomware."
+        category = "MALWARE"
+        malware = "GPCODE"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "GPCode"
         tc_detection_factor = 5
 
     strings:
@@ -56,7 +59,7 @@ rule Win32_Ransomware_GPCode : tc_detection malicious
             45 ?? 83 E8 ?? 50 53 E8 ?? ?? ?? ?? 8A 03 A2 ?? ?? 
             ?? ?? 83 C3 ?? 8A 03 A2 ?? ?? ?? ?? 83 C3 
         }
-    
+        
     condition:
         uint16(0) == 0x5A4D and
         ($drive_loop and 

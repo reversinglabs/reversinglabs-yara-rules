@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Clop : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Clop ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Clop"
+        id = "4EIn1dYpv0Sto7pNQkvx51"
+        fingerprint = "2094d6900aca1641458c934f15f1ce6e76cff69033c35423f2228d5a4f7f9a4d"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Clop ransomware."
+        category = "MALWARE"
+        malware = "CLOP"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Clop"
         tc_detection_factor = 5
 
     strings:

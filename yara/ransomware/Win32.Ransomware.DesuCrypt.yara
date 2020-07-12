@@ -1,17 +1,21 @@
 rule Win32_Ransomware_DesuCrypt : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects DesuCrypt ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "DesuCrypt"
+        id = "7PADHJDVuexLuS9IASKdD0"
+        fingerprint = "3d5a89633ae8b587330b1d8b45e0ef353656e3e93a4cde0a2e949997d64fde45"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects DesuCrypt ransomware."
+        category = "MALWARE"
+        malware = "DESUCRYPT"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "DesuCrypt"
         tc_detection_factor = 5
 
     strings:

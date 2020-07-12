@@ -1,18 +1,21 @@
 rule Win32_Ransomware_MZP : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects MZP ransomware."
-		malware				= "MZP"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "MZP"
+        id = "2qPSjawmWbD6BhCLjEzFhr"
+        fingerprint = "5abb06971ab8be8a8a78bf6884e6d2cb81b8da3e19cc0345d80a6891fc9e8243"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects MZP ransomware."
+        category = "MALWARE"
+        malware = "MZP"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "MZP"
         tc_detection_factor = 5
 
     strings:

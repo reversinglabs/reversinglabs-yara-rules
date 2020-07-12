@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Matsnu : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Matsnu ransomware."
-		malware				= "Matsnu"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Matsnu"
+        id = "41lVdaml7Z4UpXwzFnwYl4"
+        fingerprint = "3a773199f344c92f87285eff560864ee3ab7ce8bbb6e2a61c45f51e42ecefd3a"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Matsnu ransomware."
+        category = "MALWARE"
+        malware = "MATSNU"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Matsnu"
         tc_detection_factor = 5
 
     strings:

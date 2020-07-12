@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Ladon : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Ladon ransomware."
-		malware				= "Ladon"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Ladon"
+        id = "3TV6IA9omYHzd4HXUZ4Rul"
+        fingerprint = "37dcb8da66a204921a5cf463e160d421e0cae0bf30d9447a109e8dcd1bf5cc5a"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Ladon ransomware."
+        category = "MALWARE"
+        malware = "LADON"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Ladon"
         tc_detection_factor = 5
 
     strings:
@@ -31,7 +34,7 @@ rule Win32_Ransomware_Ladon : tc_detection malicious
             15 ?? ?? ?? ?? 85 C0 0F 85 ?? ?? ?? ?? FF 15 ?? ?? ?? ?? FF 75 ?? 33 DB 83 F8 ?? 0F 
             95 C3 FF 15 ?? ?? ?? ?? 5E 8B C3 5B 5F 8B E5 5D C3 
         }
-    
+        
         $encrypt_files_p1 = {
             55 8B EC 81 EC ?? ?? ?? ?? 53 56 57 FF 75 ?? 33 DB 89 5D ?? E8 ?? ?? ?? ?? 8B F8 83 
             C4 ?? 89 7D ?? 85 FF 0F 84 ?? ?? ?? ?? 83 3F ?? 0F 85 ?? ?? ?? ?? 53 68 ?? ?? ?? ?? 
@@ -86,7 +89,7 @@ rule Win32_Ransomware_Ladon : tc_detection malicious
             83 C4 ?? 56 6A ?? FF 15 ?? ?? ?? ?? 50 FF 15 ?? ?? ?? ?? E8 ?? ?? ?? ?? E8 ?? ?? ??
             ?? E8 ?? ?? ?? ?? 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 83 C4 ?? 5E 8B E5 5D C3 
         }
-        
+                
     condition:
         uint16(0) == 0x5A4D and
         (

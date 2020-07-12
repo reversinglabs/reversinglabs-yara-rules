@@ -1,18 +1,21 @@
 rule Win32_Ransomware_OphionLocker : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects OphionLocker ransomware."
-		malware				= "OphionLocker"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "OphionLocker"
+        id = "6NCU44m73UJLMyqzRI0S5X"
+        fingerprint = "226d688775876c319c951fd02f0d0ffebd40d1a9a2721e5a348f00c304cb5be1"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects OphionLocker ransomware."
+        category = "MALWARE"
+        malware = "OPHIONLOCKER"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "OphionLocker"
         tc_detection_factor = 5
 
     strings:

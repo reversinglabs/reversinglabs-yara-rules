@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Velso : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Velso ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Velso"
+        id = "6L5mcguYqkLs10qEmUaaLV"
+        fingerprint = "0b54a78b8e588d9a103946264b6718704634ba4a25cbb6fb15822388eca94b40"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Velso ransomware."
+        category = "MALWARE"
+        malware = "VELSO"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Velso"
         tc_detection_factor = 5
 
     strings:

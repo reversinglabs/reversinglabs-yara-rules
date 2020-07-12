@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Satan : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Satan ransomware."
-		malware				= "Satan"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Satan"
+        id = "4neRnwiZtEwm3NiKvcsLSW"
+        fingerprint = "e98b36da02ca0f553fd17fb22f1aa9bee717f7221175af36d096d95c25b2a212"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Satan ransomware."
+        category = "MALWARE"
+        malware = "SATAN"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Satan"
         tc_detection_factor = 5
 
     strings:

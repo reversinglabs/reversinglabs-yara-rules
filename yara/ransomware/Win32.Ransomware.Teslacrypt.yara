@@ -1,15 +1,19 @@
 rule Win32_Ransomware_Teslacrypt : tc_detection malicious
 {
     meta:
-
-        author            = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Teslacrypt ransomware."
-
+        id = "iBOLj5O3J4II2CACXkHD8"
+        fingerprint = "d2231731f90a0618d5803ac80308c1dacc6b0bdf1457643e71c7079fb7f2c544"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Teslacrypt ransomware."
+        category = "MALWARE"
+        malware = "TESLACRYPT"
+        malware_type = "RANSOMWARE"
         tc_detection_type = "Ransomware"
         tc_detection_name = "Teslacrypt"
 

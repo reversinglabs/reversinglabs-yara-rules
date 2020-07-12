@@ -1,17 +1,21 @@
 rule Win32_Ransomware_GlobeImposter : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects GlobeImposter ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "GlobeImposter"
+        id = "2PDnkik1sksNmLLopkXpZT"
+        fingerprint = "aa1f126925fe1860b395238f0c3ac75998cd4b667d2efa542f733059076db8e8"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects GlobeImposter ransomware."
+        category = "MALWARE"
+        malware = "GLOBEIMPOSTER"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "GlobeImposter"
         tc_detection_factor = 5
 
     strings:
@@ -87,7 +91,7 @@ rule Win32_Ransomware_GlobeImposter : tc_detection malicious
             ?? 8D 84 24 ?? ?? ?? ?? 50 57 FF 15 ?? ?? ?? ?? 85 C0 0F 85 ?? ?? ?? ?? 57 FF 15 ?? 
             ?? ?? ?? 5D 5B 5F 5E 81 C4 ?? ?? ?? ?? C2
         }
-        
+                
         $kill_specific_processes_1 = {
             81 EC ?? ?? ?? ?? 55 56 57 6A ?? 5E 56 33 ED 8D 44 24 ?? 55 50 E8 ?? ?? ?? ?? 83 C4 
             ?? 89 74 24 ?? 55 6A ?? E8 ?? ?? ?? ?? 8B F8 89 7C 24 ?? 83 FF ?? 0F 84 ?? ?? ?? ?? 
@@ -119,7 +123,7 @@ rule Win32_Ransomware_GlobeImposter : tc_detection malicious
             ?? ?? ?? ?? 50 8D 84 24 ?? ?? ?? ?? 50 FF 15 ?? ?? ?? ?? 8D 84 24 ?? ?? ?? ?? 50 E8 
             ?? ?? ?? ?? 56 E8 ?? ?? ?? ?? 8B 74 24 ?? 59 8D 44 24 ?? 50 55 FF 15
         }
-        
+                
         $search_files_2 = {
             53 55 56 57 8B 3D ?? ?? ?? ?? 6A ?? 6A ?? FF D7 50 FF 15 ?? ?? ?? ?? 8B E8 FF 15 ?? 
             ?? ?? ?? 68 ?? ?? ?? ?? 8B D8 C7 84 24 ?? ?? ?? ?? ?? ?? ?? ?? 33 F6 8D 84 24 ?? ?? 
@@ -147,7 +151,7 @@ rule Win32_Ransomware_GlobeImposter : tc_detection malicious
             8D 84 24 ?? ?? ?? ?? 50 55 FF 15 ?? ?? ?? ?? 8D 84 24 ?? ?? ?? ?? 50 57 E8 ?? ?? ?? 
             ?? 85 C0 0F 85 ?? ?? ?? ?? 57 FF 15
         }
-        
+                
     condition:
         uint16(0) == 0x5A4D and
         (

@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Rokku : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Rokku ransomware."
-		malware				= "Rokku"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Rokku"
+        id = "2XABVJswFTZlo9GXiYDjoa"
+        fingerprint = "21d336f9a05c5253c2d31720a0946a71689f0dc753e7be4dcbeb758565532c56"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Rokku ransomware."
+        category = "MALWARE"
+        malware = "ROKKU"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Rokku"
         tc_detection_factor = 5
 
     strings:

@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Serpent : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Serpent ransomware."
-		malware				= "Serpent"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Serpent"
+        id = "5fnN1gvM3MqTnYxYlGorz8"
+        fingerprint = "b868fa1bd5b466974b7706f726ab9cd244e17506d47d89bccc8c5cfe21d9c7f8"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Serpent ransomware."
+        category = "MALWARE"
+        malware = "SERPENT"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Serpent"
         tc_detection_factor = 5
 
     strings:

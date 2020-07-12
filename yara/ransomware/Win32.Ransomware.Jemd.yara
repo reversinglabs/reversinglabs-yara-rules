@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Jemd : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Jemd ransomware."
-		malware				= "Jemd"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Jemd"
+        id = "416ymSevGwm66PqVtCOjvT"
+        fingerprint = "ef65bbaea7c36b7a6b70a232eb85b300ed8d32a2f19d576c419f0344af8fcd35"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Jemd ransomware."
+        category = "MALWARE"
+        malware = "JEMD"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Jemd"
         tc_detection_factor = 5
 
     strings:

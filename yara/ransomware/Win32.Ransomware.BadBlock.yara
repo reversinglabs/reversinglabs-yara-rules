@@ -1,17 +1,21 @@
 rule Win32_Ransomware_BadBlock : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects BadBlock ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "BadBlock"
+        id = "fXCHkiRR1ohbGFEQ60Orr"
+        fingerprint = "bb8952bd7ad6abc1ec433c32b2076f0d198fdea6e8d9e36721b222ab50b60c93"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects BadBlock ransomware."
+        category = "MALWARE"
+        malware = "BADBLOCK"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "BadBlock"
         tc_detection_factor = 5
 
     strings:

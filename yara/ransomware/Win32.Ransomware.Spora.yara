@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Spora : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Spora ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Spora"
+        id = "6FSYpvDwpCQwYYumrQ1QbY"
+        fingerprint = "103ed6628404da98fbbd5c44bdd744cdbc182fa0e9f866ec8099e0cc38084149"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Spora ransomware."
+        category = "MALWARE"
+        malware = "SPORA"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Spora"
         tc_detection_factor = 5
 
     strings:

@@ -1,18 +1,21 @@
 rule Win32_Ransomware_HDMR : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects HDMR ransomware."
-		malware				= "HDMR"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "HDMR"
+        id = "6Zpbekz0Nun3cr9Mq5Jhdb"
+        fingerprint = "d06da15cbc98f6e7e4b5b97ba2283f0a483d875227c38b158196b2e21723d94e"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects HDMR ransomware."
+        category = "MALWARE"
+        malware = "HDMR"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "HDMR"
         tc_detection_factor = 5
 
     strings:

@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Kovter : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Kovter ransomware."
-		malware				= "Kovter"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Kovter"
+        id = "4O1F9hZZQNnjfTNbKMNjso"
+        fingerprint = "2183496316b3a0ef4af859ebbb43ed0e0da2885be6372641818afb1785b261c8"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Kovter ransomware."
+        category = "MALWARE"
+        malware = "KOVTER"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Kovter"
         tc_detection_factor = 5
 
     strings:

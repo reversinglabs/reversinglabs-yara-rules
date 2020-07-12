@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Zoldon : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Zoldon ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Zoldon"
+        id = "67Xn5rOS0UE2gRoc2cV6dj"
+        fingerprint = "9a0205ec07f1e39f348c38a5436041ccce758b70eda6405826a77c99a0a63277"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Zoldon ransomware."
+        category = "MALWARE"
+        malware = "ZOLDON"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Zoldon"
         tc_detection_factor = 5
 
     strings:

@@ -1,18 +1,21 @@
 rule Win32_Ransomware_RansomPlus : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects RansomPlus ransomware."
-		malware				= "RansomPlus"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "RansomPlus"
+        id = "6DwiesMVYPTgDkIUQdvskl"
+        fingerprint = "196932402ebae48079d3f1d8804a15f2b768016e22130c3dcf0daaba79a1c2b5"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects RansomPlus ransomware."
+        category = "MALWARE"
+        malware = "RANSOMPLUS"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "RansomPlus"
         tc_detection_factor = 5
 
     strings:

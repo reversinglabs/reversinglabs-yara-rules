@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Sherminator : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Sherminator ransomware."
-		malware				= "Sherminator"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Sherminator"
+        id = "fItlWj7sFCH6y0iPOjAi7"
+        fingerprint = "7319798d599b937534229dffe774054ea24a569105d182e8ec7d6b2108d9b321"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Sherminator ransomware."
+        category = "MALWARE"
+        malware = "SHERMINATOR"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Sherminator"
         tc_detection_factor = 5
 
     strings:

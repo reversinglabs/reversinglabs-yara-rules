@@ -1,17 +1,21 @@
 rule Win32_Ransomware_ZeroLocker : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects ZeroLocker ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "ZeroLocker"
+        id = "2ADRov6IBveGfNwQED5mo2"
+        fingerprint = "090f457c708a91a09657ec7cb6a332d3c0702ac47eebf716785872e898596cf3"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects ZeroLocker ransomware."
+        category = "MALWARE"
+        malware = "ZEROLOCKER"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "ZeroLocker"
         tc_detection_factor = 5
 
     strings:

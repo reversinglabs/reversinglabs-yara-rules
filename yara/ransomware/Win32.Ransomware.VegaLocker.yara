@@ -1,17 +1,21 @@
 rule Win32_Ransomware_VegaLocker : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects VegaLocker ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "VegaLocker"
+        id = "qiwZqEtf1TTJweRW3eEIO"
+        fingerprint = "86a144c8edbed486ac0dd53a5daea4ad00c536d414307da2a71103d433096f60"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects VegaLocker ransomware."
+        category = "MALWARE"
+        malware = "VEGALOCKER"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "VegaLocker"
         tc_detection_factor = 5
 
     strings:

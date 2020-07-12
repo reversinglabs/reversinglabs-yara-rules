@@ -1,18 +1,21 @@
 rule Win32_Ransomware_SevenSevenSeven : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects SevenSevenSeven ransomware."
-		malware				= "SevenSevenSeven"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "SevenSevenSeven"
+        id = "22mXg02eHHUXcpF18H9tZm"
+        fingerprint = "0a93451a30f23c42640d7e5835b3fa7a19e69565b856492ba2c26f78a66a7243"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects SevenSevenSeven ransomware."
+        category = "MALWARE"
+        malware = "SEVENSEVENSEVEN"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "SevenSevenSeven"
         tc_detection_factor = 5
 
     strings:

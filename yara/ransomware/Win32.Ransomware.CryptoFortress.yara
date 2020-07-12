@@ -1,17 +1,21 @@
 rule Win32_Ransomware_CryptoFortress : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects CryptoFortress ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "CryptoFortress"
+        id = "2yeWjKOJ0bO1wYNrz4b6Do"
+        fingerprint = "c698eb6c96a31a355c500e049eb62cc83ba5c0b7fe4d7fde89a445f4689fbfc6"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects CryptoFortress ransomware."
+        category = "MALWARE"
+        malware = "CRYPTOFORTRESS"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "CryptoFortress"
         tc_detection_factor = 5
 
     strings:

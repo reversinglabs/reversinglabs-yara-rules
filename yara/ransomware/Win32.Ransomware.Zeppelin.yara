@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Zeppelin : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Zeppelin ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Zeppelin"
+        id = "54tWCqAtQ645jHHJAkjqrB"
+        fingerprint = "7c201b8ce3563ed8686fc56d4794b40d8da8b33aabf524dd242f3cb8a8a868f6"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Zeppelin ransomware."
+        category = "MALWARE"
+        malware = "ZEPPELIN"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Zeppelin"
         tc_detection_factor = 5
 
     strings:

@@ -1,18 +1,21 @@
 rule Win32_Ransomware_MedusaLocker : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects MedusaLocker ransomware."
-		malware				= "MedusaLocker"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "MedusaLocker"
+        id = "1VUanAxXLSl9fQFgoJcg0Q"
+        fingerprint = "1790117edf404b6e8aa9da5c616997449332e793998f86aabb1d391efc1a2434"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects MedusaLocker ransomware."
+        category = "MALWARE"
+        malware = "MEDUSALOCKER"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "MedusaLocker"
         tc_detection_factor = 5
 
     strings:

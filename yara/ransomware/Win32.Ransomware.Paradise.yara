@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Paradise : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Paradise ransomware."
-		malware				= "Paradise"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Paradise"
+        id = "48rNEWauR1wn8xTDITIF6O"
+        fingerprint = "28df79a920cf2aedf57bed878d785b803f52e49a25e2ce8da1644dd032d70dcb"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Paradise ransomware."
+        category = "MALWARE"
+        malware = "PARADISE"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Paradise"
         tc_detection_factor = 5
 
     strings:

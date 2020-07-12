@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Ragnarok : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Ragnarok ransomware."
-		malware				= "Ragnarok"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Ragnarok"
+        id = "7BAutYbkY2RUXzq3IZvgXm"
+        fingerprint = "1c399ba64337dde14cea29318e0645489358885c046038ee0c95371b18403849"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Ragnarok ransomware."
+        category = "MALWARE"
+        malware = "RAGNAROK"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Ragnarok"
         tc_detection_factor = 5
 
     strings:
@@ -79,7 +82,7 @@ rule Win32_Ransomware_Ragnarok : tc_detection malicious
             50 E8 ?? ?? ?? ?? 83 C4 ?? 85 FF 74 ?? 57 E8 ?? ?? ?? ?? 83 C4 ?? 8B 4D ?? 5F 33 CD 
             5E E8 ?? ?? ?? ?? 8B E5 5D C3 
         }
-        
+                
         $disable_fw_and_delete_shadow_volumes = {
             6A ?? 68 ?? ?? ?? ?? FF 35 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 40 ?? 50 E8 ?? ?? ?? ?? 83 
             C4 ?? 85 C0 74 ?? 8D 45 ?? 50 8D 85 ?? ?? ?? ?? 50 6A ?? 6A ?? 6A ?? 6A ?? 6A ?? 6A 
@@ -95,7 +98,7 @@ rule Win32_Ransomware_Ragnarok : tc_detection malicious
             FF D6 8D 45 ?? 50 8D 85 ?? ?? ?? ?? 50 6A ?? 6A ?? 6A ?? 6A ?? 6A ?? 6A ?? 68 ?? ?? 
             ?? ?? FF 35 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 40 ?? 50 6A ?? FF D6 
         }
-        
+                
     condition:
         uint16(0) == 0x5A4D and
         (

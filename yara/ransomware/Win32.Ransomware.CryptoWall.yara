@@ -3,17 +3,21 @@ import "pe"
 rule Win32_Ransomware_CryptoWall : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects CryptoWall ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "CryptoWall"
+        id = "1J3d8nYE3nWc0cTdWGJjEN"
+        fingerprint = "1d5134cadddcfdea2c260534901c270421aec1907bf009bca73c398ef6652c15"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects CryptoWall ransomware."
+        category = "MALWARE"
+        malware = "CRYPTOWALL"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "CryptoWall"
         tc_detection_factor = 5
 
     strings:

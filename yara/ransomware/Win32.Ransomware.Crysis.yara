@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Crysis : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Crysis ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Crysis"
+        id = "1v0Vxo6uPSr1DBzgMS25P5"
+        fingerprint = "cd49a65879205d88a753cc2e759550ae55ca2f9fb868ed8baf5b6974a7e19e90"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Crysis ransomware."
+        category = "MALWARE"
+        malware = "CRYSIS"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Crysis"
         tc_detection_factor = 5
 
     strings:

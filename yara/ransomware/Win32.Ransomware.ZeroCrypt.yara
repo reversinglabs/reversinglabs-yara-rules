@@ -1,17 +1,21 @@
 rule Win32_Ransomware_ZeroCrypt : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects ZeroCrypt ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "ZeroCrypt"
+        id = "3xj2aXyM2v21qXfjGK9N1E"
+        fingerprint = "958c7b268cd1bb3e1543cd1b23c6ec47312058b66c79f07e6a9c4fd2bf5b278e"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects ZeroCrypt ransomware."
+        category = "MALWARE"
+        malware = "ZEROCRYPT"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "ZeroCrypt"
         tc_detection_factor = 5
 
     strings:
@@ -87,7 +91,7 @@ rule Win32_Ransomware_ZeroCrypt : tc_detection malicious
             ?? ?? ?? ?? 8B 8C 24 ?? ?? ?? ?? 64 89 0D ?? ?? ?? ?? 59 5F 5E 5B 8B 8C 24 ?? ?? ?? 
             ?? 33 CC E8 ?? ?? ?? ?? 8B E5 5D C3 
         }
-        
+                
     condition:
         uint16(0) == 0x5A4D and $encrypt_file_1 and $encrypt_file_2 and $encrypt_file_3
 }

@@ -1,17 +1,21 @@
 rule Linux_Ransomware_KillDisk : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects KillDisk ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "KillDisk"
+        id = "6URFYNLmgy3SCsVS3Ho1vb"
+        fingerprint = "3814130611eb690b2c190f88b6ac884a4c163e7b2181e206acbe556b601a2f0c"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects KillDisk ransomware."
+        category = "MALWARE"
+        malware = "KILLDISK"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "KillDisk"
         tc_detection_factor = 5
 
     strings:

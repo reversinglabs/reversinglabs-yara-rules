@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Sepsis : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Sepsis ransomware."
-		malware				= "Sepsis"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Sepsis"
+        id = "65cxDoW4ZPyUfBl5fhSidl"
+        fingerprint = "f3623abf9f6308fd293261ed9757328f8d23760c4562fc718e8b7f4599dd123c"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Sepsis ransomware."
+        category = "MALWARE"
+        malware = "SEPSIS"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Sepsis"
         tc_detection_factor = 5
 
     strings:

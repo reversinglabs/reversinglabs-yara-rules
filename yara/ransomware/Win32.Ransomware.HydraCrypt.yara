@@ -1,18 +1,21 @@
 rule Win32_Ransomware_HydraCrypt : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects HydraCrypt ransomware."
-		malware				= "HydraCrypt"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "HydraCrypt"
+        id = "16VpxrNrDbfasHqfzaKsAk"
+        fingerprint = "c90edae89533bbc1c439baca1b37995f561bb72cb7dd4f1cfb4208ddbf42e95b"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects HydraCrypt ransomware."
+        category = "MALWARE"
+        malware = "HYDRACRYPT"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "HydraCrypt"
         tc_detection_factor = 5
 
     strings:

@@ -1,18 +1,21 @@
 rule Win32_Ransomware_JSWorm : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects JSWorm ransomware."
-		malware				= "JSWorm"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "JSWorm"
+        id = "1glWuowara14h9ZZbke9fp"
+        fingerprint = "d479c8963db5004317a20887a34caf17eead0819d7508aabfa5c706a87d2743d"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects JSWorm ransomware."
+        category = "MALWARE"
+        malware = "JSWORM"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "JSWorm"
         tc_detection_factor = 5
 
     strings:

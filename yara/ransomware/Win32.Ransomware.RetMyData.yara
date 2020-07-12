@@ -1,18 +1,21 @@
 rule Win32_Ransomware_RetMyData : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects RetMyData ransomware."
-		malware				= "RetMyData"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "RetMyData"
+        id = "1AjFlMzwyZUWhGDFHARNhW"
+        fingerprint = "ba30cd8b5114c33b6393849e5b4bd0d14d07e8f7109f166d6b41375d4da78197"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects RetMyData ransomware."
+        category = "MALWARE"
+        malware = "RETMYDATA"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "RetMyData"
         tc_detection_factor = 5
 
     strings:

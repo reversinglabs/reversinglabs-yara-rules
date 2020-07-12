@@ -1,17 +1,21 @@
 rule Win32_Ransomware_GarrantyDecrypt : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects GarrantyDecrypt ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "GarrantyDecrypt"
+        id = "2E4hZu3gDCOt8k8TrKFhGb"
+        fingerprint = "b9ab4f8a11823138621be292902198d90fa661961b88c73fc7cd6601d5cd4923"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects GarrantyDecrypt ransomware."
+        category = "MALWARE"
+        malware = "GARRANTYDECRYPT"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "GarrantyDecrypt"
         tc_detection_factor = 5
 
     strings:

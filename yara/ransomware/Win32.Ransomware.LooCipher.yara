@@ -1,18 +1,21 @@
 rule Win32_Ransomware_LooCipher : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects LooCipher ransomware."
-		malware				= "LooCipher"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "LooCipher"
+        id = "7YZhMwJNrcUXkJhpkAVcZ5"
+        fingerprint = "14c51158bd968da6fe631e6bf3532e6b12a310b1cb4597dd0c35777c7dd98912"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects LooCipher ransomware."
+        category = "MALWARE"
+        malware = "LOOCIPHER"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "LooCipher"
         tc_detection_factor = 5
 
     strings:

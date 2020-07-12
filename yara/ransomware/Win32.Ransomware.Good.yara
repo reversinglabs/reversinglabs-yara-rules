@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Good : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Good ransomware."
-		malware				= "Good"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Good"
+        id = "4pl02JoQDYfnqhP1VUQe0Z"
+        fingerprint = "05c46befcaf4832ca7d9deeb73dc29c051943ff78b97caac64ac10d2a072d05e"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Good ransomware."
+        category = "MALWARE"
+        malware = "GOOD"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Good"
         tc_detection_factor = 5
 
     strings:

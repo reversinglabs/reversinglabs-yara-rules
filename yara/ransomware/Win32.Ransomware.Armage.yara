@@ -1,17 +1,21 @@
 rule Win32_Ransomware_Armage : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Armage ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Armage"
+        id = "2mAnJPruCxMLPKrJxUVRrM"
+        fingerprint = "2e982f1602ced8600171c3750178d1c206fe8d09c2f15bf49f585880eda83603"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Armage ransomware."
+        category = "MALWARE"
+        malware = "ARMAGE"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Armage"
         tc_detection_factor = 5
 
     strings:

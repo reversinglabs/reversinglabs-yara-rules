@@ -1,18 +1,21 @@
 rule Win32_Ransomware_NanoLocker : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects NanoLocker ransomware."
-		malware				= "NanoLocker"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "NanoLocker"
+        id = "3jvxzyipYMUTrShNQcDIDO"
+        fingerprint = "fa943d31fd00cdb8fe9ca18a0d430249df14df0b2dc7ddf3d536e89ba214ca1a"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects NanoLocker ransomware."
+        category = "MALWARE"
+        malware = "NANOLOCKER"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "NanoLocker"
         tc_detection_factor = 5
 
     strings:

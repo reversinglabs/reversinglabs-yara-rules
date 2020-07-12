@@ -1,17 +1,21 @@
 rule Win32_Ransomware_FCT : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects FCT ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "FCT"
+        id = "7gTftjWX51gBtYpU9GeKun"
+        fingerprint = "2920c93edf064364e87ad6371e023ea41d524ff24c76cc85279acd0b69f0b591"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects FCT ransomware."
+        category = "MALWARE"
+        malware = "FCT"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "FCT"
         tc_detection_factor = 5
 
     strings:
@@ -73,7 +77,7 @@ rule Win32_Ransomware_FCT : tc_detection malicious
             ?? ?? ?? 83 BD ?? ?? ?? ?? ?? 8D 8D ?? ?? ?? ?? 8D 45 ?? 0F 43 8D ?? ?? ?? ?? 83 7D 
             ?? ?? 51 0F 43 45 ?? 50 FF 15
         }
-        
+                
     condition:
         uint16(0) == 0x5A4D and
         (

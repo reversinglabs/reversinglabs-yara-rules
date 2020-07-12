@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Maktub : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Maktub ransomware."
-		malware				= "Maktub"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Maktub"
+        id = "2E8sbmwuB0Rxyyk5lFJEaN"
+        fingerprint = "62ef8c8b8df4d8bb2d26bb5de818ae043b49ca6c4b1a8543d6965aa92331837f"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Maktub ransomware."
+        category = "MALWARE"
+        malware = "MAKTUB"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Maktub"
         tc_detection_factor = 5
 
     strings:

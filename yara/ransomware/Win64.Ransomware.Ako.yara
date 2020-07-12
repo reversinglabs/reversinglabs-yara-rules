@@ -1,17 +1,21 @@
 rule Win64_Ransomware_Ako : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Ako ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Ako"
+        id = "7iTZVkufSHiG4yyPP3jHiC"
+        fingerprint = "43c240f1bb3d8df51cf54d71fd4d1b6eb0fb6eea1972525d022c2bb33e3b0d4e"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Ako ransomware."
+        category = "MALWARE"
+        malware = "AKO"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Ako"
         tc_detection_factor = 5
 
     strings:

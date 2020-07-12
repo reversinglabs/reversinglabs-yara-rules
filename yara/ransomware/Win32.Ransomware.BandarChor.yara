@@ -1,17 +1,21 @@
 rule Win32_Ransomware_BandarChor : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects BandarChor ransomware."
-
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "BandarChor"
+        id = "ex4J23e2WUEjPBcyXpSxa"
+        fingerprint = "5c4184bec7807908bc987ebfbc8ab1e51e1ef6899c0b728338a636cdec548671"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects BandarChor ransomware."
+        category = "MALWARE"
+        malware = "BANDARCHOR"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "BandarChor"
         tc_detection_factor = 5
 
     strings:
@@ -77,7 +81,7 @@ rule Win32_Ransomware_BandarChor : tc_detection malicious
             ?? ?? E8 ?? ?? ?? ?? 8B 85 ?? ?? ?? ?? BA ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F 84 ?? ?? ?? ?? 8D 95 ?? ?? ?? ?? 8B 45 ?? E8 ?? 
             ?? ?? ?? 8B 85 ?? ?? ?? ?? 8D 95 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 85 ?? ?? ?? ?? BA ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F 84
             }
-           
+                      
         $parse_server_commands = {
             83 F9 ?? 0F 84 E0 00 00 00 50 53 56 57 89 C3 89 D6 89 CF 31 D2 8A 06 8A 56 ?? 3C ?? 74 25 3C ?? 74 3E 3C ?? 74 51 3C ?? 
             74 5C 3C ?? 74 76 3C ?? 0F 84 84 00 00 00 3C ?? 0F 84 8B 00 00 00 E9 97 00 00 00 83 F9 ?? 89 D8 7F 0A E8 ?? ?? ?? ?? E9 
@@ -87,7 +91,7 @@ rule Win32_Ransomware_BandarChor : tc_detection malicious
             1C 89 D8 89 F2 83 C3 ?? E8 ?? ?? ?? ?? 4F 7F F1 EB 0B 5F 5E 5B 58 B0 ?? E9 ?? ?? ?? ?? 5F 5E 5B 58 C3 8B C0 B9 ?? ?? ?? 
             ?? E9 0A FF FF FF C3
         } 
-          
+                    
     condition:
         uint16(0) == 0x5A4D and
         (($file_extensions_1 and $file_extensions_2 and $file_extensions_3 and

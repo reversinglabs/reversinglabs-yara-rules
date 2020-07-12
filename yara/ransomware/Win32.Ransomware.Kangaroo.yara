@@ -1,18 +1,21 @@
 rule Win32_Ransomware_Kangaroo : tc_detection malicious
 {
     meta:
-
-        author              = "ReversingLabs"
-
-        source              = "ReversingLabs"
-        status              = "RELEASED"
-        sharing             = "TLP:WHITE"
-        category            = "MALWARE"
-        description         = "Yara rule that detects Kangaroo ransomware."
-		malware				= "Kangaroo"
-		malware_type		= "Ransomware"
-        tc_detection_type   = "Ransomware"
-        tc_detection_name   = "Kangaroo"
+        id = "7DA70NNROqVKRffMLPUuwL"
+        fingerprint = "82e4d0dcdd6ae1e9e193cb22bee47ab7e0bbfef16b4299e1fe5228bbf08bbb6f"
+        version = "1.0"
+        first_imported = "2020-07-11"
+        last_modified = "2020-07-11"
+        status = "RELEASED"
+        sharing = "TLP:WHITE"
+        source = "REVERSINGLABS"
+        author = "ReversingLabs"
+        description = "Yara rule that detects Kangaroo ransomware."
+        category = "MALWARE"
+        malware = "KANGAROO"
+        malware_type = "RANSOMWARE"
+        tc_detection_type = "Ransomware"
+        tc_detection_name = "Kangaroo"
         tc_detection_factor = 5
 
     strings:
