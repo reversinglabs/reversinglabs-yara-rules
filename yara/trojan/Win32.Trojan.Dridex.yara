@@ -4,8 +4,9 @@ rule Win32_Trojan_Dridex : tc_detection malicious
         id = "79PiKFWb5H1uEOzcVMuxqg"
         fingerprint = "a8b0cd1024aa0b2c7001a8ff039ae4b634cfd543759b388e415eec23078f9eed"
         version = "1.0"
+        yara_version = "3.2.0"
         first_imported = "2020-07-11"
-        last_modified = "2020-07-11"
+        last_modified = "2020-07-12"
         status = "RELEASED"
         sharing = "TLP:WHITE"
         source = "REVERSINGLABS"
@@ -14,6 +15,7 @@ rule Win32_Trojan_Dridex : tc_detection malicious
         category = "MALWARE"
         malware = "DRIDEX"
         malware_type = "TROJAN"
+        mitre_att = "S0384"
         tc_detection_type = "Trojan"
         tc_detection_name = "Dridex"
         tc_detection_factor = 5

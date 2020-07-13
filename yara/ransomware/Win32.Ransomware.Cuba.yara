@@ -4,8 +4,9 @@ rule Win32_Ransomware_Cuba : tc_detection malicious
         id = "4mIq51lsKDOswUMxKpztwr"
         fingerprint = "98d3772c399e21184f077a38b8c6b5c39b1aa06f22054b00343b4db2d7017c77"
         version = "1.0"
+        yara_version = "3.2.0"
         first_imported = "2020-07-11"
-        last_modified = "2020-07-11"
+        last_modified = "2020-07-12"
         status = "RELEASED"
         sharing = "TLP:WHITE"
         source = "REVERSINGLABS"
@@ -114,7 +115,7 @@ rule Win32_Ransomware_Cuba : tc_detection malicious
             FF D6 89 43 ?? 32 C0 5F 5E 5B 8B 8C 24 ?? ?? ?? ?? 33 CC E8 ?? ?? ?? ?? 8B E5 5D C2 
             ?? ?? 8B 8C 24 ?? ?? ?? ?? B0 ?? 5F 5E 5B 33 CC E8 ?? ?? ?? ?? 8B E5 5D C2
         }
-                
+                                
     condition:
         uint16(0) == 0x5A4D and
         (

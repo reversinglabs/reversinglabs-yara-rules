@@ -4,8 +4,9 @@ rule Win32_Ransomware_GPCode : tc_detection malicious
         id = "4c1OnhZaCdsnUtM4SaMUkB"
         fingerprint = "835c3d98cefae26888e54eb14b97fdfcaee11ea88c7093ffdadde2f1c100724d"
         version = "1.0"
+        yara_version = "3.2.0"
         first_imported = "2020-07-11"
-        last_modified = "2020-07-11"
+        last_modified = "2020-07-12"
         status = "RELEASED"
         sharing = "TLP:WHITE"
         source = "REVERSINGLABS"
@@ -59,7 +60,7 @@ rule Win32_Ransomware_GPCode : tc_detection malicious
             45 ?? 83 E8 ?? 50 53 E8 ?? ?? ?? ?? 8A 03 A2 ?? ?? 
             ?? ?? 83 C3 ?? 8A 03 A2 ?? ?? ?? ?? 83 C3 
         }
-        
+                
     condition:
         uint16(0) == 0x5A4D and
         ($drive_loop and 

@@ -1,12 +1,13 @@
 rule Win32_Ransomware_NotPetya : tc_detection malicious
 {
-        
+                
     meta:
         id = "2fLMzesxd3DmCpsrhdHqlM"
         fingerprint = "909b403ef41fc8bcdcb89a2da41e0dd636ac3b7d89744f2fc8b7dc4c39d1fd09"
         version = "1.0"
+        yara_version = "3.2.0"
         first_imported = "2020-07-11"
-        last_modified = "2020-07-11"
+        last_modified = "2020-07-12"
         status = "RELEASED"
         sharing = "TLP:WHITE"
         source = "REVERSINGLABS"
@@ -72,5 +73,5 @@ rule Win32_Ransomware_NotPetya : tc_detection malicious
 
     condition:
         uint16(0) == 0x5A4D and $encrypt_file and $main and $encryption_loop and $shutdown
-                        
+                                                
 }

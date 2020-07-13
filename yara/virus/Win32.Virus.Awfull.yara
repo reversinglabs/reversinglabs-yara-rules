@@ -6,8 +6,9 @@ rule Win32_Virus_Awfull : tc_detection malicious
         id = "5qajfijTkcfnLkkX8Xlear"
         fingerprint = "4eaf0958951a57ad4d9d45c6eebb92269b210da418381e94b1e891f4e49fb415"
         version = "1.0"
+        yara_version = "3.2.0"
         first_imported = "2020-07-11"
-        last_modified = "2020-07-11"
+        last_modified = "2020-07-12"
         status = "RELEASED"
         sharing = "TLP:WHITE"
         source = "REVERSINGLABS"
@@ -29,7 +30,7 @@ rule Win32_Virus_Awfull : tc_detection malicious
               [0-128] (BE | 8B 35) ?? ?? ?? ?? 03 F5 B9 ?? ?? ?? ??    
               56 5F AC F6 D0 AA 49 E3 02 EB F7
         }
-                
+                                
     condition:
         uint16(0) == 0x5A4D and 
         ($awfull_body at pe.entry_point)

@@ -4,8 +4,9 @@ rule Win32_Ransomware_VHDLocker : tc_detection malicious
         id = "4Ch72WyGqmARjjcLTaBI6o"
         fingerprint = "965d2ce13861c899448a296dfd84bf427e7e4bea4b999ccdf4e41a9fee56e9e1"
         version = "1.0"
+        yara_version = "3.2.0"
         first_imported = "2020-07-11"
-        last_modified = "2020-07-11"
+        last_modified = "2020-07-12"
         status = "RELEASED"
         sharing = "TLP:WHITE"
         source = "REVERSINGLABS"
@@ -140,7 +141,7 @@ rule Win32_Ransomware_VHDLocker : tc_detection malicious
             FE ?? 0F 8C ?? ?? ?? ?? EB ?? 68 ?? ?? ?? ?? BB ?? ?? ?? ?? E8 ?? ?? ?? ?? B0 ?? 8B 
             4D ?? 64 89 0D ?? ?? ?? ?? 59 5F 5E 5B 8B 4D ?? 33 CD E8 ?? ?? ?? ?? 8B E5 5D C3 
         }
-                
+                                
     condition:
         uint16(0) == 0x5A4D and
         (

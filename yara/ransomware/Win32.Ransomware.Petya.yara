@@ -2,13 +2,14 @@ import "pe"
 
 rule Win32_Ransomware_Petya : tc_detection malicious
 {
-        
+                
     meta:
         id = "77cpHcJ8m7uuw5my3Y46zD"
         fingerprint = "76b24346056a659f3caa489f0e7c77764ffaf742df52a91d5acda01809115bfa"
         version = "1.0"
+        yara_version = "3.2.0"
         first_imported = "2020-07-11"
-        last_modified = "2020-07-11"
+        last_modified = "2020-07-12"
         status = "RELEASED"
         sharing = "TLP:WHITE"
         source = "REVERSINGLABS"
@@ -57,5 +58,5 @@ rule Win32_Ransomware_Petya : tc_detection malicious
 
     condition:
         uint16(0) == 0x5A4D and ($entry_point at pe.entry_point) and $shutdown_pattern and $sectionxxxx_pattern and $crypt_gen_pattern
-                        
+                                                
 }

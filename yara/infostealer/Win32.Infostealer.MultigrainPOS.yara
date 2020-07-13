@@ -4,8 +4,9 @@ rule Win32_Infostealer_MultigrainPOS : tc_detection malicious
         id = "4DD8Ll97baGkuEHc0udTrS"
         fingerprint = "4322a4d32bebff9c525d5cd668c07ea8a65a53c954f01fa493925ca5ea7baa99"
         version = "1.0"
+        yara_version = "3.2.0"
         first_imported = "2020-07-11"
-        last_modified = "2020-07-11"
+        last_modified = "2020-07-12"
         status = "RELEASED"
         sharing = "TLP:WHITE"
         source = "REVERSINGLABS"
@@ -14,6 +15,7 @@ rule Win32_Infostealer_MultigrainPOS : tc_detection malicious
         category = "MALWARE"
         malware = "MULTIGRAINPOS"
         malware_type = "INFOSTEALER"
+        malware_type = "POS"
         tc_detection_type = "Infostealer"
         tc_detection_name = "MultigrainPOS"
         tc_detection_factor = 5

@@ -4,8 +4,9 @@ rule Win32_Ransomware_Erica : tc_detection malicious
         id = "38tRH0WrMtB9phC2k64nUh"
         fingerprint = "54d63bc7caa71b397793b28b640ca74d0ff7819eab48c960135104851286daa6"
         version = "1.0"
+        yara_version = "3.2.0"
         first_imported = "2020-07-11"
-        last_modified = "2020-07-11"
+        last_modified = "2020-07-12"
         status = "RELEASED"
         sharing = "TLP:WHITE"
         source = "REVERSINGLABS"
@@ -67,7 +68,7 @@ rule Win32_Ransomware_Erica : tc_detection malicious
             ?? ?? F7 D8 1B C0 F7 D8 84 C0 75 ?? 56 E8 ?? ?? ?? ?? 33 C0 5A 59 59 64 89 10 68 ?? 
             ?? ?? ?? 8D 85 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8D 45 ?? BA ?? ?? ?? ?? E8 ?? ?? ?? ?? C3 
         }
-                
+                                
     condition:
         uint16(0) == 0x5A4D and
         (

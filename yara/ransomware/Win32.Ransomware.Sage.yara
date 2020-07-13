@@ -4,8 +4,9 @@ rule Win32_Ransomware_Sage : tc_detection malicious
         id = "6woq9rjQeDZfnkv22LzNkx"
         fingerprint = "aa7b2ca691ed3b4711bf5fcb370af29429c73f621298ef49c1ce3206083b14e5"
         version = "1.0"
+        yara_version = "3.2.0"
         first_imported = "2020-07-11"
-        last_modified = "2020-07-11"
+        last_modified = "2020-07-12"
         status = "RELEASED"
         sharing = "TLP:WHITE"
         source = "REVERSINGLABS"
@@ -65,7 +66,7 @@ rule Win32_Ransomware_Sage : tc_detection malicious
             8D 56 ?? 52 E8 ?? ?? ?? ?? 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 89 46 ?? E8 ?? ?? ?? 
             ?? 83 C4 ?? 66 83 3B ?? 0F 85 ?? ?? ?? ?? 5F 5E 5D 5B C3 
         }
-                
+                                
     condition:
         uint16(0) == 0x5A4D and
         (

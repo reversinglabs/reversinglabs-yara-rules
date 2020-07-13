@@ -4,8 +4,9 @@ rule Win32_Ransomware_Nefilim : tc_detection malicious
         id = "1hw6SqLtgzrNo7D2Gz2tqG"
         fingerprint = "3ee9f8f7d65cd9ae7e55dc84ad2dce08c596c9d5bbc0144b0396a26a0dd3a9f3"
         version = "1.0"
+        yara_version = "3.2.0"
         first_imported = "2020-07-11"
-        last_modified = "2020-07-11"
+        last_modified = "2020-07-12"
         status = "RELEASED"
         sharing = "TLP:WHITE"
         source = "REVERSINGLABS"
@@ -135,7 +136,7 @@ rule Win32_Ransomware_Nefilim : tc_detection malicious
             74 24 ?? E8 ?? ?? ?? ?? 53 8D 75 ?? E8 ?? ?? ?? ?? 8B 8C 24 ?? ?? ?? ?? 5F 5E 5B 33 
             CC E8 ?? ?? ?? ?? 8B E5 5D C3
         }
-                
+                                
     condition:
         uint16(0) == 0x5A4D and 
         (

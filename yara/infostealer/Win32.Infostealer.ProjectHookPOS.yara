@@ -4,8 +4,9 @@ rule Win32_Infostealer_ProjectHookPOS : tc_detection malicious
         id = "7Ip4N6ZAU9DtvQ3oBi7Utp"
         fingerprint = "4baaf2523f940688178ab09ba231c4da4f98ce2ce0445c19e4ed201ae1e3342c"
         version = "1.0"
+        yara_version = "3.2.0"
         first_imported = "2020-07-11"
-        last_modified = "2020-07-11"
+        last_modified = "2020-07-12"
         status = "RELEASED"
         sharing = "TLP:WHITE"
         source = "REVERSINGLABS"
@@ -14,6 +15,7 @@ rule Win32_Infostealer_ProjectHookPOS : tc_detection malicious
         category = "MALWARE"
         malware = "PROJECTHOOKPOS"
         malware_type = "INFOSTEALER"
+        malware_type = "POS"
         tc_detection_type = "Infostealer"
         tc_detection_name = "ProjectHookPOS"
         tc_detection_factor = 5

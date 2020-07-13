@@ -6,8 +6,9 @@ rule Win32_Virus_Cmay : tc_detection malicious
         id = "3RLgyJBOG6Ldt0XWB2CAa0"
         fingerprint = "27298c6ce0ab86ec0755e792d611d8f0d8b557004c71973015ab3ef772eff6cf"
         version = "1.0"
+        yara_version = "3.2.0"
         first_imported = "2020-07-11"
-        last_modified = "2020-07-11"
+        last_modified = "2020-07-12"
         status = "RELEASED"
         sharing = "TLP:WHITE"
         source = "REVERSINGLABS"
@@ -68,7 +69,7 @@ rule Win32_Virus_Cmay : tc_detection malicious
             ?? ?? 56 FF 95 ?? ?? ?? ?? 89 85 ?? ?? ?? ?? C3 85 ED 0F 84 2A 04 00 
             00 33 C0 05 ?? ?? ?? ?? 05 ?? ?? ?? ?? FF E0
         } 
-                
+                                
         condition: 
             uint16(0) == 0x5A4D and 
             ($cmay_body_1 at pe.entry_point) and

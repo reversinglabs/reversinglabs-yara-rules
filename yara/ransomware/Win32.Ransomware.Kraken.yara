@@ -4,8 +4,9 @@ rule Linux_Ransomware_Kraken : tc_detection malicious
         id = "gpqhQHCQaUlc8mofLAJCl"
         fingerprint = "5308d06cdb8000a395bf86c409868c6fd861c8bccbb52607f3ddd55cc86a3b49"
         version = "1.0"
+        yara_version = "3.2.0"
         first_imported = "2020-07-11"
-        last_modified = "2020-07-11"
+        last_modified = "2020-07-12"
         status = "RELEASED"
         sharing = "TLP:WHITE"
         source = "REVERSINGLABS"
@@ -150,5 +151,5 @@ rule Linux_Ransomware_Kraken : tc_detection malicious
                 all of ($encrypt_files_p*)
             )
         )
-                
+                                
 }

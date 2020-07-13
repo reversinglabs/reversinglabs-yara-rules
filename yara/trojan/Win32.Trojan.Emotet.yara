@@ -4,8 +4,9 @@ rule Win32_Trojan_Emotet : tc_detection malicious
         id = "6rxNMlUDeBszEkDWJ9e9eL"
         fingerprint = "b1d1a38fccdf4d2ddef833cee5360d13432ab4f6f05ad6cef17ae91659057ecc"
         version = "1.0"
+        yara_version = "3.2.0"
         first_imported = "2020-07-11"
-        last_modified = "2020-07-11"
+        last_modified = "2020-07-12"
         status = "RELEASED"
         sharing = "TLP:WHITE"
         source = "REVERSINGLABS"
@@ -14,6 +15,7 @@ rule Win32_Trojan_Emotet : tc_detection malicious
         category = "MALWARE"
         malware = "EMOTET"
         malware_type = "TROJAN"
+        mitre_att = "S0367"
         tc_detection_type = "Trojan"
         tc_detection_name = "Emotet"
         tc_detection_factor = 5

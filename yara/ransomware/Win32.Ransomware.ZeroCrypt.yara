@@ -4,8 +4,9 @@ rule Win32_Ransomware_ZeroCrypt : tc_detection malicious
         id = "3xj2aXyM2v21qXfjGK9N1E"
         fingerprint = "958c7b268cd1bb3e1543cd1b23c6ec47312058b66c79f07e6a9c4fd2bf5b278e"
         version = "1.0"
+        yara_version = "3.2.0"
         first_imported = "2020-07-11"
-        last_modified = "2020-07-11"
+        last_modified = "2020-07-12"
         status = "RELEASED"
         sharing = "TLP:WHITE"
         source = "REVERSINGLABS"
@@ -91,7 +92,7 @@ rule Win32_Ransomware_ZeroCrypt : tc_detection malicious
             ?? ?? ?? ?? 8B 8C 24 ?? ?? ?? ?? 64 89 0D ?? ?? ?? ?? 59 5F 5E 5B 8B 8C 24 ?? ?? ?? 
             ?? 33 CC E8 ?? ?? ?? ?? 8B E5 5D C3 
         }
-                
+                                
     condition:
         uint16(0) == 0x5A4D and $encrypt_file_1 and $encrypt_file_2 and $encrypt_file_3
 }

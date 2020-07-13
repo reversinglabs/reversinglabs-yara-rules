@@ -4,8 +4,9 @@ rule Win32_Ransomware_FCT : tc_detection malicious
         id = "7gTftjWX51gBtYpU9GeKun"
         fingerprint = "2920c93edf064364e87ad6371e023ea41d524ff24c76cc85279acd0b69f0b591"
         version = "1.0"
+        yara_version = "3.2.0"
         first_imported = "2020-07-11"
-        last_modified = "2020-07-11"
+        last_modified = "2020-07-12"
         status = "RELEASED"
         sharing = "TLP:WHITE"
         source = "REVERSINGLABS"
@@ -77,7 +78,7 @@ rule Win32_Ransomware_FCT : tc_detection malicious
             ?? ?? ?? 83 BD ?? ?? ?? ?? ?? 8D 8D ?? ?? ?? ?? 8D 45 ?? 0F 43 8D ?? ?? ?? ?? 83 7D 
             ?? ?? 51 0F 43 45 ?? 50 FF 15
         }
-                
+                                
     condition:
         uint16(0) == 0x5A4D and
         (

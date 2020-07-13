@@ -4,8 +4,9 @@ rule Win32_Trojan_TrickBot : tc_detection malicious
         id = "OiCL2Ty0AjKxNUSgDaHGs"
         fingerprint = "dd0748a5458e1940656b8de92f80b56d814750ed590398c8cf983d564ba9e72d"
         version = "1.0"
+        yara_version = "3.2.0"
         first_imported = "2020-07-11"
-        last_modified = "2020-07-11"
+        last_modified = "2020-07-12"
         status = "RELEASED"
         sharing = "TLP:WHITE"
         source = "REVERSINGLABS"
@@ -14,6 +15,7 @@ rule Win32_Trojan_TrickBot : tc_detection malicious
         category = "MALWARE"
         malware = "TRICKBOT"
         malware_type = "TROJAN"
+        mitre_att = "S0266"
         tc_detection_type = "Trojan"
         tc_detection_name = "TrickBot"
         tc_detection_factor = 5

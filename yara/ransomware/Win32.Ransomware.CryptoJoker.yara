@@ -4,8 +4,9 @@ rule Win32_Ransomware_CryptoJoker : tc_detection malicious
         id = "5ykkxC4vmmTYsiWo0jCVR6"
         fingerprint = "538a9ab3717aa91e08281dddc10902ce3b42ffcea6110d0e5a701bb78c5d539a"
         version = "1.0"
+        yara_version = "3.2.0"
         first_imported = "2020-07-11"
-        last_modified = "2020-07-11"
+        last_modified = "2020-07-12"
         status = "RELEASED"
         sharing = "TLP:WHITE"
         source = "REVERSINGLABS"
@@ -19,11 +20,11 @@ rule Win32_Ransomware_CryptoJoker : tc_detection malicious
         tc_detection_factor = 5
 
     strings:
-                
+                                
         $call_encrypt = {
             2B 02 26 16 FE 09 00 00 FE 09 01 00 FE 09 02 00 6F ?? ?? ?? ?? 2A
         }
-        
+                
         $encrypt_files = {
             2B 02 26 16 20 04 ?? ?? ?? 28 ?? ?? ?? ?? 39 ?? ?? ?? ?? 26 20 00 04 ?? ?? 73 ?? ?? ?? ?? 0C 20 05 ?? ?? ??
             16 39 ?? ?? ?? ?? 26 28 ?? ?? ?? ?? 02 28 ?? ?? ?? ?? 0B 38 ?? ?? ?? ?? 20 04 ?? ?? ?? FE ?? ?? ?? FE ?? ?? 
