@@ -8,6 +8,7 @@ rule Win32_Ransomware_Gibon : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "GIBON"
         description         = "Yara rule that detects Gibon ransomware."
 
         tc_detection_type   = "Ransomware"

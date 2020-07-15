@@ -8,6 +8,7 @@ rule Win32_Ransomware_FLKR : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "FLKR"
         description         = "Yara rule that detects FLKR ransomware."
 
         tc_detection_type   = "Ransomware"

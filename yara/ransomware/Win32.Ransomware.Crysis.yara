@@ -8,6 +8,7 @@ rule Win32_Ransomware_Crysis : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "CRYSIS"
         description         = "Yara rule that detects Crysis ransomware."
 
         tc_detection_type   = "Ransomware"

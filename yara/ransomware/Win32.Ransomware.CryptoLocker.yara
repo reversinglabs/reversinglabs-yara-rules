@@ -10,6 +10,7 @@ rule Win32_Ransomware_CryptoLocker : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "CRYPTOLOCKER"
         description         = "Yara rule that detects CryptoLocker ransomware."
 
         tc_detection_type   = "Ransomware"

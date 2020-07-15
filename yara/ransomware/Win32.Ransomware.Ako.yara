@@ -8,6 +8,7 @@ rule Win32_Ransomware_Ako : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "AKO"
         description         = "Yara rule that detects Ako ransomware."
 
         tc_detection_type   = "Ransomware"

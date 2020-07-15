@@ -10,6 +10,7 @@ rule Win32_Virus_Greenp : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "GREENP"
         description         = "Yara rule that detects Greenp virus."
 
         tc_detection_type   = "Virus"

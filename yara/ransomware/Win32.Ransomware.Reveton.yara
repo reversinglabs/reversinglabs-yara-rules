@@ -8,6 +8,7 @@ rule Win32_Ransomware_Reveton : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "REVETON"
         description         = "Yara rule that detects Reveton ransomware."
 
         tc_detection_type   = "Ransomware"

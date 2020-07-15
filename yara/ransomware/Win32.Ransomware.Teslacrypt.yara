@@ -8,6 +8,7 @@ rule Win32_Ransomware_Teslacrypt : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "TESLACRYPT"
         description         = "Yara rule that detects Teslacrypt ransomware."
 
         tc_detection_type = "Ransomware"

@@ -8,6 +8,7 @@ rule Win32_Ransomware_Spora : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "SPORA"
         description         = "Yara rule that detects Spora ransomware."
 
         tc_detection_type   = "Ransomware"

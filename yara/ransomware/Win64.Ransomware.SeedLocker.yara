@@ -8,6 +8,7 @@ rule Win64_Ransomware_SeedLocker : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "SEEDLOCKER"
         description         = "Yara rule that detects SeedLocker ransomware."
 
         tc_detection_type   = "Ransomware"

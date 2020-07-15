@@ -8,6 +8,7 @@ rule Win32_Ransomware_5ss5c : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "5SS5C"
         description         = "Yara rule that detects 5ss5c ransomware."
 
         tc_detection_type   = "Ransomware"

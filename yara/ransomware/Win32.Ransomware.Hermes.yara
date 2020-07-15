@@ -8,6 +8,7 @@ rule Win32_Ransomware_Hermes : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "HERMES"
         description         = "Yara rule that detects Hermes ransomware."
 
         tc_detection_type   = "Ransomware"

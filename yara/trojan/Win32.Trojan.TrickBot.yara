@@ -8,6 +8,7 @@ rule Win32_Trojan_TrickBot : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "TRICKBOT"
         description         = "Yara rule that detects TrickBot trojan."
 
         tc_detection_type   = "Trojan"

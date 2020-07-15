@@ -10,6 +10,7 @@ rule Win32_Virus_Cmay : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "CMAY"
         description         = "Yara rule that detects Cmay virus."
 
         tc_detection_type   = "Virus"

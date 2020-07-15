@@ -8,6 +8,7 @@ rule Win32_Ransomware_PrincessLocker : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "PRINCESSLOCKER"
         description         = "Yara rule that detects PrincessLocker ransomware."
 
         tc_detection_type   = "Ransomware"

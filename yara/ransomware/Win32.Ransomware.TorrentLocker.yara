@@ -8,6 +8,7 @@ rule Win32_Ransomware_TorrentLocker : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "TORRENTLOCKER"
         description         = "Yara rule that detects TorrentLocker ransomware."
 
         tc_detection_type   = "Ransomware"

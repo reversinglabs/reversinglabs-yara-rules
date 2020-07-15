@@ -8,6 +8,7 @@ rule Win32_Ransomware_Zeppelin : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "ZEPPELIN"
         description         = "Yara rule that detects Zeppelin ransomware."
 
         tc_detection_type   = "Ransomware"

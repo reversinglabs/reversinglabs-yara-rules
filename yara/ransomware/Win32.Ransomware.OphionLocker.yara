@@ -8,6 +8,7 @@ rule Win32_Ransomware_OphionLocker : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "OPHIONLOCKER"
         description         = "Yara rule that detects OphionLocker ransomware."
 
         tc_detection_type   = "Ransomware"

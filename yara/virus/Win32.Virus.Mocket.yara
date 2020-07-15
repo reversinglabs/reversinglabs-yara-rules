@@ -10,6 +10,7 @@ rule Win32_Virus_Mocket : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "MOCKET"
         description         = "Yara rule that detects Mocket virus."
 
         tc_detection_type   = "Virus"

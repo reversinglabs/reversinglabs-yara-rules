@@ -10,6 +10,7 @@ rule Win32_Ransomware_CryptoWall : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "CRYPTOWALL"
         description         = "Yara rule that detects CryptoWall ransomware."
 
         tc_detection_type   = "Ransomware"

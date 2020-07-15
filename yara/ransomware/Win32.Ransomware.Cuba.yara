@@ -8,6 +8,7 @@ rule Win32_Ransomware_Cuba : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "CUBA"
         description         = "Yara rule that detects Cuba ransomware."
 
         tc_detection_type   = "Ransomware"

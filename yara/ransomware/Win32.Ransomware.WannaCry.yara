@@ -10,6 +10,7 @@ rule Win32_Ransomware_WannaCry : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "WANNACRY"
         description         = "Yara rule that detects WannaCry ransomware."
 
         tc_detection_type   = "Ransomware"

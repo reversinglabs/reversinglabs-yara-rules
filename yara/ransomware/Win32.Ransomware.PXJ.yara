@@ -8,6 +8,7 @@ rule Win32_Ransomware_PXJ : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "PXJ"
         description         = "Yara rule that detects PXJ ransomware."
 
         tc_detection_type   = "Ransomware"

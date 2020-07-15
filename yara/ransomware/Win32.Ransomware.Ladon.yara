@@ -8,6 +8,7 @@ rule Win32_Ransomware_Ladon : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "LADON"
         description         = "Yara rule that detects Ladon ransomware."
 
         tc_detection_type   = "Ransomware"

@@ -8,6 +8,7 @@ rule Win32_Ransomware_MZP : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "MZP"
         description         = "Yara rule that detects MZP ransomware."
 
         tc_detection_type   = "Ransomware"

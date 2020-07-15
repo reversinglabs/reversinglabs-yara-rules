@@ -8,6 +8,7 @@ rule Win32_Ransomware_Sherminator : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "SHERMINATOR"
         description         = "Yara rule that detects Sherminator ransomware."
 
         tc_detection_type   = "Ransomware"

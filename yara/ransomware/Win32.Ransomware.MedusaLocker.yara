@@ -8,6 +8,7 @@ rule Win32_Ransomware_MedusaLocker : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "MEDUSALOCKER"
         description         = "Yara rule that detects MedusaLocker ransomware."
 
         tc_detection_type   = "Ransomware"

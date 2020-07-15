@@ -8,6 +8,7 @@ rule Win32_Ransomware_Good : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "GOOD"
         description         = "Yara rule that detects Good ransomware."
 
         tc_detection_type   = "Ransomware"

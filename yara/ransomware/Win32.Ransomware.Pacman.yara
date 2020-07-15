@@ -8,6 +8,7 @@ rule Win32_Ransomware_Pacman : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "PACMAN"
         description         = "Yara rule that detects Pacman ransomware."
 
         tc_detection_type   = "Ransomware"

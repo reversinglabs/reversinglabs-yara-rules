@@ -10,6 +10,7 @@ rule Win32_Virus_Awfull : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "AWFULL"
         description         = "Yara rule that detects Awfull virus."
 
         tc_detection_type   = "Virus"

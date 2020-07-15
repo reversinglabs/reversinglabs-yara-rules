@@ -8,6 +8,7 @@ rule Win32_Ransomware_HydraCrypt : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "HYDRACRYPT"
         description         = "Yara rule that detects HydraCrypt ransomware."
 
         tc_detection_type   = "Ransomware"

@@ -8,6 +8,7 @@ rule Win32_Ransomware_BKRansomware : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "BKRANSOMWARE"
         description         = "Yara rule that detects BKRansomware ransomware."
 
         tc_detection_type   = "Ransomware"

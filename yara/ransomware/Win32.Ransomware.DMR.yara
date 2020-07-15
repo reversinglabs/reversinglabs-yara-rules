@@ -8,6 +8,7 @@ rule Win32_Ransomware_DMR : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "DMR"
         description         = "Yara rule that detects DMR ransomware."
 
         tc_detection_type   = "Ransomware"

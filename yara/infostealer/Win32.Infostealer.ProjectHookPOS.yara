@@ -8,6 +8,7 @@ rule Win32_Infostealer_ProjectHookPOS : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "PROJECTHOOKPOS"
         description         = "Yara rule that detects ProjectHookPOS infostealer."
 
         tc_detection_type   = "Infostealer"

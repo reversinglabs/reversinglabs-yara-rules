@@ -8,6 +8,7 @@ rule Win32_Ransomware_HDDCryptor : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "HDDCRYPTOR"
         description         = "Yara rule that detects HDDCryptor ransomware."
 
         tc_detection_type   = "Ransomware"

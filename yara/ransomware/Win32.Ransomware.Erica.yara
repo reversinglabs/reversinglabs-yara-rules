@@ -8,6 +8,7 @@ rule Win32_Ransomware_Erica : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "ERICA"
         description         = "Yara rule that detects Erica ransomware."
 
         tc_detection_type   = "Ransomware"

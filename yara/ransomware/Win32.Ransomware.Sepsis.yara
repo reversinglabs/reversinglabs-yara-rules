@@ -8,6 +8,7 @@ rule Win32_Ransomware_Sepsis : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "SEPSIS"
         description         = "Yara rule that detects Sepsis ransomware."
 
         tc_detection_type   = "Ransomware"

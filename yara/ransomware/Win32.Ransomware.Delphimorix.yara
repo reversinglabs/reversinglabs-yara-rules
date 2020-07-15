@@ -8,6 +8,7 @@ rule Win32_Ransomware_Delphimorix : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "DELPHIMORIX"
         description         = "Yara rule that detects Delphimorix ransomware."
 
         tc_detection_type   = "Ransomware"

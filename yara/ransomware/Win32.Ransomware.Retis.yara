@@ -8,6 +8,7 @@ rule Win32_Ransomware_Retis : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "RETIS"
         description         = "Yara rule that detects Retis ransomware."
 
         tc_detection_type   = "Ransomware"

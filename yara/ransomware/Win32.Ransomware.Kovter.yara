@@ -8,6 +8,7 @@ rule Win32_Ransomware_Kovter : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "KOVTER"
         description         = "Yara rule that detects Kovter ransomware."
 
         tc_detection_type   = "Ransomware"

@@ -8,6 +8,7 @@ rule Win32_Ransomware_SevenSevenSeven : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "SEVENSEVENSEVEN"
         description         = "Yara rule that detects SevenSevenSeven ransomware."
 
         tc_detection_type   = "Ransomware"

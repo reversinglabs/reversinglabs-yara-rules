@@ -8,6 +8,7 @@ rule Win32_Ransomware_BadBlock : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "BADBLOCK"
         description         = "Yara rule that detects BadBlock ransomware."
 
         tc_detection_type   = "Ransomware"

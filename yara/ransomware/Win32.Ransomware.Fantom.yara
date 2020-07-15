@@ -8,6 +8,7 @@ rule Win32_Ransomware_Fantom : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "FANTOM"
         description         = "Yara rule that detects Fantom ransomware."
 
         tc_detection_type   = "Ransomware"

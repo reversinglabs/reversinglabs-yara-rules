@@ -8,6 +8,7 @@ rule Win32_Ransomware_Dharma : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "DHARMA"
         description         = "Yara rule that detects Dharma ransomware."
 
         tc_detection_type   = "Ransomware"

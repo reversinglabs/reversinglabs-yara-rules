@@ -8,6 +8,7 @@ rule Win32_Ransomware_Armage : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "ARMAGE"
         description         = "Yara rule that detects Armage ransomware."
 
         tc_detection_type   = "Ransomware"

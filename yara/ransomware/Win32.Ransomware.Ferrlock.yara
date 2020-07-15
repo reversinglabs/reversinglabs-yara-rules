@@ -8,6 +8,7 @@ rule Win32_Ransomware_Ferrlock : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "FERRLOCK"
         description         = "Yara rule that detects Ferrlock ransomware."
 
         tc_detection_type   = "Ransomware"

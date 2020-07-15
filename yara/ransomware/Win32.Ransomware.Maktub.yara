@@ -8,6 +8,7 @@ rule Win32_Ransomware_Maktub : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "MAKTUB"
         description         = "Yara rule that detects Maktub ransomware."
 
         tc_detection_type   = "Ransomware"

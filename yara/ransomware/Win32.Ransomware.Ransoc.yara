@@ -8,6 +8,7 @@ rule Win32_Ransomware_Ransoc : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "RANSOC"
         description         = "Yara rule that detects Ransoc ransomware."
 
         tc_detection_type   = "Ransomware"

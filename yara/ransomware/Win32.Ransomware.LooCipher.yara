@@ -8,6 +8,7 @@ rule Win32_Ransomware_LooCipher : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "LOOCIPHER"
         description         = "Yara rule that detects LooCipher ransomware."
 
         tc_detection_type   = "Ransomware"

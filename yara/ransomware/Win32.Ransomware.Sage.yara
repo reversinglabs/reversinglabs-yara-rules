@@ -8,6 +8,7 @@ rule Win32_Ransomware_Sage : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "SAGE"
         description         = "Yara rule that detects Sage ransomware."
 
         tc_detection_type   = "Ransomware"

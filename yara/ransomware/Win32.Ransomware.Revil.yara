@@ -8,6 +8,7 @@ rule Win32_Ransomware_Revil : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "REVIL"
         description         = "Yara rule that detects Revil ransomware."
 
         tc_detection_type   = "Ransomware"

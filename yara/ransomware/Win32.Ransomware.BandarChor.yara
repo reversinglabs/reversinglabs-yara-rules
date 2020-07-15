@@ -8,6 +8,7 @@ rule Win32_Ransomware_BandarChor : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "BANDARCHOR"
         description         = "Yara rule that detects BandarChor ransomware."
 
         tc_detection_type   = "Ransomware"

@@ -8,6 +8,7 @@ rule Win32_Ransomware_CryptoBit : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "CRYPTOBIT"
         description         = "Yara rule that detects CryptoBit ransomware."
 
         tc_detection_type   = "Ransomware"

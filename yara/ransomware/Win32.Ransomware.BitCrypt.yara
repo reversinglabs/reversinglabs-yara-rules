@@ -10,6 +10,7 @@ rule Win32_Ransomware_BitCrypt : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "BITCRYPT"
         description         = "Yara rule that detects BitCrypt ransomware."
 
         tc_detection_type   = "Ransomware"

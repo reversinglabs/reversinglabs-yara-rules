@@ -9,6 +9,7 @@ rule Win32_Ransomware_NotPetya : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "NOTPETYA"
         description         = "Yara rule that detects NotPetya ransomware."
 
         tc_detection_type   = "Ransomware"

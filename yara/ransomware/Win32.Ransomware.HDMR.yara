@@ -8,6 +8,7 @@ rule Win32_Ransomware_HDMR : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "HDMR"
         description         = "Yara rule that detects HDMR ransomware."
 
         tc_detection_type   = "Ransomware"

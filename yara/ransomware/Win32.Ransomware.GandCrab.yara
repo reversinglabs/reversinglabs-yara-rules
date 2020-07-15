@@ -8,6 +8,7 @@ rule Win32_Ransomware_GandCrab : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "GANDCRAB"
         description         = "Yara rule that detects GandCrab ransomware."
 
         tc_detection_type   = "Ransomware"

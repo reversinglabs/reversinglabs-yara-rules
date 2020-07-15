@@ -8,6 +8,7 @@ rule Win32_Ransomware_Ouroboros : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "OUROBOROS"
         description         = "Yara rule that detects Ouroboros ransomware."
 
         tc_detection_type   = "Ransomware"

@@ -8,6 +8,7 @@ rule Win32_Ransomware_Atlas : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "ATLAS"
         description         = "Yara rule that detects Atlas ransomware."
 
         tc_detection_type   = "Ransomware"

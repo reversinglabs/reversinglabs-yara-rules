@@ -8,6 +8,7 @@ rule Win32_Ransomware_Ryuk : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "RYUK"
         description         = "Yara rule that detects Ryuk ransomware."
 
         tc_detection_type   = "Ransomware"

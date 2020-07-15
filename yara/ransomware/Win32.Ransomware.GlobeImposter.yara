@@ -8,6 +8,7 @@ rule Win32_Ransomware_GlobeImposter : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "GLOBEIMPOSTER"
         description         = "Yara rule that detects GlobeImposter ransomware."
 
         tc_detection_type   = "Ransomware"

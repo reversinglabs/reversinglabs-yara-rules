@@ -8,6 +8,7 @@ rule Win32_Ransomware_Clop : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "CLOP"
         description         = "Yara rule that detects Clop ransomware."
 
         tc_detection_type   = "Ransomware"

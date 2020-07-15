@@ -8,6 +8,7 @@ rule Win32_Ransomware_Sigrun : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "SIGRUN"
         description         = "Yara rule that detects Sigrun ransomware."
 
         tc_detection_type   = "Ransomware"

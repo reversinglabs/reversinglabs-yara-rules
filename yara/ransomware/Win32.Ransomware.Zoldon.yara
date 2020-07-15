@@ -8,6 +8,7 @@ rule Win32_Ransomware_Zoldon : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "ZOLDON"
         description         = "Yara rule that detects Zoldon ransomware."
 
         tc_detection_type   = "Ransomware"

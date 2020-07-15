@@ -8,6 +8,7 @@ rule Linux_Ransomware_Kraken : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "KRAKEN"
         description         = "Yara rule that detects Kraken ransomware."
 
         tc_detection_type   = "Ransomware"

@@ -8,6 +8,7 @@ rule Win32_Ransomware_ASN1Encoder : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "ASN1ENCODER"
         description         = "Yara rule that detects ASN1Encoder ransomware."
 
         tc_detection_type   = "Ransomware"

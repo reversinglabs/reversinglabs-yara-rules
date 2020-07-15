@@ -8,6 +8,7 @@ rule Win32_Ransomware_TeleCrypt : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "TELECRYPT"
         description         = "Yara rule that detects TeleCrypt ransomware."
 
         tc_detection_type   = "Ransomware"

@@ -8,6 +8,7 @@ rule Win32_Ransomware_Jamper : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "JAMPER"
         description         = "Yara rule that detects Jamper ransomware."
 
         tc_detection_type   = "Ransomware"

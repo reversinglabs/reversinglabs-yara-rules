@@ -8,6 +8,7 @@ rule Win32_Ransomware_RagnarLocker : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "RAGNARLOCKER"
         description         = "Yara rule that detects RagnarLocker ransomware."
 
         tc_detection_type   = "Ransomware"

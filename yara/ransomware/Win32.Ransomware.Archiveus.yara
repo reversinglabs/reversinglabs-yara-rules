@@ -10,6 +10,7 @@ rule Win32_Ransomware_Archiveus : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "ARCHIVEUS"
         description         = "Yara rule that detects Archiveus ransomware."
 
         tc_detection_type   = "Ransomware"

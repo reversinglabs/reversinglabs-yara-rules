@@ -8,6 +8,7 @@ rule Win32_Ransomware_CryptoJoker : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "CRYPTOJOKER"
         description         = "Yara rule that detects CryptoJoker ransomware."
 
         tc_detection_type   = "Ransomware"

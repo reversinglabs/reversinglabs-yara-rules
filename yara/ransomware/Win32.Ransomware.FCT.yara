@@ -8,6 +8,7 @@ rule Win32_Ransomware_FCT : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "FCT"
         description         = "Yara rule that detects FCT ransomware."
 
         tc_detection_type   = "Ransomware"

@@ -8,6 +8,7 @@ rule Win32_Ransomware_VHDLocker : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "VHDLOCKER"
         description         = "Yara rule that detects VHDLocker ransomware."
 
         tc_detection_type   = "Ransomware"

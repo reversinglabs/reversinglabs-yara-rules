@@ -8,6 +8,7 @@ rule Win32_Ransomware_Nemty : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "NEMTY"
         description         = "Yara rule that detects Nemty ransomware."
 
         tc_detection_type   = "Ransomware"

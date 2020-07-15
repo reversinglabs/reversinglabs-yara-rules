@@ -8,6 +8,7 @@ rule Win32_Ransomware_ZeroCrypt : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "ZEROCRYPT"
         description         = "Yara rule that detects ZeroCrypt ransomware."
 
         tc_detection_type   = "Ransomware"

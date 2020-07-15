@@ -8,6 +8,7 @@ rule Win32_Ransomware_Kangaroo : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "KANGAROO"
         description         = "Yara rule that detects Kangaroo ransomware."
 
         tc_detection_type   = "Ransomware"

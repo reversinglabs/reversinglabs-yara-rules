@@ -8,6 +8,7 @@ rule Win32_Ransomware_IFN643 : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "IFN643"
         description         = "Yara rule that detects IFN643 ransomware."
 
         tc_detection_type   = "Ransomware"

@@ -8,6 +8,7 @@ rule Win32_Ransomware_Jemd : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "JEMD"
         description         = "Yara rule that detects Jemd ransomware."
 
         tc_detection_type   = "Ransomware"

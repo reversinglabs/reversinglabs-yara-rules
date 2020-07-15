@@ -8,6 +8,7 @@ rule Win32_Ransomware_DenizKizi : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "DENIZKIZI"
         description         = "Yara rule that detects DenizKizi ransomware."
 
         tc_detection_type   = "Ransomware"

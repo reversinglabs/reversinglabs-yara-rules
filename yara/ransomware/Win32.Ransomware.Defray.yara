@@ -8,6 +8,7 @@ rule Win32_Ransomware_Defray : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "DEFRAY"
         description         = "Yara rule that detects Defray ransomware."
 
         tc_detection_type   = "Ransomware"

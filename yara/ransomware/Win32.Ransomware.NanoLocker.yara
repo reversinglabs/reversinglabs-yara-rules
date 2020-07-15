@@ -8,6 +8,7 @@ rule Win32_Ransomware_NanoLocker : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "NANOLOCKER"
         description         = "Yara rule that detects NanoLocker ransomware."
 
         tc_detection_type   = "Ransomware"

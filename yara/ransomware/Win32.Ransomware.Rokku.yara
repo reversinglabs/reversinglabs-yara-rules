@@ -8,6 +8,7 @@ rule Win32_Ransomware_Rokku : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "ROKKU"
         description         = "Yara rule that detects Rokku ransomware."
 
         tc_detection_type   = "Ransomware"

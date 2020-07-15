@@ -8,6 +8,7 @@ rule Win32_Trojan_Emotet : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "EMOTET"
         description         = "Yara rule that detects Emotet trojan."
 
         tc_detection_type   = "Trojan"

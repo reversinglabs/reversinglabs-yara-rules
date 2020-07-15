@@ -8,6 +8,7 @@ rule Win32_Ransomware_LeChiffre : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "LECHIFFRE"
         description         = "Yara rule that detects LeChiffre ransomware."
 
         tc_detection_type   = "Ransomware"

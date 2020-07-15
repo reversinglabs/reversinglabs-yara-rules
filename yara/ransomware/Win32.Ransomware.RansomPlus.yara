@@ -8,6 +8,7 @@ rule Win32_Ransomware_RansomPlus : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "RANSOMPLUS"
         description         = "Yara rule that detects RansomPlus ransomware."
 
         tc_detection_type   = "Ransomware"

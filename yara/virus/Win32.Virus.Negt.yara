@@ -10,6 +10,7 @@ rule Win32_Virus_Negt : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "NEGT"
         description         = "Yara rule that detects Negt virus."
 
         tc_detection_type   = "Virus"

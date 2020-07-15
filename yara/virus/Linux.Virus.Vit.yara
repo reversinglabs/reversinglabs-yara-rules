@@ -10,6 +10,7 @@ rule Linux_Virus_Vit : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "VIT"
         description         = "Yara rule that detects Vit virus."
 
         tc_detection_type   = "Virus"

@@ -8,6 +8,7 @@ rule Win32_Trojan_Dridex : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "DRIDEX"
         description         = "Yara rule that detects Dridex trojan."
 
         tc_detection_type   = "Trojan"

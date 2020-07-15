@@ -8,6 +8,7 @@ rule Win32_Ransomware_KillDisk : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "KILLDISK"
         description         = "Yara rule that detects KillDisk ransomware."
 
         tc_detection_type   = "Ransomware"

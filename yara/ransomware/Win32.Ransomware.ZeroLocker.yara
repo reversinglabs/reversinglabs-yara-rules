@@ -8,6 +8,7 @@ rule Win32_Ransomware_ZeroLocker : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "ZEROLOCKER"
         description         = "Yara rule that detects ZeroLocker ransomware."
 
         tc_detection_type   = "Ransomware"

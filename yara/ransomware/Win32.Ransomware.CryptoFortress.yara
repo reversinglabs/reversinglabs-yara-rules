@@ -8,6 +8,7 @@ rule Win32_Ransomware_CryptoFortress : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "CRYPTOFORTRESS"
         description         = "Yara rule that detects CryptoFortress ransomware."
 
         tc_detection_type   = "Ransomware"

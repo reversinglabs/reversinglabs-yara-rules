@@ -8,6 +8,7 @@ rule Win32_Ransomware_VegaLocker : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "VEGALOCKER"
         description         = "Yara rule that detects VegaLocker ransomware."
 
         tc_detection_type   = "Ransomware"

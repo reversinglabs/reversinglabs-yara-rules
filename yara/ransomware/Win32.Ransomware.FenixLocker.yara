@@ -8,6 +8,7 @@ rule Win32_Ransomware_FenixLocker : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "FENIXLOCKER"
         description         = "Yara rule that detects FenixLocker ransomware."
 
         tc_detection_type   = "Ransomware"

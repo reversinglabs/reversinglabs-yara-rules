@@ -10,6 +10,7 @@ rule Win32_Ransomware_DirtyDecrypt : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "DIRTYDECRYPT"
         description         = "Yara rule that detects DirtyDecrypt ransomware."
 
         tc_detection_type   = "Ransomware"

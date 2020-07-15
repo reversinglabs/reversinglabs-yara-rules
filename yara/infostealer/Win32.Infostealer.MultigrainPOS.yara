@@ -8,6 +8,7 @@ rule Win32_Infostealer_MultigrainPOS : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "MULTIGRAINPOS"
         description         = "Yara rule that detects MultigrainPOS infostealer."
 
         tc_detection_type   = "Infostealer"

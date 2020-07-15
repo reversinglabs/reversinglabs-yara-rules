@@ -10,6 +10,7 @@ rule Win32_Virus_Elerad : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "ELERAD"
         description         = "Yara rule that detects Elerad virus."
 
         tc_detection_type   = "Virus"

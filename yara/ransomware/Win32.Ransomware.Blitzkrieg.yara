@@ -8,6 +8,7 @@ rule Win32_Ransomware_Blitzkrieg : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "BLITZKRIEG"
         description         = "Yara rule that detects Blitzkrieg ransomware."
 
         tc_detection_type   = "Ransomware"

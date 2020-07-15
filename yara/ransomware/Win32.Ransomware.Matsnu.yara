@@ -8,6 +8,7 @@ rule Win32_Ransomware_Matsnu : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "MATSNU"
         description         = "Yara rule that detects Matsnu ransomware."
 
         tc_detection_type   = "Ransomware"

@@ -8,6 +8,7 @@ rule Win32_Ransomware_Crypmic : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "CRYPMIC"
         description         = "Yara rule that detects Crypmic ransomware."
 
         tc_detection_type   = "Ransomware"

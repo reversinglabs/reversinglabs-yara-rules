@@ -10,6 +10,7 @@ rule Win32_Virus_DeadCode : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "DEADCODE"
         description         = "Yara rule that detects DeadCode virus."
 
         tc_detection_type   = "Virus"

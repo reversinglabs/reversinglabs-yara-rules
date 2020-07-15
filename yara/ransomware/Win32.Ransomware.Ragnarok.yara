@@ -8,6 +8,7 @@ rule Win32_Ransomware_Ragnarok : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "RAGNAROK"
         description         = "Yara rule that detects Ragnarok ransomware."
 
         tc_detection_type   = "Ransomware"

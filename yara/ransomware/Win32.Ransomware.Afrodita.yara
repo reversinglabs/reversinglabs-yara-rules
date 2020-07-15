@@ -8,6 +8,7 @@ rule Win32_Ransomware_Afrodita : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "AFRODITA"
         description         = "Yara rule that detects Afrodita ransomware."
 
         tc_detection_type   = "Ransomware"

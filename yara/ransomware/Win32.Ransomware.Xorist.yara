@@ -8,6 +8,7 @@ rule Win32_Ransomware_Xorist : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "XORIST"
         description         = "Yara rule that detects Xorist ransomware."
 
         tc_detection_type   = "Ransomware"

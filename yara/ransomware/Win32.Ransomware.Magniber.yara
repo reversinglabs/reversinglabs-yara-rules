@@ -8,6 +8,7 @@ rule Win32_Ransomware_Magniber : tc_detection malicious
         status              = "RELEASED"
         sharing             = "TLP:WHITE"
         category            = "MALWARE"
+        malware             = "MAGNIBER"
         description         = "Yara rule that detects Magniber ransomware."
 
         tc_detection_type   = "Ransomware"
