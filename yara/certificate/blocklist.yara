@@ -32,7 +32,7 @@ rule cert_blocklist_05e2e6a4cd09ea54d665b075fe22A256 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "*.google.com" and
-            pe.signatures[i].serial == "05:e2:e6:a4:cd:09:ea:54:d6:65:b0:75:fe:22:A2:56" and
+            pe.signatures[i].serial == "05:e2:e6:a4:cd:09:ea:54:d6:65:b0:75:fe:22:a2:56" and
             1308182400 <= pe.signatures[i].not_after
         )
 }
@@ -519,7 +519,7 @@ rule cert_blocklist_6767def972d6ea702d8c8a53af1832d3 {
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Guangzhou typical corner Network Technology Co., Ltd." and
             pe.signatures[i].serial == "67:67:de:f9:72:d6:ea:70:2d:8c:8a:53:af:18:32:d3" and
-            1461110399 <= pe.signatures[i].not_after
+            1361750400 <= pe.signatures[i].not_after
         )
 }
 
@@ -751,7 +751,7 @@ rule cert_blocklist_530591c61b5e1212f659138b7cea0a97 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "日照峰川国际矿业贸易有限公司" and
+            pe.signatures[i].subject contains "\\xE6\\x97\\xA5\\xE7\\x85\\xA7\\xE5\\xB3\\xB0\\xE5\\xB7\\x9D\\xE5\\x9B\\xBD\\xE9\\x99\\x85\\xE7\\x9F\\xBF\\xE4\\xB8\\x9A\\xE8\\xB4\\xB8\\xE6\\x98\\x93\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
             pe.signatures[i].serial == "53:05:91:c6:1b:5e:12:12:f6:59:13:8b:7c:ea:0a:97" and
             1403654399 <= pe.signatures[i].not_after
         )
@@ -1003,8 +1003,10 @@ rule cert_blocklist_00d8f35f4eb7872b2dab0692e315382fb0 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "global trustee" and
-            pe.signatures[i].serial == "00:d8:f3:5f:4e:b7:87:2b:2d:ab:06:92:e3:15:38:2f:b0" and
+            pe.signatures[i].subject contains "global trustee" and (
+                pe.signatures[i].serial == "00:d8:f3:5f:4e:b7:87:2b:2d:ab:06:92:e3:15:38:2f:b0" or
+                pe.signatures[i].serial == "d8:f3:5f:4e:b7:87:2b:2d:ab:06:92:e3:15:38:2f:b0"
+            ) and
             1300060800 <= pe.signatures[i].not_after
         )
 }
@@ -1057,8 +1059,10 @@ rule cert_blocklist_00ebaa11d62e2481081820 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Microsoft Enforced Licensing Intermediate PCA" and
-            pe.signatures[i].serial == "00:eb:aa:11:d6:2e:24:81:08:18:20"
+            pe.signatures[i].subject contains "Microsoft Enforced Licensing Intermediate PCA" and (
+                pe.signatures[i].serial == "00:eb:aa:11:d6:2e:24:81:08:18:20" or
+                pe.signatures[i].serial == "eb:aa:11:d6:2e:24:81:08:18:20"
+            )
         )
 }
 
@@ -1216,8 +1220,10 @@ rule cert_blocklist_00d1836bd37c331a67 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "MINDSTORM LLC" and
-            pe.signatures[i].serial == "00:d1:83:6b:d3:7c:33:1a:67" and
+            pe.signatures[i].subject contains "MINDSTORM LLC" and (
+                pe.signatures[i].serial == "00:d1:83:6b:d3:7c:33:1a:67" or
+                pe.signatures[i].serial == "d1:83:6b:d3:7c:33:1a:67"
+            ) and
             1422835199 <= pe.signatures[i].not_after
         )
 }
@@ -1432,8 +1438,10 @@ rule cert_blocklist_00e8cc18cf100b6b27443ef26319398734 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Syngenta" and
-            pe.signatures[i].serial == "00:e8:cc:18:cf:10:0b:6b:27:44:3e:f2:63:19:39:87:34" and
+            pe.signatures[i].subject contains "Syngenta" and (
+                pe.signatures[i].serial == "00:e8:cc:18:cf:10:0b:6b:27:44:3e:f2:63:19:39:87:34" or
+                pe.signatures[i].serial == "e8:cc:18:cf:10:0b:6b:27:44:3e:f2:63:19:39:87:34"
+            ) and
             1404172799 <= pe.signatures[i].not_after
         )
 }
@@ -1468,7 +1476,7 @@ rule cert_blocklist_04c8eca7243208a110dea926c7ad89ce {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Open Source Developer, Singh Aditya" and
+            pe.signatures[i].subject contains "Open Source Developer, SINGH ADITYA" and
             pe.signatures[i].serial == "04:c8:ec:a7:24:32:08:a1:10:de:a9:26:c7:ad:89:ce" and
             1404172799 <= pe.signatures[i].not_after
         )
@@ -1558,8 +1566,10 @@ rule cert_blocklist_0087d60d1e2b9374eb7a735dce4bbdae56 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "AMO-K Limited Liability Company" and
-            pe.signatures[i].serial == "00:87:d6:0d:1e:2b:93:74:eb:7a:73:5d:ce:4b:bd:ae:56" and
+            pe.signatures[i].subject contains "AMO-K Limited Liability Company" and (
+                pe.signatures[i].serial == "00:87:d6:0d:1e:2b:93:74:eb:7a:73:5d:ce:4b:bd:ae:56" or
+                pe.signatures[i].serial == "87:d6:0d:1e:2b:93:74:eb:7a:73:5d:ce:4b:bd:ae:56"
+            ) and
             1404172799 <= pe.signatures[i].not_after
         )
 }
@@ -1650,7 +1660,7 @@ rule cert_blocklist_621ed8265b0ad872d9f4b4ed6d560513 {
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Fan Li" and
             pe.signatures[i].serial == "62:1e:d8:26:5b:0a:d8:72:d9:f4:b4:ed:6d:56:05:13" and
-            1463615999 <= pe.signatures[i].not_after
+            1413183357 <= pe.signatures[i].not_after
         )
 }
 
@@ -1684,7 +1694,7 @@ rule cert_blocklist_3bc3bae4118d46f3fdd9beeeab749fee {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "李雪梅" and
+            pe.signatures[i].subject contains "\\xE6\\x9D\\x8E\\xE9\\x9B\\xAA\\xE6\\xA2\\x85" and
             pe.signatures[i].serial == "3b:c3:ba:e4:11:8d:46:f3:fd:d9:be:ee:ab:74:9f:ee" and
             1442275199 <= pe.signatures[i].not_after
         )
@@ -1830,7 +1840,7 @@ rule cert_blocklist_5067339614c5cc219c489d40420f3bf9 {
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "D-LINK CORPORATION" and
             pe.signatures[i].serial == "50:67:33:96:14:c5:cc:21:9c:48:9d:40:42:0f:3b:f9" and
-            1441371599 <= pe.signatures[i].not_after
+            1441238400 <= pe.signatures[i].not_after
         )
 }
 
@@ -2278,7 +2288,7 @@ rule cert_blocklist_02f17566ef568dc06c9a379ea2f4faea {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Valeriano Bedeschi" and
+            pe.signatures[i].subject contains "VALERIANO BEDESCHI" and
             pe.signatures[i].serial == "02:f1:75:66:ef:56:8d:c0:6c:9a:37:9e:a2:f4:fa:ea" and
             1441324799 <= pe.signatures[i].not_after
         )
@@ -2350,9 +2360,11 @@ rule cert_blocklist_fe9404dc73cf1c2ba1450b8398305557 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "厦门翔通信息科技有限公司北京分公司" and
-            pe.signatures[i].serial == "fe:94:04:dc:73:cf:1c:2b:a1:45:0b:83:98:30:55:57" and
-            1290643199 <= pe.signatures[i].not_after
+            pe.signatures[i].subject contains "\\xE5\\x8E\\xA6\\xE9\\x97\\xA8\\xE7\\xBF\\x94\\xE9\\x80\\x9A\\xE4\\xBF\\xA1\\xE6\\x81\\xAF\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8\\xE5\\x8C\\x97\\xE4\\xBA\\xAC\\xE5\\x88\\x86\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and (
+                pe.signatures[i].serial == "00:fe:94:04:dc:73:cf:1c:2b:a1:45:0b:83:98:30:55:57" or
+                pe.signatures[i].serial == "fe:94:04:dc:73:cf:1c:2b:a1:45:0b:83:98:30:55:57"
+            ) and
+            1287360000 <= pe.signatures[i].not_after
         )
 }
 
@@ -2368,7 +2380,7 @@ rule cert_blocklist_1cb2d523a6bf7a066642c578de1c9be4 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Shenzhen Hua’nan Xingfa Electronic Equipment Firm" and
+            pe.signatures[i].subject contains "Shenzhen Hua\\xE2\\x80\\x99nan Xingfa Electronic Equipment Firm" and
             pe.signatures[i].serial == "1c:b2:d5:23:a6:bf:7a:06:66:42:c5:78:de:1c:9b:e4" and
             1400889599 <= pe.signatures[i].not_after
         )
@@ -2386,7 +2398,7 @@ rule cert_blocklist_3a6ccabb1c62f3be3eb03869fa43dc4a {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "常州骏景通联数字科技有限公司" and
+            pe.signatures[i].subject contains "\\xE5\\xB8\\xB8\\xE5\\xB7\\x9E\\xE9\\xAA\\x8F\\xE6\\x99\\xAF\\xE9\\x80\\x9A\\xE8\\x81\\x94\\xE6\\x95\\xB0\\xE5\\xAD\\x97\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
             pe.signatures[i].serial == "3a:6c:ca:bb:1c:62:f3:be:3e:b0:38:69:fa:43:dc:4a" and
             1259798399 <= pe.signatures[i].not_after
         )
@@ -2404,8 +2416,10 @@ rule cert_blocklist_864196f01971dbec7002b48642a7013a {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "WLE DESENVOLVIMENTO DE SOFTWARE E ASSESSORIA LTDA EPP" and
-            pe.signatures[i].serial == "86:41:96:f0:19:71:db:ec:70:02:b4:86:42:a7:01:3a" and
+            pe.signatures[i].subject contains "WLE DESENVOLVIMENTO DE SOFTWARE E ASSESSORIA LTDA EPP" and (
+                pe.signatures[i].serial == "00:86:41:96:f0:19:71:db:ec:70:02:b4:86:42:a7:01:3a" or
+                pe.signatures[i].serial == "86:41:96:f0:19:71:db:ec:70:02:b4:86:42:a7:01:3a"
+            ) and
             1384300799 <= pe.signatures[i].not_after
         )
 }
@@ -2440,7 +2454,7 @@ rule cert_blocklist_03866deb183abfbf4ff458d4de7bd73a {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "重庆话语科技有限公司" and
+            pe.signatures[i].subject contains "\\xE9\\x87\\x8D\\xE5\\xBA\\x86\\xE8\\xAF\\x9D\\xE8\\xAF\\xAD\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
             pe.signatures[i].serial == "03:86:6d:eb:18:3a:bf:bf:4f:f4:58:d4:de:7b:d7:3a" and
             1371772799 <= pe.signatures[i].not_after
         )
@@ -2458,7 +2472,7 @@ rule cert_blocklist_1be41b34127ca9e6270830d2070db426 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "北京耘升天下科技有限公司" and
+            pe.signatures[i].subject contains "\\xE5\\x8C\\x97\\xE4\\xBA\\xAC\\xE8\\x80\\x98\\xE5\\x8D\\x87\\xE5\\xA4\\xA9\\xE4\\xB8\\x8B\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
             pe.signatures[i].serial == "1b:e4:1b:34:12:7c:a9:e6:27:08:30:d2:07:0d:b4:26" and
             1352764799 <= pe.signatures[i].not_after
         )
@@ -2476,8 +2490,10 @@ rule cert_blocklist_9b108b8a1daa0d5581f59fcee0447901 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "CharacTell Ltd" and
-            pe.signatures[i].serial == "9b:10:8b:8a:1d:aa:0d:55:81:f5:9f:ce:e0:44:79:01" and
+            pe.signatures[i].subject contains "CharacTell Ltd" and (
+                pe.signatures[i].serial == "00:9b:10:8b:8a:1d:aa:0d:55:81:f5:9f:ce:e0:44:79:01" or
+                pe.signatures[i].serial == "9b:10:8b:8a:1d:aa:0d:55:81:f5:9f:ce:e0:44:79:01"
+            ) and
             1380671999 <= pe.signatures[i].not_after
         )
 }
@@ -2602,8 +2618,10 @@ rule cert_blocklist_aa146bff4b832bdbfe30b84580356763 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Yancheng Peoples Information Technology Service Co., Ltd" and
-            pe.signatures[i].serial == "aa:14:6b:ff:4b:83:2b:db:fe:30:b8:45:80:35:67:63" and
+            pe.signatures[i].subject contains "Yancheng Peoples Information Technology Service Co., Ltd" and (
+                pe.signatures[i].serial == "00:aa:14:6b:ff:4b:83:2b:db:fe:30:b8:45:80:35:67:63" or
+                pe.signatures[i].serial == "aa:14:6b:ff:4b:83:2b:db:fe:30:b8:45:80:35:67:63"
+            ) and
             1295481599 <= pe.signatures[i].not_after
         )
 }
@@ -2620,8 +2638,10 @@ rule cert_blocklist_e86f46b60142092aae81b8f6fa3d9c7c {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Syncode Sistemas e Tecnologia Ltda" and
-            pe.signatures[i].serial == "e8:6f:46:b6:01:42:09:2a:ae:81:b8:f6:fa:3d:9c:7c" and
+            pe.signatures[i].subject contains "Syncode Sistemas e Tecnologia Ltda" and (
+                pe.signatures[i].serial == "00:e8:6f:46:b6:01:42:09:2a:ae:81:b8:f6:fa:3d:9c:7c" or
+                pe.signatures[i].serial == "e8:6f:46:b6:01:42:09:2a:ae:81:b8:f6:fa:3d:9c:7c"
+            ) and
             1373932799 <= pe.signatures[i].not_after
         )
 }
@@ -2638,7 +2658,7 @@ rule cert_blocklist_1a0fd2a4ef4c2a36ab9c5e8f792a35e2 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "北京金利宏昌科技有限公司" and
+            pe.signatures[i].subject contains "\\xE5\\x8C\\x97\\xE4\\xBA\\xAC\\xE9\\x87\\x91\\xE5\\x88\\xA9\\xE5\\xAE\\x8F\\xE6\\x98\\x8C\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
             pe.signatures[i].serial == "1a:0f:d2:a4:ef:4c:2a:36:ab:9c:5e:8f:79:2a:35:e2" and
             1389311999 <= pe.signatures[i].not_after
         )
@@ -2656,7 +2676,7 @@ rule cert_blocklist_53bb753b79a99e61a6e822ac52460c70 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "데스크탑아이콘" and
+            pe.signatures[i].subject contains "\\xEB\\x8D\\xB0\\xEC\\x8A\\xA4\\xED\\x81\\xAC\\xED\\x83\\x91\\xEC\\x95\\x84\\xEC\\x9D\\xB4\\xEC\\xBD\\x98" and
             pe.signatures[i].serial == "53:bb:75:3b:79:a9:9e:61:a6:e8:22:ac:52:46:0c:70" and
             1400543999 <= pe.signatures[i].not_after
         )
@@ -2674,8 +2694,10 @@ rule cert_blocklist_83f68fc6834bf8bd2c801a2d1f1acc76 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Helpful Technologies, Inc" and
-            pe.signatures[i].serial == "83:f6:8f:c6:83:4b:f8:bd:2c:80:1a:2d:1f:1a:cc:76" and
+            pe.signatures[i].subject contains "Helpful Technologies, Inc" and (
+                pe.signatures[i].serial == "00:83:f6:8f:c6:83:4b:f8:bd:2c:80:1a:2d:1f:1a:cc:76" or
+                pe.signatures[i].serial == "83:f6:8f:c6:83:4b:f8:bd:2c:80:1a:2d:1f:1a:cc:76"
+            ) and
             1407715199 <= pe.signatures[i].not_after
         )
 }
@@ -2692,8 +2714,10 @@ rule cert_blocklist_f385e765acfb95605c9b35ca4c32f80e {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "CWI SOFTWARE LTDA" and
-            pe.signatures[i].serial == "f3:85:e7:65:ac:fb:95:60:5c:9b:35:ca:4c:32:f8:0e" and
+            pe.signatures[i].subject contains "CWI SOFTWARE LTDA" and (
+                pe.signatures[i].serial == "00:f3:85:e7:65:ac:fb:95:60:5c:9b:35:ca:4c:32:f8:0e" or
+                pe.signatures[i].serial == "f3:85:e7:65:ac:fb:95:60:5c:9b:35:ca:4c:32:f8:0e"
+            ) and
             1382313599 <= pe.signatures[i].not_after
         )
 }
@@ -2710,8 +2734,10 @@ rule cert_blocklist_f62c9c4efc81caf0d5a2608009d48018 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "唐山万东润播网络技术有限公司" and
-            pe.signatures[i].serial == "f6:2c:9c:4e:fc:81:ca:f0:d5:a2:60:80:09:d4:80:18" and
+            pe.signatures[i].subject contains "\\xE5\\x94\\x90\\xE5\\xB1\\xB1\\xE4\\xB8\\x87\\xE4\\xB8\\x9C\\xE6\\xB6\\xA6\\xE6\\x92\\xAD\\xE7\\xBD\\x91\\xE7\\xBB\\x9C\\xE6\\x8A\\x80\\xE6\\x9C\\xAF\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and (
+                pe.signatures[i].serial == "00:f6:2c:9c:4e:fc:81:ca:f0:d5:a2:60:80:09:d4:80:18" or
+                pe.signatures[i].serial == "f6:2c:9c:4e:fc:81:ca:f0:d5:a2:60:80:09:d4:80:18"
+            ) and
             1292889599 <= pe.signatures[i].not_after
         )
 }
@@ -2728,9 +2754,11 @@ rule cert_blocklist_cc8d902da36587c9b2113cd76c3c3f8d {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "上海金俊坤计算机技术服务有限公司" and
-            pe.signatures[i].serial == "cc:8d:90:2d:a3:65:87:c9:b2:11:3c:d7:6c:3c:3f:8d" and
-            1296691199 <= pe.signatures[i].not_after
+            pe.signatures[i].subject contains "\\xE4\\xB8\\x8A\\xE6\\xB5\\xB7\\xE9\\x87\\x91\\xE4\\xBF\\x8A\\xE5\\x9D\\xA4\\xE8\\xAE\\xA1\\xE7\\xAE\\x97\\xE6\\x9C\\xBA\\xE6\\x8A\\x80\\xE6\\x9C\\xAF\\xE6\\x9C\\x8D\\xE5\\x8A\\xA1\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and (
+                pe.signatures[i].serial == "00:cc:8d:90:2d:a3:65:87:c9:b2:11:3c:d7:6c:3c:3f:8d" or
+                pe.signatures[i].serial == "cc:8d:90:2d:a3:65:87:c9:b2:11:3c:d7:6c:3c:3f:8d"
+            ) and
+            1292544000 <= pe.signatures[i].not_after
         )
 }
 
@@ -2764,9 +2792,9 @@ rule cert_blocklist_5f78149eb4f75eb17404a8143aaeaed7 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "上海域联软件技术有限公司" and
+            pe.signatures[i].subject contains "\\xE4\\xB8\\x8A\\xE6\\xB5\\xB7\\xE5\\x9F\\x9F\\xE8\\x81\\x94\\xE8\\xBD\\xAF\\xE4\\xBB\\xB6\\xE6\\x8A\\x80\\xE6\\x9C\\xAF\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
             pe.signatures[i].serial == "5f:78:14:9e:b4:f7:5e:b1:74:04:a8:14:3a:ae:ae:d7" and
-            1343001599 <= pe.signatures[i].not_after
+            1303116124 <= pe.signatures[i].not_after
         )
 }
 
@@ -2818,8 +2846,10 @@ rule cert_blocklist_bc32bbe5bbb4f06f490c50651cd5da50 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Remedica Medical Education and Publishing Ltd" and
-            pe.signatures[i].serial == "bc:32:bb:e5:bb:b4:f0:6f:49:0c:50:65:1c:d5:da:50" and
+            pe.signatures[i].subject contains "Remedica Medical Education and Publishing Ltd" and (
+                pe.signatures[i].serial == "00:bc:32:bb:e5:bb:b4:f0:6f:49:0c:50:65:1c:d5:da:50" or
+                pe.signatures[i].serial == "bc:32:bb:e5:bb:b4:f0:6f:49:0c:50:65:1c:d5:da:50"
+            ) and
             1387151999 <= pe.signatures[i].not_after
         )
 }
@@ -2962,8 +2992,10 @@ rule cert_blocklist_832e161aea5206d815f973e5a1feb3e7 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Project NSRM Ltd" and
-            pe.signatures[i].serial == "83:2e:16:1a:ea:52:06:d8:15:f9:73:e5:a1:fe:b3:e7" and
+            pe.signatures[i].subject contains "Project NSRM Ltd" and (
+                pe.signatures[i].serial == "00:83:2e:16:1a:ea:52:06:d8:15:f9:73:e5:a1:fe:b3:e7" or
+                pe.signatures[i].serial == "83:2e:16:1a:ea:52:06:d8:15:f9:73:e5:a1:fe:b3:e7"
+            ) and
             1549830060 <= pe.signatures[i].not_after
         )
 }
@@ -3034,8 +3066,10 @@ rule cert_blocklist_b1da219688e51fd0bfac2c891d56cbb8 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "FIRNEEZ EUROPE LIMITED" and
-            pe.signatures[i].serial == "b1:da:21:96:88:e5:1f:d0:bf:ac:2c:89:1d:56:cb:b8" and
+            pe.signatures[i].subject contains "FIRNEEZ EUROPE LIMITED" and (
+                pe.signatures[i].serial == "00:b1:da:21:96:88:e5:1f:d0:bf:ac:2c:89:1d:56:cb:b8" or
+                pe.signatures[i].serial == "b1:da:21:96:88:e5:1f:d0:bf:ac:2c:89:1d:56:cb:b8"
+            ) and
             1542931200 <= pe.signatures[i].not_after
         )
 }
@@ -3070,8 +3104,10 @@ rule cert_blocklist_fd7b7a8678a67181a54bc7499eba44da {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "IMRAN IT SERVICES LTD" and
-            pe.signatures[i].serial == "fd:7b:7a:86:78:a6:71:81:a5:4b:c7:49:9e:ba:44:da" and
+            pe.signatures[i].subject contains "IMRAN IT SERVICES LTD" and (
+                pe.signatures[i].serial == "00:fd:7b:7a:86:78:a6:71:81:a5:4b:c7:49:9e:ba:44:da" or
+                pe.signatures[i].serial == "fd:7b:7a:86:78:a6:71:81:a5:4b:c7:49:9e:ba:44:da"
+            ) and
             1548028800 <= pe.signatures[i].not_after
         )
 }
@@ -3088,8 +3124,10 @@ rule cert_blocklist_ebbdd6cdeda40ca64513280ecd625c54 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "IT PUT LIMITED" and
-            pe.signatures[i].serial == "eb:bd:d6:cd:ed:a4:0c:a6:45:13:28:0e:cd:62:5c:54" and
+            pe.signatures[i].subject contains "IT PUT LIMITED" and (
+                pe.signatures[i].serial == "00:eb:bd:d6:cd:ed:a4:0c:a6:45:13:28:0e:cd:62:5c:54" or
+                pe.signatures[i].serial == "eb:bd:d6:cd:ed:a4:0c:a6:45:13:28:0e:cd:62:5c:54"
+            ) and
             1549238400 <= pe.signatures[i].not_after
         )
 }
@@ -3160,8 +3198,10 @@ rule cert_blocklist_8f40b1485309a064a28b96bfa3f55f36 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Singh Agile Content Design Limited" and
-            pe.signatures[i].serial == "8f:40:b1:48:53:09:a0:64:a2:8b:96:bf:a3:f5:5f:36" and
+            pe.signatures[i].subject contains "Singh Agile Content Design Limited" and (
+                pe.signatures[i].serial == "00:8f:40:b1:48:53:09:a0:64:a2:8b:96:bf:a3:f5:5f:36" or
+                pe.signatures[i].serial == "8f:40:b1:48:53:09:a0:64:a2:8b:96:bf:a3:f5:5f:36"
+            ) and
             1542585600 <= pe.signatures[i].not_after
         )
 }
@@ -3178,8 +3218,10 @@ rule cert_blocklist_b2120facadbb92cc0a176759604c6a0f {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "SLON LTD" and
-            pe.signatures[i].serial == "b2:12:0f:ac:ad:bb:92:cc:0a:17:67:59:60:4c:6a:0f" and
+            pe.signatures[i].subject contains "SLON LTD" and (
+                pe.signatures[i].serial == "00:b2:12:0f:ac:ad:bb:92:cc:0a:17:67:59:60:4c:6a:0f" or
+                pe.signatures[i].serial == "b2:12:0f:ac:ad:bb:92:cc:0a:17:67:59:60:4c:6a:0f"
+            ) and
             1554249600 <= pe.signatures[i].not_after
         )
 }
@@ -3376,8 +3418,10 @@ rule cert_blocklist_c04f8f1e00c69e96a51bf14aab1c6ae0 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "CHAIKA, TOV" and
-            pe.signatures[i].serial == "c0:4f:8f:1e:00:c6:9e:96:a5:1b:f1:4a:ab:1c:6a:e0" and
+            pe.signatures[i].subject contains "CHAIKA, TOV" and (
+                pe.signatures[i].serial == "00:c0:4f:8f:1e:00:c6:9e:96:a5:1b:f1:4a:ab:1c:6a:e0" or
+                pe.signatures[i].serial == "c0:4f:8f:1e:00:c6:9e:96:a5:1b:f1:4a:ab:1c:6a:e0"
+            ) and
             1551398400 <= pe.signatures[i].not_after
         )
 }
@@ -3466,8 +3510,10 @@ rule cert_blocklist_da000d18949c247d4ddfc2585cc8bd0f {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "PORT-SERVIS LTD" and
-            pe.signatures[i].serial == "da:00:0d:18:94:9c:24:7d:4d:df:c2:58:5c:c8:bd:0f" and
+            pe.signatures[i].subject contains "PORT-SERVIS LTD" and (
+                pe.signatures[i].serial == "00:da:00:0d:18:94:9c:24:7d:4d:df:c2:58:5c:c8:bd:0f" or
+                pe.signatures[i].serial == "da:00:0d:18:94:9c:24:7d:4d:df:c2:58:5c:c8:bd:0f"
+            ) and
             1564444800 <= pe.signatures[i].not_after
         )
 }
@@ -3574,8 +3620,10 @@ rule cert_blocklist_c7505e7464e00ec1dccd8d1b466d15ff {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Ltd. \"Eve Beauty\"" and
-            pe.signatures[i].serial == "c7:50:5e:74:64:e0:0e:c1:dc:cd:8d:1b:46:6d:15:ff" and
+            pe.signatures[i].subject contains "Ltd. \"Eve Beauty\"" and (
+                pe.signatures[i].serial == "00:c7:50:5e:74:64:e0:0e:c1:dc:cd:8d:1b:46:6d:15:ff" or
+                pe.signatures[i].serial == "c7:50:5e:74:64:e0:0e:c1:dc:cd:8d:1b:46:6d:15:ff"
+            ) and
             1583824676 <= pe.signatures[i].not_after
         )
 }
@@ -3592,8 +3640,10 @@ rule cert_blocklist_cbf91988fb83511de1b3a7a520712e9c {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Ltd. \"Eve Beauty\"" and
-            pe.signatures[i].serial == "cb:f9:19:88:fb:83:51:1d:e1:b3:a7:a5:20:71:2e:9c" and
+            pe.signatures[i].subject contains "Ltd. \"Eve Beauty\"" and (
+                pe.signatures[i].serial == "00:cb:f9:19:88:fb:83:51:1d:e1:b3:a7:a5:20:71:2e:9c" or
+                pe.signatures[i].serial == "cb:f9:19:88:fb:83:51:1d:e1:b3:a7:a5:20:71:2e:9c"
+            ) and
             1578786662 <= pe.signatures[i].not_after
         )
 }
@@ -3610,8 +3660,10 @@ rule cert_blocklist_ce3675ae4abfe688870bcacb63060f4f {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "OOO \"MPS\"" and
-            pe.signatures[i].serial == "ce:36:75:ae:4a:bf:e6:88:87:0b:ca:cb:63:06:0f:4f" and
+            pe.signatures[i].subject contains "OOO \"MPS\"" and (
+                pe.signatures[i].serial == "00:ce:36:75:ae:4a:bf:e6:88:87:0b:ca:cb:63:06:0f:4f" or
+                pe.signatures[i].serial == "ce:36:75:ae:4a:bf:e6:88:87:0b:ca:cb:63:06:0f:4f"
+            ) and
             1582675200 <= pe.signatures[i].not_after
         )
 }
@@ -3628,8 +3680,10 @@ rule cert_blocklist_9813229efe0046d23542cc7569d5a403 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "OOO \"MPS\"" and
-            pe.signatures[i].serial == "98:13:22:9e:fe:00:46:d2:35:42:cc:75:69:d5:a4:03" and
+            pe.signatures[i].subject contains "OOO \"MPS\"" and (
+                pe.signatures[i].serial == "00:98:13:22:9e:fe:00:46:d2:35:42:cc:75:69:d5:a4:03" or
+                pe.signatures[i].serial == "98:13:22:9e:fe:00:46:d2:35:42:cc:75:69:d5:a4:03"
+            ) and
             1575849600 <= pe.signatures[i].not_after
         )
 }
@@ -3646,8 +3700,10 @@ rule cert_blocklist_86e5a9b9e89e5075c475006d0ca03832 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "BlueMarble GmbH" and
-            pe.signatures[i].serial == "86:e5:a9:b9:e8:9e:50:75:c4:75:00:6d:0c:a0:38:32" and
+            pe.signatures[i].subject contains "BlueMarble GmbH" and (
+                pe.signatures[i].serial == "00:86:e5:a9:b9:e8:9e:50:75:c4:75:00:6d:0c:a0:38:32" or
+                pe.signatures[i].serial == "86:e5:a9:b9:e8:9e:50:75:c4:75:00:6d:0c:a0:38:32"
+            ) and
             1574791194 <= pe.signatures[i].not_after
         )
 }
@@ -3700,8 +3756,10 @@ rule cert_blocklist_9bd614d5869bb66c96b67e154d517384 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\"CENTR MBP\"" and
-            pe.signatures[i].serial == "9b:d6:14:d5:86:9b:b6:6c:96:b6:7e:15:4d:51:73:84" and
+            pe.signatures[i].subject contains "\"CENTR MBP\"" and (
+                pe.signatures[i].serial == "00:9b:d6:14:d5:86:9b:b6:6c:96:b6:7e:15:4d:51:73:84" or
+                pe.signatures[i].serial == "9b:d6:14:d5:86:9b:b6:6c:96:b6:7e:15:4d:51:73:84"
+            ) and
             1581618180 <= pe.signatures[i].not_after
         )
 }
@@ -3754,8 +3812,10 @@ rule cert_blocklist_b881a72d4117bbc38b81d3c65c792c1a {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Red GmbH" and
-            pe.signatures[i].serial == "b8:81:a7:2d:41:17:bb:c3:8b:81:d3:c6:5c:79:2c:1a" and
+            pe.signatures[i].subject contains "Red GmbH" and (
+                pe.signatures[i].serial == "00:b8:81:a7:2d:41:17:bb:c3:8b:81:d3:c6:5c:79:2c:1a" or
+                pe.signatures[i].serial == "b8:81:a7:2d:41:17:bb:c3:8b:81:d3:c6:5c:79:2c:1a"
+            ) and
             1581936420 <= pe.signatures[i].not_after
         )
 }
@@ -3790,8 +3850,10 @@ rule cert_blocklist_9c4816d900a6ecdbe54adf72b19ebcf5 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Datamingo Limited" and
-            pe.signatures[i].serial == "9c:48:16:d9:00:a6:ec:db:e5:4a:df:72:b1:9e:bc:f5" and
+            pe.signatures[i].subject contains "Datamingo Limited" and (
+                pe.signatures[i].serial == "00:9c:48:16:d9:00:a6:ec:db:e5:4a:df:72:b1:9e:bc:f5" or
+                pe.signatures[i].serial == "9c:48:16:d9:00:a6:ec:db:e5:4a:df:72:b1:9e:bc:f5"
+            ) and
             1557187200 <= pe.signatures[i].not_after
         )
 }
@@ -3844,8 +3906,10 @@ rule cert_blocklist_84f842f6d33cd2f25b88dd1710e21137 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "DataNext s.r.o." and
-            pe.signatures[i].serial == "84:f8:42:f6:d3:3c:d2:f2:5b:88:dd:17:10:e2:11:37" and
+            pe.signatures[i].subject contains "DataNext s.r.o." and (
+                pe.signatures[i].serial == "00:84:f8:42:f6:d3:3c:d2:f2:5b:88:dd:17:10:e2:11:37" or
+                pe.signatures[i].serial == "84:f8:42:f6:d3:3c:d2:f2:5b:88:dd:17:10:e2:11:37"
+            ) and
             1586775720 <= pe.signatures[i].not_after
         )
 }
@@ -3898,8 +3962,10 @@ rule cert_blocklist_aeba4c39306fdd022849867801645814 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "SK AI MAS GmbH" and
-            pe.signatures[i].serial == "ae:ba:4c:39:30:6f:dd:02:28:49:86:78:01:64:58:14" and
+            pe.signatures[i].subject contains "SK AI MAS GmbH" and (
+                pe.signatures[i].serial == "00:ae:ba:4c:39:30:6f:dd:02:28:49:86:78:01:64:58:14" or
+                pe.signatures[i].serial == "ae:ba:4c:39:30:6f:dd:02:28:49:86:78:01:64:58:14"
+            ) and
             1579478400 <= pe.signatures[i].not_after
         )
 }
@@ -4024,8 +4090,10 @@ rule cert_blocklist_bb26b7b6634d5db548c437b5085b01c1 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "OOO \"IT Mott\"" and
-            pe.signatures[i].serial == "bb:26:b7:b6:63:4d:5d:b5:48:c4:37:b5:08:5b:01:c1" and
+            pe.signatures[i].subject contains "OOO \"IT Mott\"" and (
+                pe.signatures[i].serial == "00:bb:26:b7:b6:63:4d:5d:b5:48:c4:37:b5:08:5b:01:c1" or
+                pe.signatures[i].serial == "bb:26:b7:b6:63:4d:5d:b5:48:c4:37:b5:08:5b:01:c1"
+            ) and
             1591919307 <= pe.signatures[i].not_after
         )
 }
@@ -4114,8 +4182,10 @@ rule cert_blocklist_be41e2c7bb2493044b9241abb732599d {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Company Babylon" and
-            pe.signatures[i].serial == "be:41:e2:c7:bb:24:93:04:4b:92:41:ab:b7:32:59:9d" and
+            pe.signatures[i].subject contains "Company Babylon" and (
+                pe.signatures[i].serial == "00:be:41:e2:c7:bb:24:93:04:4b:92:41:ab:b7:32:59:9d" or
+                pe.signatures[i].serial == "be:41:e2:c7:bb:24:93:04:4b:92:41:ab:b7:32:59:9d"
+            ) and
             1589146251 <= pe.signatures[i].not_after
         )
 }
@@ -4132,7 +4202,7 @@ rule cert_blocklist_15c5af15afecf1c900cbab0ca9165629 {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Kompaniya auttek" and
+            pe.signatures[i].subject contains "Kompaniya Auttek" and
             pe.signatures[i].serial == "15:c5:af:15:af:ec:f1:c9:00:cb:ab:0c:a9:16:56:29" and
             1586091840 <= pe.signatures[i].not_after
         )
@@ -4204,8 +4274,10 @@ rule cert_blocklist_bebef5c533ce92efc402fab8605c43ec {
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "OOO VEKTOR" and
-            pe.signatures[i].serial == "be:be:f5:c5:33:ce:92:ef:c4:02:fa:b8:60:5c:43:ec" and
+            pe.signatures[i].subject contains "OOO VEKTOR" and (
+                pe.signatures[i].serial == "00:be:be:f5:c5:33:ce:92:ef:c4:02:fa:b8:60:5c:43:ec" or
+                pe.signatures[i].serial == "be:be:f5:c5:33:ce:92:ef:c4:02:fa:b8:60:5c:43:ec"
+            ) and
             1587513600 <= pe.signatures[i].not_after
         )
 }
