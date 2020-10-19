@@ -7,6 +7,11 @@
     b) Files that fail integrity validation due to checksum mismatch
     c) Files that have extra data appended after the certificate
 
+ It's also worth mentioning that the timestamp value in the condition is only
+ informative, since YARA doesn't extract timestamping certificate information.
+ This information could be used in combination with other tools to reduce
+ potential false positives.
+
  ReversingLabs recommends using Titanium platform for best results with certificate-based classifications.
 
  References on importance of certificate verification:
