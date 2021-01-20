@@ -4286,3 +4286,2651 @@ rule cert_blocklist_bebef5c533ce92efc402fab8605c43ec {
             1587513600 <= pe.signatures[i].not_after
         )
 }
+
+rule cert_blocklist_1d3f39f481fe067f8a9289bb49e05a04 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "LOGIKA, OOO" and
+            pe.signatures[i].serial == "1d:3f:39:f4:81:fe:06:7f:8a:92:89:bb:49:e0:5a:04" and
+            1592553220 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_7be35d025e65cc7a4ee01f72 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Logika OOO" and
+            pe.signatures[i].serial == "7b:e3:5d:02:5e:65:cc:7a:4e:e0:1f:72" and
+            1594976445 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_351fe2efdc0ac56a0c822cf8 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Logika OOO" and
+            pe.signatures[i].serial == "35:1f:e2:ef:dc:0a:c5:6a:0c:82:2c:f8" and
+            1594976475 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_9cfbb4c69008821aaacecde97ee149ab {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Kivaliz Prest s.r.l." and (
+                pe.signatures[i].serial == "00:9c:fb:b4:c6:90:08:82:1a:aa:ce:cd:e9:7e:e1:49:ab" or
+                pe.signatures[i].serial == "9c:fb:b4:c6:90:08:82:1a:aa:ce:cd:e9:7e:e1:49:ab"
+            ) and
+            1592363914 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_c04f5d17af872cb2c37e3367fe761d0d {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "DES SP Z O O" and (
+                pe.signatures[i].serial == "00:c0:4f:5d:17:af:87:2c:b2:c3:7e:33:67:fe:76:1d:0d" or
+                pe.signatures[i].serial == "c0:4f:5d:17:af:87:2c:b2:c3:7e:33:67:fe:76:1d:0d"
+            ) and
+            1594590024 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_02c5351936abe405ac760228a40387e8 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "RESURS-RM OOO" and
+            pe.signatures[i].serial == "02:c5:35:19:36:ab:e4:05:ac:76:02:28:a4:03:87:e8" and
+            1589932801 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_1ecd829adcc55d9d6afe30dc371ebda6 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "OOO Komp.IT" and (
+                pe.signatures[i].serial == "00:1e:cd:82:9a:dc:c5:5d:9d:6a:fe:30:dc:37:1e:bd:a6" or
+                pe.signatures[i].serial == "1e:cd:82:9a:dc:c5:5d:9d:6a:fe:30:dc:37:1e:bd:a6"
+            ) and
+            1588723200 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_b0167124ca59149e64d292eb4b142014 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Euro May SP Z O O" and (
+                pe.signatures[i].serial == "00:b0:16:71:24:ca:59:14:9e:64:d2:92:eb:4b:14:20:14" or
+                pe.signatures[i].serial == "b0:16:71:24:ca:59:14:9e:64:d2:92:eb:4b:14:20:14"
+            ) and
+            1585267200 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_112613b7b5f696cf377680f6463fcc8c {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Infoware Cloud Limited" and
+            pe.signatures[i].serial == "11:26:13:b7:b5:f6:96:cf:37:76:80:f6:46:3f:cc:8c" and
+            1566518400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_b3f906e5e6b2cf61c5e51be79b4e8777 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Accelerate Technologies Ltd" and (
+                pe.signatures[i].serial == "00:b3:f9:06:e5:e6:b2:cf:61:c5:e5:1b:e7:9b:4e:87:77" or
+                pe.signatures[i].serial == "b3:f9:06:e5:e6:b2:cf:61:c5:e5:1b:e7:9b:4e:87:77"
+            ) and
+            1594900020 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_566ac16a57b132d3f64dced14de790ee {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Unirad LLC" and
+            pe.signatures[i].serial == "56:6a:c1:6a:57:b1:32:d3:f6:4d:ce:d1:4d:e7:90:ee" and
+            1562889600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_d2caf7908aaebfa1a8f3e2136fece024 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "FANATOR, OOO" and (
+                pe.signatures[i].serial == "00:d2:ca:f7:90:8a:ae:bf:a1:a8:f3:e2:13:6f:ec:e0:24" or
+                pe.signatures[i].serial == "d2:ca:f7:90:8a:ae:bf:a1:a8:f3:e2:13:6f:ec:e0:24"
+            ) and
+            1599041760 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_e04a344b397f752a45b128a594a3d6b5 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Highweb Ireland Operations Limited" and (
+                pe.signatures[i].serial == "00:e0:4a:34:4b:39:7f:75:2a:45:b1:28:a5:94:a3:d6:b5" or
+                pe.signatures[i].serial == "e0:4a:34:4b:39:7f:75:2a:45:b1:28:a5:94:a3:d6:b5"
+            ) and
+            1597708800 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_3bcaed3ef678f2f9bf38d09e149b8d70 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "StarY Media Inc." and
+            pe.signatures[i].serial == "3b:ca:ed:3e:f6:78:f2:f9:bf:38:d0:9e:14:9b:8d:70" and
+            1599091200 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_56d576a062491ea0a5877ced418203a1 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Silvo LLC" and
+            pe.signatures[i].serial == "56:d5:76:a0:62:49:1e:a0:a5:87:7c:ed:41:82:03:a1" and
+            1596249885 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_0fcba260df7da602ecf4d4d6fc89d5dd {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Gold Stroy SP Z O O" and
+            pe.signatures[i].serial == "0f:cb:a2:60:df:7d:a6:02:ec:f4:d4:d6:fc:89:d5:dd" and
+            1593388801 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_4152169f22454ed604d03555b7afb175 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "SMACKTECH SOFTWARE LIMITED" and
+            pe.signatures[i].serial == "41:52:16:9f:22:45:4e:d6:04:d0:35:55:b7:af:b1:75" and
+            1595808000 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_01c88ccbd219500139d1af138a9e898e {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Raymond Yanagita" and
+            pe.signatures[i].serial == "01:c8:8c:cb:d2:19:50:01:39:d1:af:13:8a:9e:89:8e" and
+            1593041280 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_41d05676e0d31908be4dead3486aeae3 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Rov SP Z O O" and
+            pe.signatures[i].serial == "41:d0:56:76:e0:d3:19:08:be:4d:ea:d3:48:6a:ea:e3" and
+            1594857600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_8cff807edaf368a60e4106906d8df319 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "KRAFT BOKS OOO" and (
+                pe.signatures[i].serial == "00:8c:ff:80:7e:da:f3:68:a6:0e:41:06:90:6d:8d:f3:19" or
+                pe.signatures[i].serial == "8c:ff:80:7e:da:f3:68:a6:0e:41:06:90:6d:8d:f3:19"
+            ) and
+            1598334455 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_a3e62be1572293ad618f58a8aa32857f {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "ISIDA, TOV" and (
+                pe.signatures[i].serial == "00:a3:e6:2b:e1:57:22:93:ad:61:8f:58:a8:aa:32:85:7f" or
+                pe.signatures[i].serial == "a3:e6:2b:e1:57:22:93:ad:61:8f:58:a8:aa:32:85:7f"
+            ) and
+            1596585600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_672d4428450afcc24fc60969a5063a3e {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "MEP, OOO" and
+            pe.signatures[i].serial == "67:2d:44:28:45:0a:fc:c2:4f:c6:09:69:a5:06:3a:3e" and
+            1597381260 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_df479e14a70c7970a4de3dd3e4bb0318 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "SOFTWARE HUB IT LTD" and (
+                pe.signatures[i].serial == "00:df:47:9e:14:a7:0c:79:70:a4:de:3d:d3:e4:bb:03:18" or
+                pe.signatures[i].serial == "df:47:9e:14:a7:0c:79:70:a4:de:3d:d3:e4:bb:03:18"
+            ) and
+            1591660800 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_2924785fd7990b2d510675176dae2bed {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Neoopt LLC" and
+            pe.signatures[i].serial == "29:24:78:5f:d7:99:0b:2d:51:06:75:17:6d:ae:2b:ed" and
+            1595000258 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_f4d2def53bccb0dd2b7d54e4853a2fc5 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "PETROYL GROUP, TOV" and (
+                pe.signatures[i].serial == "00:f4:d2:de:f5:3b:cc:b0:dd:2b:7d:54:e4:85:3a:2f:c5" or
+                pe.signatures[i].serial == "f4:d2:de:f5:3b:cc:b0:dd:2b:7d:54:e4:85:3a:2f:c5"
+            ) and
+            1598347687 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_03bf9ef4cf037a2385649026c3da9d3e {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "COLLECTIVE SOFTWARE INC." and
+            pe.signatures[i].serial == "03:bf:9e:f4:cf:03:7a:23:85:64:90:26:c3:da:9d:3e" and
+            1595371955 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_790177a54209d55560a55db97c5900d6 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "MAK GmbH" and
+            pe.signatures[i].serial == "79:01:77:a5:42:09:d5:55:60:a5:5d:b9:7c:59:00:d6" and
+            1594080000 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_048f7b5f67d8e2b3030f75eb7be2713d {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "RITEIL SERVIS, OOO" and
+            pe.signatures[i].serial == "04:8f:7b:5f:67:d8:e2:b3:03:0f:75:eb:7b:e2:71:3d" and
+            1591142400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_082023879112289bf351d297cc8efcfc {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "STA-R TOV" and
+            pe.signatures[i].serial == "08:20:23:87:91:12:28:9b:f3:51:d2:97:cc:8e:fc:fc" and
+            1573430400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_0d53690631dd186c56be9026eb931ae2 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "STA-R TOV" and
+            pe.signatures[i].serial == "0d:53:69:06:31:dd:18:6c:56:be:90:26:eb:93:1a:e2" and
+            1592190240 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_32119925a6ce4710aecc4006c28e749f {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Maxiol" and
+            pe.signatures[i].serial == "32:11:99:25:a6:ce:47:10:ae:cc:40:06:c2:8e:74:9f" and
+            1592438400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_2c90eaf4de3afc03ba924c719435c2a3 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "AntiFIX s.r.o." and (
+                pe.signatures[i].serial == "00:2c:90:ea:f4:de:3a:fc:03:ba:92:4c:71:94:35:c2:a3" or
+                pe.signatures[i].serial == "2c:90:ea:f4:de:3a:fc:03:ba:92:4c:71:94:35:c2:a3"
+            ) and
+            1586293430 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_aff762e907f0644e76ed8a7485fb12a1 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Lets Start SP Z O O" and (
+                pe.signatures[i].serial == "00:af:f7:62:e9:07:f0:64:4e:76:ed:8a:74:85:fb:12:a1" or
+                pe.signatures[i].serial == "af:f7:62:e9:07:f0:64:4e:76:ed:8a:74:85:fb:12:a1"
+            ) and
+            1594882330 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_d8530214ca0f512946496b5164c61201 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "DJ ONLINE MARKETING LIMITED" and (
+                pe.signatures[i].serial == "00:d8:53:02:14:ca:0f:51:29:46:49:6b:51:64:c6:12:01" or
+                pe.signatures[i].serial == "d8:53:02:14:ca:0f:51:29:46:49:6b:51:64:c6:12:01"
+            ) and
+            1595485920 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_661ba8f3c9d1b348413484e9a49502f7 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Unique Digital Services Ltd." and (
+                pe.signatures[i].serial == "00:66:1b:a8:f3:c9:d1:b3:48:41:34:84:e9:a4:95:02:f7" or
+                pe.signatures[i].serial == "66:1b:a8:f3:c9:d1:b3:48:41:34:84:e9:a4:95:02:f7"
+            ) and
+            1594942800 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_51aead5a9ab2d841b449fa82de3a8a00 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Corsair Software Solution Inc." and
+            pe.signatures[i].serial == "51:ae:ad:5a:9a:b2:d8:41:b4:49:fa:82:de:3a:8a:00" and
+            1501577475 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_03b630f9645531f8868dae8ac0f8cfe6 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Geksan LLC" and
+            pe.signatures[i].serial == "03:b6:30:f9:64:55:31:f8:86:8d:ae:8a:c0:f8:cf:e6" and
+            1594252801 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_6f8373cf89f1b49138f4328118487f9e {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "30 PTY LTD" and
+            pe.signatures[i].serial == "6f:83:73:cf:89:f1:b4:91:38:f4:32:81:18:48:7f:9e" and
+            1572566400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_e38259cf24cc702ce441b683ad578911 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Akhirah Technologies Inc." and (
+                pe.signatures[i].serial == "00:e3:82:59:cf:24:cc:70:2c:e4:41:b6:83:ad:57:89:11" or
+                pe.signatures[i].serial == "e3:82:59:cf:24:cc:70:2c:e4:41:b6:83:ad:57:89:11"
+            ) and
+            1597276800 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_bdc81bc76090dae0eee2e1eb744a4f9a {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "ALM4U GmbH" and (
+                pe.signatures[i].serial == "00:bd:c8:1b:c7:60:90:da:e0:ee:e2:e1:eb:74:4a:4f:9a" or
+                pe.signatures[i].serial == "bd:c8:1b:c7:60:90:da:e0:ee:e2:e1:eb:74:4a:4f:9a"
+            ) and
+            1579824000 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_b2e730b0526f36faf7d093d48d6d9997 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Bamboo Connect s.r.o." and (
+                pe.signatures[i].serial == "00:b2:e7:30:b0:52:6f:36:fa:f7:d0:93:d4:8d:6d:99:97" or
+                pe.signatures[i].serial == "b2:e7:30:b0:52:6f:36:fa:f7:d0:93:d4:8d:6d:99:97"
+            ) and
+            1597276800 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_7156ec47ef01ab8359ef4304e5af1a05 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "BOREC, OOO" and
+            pe.signatures[i].serial == "71:56:ec:47:ef:01:ab:83:59:ef:43:04:e5:af:1a:05" and
+            1597363200 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_13794371c052ec0559e9b492abb25c26 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Carmel group LLC" and
+            pe.signatures[i].serial == "13:79:43:71:c0:52:ec:05:59:e9:b4:92:ab:b2:5c:26" and
+            1599177600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_5c7e78f53c31d6aa5b45de14b47eb5c4 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Cubic Information Systems, UAB" and
+            pe.signatures[i].serial == "5c:7e:78:f5:3c:31:d6:aa:5b:45:de:14:b4:7e:b5:c4" and
+            1579824000 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_dadf44e4046372313ee97b8e394c4079 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Digital Capital Management Ireland Limited" and (
+                pe.signatures[i].serial == "00:da:df:44:e4:04:63:72:31:3e:e9:7b:8e:39:4c:40:79" or
+                pe.signatures[i].serial == "da:df:44:e4:04:63:72:31:3e:e9:7b:8e:39:4c:40:79"
+            ) and
+            1600244736 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_f8c2e08438bb0e9adc955e4b493e5821 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "DocsGen Software Solutions Inc." and (
+                pe.signatures[i].serial == "00:f8:c2:e0:84:38:bb:0e:9a:dc:95:5e:4b:49:3e:58:21" or
+                pe.signatures[i].serial == "f8:c2:e0:84:38:bb:0e:9a:dc:95:5e:4b:49:3e:58:21"
+            ) and
+            1599523200 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_70e1ebd170db8102d8c28e58392e5632 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Equal Cash Technologies Limited" and
+            pe.signatures[i].serial == "70:e1:eb:d1:70:db:81:02:d8:c2:8e:58:39:2e:56:32" and
+            1599264000 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_09c89de6f64a7fdf657e69353c5fdd44 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "EXON RENTAL SP Z O O" and
+            pe.signatures[i].serial == "09:c8:9d:e6:f6:4a:7f:df:65:7e:69:35:3c:5f:dd:44" and
+            1601337601 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_ffff2ce862378b26440df49ca9175b70 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "F & A.TIM d.o.o." and (
+                pe.signatures[i].serial == "00:ff:ff:2c:e8:62:37:8b:26:44:0d:f4:9c:a9:17:5b:70" or
+                pe.signatures[i].serial == "ff:ff:2c:e8:62:37:8b:26:44:0d:f4:9c:a9:17:5b:70"
+            ) and
+            1576195200 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_3223b4616c2687c04865bee8321726a8 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "FORTUNE STAR TRADING, INC." and
+            pe.signatures[i].serial == "32:23:b4:61:6c:26:87:c0:48:65:be:e8:32:17:26:a8" and
+            1601337600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_7709d2df39e9a4f7db2f3cbc29b49743 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Grina LLC" and
+            pe.signatures[i].serial == "77:09:d2:df:39:e9:a4:f7:db:2f:3c:bc:29:b4:97:43" and
+            1556353331 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_e29690e14518874d2dcf00234ae94f1f {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "GRIND & TAMP ENTERPRISES PTY LTD" and (
+                pe.signatures[i].serial == "00:e2:96:90:e1:45:18:87:4d:2d:cf:00:23:4a:e9:4f:1f" or
+                pe.signatures[i].serial == "e2:96:90:e1:45:18:87:4d:2d:cf:00:23:4a:e9:4f:1f"
+            ) and
+            1570838400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_cfac705c7e6845904f99995324f7562c {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "HMWOCFPSDLAFMFZIVD" and (
+                pe.signatures[i].serial == "cf:ac:70:5c:7e:68:45:90:4f:99:99:53:24:f7:56:2c" or
+                pe.signatures[i].serial == "30:53:8f:a3:81:97:ba:6f:b0:66:66:ac:db:08:a9:d4"
+            ) and
+            1601918720 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_a7989f8be0c82d35a19e7b3dd4be30e5 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Instamix Limited" and (
+                pe.signatures[i].serial == "00:a7:98:9f:8b:e0:c8:2d:35:a1:9e:7b:3d:d4:be:30:e5" or
+                pe.signatures[i].serial == "a7:98:9f:8b:e0:c8:2d:35:a1:9e:7b:3d:d4:be:30:e5"
+            ) and
+            1598054400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_0fa13ae98e17ae23fcfe7ae873d0c120 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "KLAKSON, LLC" and
+            pe.signatures[i].serial == "0f:a1:3a:e9:8e:17:ae:23:fc:fe:7a:e8:73:d0:c1:20" and
+            1597276801 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_3696883055975d571199c6b5d48f3cd5 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Korist Networks Incorporated" and
+            pe.signatures[i].serial == "36:96:88:30:55:97:5d:57:11:99:c6:b5:d4:8f:3c:d5" and
+            1600069289 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_ee678930d5bdfaa2ab0172fa4c10ae07 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "LEX CORPORATION PTY LTD" and (
+                pe.signatures[i].serial == "00:ee:67:89:30:d5:bd:fa:a2:ab:01:72:fa:4c:10:ae:07" or
+                pe.signatures[i].serial == "ee:67:89:30:d5:bd:fa:a2:ab:01:72:fa:4c:10:ae:07"
+            ) and
+            1571011200 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_d7c432e8d4edef515bfb9d1c214ff0f5 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "LLC \"MILKY PUT\"" and (
+                pe.signatures[i].serial == "00:d7:c4:32:e8:d4:ed:ef:51:5b:fb:9d:1c:21:4f:f0:f5" or
+                pe.signatures[i].serial == "d7:c4:32:e8:d4:ed:ef:51:5b:fb:9d:1c:21:4f:f0:f5"
+            ) and
+            1601596800 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_5b440a47e8ce3dd202271e5c7a666c78 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Master Networking s.r.o." and
+            pe.signatures[i].serial == "5b:44:0a:47:e8:ce:3d:d2:02:27:1e:5c:7a:66:6c:78" and
+            1601895571 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_b82c6553b2186c219797621aaa233edb {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "MC Commerce SP Z o o" and (
+                pe.signatures[i].serial == "00:b8:2c:65:53:b2:18:6c:21:97:97:62:1a:aa:23:3e:db" or
+                pe.signatures[i].serial == "b8:2c:65:53:b2:18:6c:21:97:97:62:1a:aa:23:3e:db"
+            ) and
+            1585785600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_f360f7ad0ed065fec0b44f98e04481a0 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "MEHANIKUM OOO" and (
+                pe.signatures[i].serial == "00:f3:60:f7:ad:0e:d0:65:fe:c0:b4:4f:98:e0:44:81:a0" or
+                pe.signatures[i].serial == "f3:60:f7:ad:0e:d0:65:fe:c0:b4:4f:98:e0:44:81:a0"
+            ) and
+            1599031121 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_fe41941464b9992a69b7317418ae8eb7 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Milsean Software Limited" and (
+                pe.signatures[i].serial == "00:fe:41:94:14:64:b9:99:2a:69:b7:31:74:18:ae:8e:b7" or
+                pe.signatures[i].serial == "fe:41:94:14:64:b9:99:2a:69:b7:31:74:18:ae:8e:b7"
+            ) and
+            1599523200 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_0c14b611a44a1bae0e8c7581651845b6 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "NEEDCODE SP Z O O" and
+            pe.signatures[i].serial == "0c:14:b6:11:a4:4a:1b:ae:0e:8c:75:81:65:18:45:b6" and
+            1600300801 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_690910dc89d7857c3500fb74bed2b08d {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "OLIMP STROI, OOO" and
+            pe.signatures[i].serial == "69:09:10:dc:89:d7:85:7c:35:00:fb:74:be:d2:b0:8d" and
+            1597276800 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_fd41e6bd7428d3008c8a05f68c9ac6f2 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "OM-FAS d.o.o." and (
+                pe.signatures[i].serial == "00:fd:41:e6:bd:74:28:d3:00:8c:8a:05:f6:8c:9a:c6:f2" or
+                pe.signatures[i].serial == "fd:41:e6:bd:74:28:d3:00:8c:8a:05:f6:8c:9a:c6:f2"
+            ) and
+            1575590400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_c7079866c0e48b01246ba0c148e70d4d {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "OOO GARANT" and (
+                pe.signatures[i].serial == "00:c7:07:98:66:c0:e4:8b:01:24:6b:a0:c1:48:e7:0d:4d" or
+                pe.signatures[i].serial == "c7:07:98:66:c0:e4:8b:01:24:6b:a0:c1:48:e7:0d:4d"
+            ) and
+            1588679105 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_d591da22f33c800a7024aecff2cd6c6d {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "OOO T2 Soft" and (
+                pe.signatures[i].serial == "00:d5:91:da:22:f3:3c:80:0a:70:24:ae:cf:f2:cd:6c:6d" or
+                pe.signatures[i].serial == "d5:91:da:22:f3:3c:80:0a:70:24:ae:cf:f2:cd:6c:6d"
+            ) and
+            1588679107 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_b36e0f2053caee9c3b966f7be0b40fc3 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "PARTS-JEST d.o.o." and (
+                pe.signatures[i].serial == "00:b3:6e:0f:20:53:ca:ee:9c:3b:96:6f:7b:e0:b4:0f:c3" or
+                pe.signatures[i].serial == "b3:6e:0f:20:53:ca:ee:9c:3b:96:6f:7b:e0:b4:0f:c3"
+            ) and
+            1600172855 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_5b320a2f46c99c1ba1357bee {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "REGION TOURISM LLC" and
+            pe.signatures[i].serial == "5b:32:0a:2f:46:c9:9c:1b:a1:35:7b:ee" and
+            1602513116 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_08d4352185317271c1cec9d05c279af7 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Retalit LLC" and
+            pe.signatures[i].serial == "08:d4:35:21:85:31:72:71:c1:ce:c9:d0:5c:27:9a:f7" and
+            1596585601 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_b514e4c5309ef9f27add05bedd4339a0 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "SCABONE PTY LTD" and (
+                pe.signatures[i].serial == "00:b5:14:e4:c5:30:9e:f9:f2:7a:dd:05:be:dd:43:39:a0" or
+                pe.signatures[i].serial == "b5:14:e4:c5:30:9e:f9:f2:7a:dd:05:be:dd:43:39:a0"
+            ) and
+            1572566400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_13c7b92282aae782bfb00baf879935f4 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "THE WIZARD GIFT CORPORATION" and
+            pe.signatures[i].serial == "13:c7:b9:22:82:aa:e7:82:bf:b0:0b:af:87:99:35:f4" and
+            1603130510 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_d627f1000d12485995514bfbdefc55d9 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "THREE D CORPORATION PTY LTD" and (
+                pe.signatures[i].serial == "00:d6:27:f1:00:0d:12:48:59:95:51:4b:fb:de:fc:55:d9" or
+                pe.signatures[i].serial == "d6:27:f1:00:0d:12:48:59:95:51:4b:fb:de:fc:55:d9"
+            ) and
+            1597622400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_5fb6bae8834edd8d3d58818edc86d7d7 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Tramplink LLC" and
+            pe.signatures[i].serial == "5f:b6:ba:e8:83:4e:dd:8d:3d:58:81:8e:dc:86:d7:d7" and
+            1600781989 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_e5ad42c509a7c24605530d35832c091e {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "VESNA, OOO" and (
+                pe.signatures[i].serial == "00:e5:ad:42:c5:09:a7:c2:46:05:53:0d:35:83:2c:09:1e" or
+                pe.signatures[i].serial == "e5:ad:42:c5:09:a7:c2:46:05:53:0d:35:83:2c:09:1e"
+            ) and
+            1600786458 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_8e3d89c682f7c0dad70110cb7b7c8263 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "WORK PLACEMENTS INTERNATIONAL LIMITED" and (
+                pe.signatures[i].serial == "00:8e:3d:89:c6:82:f7:c0:da:d7:01:10:cb:7b:7c:82:63" or
+                pe.signatures[i].serial == "8e:3d:89:c6:82:f7:c0:da:d7:01:10:cb:7b:7c:82:63"
+            ) and
+            1570626662 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_ef2d35f2ae82a767a16be582ab0d1ba0 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Workstage Limited" and (
+                pe.signatures[i].serial == "00:ef:2d:35:f2:ae:82:a7:67:a1:6b:e5:82:ab:0d:1b:a0" or
+                pe.signatures[i].serial == "ef:2d:35:f2:ae:82:a7:67:a1:6b:e5:82:ab:0d:1b:a0"
+            ) and
+            1567123200 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_039668034826df47e6207ec9daed57c3 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "CHOO FSP, LLC" and
+            pe.signatures[i].serial == "03:96:68:03:48:26:df:47:e6:20:7e:c9:da:ed:57:c3" and
+            1601424001 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_07bb6a9d1c642c5973c16d5353b17ca4 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "MADAS d.o.o." and
+            pe.signatures[i].serial == "07:bb:6a:9d:1c:64:2c:59:73:c1:6d:53:53:b1:7c:a4" and
+            1601856001 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_0a1dc99e4d5264c45a5090f93242a30a {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "K & D KOMPANI d.o.o." and
+            pe.signatures[i].serial == "0a:1d:c9:9e:4d:52:64:c4:5a:50:90:f9:32:42:a3:0a" and
+            1600905601 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_018093cfad72cdf402eecbe18b33ec71 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "FAT11 d.o.o." and 
+            pe.signatures[i].serial == "01:80:93:cf:ad:72:cd:f4:02:ee:cb:e1:8b:33:ec:71" and
+            1602000390 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_569e03988af60d80ce60728940850d9b {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "OORT inc." and (
+                pe.signatures[i].serial == "00:56:9e:03:98:8a:f6:0d:80:ce:60:72:89:40:85:0d:9b" or
+                pe.signatures[i].serial == "56:9e:03:98:8a:f6:0d:80:ce:60:72:89:40:85:0d:9b"
+            ) and
+            1601006510 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_418f6d959a8a0f82bef07ceba3603e52 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "OORT inc." and (
+                pe.signatures[i].serial == "00:41:8f:6d:95:9a:8a:0f:82:be:f0:7c:eb:a3:60:3e:52" or
+                pe.signatures[i].serial == "41:8f:6d:95:9a:8a:0f:82:be:f0:7c:eb:a3:60:3e:52"
+            ) and
+            1601928240 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_5378c5bbeba0d3309a35bb47f63037f7 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "OORT inc." and (
+                pe.signatures[i].serial == "00:53:78:c5:bb:eb:a0:d3:30:9a:35:bb:47:f6:30:37:f7" or
+                pe.signatures[i].serial == "53:78:c5:bb:eb:a0:d3:30:9a:35:bb:47:f6:30:37:f7"
+            ) and
+            1601427420 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_0bab6a2aa84b495d9e554a4c42c0126d {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "NOSOV SP Z O O" and
+            pe.signatures[i].serial == "0b:ab:6a:2a:a8:4b:49:5d:9e:55:4a:4c:42:c0:12:6d" and
+            1597971600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_6314001c3235cd59bcc3f5278c518804 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "GIE-MUTUALISTE" and
+            pe.signatures[i].serial == "63:14:00:1c:32:35:cd:59:bc:c3:f5:27:8c:51:88:04" and
+            1600304400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_0ed8ade5d73b73dade6943d557ff87e5 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Rumikon LLC" and
+            pe.signatures[i].serial == "0e:d8:ad:e5:d7:3b:73:da:de:69:43:d5:57:ff:87:e5" and
+            1597885200 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_0292c7d574132ba5c0441d1c7ffcb805 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "TES LOGISTIKA d.o.o." and
+            pe.signatures[i].serial == "02:92:c7:d5:74:13:2b:a5:c0:44:1d:1c:7f:fc:b8:05" and
+            1602183720 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_1f23f001458716d435cca1a55d660ec5 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "OOO Ringen" and
+            pe.signatures[i].serial == "1f:23:f0:01:45:87:16:d4:35:cc:a1:a5:5d:66:0e:c5" and
+            1603176940 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_6e0ccbdfb4777e10ea6221b90dc350c2 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "TRAUMALAB INTERNATIONAL APS" and
+            pe.signatures[i].serial == "6e:0c:cb:df:b4:77:7e:10:ea:62:21:b9:0d:c3:50:c2" and
+            1603046620 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_0ed1847a2ae5d71def1e833fddd33d38 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "SNAB-RESURS, OOO" and
+            pe.signatures[i].serial == "0e:d1:84:7a:2a:e5:d7:1d:ef:1e:83:3f:dd:d3:3d:38" and
+            1598662800 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_97df46acb26b7c81a13cc467b47688c8 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Information Civilized System Oy" and (
+                pe.signatures[i].serial == "00:97:df:46:ac:b2:6b:7c:81:a1:3c:c4:67:b4:76:88:c8" or
+                pe.signatures[i].serial == "97:df:46:ac:b2:6b:7c:81:a1:3c:c4:67:b4:76:88:c8"
+            ) and
+            1602636910 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_186d49fac34ce99775b8e7ffbf50679d {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Hairis LLC" and
+            pe.signatures[i].serial == "18:6d:49:fa:c3:4c:e9:97:75:b8:e7:ff:bf:50:67:9d" and
+            1602234590 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_b1aea98bf0ce789b6c952310f14edde0 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Absolut LLC" and (
+                pe.signatures[i].serial == "00:b1:ae:a9:8b:f0:ce:78:9b:6c:95:23:10:f1:4e:dd:e0" or
+                pe.signatures[i].serial == "b1:ae:a9:8b:f0:ce:78:9b:6c:95:23:10:f1:4e:dd:e0"
+            ) and
+            1602612570 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_2dcd0699da08915dde6d044cb474157c {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "VENTE DE TOUT" and
+            pe.signatures[i].serial == "2d:cd:06:99:da:08:91:5d:de:6d:04:4c:b4:74:15:7c" and
+            1601830010 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_4b03cabe6a0481f17a2dbeb9aefad425 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "RASSVET, OOO" and
+            pe.signatures[i].serial == "4b:03:ca:be:6a:04:81:f1:7a:2d:be:b9:ae:fa:d4:25" and
+            1603230930 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_64cd303fa289790afa03c403e9240002 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "MAITLAND TRIFECTA, INC." and 
+            pe.signatures[i].serial == "64:cd:30:3f:a2:89:79:0a:fa:03:c4:03:e9:24:00:02" and
+            1602723600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_07cef66a71c35bc3aed6d100c6493863 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Fubon Technologies Ltd" and
+            pe.signatures[i].serial == "07:ce:f6:6a:71:c3:5b:c3:ae:d6:d1:00:c6:49:38:63" and
+            1602740890 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_be77fe5c58b7a360add6a3fced4e8334 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Incar LLC" and (
+                pe.signatures[i].serial == "00:be:77:fe:5c:58:b7:a3:60:ad:d6:a3:fc:ed:4e:83:34" or
+                pe.signatures[i].serial == "be:77:fe:5c:58:b7:a3:60:ad:d6:a3:fc:ed:4e:83:34"
+            ) and
+            1602530730 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_f097e59809ae2e771b7b9ae5fc3408d7 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "ABEL RENOVATIONS, INC." and (
+                pe.signatures[i].serial == "00:f0:97:e5:98:09:ae:2e:77:1b:7b:9a:e5:fc:34:08:d7" or
+                pe.signatures[i].serial == "f0:97:e5:98:09:ae:2e:77:1b:7b:9a:e5:fc:34:08:d7"
+            ) and
+            1602542033 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_0cf1ed2a6ff4bee621efdf725ea174b7 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "LEVEL LIST SP Z O O" and
+            pe.signatures[i].serial == "0c:f1:ed:2a:6f:f4:be:e6:21:ef:df:72:5e:a1:74:b7" and
+            1603036100 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_1249aa2ada4967969b71ce63bf187c38 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Umbrella LLC" and
+            pe.signatures[i].serial == "12:49:aa:2a:da:49:67:96:9b:71:ce:63:bf:18:7c:38" and
+            1599181200 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_d59a05955a4a421500f9561ce983aac4 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Olymp LLC" and (
+                pe.signatures[i].serial == "00:d5:9a:05:95:5a:4a:42:15:00:f9:56:1c:e9:83:aa:c4" or
+                pe.signatures[i].serial == "d5:9a:05:95:5a:4a:42:15:00:f9:56:1c:e9:83:aa:c4"
+            ) and
+            1601895290 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_539015999e304a5952985a994f9c3a53 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Service lab LLC" and
+            pe.signatures[i].serial == "53:90:15:99:9e:30:4a:59:52:98:5a:99:4f:9c:3a:53" and
+            1599181200 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_0b1926a5e8ae50a0efa504f005f93869 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Nordkod LLC" and
+            pe.signatures[i].serial == "0b:19:26:a5:e8:ae:50:a0:ef:a5:04:f0:05:f9:38:69" and
+            1600650000 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_0a23b660e7322e54d7bd0e5acc890966 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "ARTBUD RADOM SP Z O O" and
+            pe.signatures[i].serial == "0a:23:b6:60:e7:32:2e:54:d7:bd:0e:5a:cc:89:09:66" and
+            1601254800 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_6cfa5050c819c4acbb8fa75979688dff {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Elite Web Development Ltd." and (
+                pe.signatures[i].serial == "00:6c:fa:50:50:c8:19:c4:ac:bb:8f:a7:59:79:68:8d:ff" or
+                pe.signatures[i].serial == "6c:fa:50:50:c8:19:c4:ac:bb:8f:a7:59:79:68:8d:ff"
+            ) and
+            1600176940 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_044e05bb1a01a1cbb50cfb6cd24e5d6b {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "MUSTER PLUS SP Z O O" and
+            pe.signatures[i].serial == "04:4e:05:bb:1a:01:a1:cb:b5:0c:fb:6c:d2:4e:5d:6b" and
+            1601427600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_b7f19b13de9bee8a52ff365ced6f67fa {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "ALEXIS SECURITY GROUP, LLC" and (
+                pe.signatures[i].serial == "00:b7:f1:9b:13:de:9b:ee:8a:52:ff:36:5c:ed:6f:67:fa" or
+                pe.signatures[i].serial == "b7:f1:9b:13:de:9b:ee:8a:52:ff:36:5c:ed:6f:67:fa"
+            ) and
+            1574914319 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_b61b8e71514059adc604da05c283e514 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "APP DIVISION ApS" and (
+                pe.signatures[i].serial == "00:b6:1b:8e:71:51:40:59:ad:c6:04:da:05:c2:83:e5:14" or
+                pe.signatures[i].serial == "b6:1b:8e:71:51:40:59:ad:c6:04:da:05:c2:83:e5:14"
+            ) and
+            1603328400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_ece6cbf67dc41635a5e5d075f286af23 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "THRANE AGENTUR ApS" and (
+                pe.signatures[i].serial == "00:ec:e6:cb:f6:7d:c4:16:35:a5:e5:d0:75:f2:86:af:23" or
+                pe.signatures[i].serial == "ec:e6:cb:f6:7d:c4:16:35:a5:e5:d0:75:f2:86:af:23"
+            ) and
+            1603369254 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_014a98d697b44f43ded21f18eb6ad0ba {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Hillcoe Software Inc." and
+            pe.signatures[i].serial == "01:4a:98:d6:97:b4:4f:43:de:d2:1f:18:eb:6a:d0:ba" and
+            1605364760 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_063a7d09107eddd8aa1f733634c6591b {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Smart Line Logistics" and
+            pe.signatures[i].serial == "06:3a:7d:09:10:7e:dd:d8:aa:1f:73:36:34:c6:59:1b" and
+            1605712706 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_1e74cfe7de8c5f57840a61034414ca9f {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Insta Software Solution Inc." and (
+                pe.signatures[i].serial == "00:1e:74:cf:e7:de:8c:5f:57:84:0a:61:03:44:14:ca:9f" or
+                pe.signatures[i].serial == "1e:74:cf:e7:de:8c:5f:57:84:0a:61:03:44:14:ca:9f"
+            ) and
+            1601733106 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_75cf729f8a740bbdef183a1c4d86a02f {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Umbor LLC" and
+            pe.signatures[i].serial == "75:cf:72:9f:8a:74:0b:bd:ef:18:3a:1c:4d:86:a0:2f" and
+            1604223894 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_2f64677254d3844efdac2922123d05d1 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "ORGANICUP ApS" and
+            pe.signatures[i].serial == "2f:64:67:72:54:d3:84:4e:fd:ac:29:22:12:3d:05:d1" and
+            1605640092 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_32fbf8cfa43dca3f85efabe96dfefa49 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Foxstyle LLC" and
+            pe.signatures[i].serial == "32:fb:f8:cf:a4:3d:ca:3f:85:ef:ab:e9:6d:fe:fa:49" and
+            1598255906 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_ef9d0cf071d463cd63d13083046a7b8d {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Rubin LLC" and (
+                pe.signatures[i].serial == "00:ef:9d:0c:f0:71:d4:63:cd:63:d1:30:83:04:6a:7b:8d" or
+                pe.signatures[i].serial == "ef:9d:0c:f0:71:d4:63:cd:63:d1:30:83:04:6a:7b:8d"
+            ) and
+            1605358307 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_115cf1353a0e33e19099a4867a4c750a {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "212 NY Gifts, Inc." and (
+                pe.signatures[i].serial == "00:11:5c:f1:35:3a:0e:33:e1:90:99:a4:86:7a:4c:75:0a" or
+                pe.signatures[i].serial == "11:5c:f1:35:3a:0e:33:e1:90:99:a4:86:7a:4c:75:0a"
+            ) and
+            1605515909 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_5cf3778bb11115a884e192a7cb807599 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "SLOMATIC d.o.o." and (
+                pe.signatures[i].serial == "00:5c:f3:77:8b:b1:11:15:a8:84:e1:92:a7:cb:80:75:99" or
+                pe.signatures[i].serial == "5c:f3:77:8b:b1:11:15:a8:84:e1:92:a7:cb:80:75:99"
+            ) and
+            1605006199 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_82cb93593b658100cdd7a00c874287f2 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Sportsonline24 B.V." and (
+                pe.signatures[i].serial == "00:82:cb:93:59:3b:65:81:00:cd:d7:a0:0c:87:42:87:f2" or
+                pe.signatures[i].serial == "82:cb:93:59:3b:65:81:00:cd:d7:a0:0c:87:42:87:f2"
+            ) and
+            1605117874 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_9a8bcfd05f86b15d0c99f50cf414bd00 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "AI Software a.s." and (
+                pe.signatures[i].serial == "00:9a:8b:cf:d0:5f:86:b1:5d:0c:99:f5:0c:f4:14:bd:00" or
+                pe.signatures[i].serial == "9a:8b:cf:d0:5f:86:b1:5d:0c:99:f5:0c:f4:14:bd:00"
+            ) and
+            1592442000 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_95e5793f2abe0b4ec9be54fd24f76ae5 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Kommservice LLC" and (
+                pe.signatures[i].serial == "00:95:e5:79:3f:2a:be:0b:4e:c9:be:54:fd:24:f7:6a:e5" or
+                pe.signatures[i].serial == "95:e5:79:3f:2a:be:0b:4e:c9:be:54:fd:24:f7:6a:e5"
+            ) and
+            1604933746 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_133565779808c3b79d8e3f70a9c3ffac {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "OOO Istok" and
+            pe.signatures[i].serial == "13:35:65:77:98:08:c3:b7:9d:8e:3f:70:a9:c3:ff:ac" and
+            1605019819 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_7e0ccda0ef37acef6c2ebe4538627e5c {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Orangetree B.V." and (
+                pe.signatures[i].serial == "00:7e:0c:cd:a0:ef:37:ac:ef:6c:2e:be:45:38:62:7e:5c" or
+                pe.signatures[i].serial == "7e:0c:cd:a0:ef:37:ac:ef:6c:2e:be:45:38:62:7e:5c"
+            ) and
+            1606159604 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_bad35fd70025d46c56b89e32b1a3954c {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Fort LLC" and (
+                pe.signatures[i].serial == "00:ba:d3:5f:d7:00:25:d4:6c:56:b8:9e:32:b1:a3:95:4c" or
+                pe.signatures[i].serial == "ba:d3:5f:d7:00:25:d4:6c:56:b8:9e:32:b1:a3:95:4c"
+            ) and
+            1604937337 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_7b91468122273aa32b7cfc80c331ea13 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "OOO KBI" and
+            pe.signatures[i].serial == "7b:91:46:81:22:27:3a:a3:2b:7c:fc:80:c3:31:ea:13" and
+            1586942863 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_3e267b5d14cdf1f645c1ec545cec3aee {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "OOO KBI" and
+            pe.signatures[i].serial == "3e:26:7b:5d:14:cd:f1:f6:45:c1:ec:54:5c:ec:3a:ee" and
+            1579825892 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_ae6d3c0269ef6497e14379c51a8507ba {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "VELES PROPERTIES LIMITED" and (
+                pe.signatures[i].serial == "00:ae:6d:3c:02:69:ef:64:97:e1:43:79:c5:1a:85:07:ba" or
+                pe.signatures[i].serial == "ae:6d:3c:02:69:ef:64:97:e1:43:79:c5:1a:85:07:ba"
+            ) and
+            1578566034 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_fd8c468cc1b45c9cfb41cbd8c835cc9e {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Pivo ZLoun s.r.o." and (
+                pe.signatures[i].serial == "00:fd:8c:46:8c:c1:b4:5c:9c:fb:41:cb:d8:c8:35:cc:9e" or
+                pe.signatures[i].serial == "fd:8c:46:8c:c1:b4:5c:9c:fb:41:cb:d8:c8:35:cc:9e"
+            ) and
+            1604019600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_7c061baa3118327255161f6a7fa4e21d {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "YUTAKS, OOO" and (
+                pe.signatures[i].serial == "00:7c:06:1b:aa:31:18:32:72:55:16:1f:6a:7f:a4:e2:1d" or
+                pe.signatures[i].serial == "7c:06:1b:aa:31:18:32:72:55:16:1f:6a:7f:a4:e2:1d"
+            ) and
+            1599611338 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_04332c16724ffeda5868d22af56aea43 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Bespoke Software Solutions Limited" and
+            pe.signatures[i].serial == "04:33:2c:16:72:4f:fe:da:58:68:d2:2a:f5:6a:ea:43" and
+            1597971601 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_030012f134e64347669f3256c7d050c5 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Futumarket LLC" and
+            pe.signatures[i].serial == "03:00:12:f1:34:e6:43:47:66:9f:32:56:c7:d0:50:c5" and
+            1604036657 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_fa3dcac19b884b44ef4f81541184d6b0 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Unicom Ltd" and (
+                pe.signatures[i].serial == "00:fa:3d:ca:c1:9b:88:4b:44:ef:4f:81:54:11:84:d6:b0" or
+                pe.signatures[i].serial == "fa:3d:ca:c1:9b:88:4b:44:ef:4f:81:54:11:84:d6:b0"
+            ) and
+            1603958571 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_0e6f4cb8b06e01c3bd296ace3a95f814 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "EVATON, s.r.o." and
+            pe.signatures[i].serial == "0e:6f:4c:b8:b0:6e:01:c3:bd:29:6a:ce:3a:95:f8:14" and
+            1603957781 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_085b70224253486624fc36fa658a1e32 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Best Fud, OOO" and
+            pe.signatures[i].serial == "08:5b:70:22:42:53:48:66:24:fc:36:fa:65:8a:1e:32" and
+            1597971601 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_51cd5393514f7ace2b407c3dbfb09d8d {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "APPI CZ a.s" and
+            pe.signatures[i].serial == "51:cd:53:93:51:4f:7a:ce:2b:40:7c:3d:bf:b0:9d:8d" and
+            1605299467 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_b72179c027b9037ee220e81ab18fe56d {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Planeta, TOV" and (
+                pe.signatures[i].serial == "00:b7:21:79:c0:27:b9:03:7e:e2:20:e8:1a:b1:8f:e5:6d" or
+                pe.signatures[i].serial == "b7:21:79:c0:27:b9:03:7e:e2:20:e8:1a:b1:8f:e5:6d"
+            ) and
+            1603381300 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_07b74c70c4aa092648b7f0d1a8a3a28f {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Rad-Grad D.O.O." and
+            pe.signatures[i].serial == "07:b7:4c:70:c4:aa:09:26:48:b7:f0:d1:a8:a3:a2:8f" and
+            1603240965 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_4c8def294478b7d59ee95c61fae3d965 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "DREAM SECURITY USA INC" and
+            pe.signatures[i].serial == "4c:8d:ef:29:44:78:b7:d5:9e:e9:5c:61:fa:e3:d9:65" and
+            1592961292 <= pe.signatures[i].not_after
+        )
+}
