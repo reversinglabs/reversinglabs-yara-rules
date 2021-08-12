@@ -1,4 +1,4 @@
-rule Win32_Ransomware_Namaste : tc_detection malicious
+rule ByteCode_MSIL_Ransomware_Namaste : tc_detection malicious
 {
     meta:
 

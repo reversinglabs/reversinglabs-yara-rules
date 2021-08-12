@@ -1,4 +1,4 @@
-rule Win32_Ransomware_Cring : tc_detection malicious
+rule ByteCode_MSIL_Ransomware_Cring : tc_detection malicious
 {
     meta:
 

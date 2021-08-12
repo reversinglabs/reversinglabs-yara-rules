@@ -1,4 +1,4 @@
-rule Win32_Ransomware_CobraLocker : tc_detection malicious
+rule Bytecode_MSIL_Ransomware_CobraLocker : tc_detection malicious
 {
     meta:
 
