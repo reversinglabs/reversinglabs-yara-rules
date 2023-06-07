@@ -1,3 +1,5 @@
+import "elf"
+
 rule Linux_Virus_Vit : tc_detection malicious
 {
     meta:
@@ -30,5 +32,5 @@ rule Linux_Virus_Vit : tc_detection malicious
       $vit_str = "vi324.tmp"
 
     condition:
-        uint32(0) == 0x464C457F and all of them
+        uint32(0) == 0x464C457F and $vit_entry_point at elf.entry_point and $vit_str
 }
