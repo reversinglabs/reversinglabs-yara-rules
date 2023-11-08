@@ -6943,13 +6943,13 @@ rule cert_blocklist_7d36cbb64bc9add17ba71737d3ecceca {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "LTD SERVICES LIMITED" and 
+            pe.signatures[i].subject contains "LTD SERVICES LIMITED" and
             pe.signatures[i].serial == "7d:36:cb:b6:4b:c9:ad:d1:7b:a7:17:37:d3:ec:ce:ca" and
-            1592961292 <= pe.signatures[i].not_after
+            1616025600 <= pe.signatures[i].not_after
         )
 }
 
@@ -6961,15 +6961,15 @@ rule cert_blocklist_ad255d4ebefa751f3782587396c08629 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "OOO Ornitek" and (
                 pe.signatures[i].serial == "00:ad:25:5d:4e:be:fa:75:1f:37:82:58:73:96:c0:86:29" or
-                pe.signatures[i].serial == "ad:25:5d:4e:be:fa:75:1f:37:82:58:73:96:c0:86:29" 
+                pe.signatures[i].serial == "ad:25:5d:4e:be:fa:75:1f:37:82:58:73:96:c0:86:29"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1614643200 <= pe.signatures[i].not_after
         )
 }
 
@@ -6981,13 +6981,13 @@ rule cert_blocklist_262ca7ae19d688138e75932832b18f9d {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Bisoyetutu Ltd Ltd" and 
+            pe.signatures[i].subject contains "Bisoyetutu Ltd Ltd" and
             pe.signatures[i].serial == "26:2c:a7:ae:19:d6:88:13:8e:75:93:28:32:b1:8f:9d" and
-            1592961292 <= pe.signatures[i].not_after
+            1616025600 <= pe.signatures[i].not_after
         )
 }
 
@@ -6999,13 +6999,13 @@ rule cert_blocklist_59a57e8ba3dcf2b6f59981fda14b03 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Medium LLC" and 
+            pe.signatures[i].subject contains "Medium LLC" and
             pe.signatures[i].serial == "59:a5:7e:8b:a3:dc:f2:b6:f5:99:81:fd:a1:4b:03" and
-            1592961292 <= pe.signatures[i].not_after
+            1609113600 <= pe.signatures[i].not_after
         )
 }
 
@@ -7017,15 +7017,15 @@ rule cert_blocklist_aebe117a13b8bca21685df48c74f584d {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "NANAX d.o.o." and (
                 pe.signatures[i].serial == "00:ae:be:11:7a:13:b8:bc:a2:16:85:df:48:c7:4f:58:4d" or
-                pe.signatures[i].serial == "ae:be:11:7a:13:b8:bc:a2:16:85:df:48:c7:4f:58:4d" 
+                pe.signatures[i].serial == "ae:be:11:7a:13:b8:bc:a2:16:85:df:48:c7:4f:58:4d"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1613520000 <= pe.signatures[i].not_after
         )
 }
 
@@ -7037,13 +7037,13 @@ rule cert_blocklist_7dcd19a94535f034ee36af4676740633 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Toko Saya ApS" and 
+            pe.signatures[i].subject contains "Toko Saya ApS" and
             pe.signatures[i].serial == "7d:cd:19:a9:45:35:f0:34:ee:36:af:46:76:74:06:33" and
-            1592961292 <= pe.signatures[i].not_after
+            1609200000 <= pe.signatures[i].not_after
         )
 }
 
@@ -7055,15 +7055,15 @@ rule cert_blocklist_ca4822e6905aa4fca9e28523f04f14a3 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "ELISTREID, OOO" and (
                 pe.signatures[i].serial == "00:ca:48:22:e6:90:5a:a4:fc:a9:e2:85:23:f0:4f:14:a3" or
-                pe.signatures[i].serial == "ca:48:22:e6:90:5a:a4:fc:a9:e2:85:23:f0:4f:14:a3" 
+                pe.signatures[i].serial == "ca:48:22:e6:90:5a:a4:fc:a9:e2:85:23:f0:4f:14:a3"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1614643200 <= pe.signatures[i].not_after
         )
 }
 
@@ -7075,13 +7075,13 @@ rule cert_blocklist_24c1ef800f275ab2780280c595de3464 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "HOLGAN LIMITED" and 
+            pe.signatures[i].subject contains "HOLGAN LIMITED" and
             pe.signatures[i].serial == "24:c1:ef:80:0f:27:5a:b2:78:02:80:c5:95:de:34:64" and
-            1592961292 <= pe.signatures[i].not_after
+            1614729600 <= pe.signatures[i].not_after
         )
 }
 
@@ -7093,13 +7093,13 @@ rule cert_blocklist_6401831b46588b9d872b02076c3a7b00 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "ACTIV GROUP ApS" and 
+            pe.signatures[i].subject contains "ACTIV GROUP ApS" and
             pe.signatures[i].serial == "64:01:83:1b:46:58:8b:9d:87:2b:02:07:6c:3a:7b:00" and
-            1592961292 <= pe.signatures[i].not_after
+            1615507200 <= pe.signatures[i].not_after
         )
 }
 
@@ -7111,13 +7111,13 @@ rule cert_blocklist_0a01a91cce63ede5eaa3dac4883aea05 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Seacloud Technologies Pte. Ltd." and 
+            pe.signatures[i].subject contains "Seacloud Technologies Pte. Ltd." and
             pe.signatures[i].serial == "0a:01:a9:1c:ce:63:ed:e5:ea:a3:da:c4:88:3a:ea:05" and
-            1592961292 <= pe.signatures[i].not_after
+            1618876800 <= pe.signatures[i].not_after
         )
 }
 
@@ -7129,13 +7129,13 @@ rule cert_blocklist_54cd7ae1c27f1421136ed25088f4979a {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "ABBYMAJUTA LTD LIMITED" and 
+            pe.signatures[i].subject contains "ABBYMAJUTA LTD LIMITED" and
             pe.signatures[i].serial == "54:cd:7a:e1:c2:7f:14:21:13:6e:d2:50:88:f4:97:9a" and
-            1592961292 <= pe.signatures[i].not_after
+            1616371200 <= pe.signatures[i].not_after
         )
 }
 
@@ -7147,15 +7147,15 @@ rule cert_blocklist_f2d693aad63e6920782a0027dfc97d91 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "EKO-KHIM TOV" and (
                 pe.signatures[i].serial == "00:f2:d6:93:aa:d6:3e:69:20:78:2a:00:27:df:c9:7d:91" or
-                pe.signatures[i].serial == "f2:d6:93:aa:d6:3e:69:20:78:2a:00:27:df:c9:7d:91" 
+                pe.signatures[i].serial == "f2:d6:93:aa:d6:3e:69:20:78:2a:00:27:df:c9:7d:91"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1598989763 <= pe.signatures[i].not_after
         )
 }
 
@@ -7167,15 +7167,15 @@ rule cert_blocklist_f8e8f6c92ba666b0688a8cacce9acccf {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "5 th Dimension LTD Oy" and (
                 pe.signatures[i].serial == "00:f8:e8:f6:c9:2b:a6:66:b0:68:8a:8c:ac:ce:9a:cc:cf" or
-                pe.signatures[i].serial == "f8:e8:f6:c9:2b:a6:66:b0:68:8a:8c:ac:ce:9a:cc:cf" 
+                pe.signatures[i].serial == "f8:e8:f6:c9:2b:a6:66:b0:68:8a:8c:ac:ce:9a:cc:cf"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1618531200 <= pe.signatures[i].not_after
         )
 }
 
@@ -7187,15 +7187,15 @@ rule cert_blocklist_e3d5089d4b8f01aadce2731062fb0cce {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "DEVELOP - Residence s. r. o." and (
                 pe.signatures[i].serial == "00:e3:d5:08:9d:4b:8f:01:aa:dc:e2:73:10:62:fb:0c:ce" or
-                pe.signatures[i].serial == "e3:d5:08:9d:4b:8f:01:aa:dc:e2:73:10:62:fb:0c:ce" 
+                pe.signatures[i].serial == "e3:d5:08:9d:4b:8f:01:aa:dc:e2:73:10:62:fb:0c:ce"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1618358400 <= pe.signatures[i].not_after
         )
 }
 
@@ -7207,13 +7207,13 @@ rule cert_blocklist_7ed801843fa001b8add52d3a97b25931 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "AM El-Teknik ApS" and 
+            pe.signatures[i].subject contains "AM El-Teknik ApS" and
             pe.signatures[i].serial == "7e:d8:01:84:3f:a0:01:b8:ad:d5:2d:3a:97:b2:59:31" and
-            1592961292 <= pe.signatures[i].not_after
+            1614297600 <= pe.signatures[i].not_after
         )
 }
 
@@ -7225,15 +7225,15 @@ rule cert_blocklist_d9e834182dec62c654e775e809ac1d1b {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "FoodLehto Oy" and (
                 pe.signatures[i].serial == "00:d9:e8:34:18:2d:ec:62:c6:54:e7:75:e8:09:ac:1d:1b" or
-                pe.signatures[i].serial == "d9:e8:34:18:2d:ec:62:c6:54:e7:75:e8:09:ac:1d:1b" 
+                pe.signatures[i].serial == "d9:e8:34:18:2d:ec:62:c6:54:e7:75:e8:09:ac:1d:1b"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1614297600 <= pe.signatures[i].not_after
         )
 }
 
@@ -7245,15 +7245,15 @@ rule cert_blocklist_801689896ed339237464a41a2900a969 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "GLG Rental ApS" and (
                 pe.signatures[i].serial == "00:80:16:89:89:6e:d3:39:23:74:64:a4:1a:29:00:a9:69" or
-                pe.signatures[i].serial == "80:16:89:89:6e:d3:39:23:74:64:a4:1a:29:00:a9:69" 
+                pe.signatures[i].serial == "80:16:89:89:6e:d3:39:23:74:64:a4:1a:29:00:a9:69"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1615507200 <= pe.signatures[i].not_after
         )
 }
 
@@ -7265,13 +7265,13 @@ rule cert_blocklist_3fd3661533eef209153c9afec3ba4d8a {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "SFB Regnskabsservice ApS" and 
+            pe.signatures[i].subject contains "SFB Regnskabsservice ApS" and
             pe.signatures[i].serial == "3f:d3:66:15:33:ee:f2:09:15:3c:9a:fe:c3:ba:4d:8a" and
-            1592961292 <= pe.signatures[i].not_after
+            1614816000 <= pe.signatures[i].not_after
         )
 }
 
@@ -7283,13 +7283,13 @@ rule cert_blocklist_0ced87bd70b092cb93b182fac32655f6 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Creator Soft Limited" and 
+            pe.signatures[i].subject contains "Creator Soft Limited" and
             pe.signatures[i].serial == "0c:ed:87:bd:70:b0:92:cb:93:b1:82:fa:c3:26:55:f6" and
-            1592961292 <= pe.signatures[i].not_after
+            1614816000 <= pe.signatures[i].not_after
         )
 }
 
@@ -7301,13 +7301,13 @@ rule cert_blocklist_047801d5b55c800b48411fd8c320ca5b {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "LICHFIELD STUDIO GLASS LIMITED" and 
+            pe.signatures[i].subject contains "LICHFIELD STUDIO GLASS LIMITED" and
             pe.signatures[i].serial == "04:78:01:d5:b5:5c:80:0b:48:41:1f:d8:c3:20:ca:5b" and
-            1592961292 <= pe.signatures[i].not_after
+            1614297600 <= pe.signatures[i].not_after
         )
 }
 
@@ -7319,13 +7319,13 @@ rule cert_blocklist_0f0ed5318848703405d40f7c62d0f39a {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "SIES UPRAVLENIE PROTSESSAMI, OOO" and 
+            pe.signatures[i].subject contains "SIES UPRAVLENIE PROTSESSAMI, OOO" and
             pe.signatures[i].serial == "0f:0e:d5:31:88:48:70:34:05:d4:0f:7c:62:d0:f3:9a" and
-            1592961292 <= pe.signatures[i].not_after
+            1614729600 <= pe.signatures[i].not_after
         )
 }
 
@@ -7337,13 +7337,13 @@ rule cert_blocklist_4e7545c9fc5938f5198ab9f1749ca31c {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "For M d.o.o." and 
+            pe.signatures[i].subject contains "For M d.o.o." and
             pe.signatures[i].serial == "4e:75:45:c9:fc:59:38:f5:19:8a:b9:f1:74:9c:a3:1c" and
-            1592961292 <= pe.signatures[i].not_after
+            1614297600 <= pe.signatures[i].not_after
         )
 }
 
@@ -7355,13 +7355,13 @@ rule cert_blocklist_7ddd3796a427b42f2e52d7c7af0ca54f {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "OOO Fobos" and 
+            pe.signatures[i].subject contains "OOO Fobos" and
             pe.signatures[i].serial == "7d:dd:37:96:a4:27:b4:2f:2e:52:d7:c7:af:0c:a5:4f" and
-            1592961292 <= pe.signatures[i].not_after
+            1612915200 <= pe.signatures[i].not_after
         )
 }
 
@@ -7373,13 +7373,13 @@ rule cert_blocklist_03b27d7f4ee21a462a064a17eef70d6c {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "CCL TRADING LIMITED" and 
+            pe.signatures[i].subject contains "CCL TRADING LIMITED" and
             pe.signatures[i].serial == "03:b2:7d:7f:4e:e2:1a:46:2a:06:4a:17:ee:f7:0d:6c" and
-            1592961292 <= pe.signatures[i].not_after
+            1613952000 <= pe.signatures[i].not_after
         )
 }
 
@@ -7391,15 +7391,15 @@ rule cert_blocklist_b0a308fc2e71ac4ac40677b9c27ccbad {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Volpayk LLC" and (
                 pe.signatures[i].serial == "00:b0:a3:08:fc:2e:71:ac:4a:c4:06:77:b9:c2:7c:cb:ad" or
-                pe.signatures[i].serial == "b0:a3:08:fc:2e:71:ac:4a:c4:06:77:b9:c2:7c:cb:ad" 
+                pe.signatures[i].serial == "b0:a3:08:fc:2e:71:ac:4a:c4:06:77:b9:c2:7c:cb:ad"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1611705600 <= pe.signatures[i].not_after
         )
 }
 
@@ -7411,13 +7411,13 @@ rule cert_blocklist_61b11ef9726ab2e78132e01bd791b336 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "OOO Skalari" and 
+            pe.signatures[i].subject contains "OOO Skalari" and
             pe.signatures[i].serial == "61:b1:1e:f9:72:6a:b2:e7:81:32:e0:1b:d7:91:b3:36" and
-            1592961292 <= pe.signatures[i].not_after
+            1609372800 <= pe.signatures[i].not_after
         )
 }
 
@@ -7429,15 +7429,15 @@ rule cert_blocklist_8fe807310d98357a59382090634b93f0 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "MAVE MEDIA" and (
                 pe.signatures[i].serial == "00:8f:e8:07:31:0d:98:35:7a:59:38:20:90:63:4b:93:f0" or
-                pe.signatures[i].serial == "8f:e8:07:31:0d:98:35:7a:59:38:20:90:63:4b:93:f0" 
+                pe.signatures[i].serial == "8f:e8:07:31:0d:98:35:7a:59:38:20:90:63:4b:93:f0"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1613433600 <= pe.signatures[i].not_after
         )
 }
 
@@ -7449,15 +7449,15 @@ rule cert_blocklist_b97f66bb221772dc07ef1d4bed8f6085 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "S-PRO d.o.o." and (
                 pe.signatures[i].serial == "00:b9:7f:66:bb:22:17:72:dc:07:ef:1d:4b:ed:8f:60:85" or
-                pe.signatures[i].serial == "b9:7f:66:bb:22:17:72:dc:07:ef:1d:4b:ed:8f:60:85" 
+                pe.signatures[i].serial == "b9:7f:66:bb:22:17:72:dc:07:ef:1d:4b:ed:8f:60:85"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1614556800 <= pe.signatures[i].not_after
         )
 }
 
@@ -7469,15 +7469,15 @@ rule cert_blocklist_fed006fbf85cd1c6ba6b4345b198e1e6 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "LoL d.o.o." and (
                 pe.signatures[i].serial == "00:fe:d0:06:fb:f8:5c:d1:c6:ba:6b:43:45:b1:98:e1:e6" or
-                pe.signatures[i].serial == "fe:d0:06:fb:f8:5c:d1:c6:ba:6b:43:45:b1:98:e1:e6" 
+                pe.signatures[i].serial == "fe:d0:06:fb:f8:5c:d1:c6:ba:6b:43:45:b1:98:e1:e6"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1614297600 <= pe.signatures[i].not_after
         )
 }
 
@@ -7489,15 +7489,15 @@ rule cert_blocklist_aa28c9bd16d9d304f18af223b27bfa1e {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Tecno trade d.o.o." and (
                 pe.signatures[i].serial == "00:aa:28:c9:bd:16:d9:d3:04:f1:8a:f2:23:b2:7b:fa:1e" or
-                pe.signatures[i].serial == "aa:28:c9:bd:16:d9:d3:04:f1:8a:f2:23:b2:7b:fa:1e" 
+                pe.signatures[i].serial == "aa:28:c9:bd:16:d9:d3:04:f1:8a:f2:23:b2:7b:fa:1e"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1611705600 <= pe.signatures[i].not_after
         )
 }
 
@@ -7509,13 +7509,13 @@ rule cert_blocklist_19beff8a6c129663e5e8c18953dc1f67 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "CULNADY LTD LTD" and 
+            pe.signatures[i].subject contains "CULNADY LTD LTD" and
             pe.signatures[i].serial == "19:be:ff:8a:6c:12:96:63:e5:e8:c1:89:53:dc:1f:67" and
-            1592961292 <= pe.signatures[i].not_after
+            1608163200 <= pe.signatures[i].not_after
         )
 }
 
@@ -7527,13 +7527,13 @@ rule cert_blocklist_029685cda1c8233d2409a31206f78f9f {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "KOTO TRADE, dru\\xC5\\xBEba za posredovanje, d.o.o." and 
+            pe.signatures[i].subject contains "KOTO TRADE, dru\\xC5\\xBEba za posredovanje, d.o.o." and
             pe.signatures[i].serial == "02:96:85:cd:a1:c8:23:3d:24:09:a3:12:06:f7:8f:9f" and
-            1592961292 <= pe.signatures[i].not_after
+            1612396800 <= pe.signatures[i].not_after
         )
 }
 
@@ -7545,15 +7545,15 @@ rule cert_blocklist_d609b6c95428954a999a8a99d4f198af {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "OOO Fudl" and (
                 pe.signatures[i].serial == "00:d6:09:b6:c9:54:28:95:4a:99:9a:8a:99:d4:f1:98:af" or
-                pe.signatures[i].serial == "d6:09:b6:c9:54:28:95:4a:99:9a:8a:99:d4:f1:98:af" 
+                pe.signatures[i].serial == "d6:09:b6:c9:54:28:95:4a:99:9a:8a:99:d4:f1:98:af"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1612828800 <= pe.signatures[i].not_after
         )
 }
 
@@ -7565,15 +7565,15 @@ rule cert_blocklist_d3356318924c8c42959bf1d1574e6482 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "ADV TOURS d.o.o." and (
                 pe.signatures[i].serial == "00:d3:35:63:18:92:4c:8c:42:95:9b:f1:d1:57:4e:64:82" or
-                pe.signatures[i].serial == "d3:35:63:18:92:4c:8c:42:95:9b:f1:d1:57:4e:64:82" 
+                pe.signatures[i].serial == "d3:35:63:18:92:4c:8c:42:95:9b:f1:d1:57:4e:64:82"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1613001600 <= pe.signatures[i].not_after
         )
 }
 
@@ -7585,13 +7585,13 @@ rule cert_blocklist_31d852f5fca1a5966b5ed08a14825c54 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "BBT KLA d.o.o." and 
+            pe.signatures[i].subject contains "BBT KLA d.o.o." and
             pe.signatures[i].serial == "31:d8:52:f5:fc:a1:a5:96:6b:5e:d0:8a:14:82:5c:54" and
-            1592961292 <= pe.signatures[i].not_after
+            1612396800 <= pe.signatures[i].not_after
         )
 }
 
@@ -7603,13 +7603,13 @@ rule cert_blocklist_17d99cc2f5b29522d422332e681f3e18 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "PKV Trading ApS" and 
+            pe.signatures[i].subject contains "PKV Trading ApS" and
             pe.signatures[i].serial == "17:d9:9c:c2:f5:b2:95:22:d4:22:33:2e:68:1f:3e:18" and
-            1592961292 <= pe.signatures[i].not_after
+            1613088000 <= pe.signatures[i].not_after
         )
 }
 
@@ -7621,13 +7621,13 @@ rule cert_blocklist_6a568f85de2061f67ded98707d4988df {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "OOO Apladis" and 
+            pe.signatures[i].subject contains "OOO Apladis" and
             pe.signatures[i].serial == "6a:56:8f:85:de:20:61:f6:7d:ed:98:70:7d:49:88:df" and
-            1592961292 <= pe.signatures[i].not_after
+            1613001600 <= pe.signatures[i].not_after
         )
 }
 
@@ -7639,13 +7639,13 @@ rule cert_blocklist_038fc745523b41b40d653b83aa381b80 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "OOO Optima" and 
+            pe.signatures[i].subject contains "OOO Optima" and
             pe.signatures[i].serial == "03:8f:c7:45:52:3b:41:b4:0d:65:3b:83:aa:38:1b:80" and
-            1592961292 <= pe.signatures[i].not_after
+            1606143708 <= pe.signatures[i].not_after
         )
 }
 
@@ -7657,13 +7657,13 @@ rule cert_blocklist_30af0d0e6d8201a5369664c5ebbb010f {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "3N-\\xC5\\xA0PORT podjetje za in\\xC5\\xBEeniring, storitve in trgovino d.o.o." and 
+            pe.signatures[i].subject contains "3N-\\xC5\\xA0PORT podjetje za in\\xC5\\xBEeniring, storitve in trgovino d.o.o." and
             pe.signatures[i].serial == "30:af:0d:0e:6d:82:01:a5:36:96:64:c5:eb:bb:01:0f" and
-            1592961292 <= pe.signatures[i].not_after
+            1613433600 <= pe.signatures[i].not_after
         )
 }
 
@@ -7675,15 +7675,15 @@ rule cert_blocklist_ac0a7b9420b369af3ddb748385b981 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "OOO Tochka" and (
                 pe.signatures[i].serial == "00:ac:0a:7b:94:20:b3:69:af:3d:db:74:83:85:b9:81" or
-                pe.signatures[i].serial == "ac:0a:7b:94:20:b3:69:af:3d:db:74:83:85:b9:81" 
+                pe.signatures[i].serial == "ac:0a:7b:94:20:b3:69:af:3d:db:74:83:85:b9:81"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1604620800 <= pe.signatures[i].not_after
         )
 }
 
@@ -7695,15 +7695,15 @@ rule cert_blocklist_c167f04b338b1e8747b92c2197403c43 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "FORTUNE STAR TRADING, INC." and (
                 pe.signatures[i].serial == "00:c1:67:f0:4b:33:8b:1e:87:47:b9:2c:21:97:40:3c:43" or
-                pe.signatures[i].serial == "c1:67:f0:4b:33:8b:1e:87:47:b9:2c:21:97:40:3c:43" 
+                pe.signatures[i].serial == "c1:67:f0:4b:33:8b:1e:87:47:b9:2c:21:97:40:3c:43"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1604361600 <= pe.signatures[i].not_after
         )
 }
 
@@ -7715,15 +7715,15 @@ rule cert_blocklist_9272607cfc982b782a5d36c4b78f5e7b {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Rada SP Z o o" and (
                 pe.signatures[i].serial == "00:92:72:60:7c:fc:98:2b:78:2a:5d:36:c4:b7:8f:5e:7b" or
-                pe.signatures[i].serial == "92:72:60:7c:fc:98:2b:78:2a:5d:36:c4:b7:8f:5e:7b" 
+                pe.signatures[i].serial == "92:72:60:7c:fc:98:2b:78:2a:5d:36:c4:b7:8f:5e:7b"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1605139200 <= pe.signatures[i].not_after
         )
 }
 
@@ -7735,13 +7735,13 @@ rule cert_blocklist_45eb9187a2505d8e6c842e6d366ad0c8 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "BAKERA s.r.o." and 
+            pe.signatures[i].subject contains "BAKERA s.r.o." and
             pe.signatures[i].serial == "45:eb:91:87:a2:50:5d:8e:6c:84:2e:6d:36:6a:d0:c8" and
-            1592961292 <= pe.signatures[i].not_after
+            1607040000 <= pe.signatures[i].not_after
         )
 }
 
@@ -7753,13 +7753,13 @@ rule cert_blocklist_56fff139df5ae7e788e5d72196dd563a {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Cifromatika LLC" and 
+            pe.signatures[i].subject contains "Cifromatika LLC" and
             pe.signatures[i].serial == "56:ff:f1:39:df:5a:e7:e7:88:e5:d7:21:96:dd:56:3a" and
-            1592961292 <= pe.signatures[i].not_after
+            1606435200 <= pe.signatures[i].not_after
         )
 }
 
@@ -7771,15 +7771,15 @@ rule cert_blocklist_e161f76da3b5e4623892c8e6fda1ea3d {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "TGN Nedelica d.o.o." and (
                 pe.signatures[i].serial == "00:e1:61:f7:6d:a3:b5:e4:62:38:92:c8:e6:fd:a1:ea:3d" or
-                pe.signatures[i].serial == "e1:61:f7:6d:a3:b5:e4:62:38:92:c8:e6:fd:a1:ea:3d" 
+                pe.signatures[i].serial == "e1:61:f7:6d:a3:b5:e4:62:38:92:c8:e6:fd:a1:ea:3d"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1604966400 <= pe.signatures[i].not_after
         )
 }
 
@@ -7791,15 +7791,15 @@ rule cert_blocklist_9ae5b177ac3a7ce2aadf1c891b574924 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "OOO Kolorit" and (
                 pe.signatures[i].serial == "00:9a:e5:b1:77:ac:3a:7c:e2:aa:df:1c:89:1b:57:49:24" or
-                pe.signatures[i].serial == "9a:e5:b1:77:ac:3a:7c:e2:aa:df:1c:89:1b:57:49:24" 
+                pe.signatures[i].serial == "9a:e5:b1:77:ac:3a:7c:e2:aa:df:1c:89:1b:57:49:24"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1608076800 <= pe.signatures[i].not_after
         )
 }
 
@@ -7811,15 +7811,15 @@ rule cert_blocklist_a03ea3a4fa772b17037a0b80f1f968aa {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "DREVOKAPITAL, s.r.o." and (
                 pe.signatures[i].serial == "00:a0:3e:a3:a4:fa:77:2b:17:03:7a:0b:80:f1:f9:68:aa" or
-                pe.signatures[i].serial == "a0:3e:a3:a4:fa:77:2b:17:03:7a:0b:80:f1:f9:68:aa" 
+                pe.signatures[i].serial == "a0:3e:a3:a4:fa:77:2b:17:03:7a:0b:80:f1:f9:68:aa"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1608076800 <= pe.signatures[i].not_after
         )
 }
 
@@ -7831,13 +7831,13 @@ rule cert_blocklist_333ca7d100b139b0d9c1a97cb458e226 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "FSE, d.o.o." and 
+            pe.signatures[i].subject contains "FSE, d.o.o." and
             pe.signatures[i].serial == "33:3c:a7:d1:00:b1:39:b0:d9:c1:a9:7c:b4:58:e2:26" and
-            1592961292 <= pe.signatures[i].not_after
+            1608076800 <= pe.signatures[i].not_after
         )
 }
 
@@ -7849,15 +7849,15 @@ rule cert_blocklist_9245d1511923f541844faa3c6bfebcbe {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "LEHTEH d.o.o., Ljubljana" and (
                 pe.signatures[i].serial == "00:92:45:d1:51:19:23:f5:41:84:4f:aa:3c:6b:fe:bc:be" or
-                pe.signatures[i].serial == "92:45:d1:51:19:23:f5:41:84:4f:aa:3c:6b:fe:bc:be" 
+                pe.signatures[i].serial == "92:45:d1:51:19:23:f5:41:84:4f:aa:3c:6b:fe:bc:be"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1607040000 <= pe.signatures[i].not_after
         )
 }
 
@@ -7869,13 +7869,13 @@ rule cert_blocklist_2888cf0f953a4a3640ee4cfc6304d9d4 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Lotte Schmidt" and 
+            pe.signatures[i].subject contains "Lotte Schmidt" and
             pe.signatures[i].serial == "28:88:cf:0f:95:3a:4a:36:40:ee:4c:fc:63:04:d9:d4" and
-            1592961292 <= pe.signatures[i].not_after
+            1608024974 <= pe.signatures[i].not_after
         )
 }
 
@@ -7887,15 +7887,15 @@ rule cert_blocklist_c8edcfe8be174c2f204d858c5b91dea5 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Paarcopy Oy" and (
                 pe.signatures[i].serial == "00:c8:ed:cf:e8:be:17:4c:2f:20:4d:85:8c:5b:91:de:a5" or
-                pe.signatures[i].serial == "c8:ed:cf:e8:be:17:4c:2f:20:4d:85:8c:5b:91:de:a5" 
+                pe.signatures[i].serial == "c8:ed:cf:e8:be:17:4c:2f:20:4d:85:8c:5b:91:de:a5"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1608076800 <= pe.signatures[i].not_after
         )
 }
 
@@ -7907,15 +7907,15 @@ rule cert_blocklist_9faf8705a3eaef9340800cc4fd38597c {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Tekhnokod LLC" and (
                 pe.signatures[i].serial == "00:9f:af:87:05:a3:ea:ef:93:40:80:0c:c4:fd:38:59:7c" or
-                pe.signatures[i].serial == "9f:af:87:05:a3:ea:ef:93:40:80:0c:c4:fd:38:59:7c" 
+                pe.signatures[i].serial == "9f:af:87:05:a3:ea:ef:93:40:80:0c:c4:fd:38:59:7c"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1605744000 <= pe.signatures[i].not_after
         )
 }
 
@@ -7927,13 +7927,13 @@ rule cert_blocklist_0940fa9a4080f35052b2077333769c2f {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "PROFF LAIN, OOO" and 
+            pe.signatures[i].subject contains "PROFF LAIN, OOO" and
             pe.signatures[i].serial == "09:40:fa:9a:40:80:f3:50:52:b2:07:73:33:76:9c:2f" and
-            1592961292 <= pe.signatures[i].not_after
+            1603497600 <= pe.signatures[i].not_after
         )
 }
 
@@ -7945,15 +7945,15 @@ rule cert_blocklist_ea720222d92dc8d48e3b3c3b0fc360a6 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "CAVANAGH NETS LIMITED" and (
                 pe.signatures[i].serial == "00:ea:72:02:22:d9:2d:c8:d4:8e:3b:3c:3b:0f:c3:60:a6" or
-                pe.signatures[i].serial == "ea:72:02:22:d9:2d:c8:d4:8e:3b:3c:3b:0f:c3:60:a6" 
+                pe.signatures[i].serial == "ea:72:02:22:d9:2d:c8:d4:8e:3b:3c:3b:0f:c3:60:a6"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1608640280 <= pe.signatures[i].not_after
         )
 }
 
@@ -7965,13 +7965,13 @@ rule cert_blocklist_4743e140c05b33f0449023946bd05acb {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "STROI RENOV SARL" and 
+            pe.signatures[i].subject contains "STROI RENOV SARL" and
             pe.signatures[i].serial == "47:43:e1:40:c0:5b:33:f0:44:90:23:94:6b:d0:5a:cb" and
-            1592961292 <= pe.signatures[i].not_after
+            1607644800 <= pe.signatures[i].not_after
         )
 }
 
@@ -7983,15 +7983,15 @@ rule cert_blocklist_a496bc774575c31abec861b68c36dcb6 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "ORGLE DVORSAK, d.o.o" and (
                 pe.signatures[i].serial == "00:a4:96:bc:77:45:75:c3:1a:be:c8:61:b6:8c:36:dc:b6" or
-                pe.signatures[i].serial == "a4:96:bc:77:45:75:c3:1a:be:c8:61:b6:8c:36:dc:b6" 
+                pe.signatures[i].serial == "a4:96:bc:77:45:75:c3:1a:be:c8:61:b6:8c:36:dc:b6"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1606867200 <= pe.signatures[i].not_after
         )
 }
 
@@ -8003,13 +8003,13 @@ rule cert_blocklist_0a55c15f733bf1633e9ffae8a6e3b37d {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Osnova OOO" and 
+            pe.signatures[i].subject contains "Osnova OOO" and
             pe.signatures[i].serial == "0a:55:c1:5f:73:3b:f1:63:3e:9f:fa:e8:a6:e3:b3:7d" and
-            1592961292 <= pe.signatures[i].not_after
+            1604016000 <= pe.signatures[i].not_after
         )
 }
 
@@ -8021,15 +8021,15 @@ rule cert_blocklist_c650ae531100a91389a7f030228b3095 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "POKEROWA STRUNA SP Z O O" and (
                 pe.signatures[i].serial == "00:c6:50:ae:53:11:00:a9:13:89:a7:f0:30:22:8b:30:95" or
-                pe.signatures[i].serial == "c6:50:ae:53:11:00:a9:13:89:a7:f0:30:22:8b:30:95" 
+                pe.signatures[i].serial == "c6:50:ae:53:11:00:a9:13:89:a7:f0:30:22:8b:30:95"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1606089600 <= pe.signatures[i].not_after
         )
 }
 
@@ -8041,13 +8041,13 @@ rule cert_blocklist_3990362c34015ce4c23ecc3377fd3c06 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "RZOH ApS" and 
+            pe.signatures[i].subject contains "RZOH ApS" and
             pe.signatures[i].serial == "39:90:36:2c:34:01:5c:e4:c2:3e:cc:33:77:fd:3c:06" and
-            1592961292 <= pe.signatures[i].not_after
+            1606780800 <= pe.signatures[i].not_after
         )
 }
 
@@ -8059,13 +8059,13 @@ rule cert_blocklist_121fca3cfa4bd011669f5cc4e053aa3f {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Kymijoen Projektipalvelut Oy" and 
+            pe.signatures[i].subject contains "Kymijoen Projektipalvelut Oy" and
             pe.signatures[i].serial == "12:1f:ca:3c:fa:4b:d0:11:66:9f:5c:c4:e0:53:aa:3f" and
-            1592961292 <= pe.signatures[i].not_after
+            1606953600 <= pe.signatures[i].not_after
         )
 }
 
@@ -8077,15 +8077,15 @@ rule cert_blocklist_d338f8a490e37e6c2be80a0e349929fa {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "SAGUARO ApS" and (
                 pe.signatures[i].serial == "00:d3:38:f8:a4:90:e3:7e:6c:2b:e8:0a:0e:34:99:29:fa" or
-                pe.signatures[i].serial == "d3:38:f8:a4:90:e3:7e:6c:2b:e8:0a:0e:34:99:29:fa" 
+                pe.signatures[i].serial == "d3:38:f8:a4:90:e3:7e:6c:2b:e8:0a:0e:34:99:29:fa"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1607558400 <= pe.signatures[i].not_after
         )
 }
 
@@ -8097,13 +8097,13 @@ rule cert_blocklist_2c1ee9b583310b5e34a1ee6945a34b26 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "OOO Artmarket" and 
+            pe.signatures[i].subject contains "OOO Artmarket" and
             pe.signatures[i].serial == "2c:1e:e9:b5:83:31:0b:5e:34:a1:ee:69:45:a3:4b:26" and
-            1592961292 <= pe.signatures[i].not_after
+            1607558400 <= pe.signatures[i].not_after
         )
 }
 
@@ -8115,15 +8115,15 @@ rule cert_blocklist_d875b3e3f2db6c3eb426e24946066111 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Kubit LLC" and (
                 pe.signatures[i].serial == "00:d8:75:b3:e3:f2:db:6c:3e:b4:26:e2:49:46:06:61:11" or
-                pe.signatures[i].serial == "d8:75:b3:e3:f2:db:6c:3e:b4:26:e2:49:46:06:61:11" 
+                pe.signatures[i].serial == "d8:75:b3:e3:f2:db:6c:3e:b4:26:e2:49:46:06:61:11"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1606953600 <= pe.signatures[i].not_after
         )
 }
 
@@ -8135,15 +8135,15 @@ rule cert_blocklist_ad0a958cdf188bed43154a54bf23afba {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "RHM Ltd" and (
                 pe.signatures[i].serial == "00:ad:0a:95:8c:df:18:8b:ed:43:15:4a:54:bf:23:af:ba" or
-                pe.signatures[i].serial == "ad:0a:95:8c:df:18:8b:ed:43:15:4a:54:bf:23:af:ba" 
+                pe.signatures[i].serial == "ad:0a:95:8c:df:18:8b:ed:43:15:4a:54:bf:23:af:ba"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1612915200 <= pe.signatures[i].not_after
         )
 }
 
@@ -8155,13 +8155,13 @@ rule cert_blocklist_3cee26c125b8c188f316c3fa78d9c2f1 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Bitubit LLC" and 
+            pe.signatures[i].subject contains "Bitubit LLC" and
             pe.signatures[i].serial == "3c:ee:26:c1:25:b8:c1:88:f3:16:c3:fa:78:d9:c2:f1" and
-            1592961292 <= pe.signatures[i].not_after
+            1606435200 <= pe.signatures[i].not_after
         )
 }
 
@@ -8173,13 +8173,13 @@ rule cert_blocklist_4c687a0022c36f89e253f91d1f6954e2 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "HETCO ApS" and 
+            pe.signatures[i].subject contains "HETCO ApS" and
             pe.signatures[i].serial == "4c:68:7a:00:22:c3:6f:89:e2:53:f9:1d:1f:69:54:e2" and
-            1592961292 <= pe.signatures[i].not_after
+            1606780800 <= pe.signatures[i].not_after
         )
 }
 
@@ -8191,15 +8191,15 @@ rule cert_blocklist_ca646b4275406df639cf603756f63d77 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "SHOECORP LIMITED" and (
                 pe.signatures[i].serial == "00:ca:64:6b:42:75:40:6d:f6:39:cf:60:37:56:f6:3d:77" or
-                pe.signatures[i].serial == "ca:64:6b:42:75:40:6d:f6:39:cf:60:37:56:f6:3d:77" 
+                pe.signatures[i].serial == "ca:64:6b:42:75:40:6d:f6:39:cf:60:37:56:f6:3d:77"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1605830400 <= pe.signatures[i].not_after
         )
 }
 
@@ -8211,15 +8211,15 @@ rule cert_blocklist_addbec454b5479cabd940a72df4500af {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "SHAT LIMITED" and (
                 pe.signatures[i].serial == "00:ad:db:ec:45:4b:54:79:ca:bd:94:0a:72:df:45:00:af" or
-                pe.signatures[i].serial == "ad:db:ec:45:4b:54:79:ca:bd:94:0a:72:df:45:00:af" 
+                pe.signatures[i].serial == "ad:db:ec:45:4b:54:79:ca:bd:94:0a:72:df:45:00:af"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1612828800 <= pe.signatures[i].not_after
         )
 }
 
@@ -8231,15 +8231,15 @@ rule cert_blocklist_ac307e5257bb814b818d3633b630326f {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Aqua Direct s.r.o." and (
                 pe.signatures[i].serial == "00:ac:30:7e:52:57:bb:81:4b:81:8d:36:33:b6:30:32:6f" or
-                pe.signatures[i].serial == "ac:30:7e:52:57:bb:81:4b:81:8d:36:33:b6:30:32:6f" 
+                pe.signatures[i].serial == "ac:30:7e:52:57:bb:81:4b:81:8d:36:33:b6:30:32:6f"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1606089600 <= pe.signatures[i].not_after
         )
 }
 
@@ -8251,13 +8251,13 @@ rule cert_blocklist_0d83e7f47189cdbfc7fa3e5f58882329 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "THE WIZARD GIFT CORPORATION" and 
+            pe.signatures[i].subject contains "THE WIZARD GIFT CORPORATION" and
             pe.signatures[i].serial == "0d:83:e7:f4:71:89:cd:bf:c7:fa:3e:5f:58:88:23:29" and
-            1592961292 <= pe.signatures[i].not_after
+            1605830400 <= pe.signatures[i].not_after
         )
 }
 
@@ -8269,13 +8269,13 @@ rule cert_blocklist_58aa64564a50e8b2d6e31d5cd6250fde {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Foreground" and 
+            pe.signatures[i].subject contains "Foreground" and
             pe.signatures[i].serial == "58:aa:64:56:4a:50:e8:b2:d6:e3:1d:5c:d6:25:0f:de" and
-            1592961292 <= pe.signatures[i].not_after
+            1609002028 <= pe.signatures[i].not_after
         )
 }
 
@@ -8287,13 +8287,13 @@ rule cert_blocklist_2aa0ae245b487c8926c88ee6d736d1ca {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "PILOTE SPRL" and 
+            pe.signatures[i].subject contains "PILOTE SPRL" and
             pe.signatures[i].serial == "2a:a0:ae:24:5b:48:7c:89:26:c8:8e:e6:d7:36:d1:ca" and
-            1592961292 <= pe.signatures[i].not_after
+            1612262280 <= pe.signatures[i].not_after
         )
 }
 
@@ -8305,13 +8305,13 @@ rule cert_blocklist_1aec3d3f752a38617c1d7a677d0b5591 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "SILVER d.o.o." and 
+            pe.signatures[i].subject contains "SILVER d.o.o." and
             pe.signatures[i].serial == "1a:ec:3d:3f:75:2a:38:61:7c:1d:7a:67:7d:0b:55:91" and
-            1592961292 <= pe.signatures[i].not_after
+            1611705600 <= pe.signatures[i].not_after
         )
 }
 
@@ -8323,15 +8323,15 @@ rule cert_blocklist_a7e1dc5352c3852c5523030f57f2425c {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Pushka LLC" and (
                 pe.signatures[i].serial == "00:a7:e1:dc:53:52:c3:85:2c:55:23:03:0f:57:f2:42:5c" or
-                pe.signatures[i].serial == "a7:e1:dc:53:52:c3:85:2c:55:23:03:0f:57:f2:42:5c" 
+                pe.signatures[i].serial == "a7:e1:dc:53:52:c3:85:2c:55:23:03:0f:57:f2:42:5c"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1611792000 <= pe.signatures[i].not_after
         )
 }
 
@@ -8343,15 +8343,15 @@ rule cert_blocklist_bbd4dc3768a51aa2b3059c1bad569276 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "JJ ELECTRICAL SERVICES LIMITED" and (
                 pe.signatures[i].serial == "00:bb:d4:dc:37:68:a5:1a:a2:b3:05:9c:1b:ad:56:92:76" or
-                pe.signatures[i].serial == "bb:d4:dc:37:68:a5:1a:a2:b3:05:9c:1b:ad:56:92:76" 
+                pe.signatures[i].serial == "bb:d4:dc:37:68:a5:1a:a2:b3:05:9c:1b:ad:56:92:76"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1607472000 <= pe.signatures[i].not_after
         )
 }
 
@@ -8363,13 +8363,13 @@ rule cert_blocklist_08622b9dd9d78e67678ecc21e026522e {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Kayak Republic af 2015 APS" and 
+            pe.signatures[i].subject contains "Kayak Republic af 2015 APS" and
             pe.signatures[i].serial == "08:62:2b:9d:d9:d7:8e:67:67:8e:cc:21:e0:26:52:2e" and
-            1592961292 <= pe.signatures[i].not_after
+            1611619200 <= pe.signatures[i].not_after
         )
 }
 
@@ -8381,15 +8381,15 @@ rule cert_blocklist_e69a6de0074ece38c2f30f0d4a808456 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "OOO Semantic" and (
                 pe.signatures[i].serial == "00:e6:9a:6d:e0:07:4e:ce:38:c2:f3:0f:0d:4a:80:84:56" or
-                pe.signatures[i].serial == "e6:9a:6d:e0:07:4e:ce:38:c2:f3:0f:0d:4a:80:84:56" 
+                pe.signatures[i].serial == "e6:9a:6d:e0:07:4e:ce:38:c2:f3:0f:0d:4a:80:84:56"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1611532800 <= pe.signatures[i].not_after
         )
 }
 
@@ -8401,15 +8401,15 @@ rule cert_blocklist_8385684419ab26a3f2640b1496e1fe94 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "CAUSE FOR CHANGE LTD" and (
                 pe.signatures[i].serial == "00:83:85:68:44:19:ab:26:a3:f2:64:0b:14:96:e1:fe:94" or
-                pe.signatures[i].serial == "83:85:68:44:19:ab:26:a3:f2:64:0b:14:96:e1:fe:94" 
+                pe.signatures[i].serial == "83:85:68:44:19:ab:26:a3:f2:64:0b:14:96:e1:fe:94"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1612137600 <= pe.signatures[i].not_after
         )
 }
 
@@ -8421,13 +8421,13 @@ rule cert_blocklist_21e3cae5b77c41528658ada08509c392 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Network Design International Holdings Limited" and 
+            pe.signatures[i].subject contains "Network Design International Holdings Limited" and
             pe.signatures[i].serial == "21:e3:ca:e5:b7:7c:41:52:86:58:ad:a0:85:09:c3:92" and
-            1592961292 <= pe.signatures[i].not_after
+            1609233559 <= pe.signatures[i].not_after
         )
 }
 
@@ -8439,13 +8439,13 @@ rule cert_blocklist_2abd2eef14d480dfea9ca9fdd823cf03 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "BE SOL d.o.o." and 
+            pe.signatures[i].subject contains "BE SOL d.o.o." and
             pe.signatures[i].serial == "2a:bd:2e:ef:14:d4:80:df:ea:9c:a9:fd:d8:23:cf:03" and
-            1592961292 <= pe.signatures[i].not_after
+            1611100800 <= pe.signatures[i].not_after
         )
 }
 
@@ -8457,15 +8457,15 @@ rule cert_blocklist_86909b91f07f9316984d888d1e28ab76 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Dantherm Intelligent Monitoring A/S" and (
                 pe.signatures[i].serial == "00:86:90:9b:91:f0:7f:93:16:98:4d:88:8d:1e:28:ab:76" or
-                pe.signatures[i].serial == "86:90:9b:91:f0:7f:93:16:98:4d:88:8d:1e:28:ab:76" 
+                pe.signatures[i].serial == "86:90:9b:91:f0:7f:93:16:98:4d:88:8d:1e:28:ab:76"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1611273600 <= pe.signatures[i].not_after
         )
 }
 
@@ -8477,15 +8477,15 @@ rule cert_blocklist_d1b8f1fe56381befdb2e73ffef2a4b28 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Sein\\xC3\\xA4joen Squash ja Bowling Oy" and (
                 pe.signatures[i].serial == "00:d1:b8:f1:fe:56:38:1b:ef:db:2e:73:ff:ef:2a:4b:28" or
-                pe.signatures[i].serial == "d1:b8:f1:fe:56:38:1b:ef:db:2e:73:ff:ef:2a:4b:28" 
+                pe.signatures[i].serial == "d1:b8:f1:fe:56:38:1b:ef:db:2e:73:ff:ef:2a:4b:28"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1617667200 <= pe.signatures[i].not_after
         )
 }
 
@@ -8497,15 +8497,15 @@ rule cert_blocklist_d4ef1ab6ab5d3cb35e4efb7984def7a2 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "REIGN BROS ApS" and (
                 pe.signatures[i].serial == "00:d4:ef:1a:b6:ab:5d:3c:b3:5e:4e:fb:79:84:de:f7:a2" or
-                pe.signatures[i].serial == "d4:ef:1a:b6:ab:5d:3c:b3:5e:4e:fb:79:84:de:f7:a2" 
+                pe.signatures[i].serial == "d4:ef:1a:b6:ab:5d:3c:b3:5e:4e:fb:79:84:de:f7:a2"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1611187200 <= pe.signatures[i].not_after
         )
 }
 
@@ -8517,13 +8517,13 @@ rule cert_blocklist_066276af2f2c7e246d3b1cab1b4aa42e {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "IQ Trade ApS" and 
+            pe.signatures[i].subject contains "IQ Trade ApS" and
             pe.signatures[i].serial == "06:62:76:af:2f:2c:7e:24:6d:3b:1c:ab:1b:4a:a4:2e" and
-            1592961292 <= pe.signatures[i].not_after
+            1616630400 <= pe.signatures[i].not_after
         )
 }
 
@@ -8535,13 +8535,13 @@ rule cert_blocklist_65cd323c2483668b90a44a711d2a6b98 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "OOO Giperion" and 
+            pe.signatures[i].subject contains "OOO Giperion" and
             pe.signatures[i].serial == "65:cd:32:3c:24:83:66:8b:90:a4:4a:71:1d:2a:6b:98" and
-            1592961292 <= pe.signatures[i].not_after
+            1602547200 <= pe.signatures[i].not_after
         )
 }
 
@@ -8553,13 +8553,13 @@ rule cert_blocklist_5a17d5de74fd8f09df596df3123139bb {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "ACTA FIS d.o.o." and 
+            pe.signatures[i].subject contains "ACTA FIS d.o.o." and
             pe.signatures[i].serial == "5a:17:d5:de:74:fd:8f:09:df:59:6d:f3:12:31:39:bb" and
-            1592961292 <= pe.signatures[i].not_after
+            1611273600 <= pe.signatures[i].not_after
         )
 }
 
@@ -8571,13 +8571,13 @@ rule cert_blocklist_15da61d7e1a631803431561674fb9b90 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "JAY DANCE STUDIO d.o.o." and 
+            pe.signatures[i].subject contains "JAY DANCE STUDIO d.o.o." and
             pe.signatures[i].serial == "15:da:61:d7:e1:a6:31:80:34:31:56:16:74:fb:9b:90" and
-            1592961292 <= pe.signatures[i].not_after
+            1610668800 <= pe.signatures[i].not_after
         )
 }
 
@@ -8589,13 +8589,13 @@ rule cert_blocklist_7ab21306b11ff280a93fc445876988ab {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "ABC BIOS d.o.o." and 
+            pe.signatures[i].subject contains "ABC BIOS d.o.o." and
             pe.signatures[i].serial == "7a:b2:13:06:b1:1f:f2:80:a9:3f:c4:45:87:69:88:ab" and
-            1592961292 <= pe.signatures[i].not_after
+            1611014400 <= pe.signatures[i].not_after
         )
 }
 
@@ -8607,13 +8607,13 @@ rule cert_blocklist_634e16e38f12e9a71aca08e4c6b2dbb9 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "AUTO RESPONSE LTD CYF" and 
+            pe.signatures[i].subject contains "AUTO RESPONSE LTD CYF" and
             pe.signatures[i].serial == "63:4e:16:e3:8f:12:e9:a7:1a:ca:08:e4:c6:b2:db:b9" and
-            1592961292 <= pe.signatures[i].not_after
+            1616112000 <= pe.signatures[i].not_after
         )
 }
 
@@ -8625,13 +8625,13 @@ rule cert_blocklist_289051a83f350a2c600187c99b6c0a73 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "HALL HAULAGE LTD LTD" and 
+            pe.signatures[i].subject contains "HALL HAULAGE LTD LTD" and
             pe.signatures[i].serial == "28:90:51:a8:3f:35:0a:2c:60:01:87:c9:9b:6c:0a:73" and
-            1592961292 <= pe.signatures[i].not_after
+            1616716800 <= pe.signatures[i].not_after
         )
 }
 
@@ -8643,15 +8643,15 @@ rule cert_blocklist_818631110b5d14331dac7e6ad998b902 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "2 TOY GUYS LLC" and (
                 pe.signatures[i].serial == "00:81:86:31:11:0b:5d:14:33:1d:ac:7e:6a:d9:98:b9:02" or
-                pe.signatures[i].serial == "81:86:31:11:0b:5d:14:33:1d:ac:7e:6a:d9:98:b9:02" 
+                pe.signatures[i].serial == "81:86:31:11:0b:5d:14:33:1d:ac:7e:6a:d9:98:b9:02"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1571616000 <= pe.signatures[i].not_after
         )
 }
 
@@ -8663,13 +8663,13 @@ rule cert_blocklist_277cd16de5d61b9398b645afe41c09c7 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "THE SIGN COMPANY LIMITED" and 
+            pe.signatures[i].subject contains "THE SIGN COMPANY LIMITED" and
             pe.signatures[i].serial == "27:7c:d1:6d:e5:d6:1b:93:98:b6:45:af:e4:1c:09:c7" and
-            1592961292 <= pe.signatures[i].not_after
+            1619049600 <= pe.signatures[i].not_after
         )
 }
 
@@ -8681,15 +8681,15 @@ rule cert_blocklist_d0eda76c13d30c97015708790bb94214 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "LAEN ApS" and (
                 pe.signatures[i].serial == "00:d0:ed:a7:6c:13:d3:0c:97:01:57:08:79:0b:b9:42:14" or
-                pe.signatures[i].serial == "d0:ed:a7:6c:13:d3:0c:97:01:57:08:79:0b:b9:42:14" 
+                pe.signatures[i].serial == "d0:ed:a7:6c:13:d3:0c:97:01:57:08:79:0b:b9:42:14"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1619136000 <= pe.signatures[i].not_after
         )
 }
 
@@ -8701,13 +8701,13 @@ rule cert_blocklist_6333ed618f88a05b4d82ad7bf66cb0fa {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "RHM LIMITED" and 
+            pe.signatures[i].subject contains "RHM LIMITED" and
             pe.signatures[i].serial == "63:33:ed:61:8f:88:a0:5b:4d:82:ad:7b:f6:6c:b0:fa" and
-            1592961292 <= pe.signatures[i].not_after
+            1616457600 <= pe.signatures[i].not_after
         )
 }
 
@@ -8719,13 +8719,13 @@ rule cert_blocklist_3b777165b125bccc181d0bac3f5b55b3 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "STAND ALONE MUSIC LTD" and 
+            pe.signatures[i].subject contains "STAND ALONE MUSIC LTD" and
             pe.signatures[i].serial == "3b:77:71:65:b1:25:bc:cc:18:1d:0b:ac:3f:5b:55:b3" and
-            1592961292 <= pe.signatures[i].not_after
+            1607299200 <= pe.signatures[i].not_after
         )
 }
 
@@ -8737,13 +8737,13 @@ rule cert_blocklist_5b37ac3479283b6f9d75ddf0f8742d06 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "ART BOOK PHOTO s.r.o." and 
+            pe.signatures[i].subject contains "ART BOOK PHOTO s.r.o." and
             pe.signatures[i].serial == "5b:37:ac:34:79:28:3b:6f:9d:75:dd:f0:f8:74:2d:06" and
-            1592961292 <= pe.signatures[i].not_after
+            1619740800 <= pe.signatures[i].not_after
         )
 }
 
@@ -8755,13 +8755,13 @@ rule cert_blocklist_3112c69d460c781fd649c71e61bfec82 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "KREATURHANDLER BJARNE ANDERSEN ApS" and 
+            pe.signatures[i].subject contains "KREATURHANDLER BJARNE ANDERSEN ApS" and
             pe.signatures[i].serial == "31:12:c6:9d:46:0c:78:1f:d6:49:c7:1e:61:bf:ec:82" and
-            1592961292 <= pe.signatures[i].not_after
+            1614902400 <= pe.signatures[i].not_after
         )
 }
 
@@ -8773,13 +8773,13 @@ rule cert_blocklist_0a5b4f67ad8b22afc2debe6ce5f8f679 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Farad LLC" and 
+            pe.signatures[i].subject contains "Farad LLC" and
             pe.signatures[i].serial == "0a:5b:4f:67:ad:8b:22:af:c2:de:be:6c:e5:f8:f6:79" and
-            1592961292 <= pe.signatures[i].not_after
+            1607472000 <= pe.signatures[i].not_after
         )
 }
 
@@ -8791,15 +8791,15 @@ rule cert_blocklist_df45b36c9d0bd248c3f9494e7ca822 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "MPO STORITVE d.o.o." and (
                 pe.signatures[i].serial == "00:df:45:b3:6c:9d:0b:d2:48:c3:f9:49:4e:7c:a8:22" or
-                pe.signatures[i].serial == "df:45:b3:6c:9d:0b:d2:48:c3:f9:49:4e:7c:a8:22" 
+                pe.signatures[i].serial == "df:45:b3:6c:9d:0b:d2:48:c3:f9:49:4e:7c:a8:22"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1619740800 <= pe.signatures[i].not_after
         )
 }
 
@@ -8811,13 +8811,13 @@ rule cert_blocklist_1ae3c4eccecda2127d43be390a850dda {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "PARTYNET LIMITED" and 
+            pe.signatures[i].subject contains "PARTYNET LIMITED" and
             pe.signatures[i].serial == "1a:e3:c4:ec:ce:cd:a2:12:7d:43:be:39:0a:85:0d:da" and
-            1592961292 <= pe.signatures[i].not_after
+            1614902400 <= pe.signatures[i].not_after
         )
 }
 
@@ -8829,13 +8829,13 @@ rule cert_blocklist_2e36360538624c9b1afd78a2fb756028 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Ts Trade ApS" and 
+            pe.signatures[i].subject contains "Ts Trade ApS" and
             pe.signatures[i].serial == "2e:36:36:05:38:62:4c:9b:1a:fd:78:a2:fb:75:60:28" and
-            1592961292 <= pe.signatures[i].not_after
+            1615766400 <= pe.signatures[i].not_after
         )
 }
 
@@ -8847,15 +8847,15 @@ rule cert_blocklist_addb899f8229fd53e6435e08bbd3a733 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "U.K. STEEL EXPORTS LIMITED" and (
                 pe.signatures[i].serial == "00:ad:db:89:9f:82:29:fd:53:e6:43:5e:08:bb:d3:a7:33" or
-                pe.signatures[i].serial == "ad:db:89:9f:82:29:fd:53:e6:43:5e:08:bb:d3:a7:33" 
+                pe.signatures[i].serial == "ad:db:89:9f:82:29:fd:53:e6:43:5e:08:bb:d3:a7:33"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1616630400 <= pe.signatures[i].not_after
         )
 }
 
@@ -8867,15 +8867,15 @@ rule cert_blocklist_c1a1db95d7bf80290aa6e82d8f8f996a {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Software Two Pty Ltd" and (
                 pe.signatures[i].serial == "00:c1:a1:db:95:d7:bf:80:29:0a:a6:e8:2d:8f:8f:99:6a" or
-                pe.signatures[i].serial == "c1:a1:db:95:d7:bf:80:29:0a:a6:e8:2d:8f:8f:99:6a" 
+                pe.signatures[i].serial == "c1:a1:db:95:d7:bf:80:29:0a:a6:e8:2d:8f:8f:99:6a"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1615334400 <= pe.signatures[i].not_after
         )
 }
 
@@ -8887,15 +8887,15 @@ rule cert_blocklist_c667ffe3a5b0a5ae7cf3a9e41682e91b {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "NAILS UNLIMITED LIMITED" and (
                 pe.signatures[i].serial == "00:c6:67:ff:e3:a5:b0:a5:ae:7c:f3:a9:e4:16:82:e9:1b" or
-                pe.signatures[i].serial == "c6:67:ff:e3:a5:b0:a5:ae:7c:f3:a9:e4:16:82:e9:1b" 
+                pe.signatures[i].serial == "c6:67:ff:e3:a5:b0:a5:ae:7c:f3:a9:e4:16:82:e9:1b"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1616976000 <= pe.signatures[i].not_after
         )
 }
 
@@ -8907,15 +8907,15 @@ rule cert_blocklist_e0a83917660d05cf476374659d3c7b85 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "PIK MOTEL S.R.L." and (
                 pe.signatures[i].serial == "00:e0:a8:39:17:66:0d:05:cf:47:63:74:65:9d:3c:7b:85" or
-                pe.signatures[i].serial == "e0:a8:39:17:66:0d:05:cf:47:63:74:65:9d:3c:7b:85" 
+                pe.signatures[i].serial == "e0:a8:39:17:66:0d:05:cf:47:63:74:65:9d:3c:7b:85"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1621468800 <= pe.signatures[i].not_after
         )
 }
 
@@ -8927,15 +8927,15 @@ rule cert_blocklist_afc5522898143aafaab7fd52304cf00c {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "YAN CHING LIMITED" and (
                 pe.signatures[i].serial == "00:af:c5:52:28:98:14:3a:af:aa:b7:fd:52:30:4c:f0:0c" or
-                pe.signatures[i].serial == "af:c5:52:28:98:14:3a:af:aa:b7:fd:52:30:4c:f0:0c" 
+                pe.signatures[i].serial == "af:c5:52:28:98:14:3a:af:aa:b7:fd:52:30:4c:f0:0c"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1622419200 <= pe.signatures[i].not_after
         )
 }
 
@@ -8947,15 +8947,15 @@ rule cert_blocklist_8b3333d32b2c2a1d33b41ba5db9d4d2d {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "BOOK CAF\\xC3\\x89, s.r.o." and (
                 pe.signatures[i].serial == "00:8b:33:33:d3:2b:2c:2a:1d:33:b4:1b:a5:db:9d:4d:2d" or
-                pe.signatures[i].serial == "8b:33:33:d3:2b:2c:2a:1d:33:b4:1b:a5:db:9d:4d:2d" 
+                pe.signatures[i].serial == "8b:33:33:d3:2b:2c:2a:1d:33:b4:1b:a5:db:9d:4d:2d"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1620000000 <= pe.signatures[i].not_after
         )
 }
 
@@ -8967,15 +8967,15 @@ rule cert_blocklist_fbb1198bd8bddb0d693eb72a8613fe3f {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Trade Hunters, s. r. o." and (
                 pe.signatures[i].serial == "00:fb:b1:19:8b:d8:bd:db:0d:69:3e:b7:2a:86:13:fe:3f" or
-                pe.signatures[i].serial == "fb:b1:19:8b:d8:bd:db:0d:69:3e:b7:2a:86:13:fe:3f" 
+                pe.signatures[i].serial == "fb:b1:19:8b:d8:bd:db:0d:69:3e:b7:2a:86:13:fe:3f"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1620000000 <= pe.signatures[i].not_after
         )
 }
 
@@ -8987,15 +8987,15 @@ rule cert_blocklist_846f77d9919fc4405aefe1701309bd67 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "IPM Skupina d.o.o." and (
                 pe.signatures[i].serial == "00:84:6f:77:d9:91:9f:c4:40:5a:ef:e1:70:13:09:bd:67" or
-                pe.signatures[i].serial == "84:6f:77:d9:91:9f:c4:40:5a:ef:e1:70:13:09:bd:67" 
+                pe.signatures[i].serial == "84:6f:77:d9:91:9f:c4:40:5a:ef:e1:70:13:09:bd:67"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1621382400 <= pe.signatures[i].not_after
         )
 }
 
@@ -9007,13 +9007,13 @@ rule cert_blocklist_0939c2bad859c0432e8e98a6c0162c02 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Activ Expeditions ApS" and 
+            pe.signatures[i].subject contains "Activ Expeditions ApS" and
             pe.signatures[i].serial == "09:39:c2:ba:d8:59:c0:43:2e:8e:98:a6:c0:16:2c:02" and
-            1592961292 <= pe.signatures[i].not_after
+            1615939200 <= pe.signatures[i].not_after
         )
 }
 
@@ -9025,13 +9025,13 @@ rule cert_blocklist_7fba0e19919ac50d700ba60250d02c8b {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "OOO Diamartis" and 
+            pe.signatures[i].subject contains "OOO Diamartis" and
             pe.signatures[i].serial == "7f:ba:0e:19:91:9a:c5:0d:70:0b:a6:02:50:d0:2c:8b" and
-            1592961292 <= pe.signatures[i].not_after
+            1623196800 <= pe.signatures[i].not_after
         )
 }
 
@@ -9043,15 +9043,15 @@ rule cert_blocklist_a758504e7971869d0aec2775fffa03d5 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Amcert LLC" and (
                 pe.signatures[i].serial == "00:a7:58:50:4e:79:71:86:9d:0a:ec:27:75:ff:fa:03:d5" or
-                pe.signatures[i].serial == "a7:58:50:4e:79:71:86:9d:0a:ec:27:75:ff:fa:03:d5" 
+                pe.signatures[i].serial == "a7:58:50:4e:79:71:86:9d:0a:ec:27:75:ff:fa:03:d5"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1623628800 <= pe.signatures[i].not_after
         )
 }
 
@@ -9063,13 +9063,13 @@ rule cert_blocklist_37a67cf754ee5ae284b4cf8b9d651604 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "FORTH PROPERTY LTD" and 
+            pe.signatures[i].subject contains "FORTH PROPERTY LTD" and
             pe.signatures[i].serial == "37:a6:7c:f7:54:ee:5a:e2:84:b4:cf:8b:9d:65:16:04" and
-            1592961292 <= pe.signatures[i].not_after
+            1617321600 <= pe.signatures[i].not_after
         )
 }
 
@@ -9081,13 +9081,13 @@ rule cert_blocklist_119acead668bad57a48b4f42f294f8f0 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "PB03 TRANSPORT LTD." and 
+            pe.signatures[i].subject contains "PB03 TRANSPORT LTD." and
             pe.signatures[i].serial == "11:9a:ce:ad:66:8b:ad:57:a4:8b:4f:42:f2:94:f8:f0" and
-            1592961292 <= pe.signatures[i].not_after
+            1619654400 <= pe.signatures[i].not_after
         )
 }
 
@@ -9099,13 +9099,13 @@ rule cert_blocklist_7a6d30a6eb2fa0c3369283725704ac4c {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Trade By International ApS" and 
+            pe.signatures[i].subject contains "Trade By International ApS" and
             pe.signatures[i].serial == "7a:6d:30:a6:eb:2f:a0:c3:36:92:83:72:57:04:ac:4c" and
-            1592961292 <= pe.signatures[i].not_after
+            1619568000 <= pe.signatures[i].not_after
         )
 }
 
@@ -9117,13 +9117,13 @@ rule cert_blocklist_670c3494206b9f0c18714fdcffaaa42f {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "ADRIATIK PORT SERVIS, d.o.o." and 
+            pe.signatures[i].subject contains "ADRIATIK PORT SERVIS, d.o.o." and
             pe.signatures[i].serial == "67:0c:34:94:20:6b:9f:0c:18:71:4f:dc:ff:aa:a4:2f" and
-            1592961292 <= pe.signatures[i].not_after
+            1622160000 <= pe.signatures[i].not_after
         )
 }
 
@@ -9135,13 +9135,13 @@ rule cert_blocklist_0e8aa328af207ce8bcae1dc15c626188 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "PRO SAT SRL" and 
+            pe.signatures[i].subject contains "PRO SAT SRL" and
             pe.signatures[i].serial == "0e:8a:a3:28:af:20:7c:e8:bc:ae:1d:c1:5c:62:61:88" and
-            1592961292 <= pe.signatures[i].not_after
+            1627344000 <= pe.signatures[i].not_after
         )
 }
 
@@ -9153,15 +9153,15 @@ rule cert_blocklist_cfad6be1d823b4eacb803b720f525a7d {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Sistema LLC" and (
                 pe.signatures[i].serial == "00:cf:ad:6b:e1:d8:23:b4:ea:cb:80:3b:72:0f:52:5a:7d" or
-                pe.signatures[i].serial == "cf:ad:6b:e1:d8:23:b4:ea:cb:80:3b:72:0f:52:5a:7d" 
+                pe.signatures[i].serial == "cf:ad:6b:e1:d8:23:b4:ea:cb:80:3b:72:0f:52:5a:7d"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1627430400 <= pe.signatures[i].not_after
         )
 }
 
@@ -9173,13 +9173,13 @@ rule cert_blocklist_7ebcb54b7e0e6410b28610de0743d4dd {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "SIA \"MWorx\"" and 
+            pe.signatures[i].subject contains "SIA \"MWorx\"" and
             pe.signatures[i].serial == "7e:bc:b5:4b:7e:0e:64:10:b2:86:10:de:07:43:d4:dd" and
-            1592961292 <= pe.signatures[i].not_after
+            1625616000 <= pe.signatures[i].not_after
         )
 }
 
@@ -9191,13 +9191,13 @@ rule cert_blocklist_01106cc293772ca905a2b6eff02bf0f5 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "DMR Consulting Ltd." and 
+            pe.signatures[i].subject contains "DMR Consulting Ltd." and
             pe.signatures[i].serial == "01:10:6c:c2:93:77:2c:a9:05:a2:b6:ef:f0:2b:f0:f5" and
-            1592961292 <= pe.signatures[i].not_after
+            1627084800 <= pe.signatures[i].not_after
         )
 }
 
@@ -9209,13 +9209,13 @@ rule cert_blocklist_05bb162f6efe852b7bd4712fd737a61e {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Wellpro Impact Solutions Oy" and 
+            pe.signatures[i].subject contains "Wellpro Impact Solutions Oy" and
             pe.signatures[i].serial == "05:bb:16:2f:6e:fe:85:2b:7b:d4:71:2f:d7:37:a6:1e" and
-            1592961292 <= pe.signatures[i].not_after
+            1628726400 <= pe.signatures[i].not_after
         )
 }
 
@@ -9227,13 +9227,13 @@ rule cert_blocklist_6171990ba1c8e71049ebb296a35bd160 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "OWLNET LIMITED" and 
+            pe.signatures[i].subject contains "OWLNET LIMITED" and
             pe.signatures[i].serial == "61:71:99:0b:a1:c8:e7:10:49:eb:b2:96:a3:5b:d1:60" and
-            1592961292 <= pe.signatures[i].not_after
+            1620000000 <= pe.signatures[i].not_after
         )
 }
 
@@ -9245,13 +9245,13 @@ rule cert_blocklist_2114ca3bd2afd63d7fa29d744992b043 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "MATCH CONSULTANTS LTD" and 
+            pe.signatures[i].subject contains "MATCH CONSULTANTS LTD" and
             pe.signatures[i].serial == "21:14:ca:3b:d2:af:d6:3d:7f:a2:9d:74:49:92:b0:43" and
-            1592961292 <= pe.signatures[i].not_after
+            1625097600 <= pe.signatures[i].not_after
         )
 }
 
@@ -9263,13 +9263,13 @@ rule cert_blocklist_6aaa62208a3a78bfac1443007d031e61 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Solar LLC" and 
+            pe.signatures[i].subject contains "Solar LLC" and
             pe.signatures[i].serial == "6a:aa:62:20:8a:3a:78:bf:ac:14:43:00:7d:03:1e:61" and
-            1592961292 <= pe.signatures[i].not_after
+            1608163200 <= pe.signatures[i].not_after
         )
 }
 
@@ -9281,13 +9281,13 @@ rule cert_blocklist_09450b8f73ea43e39d2cdd56049dbe40 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE4\\xB9\\x9D\\xE6\\xB1\\x9F\\xE5\\xAE\\x8F\\xE5\\x9B\\xBE\\xE6\\x97\\xA0\\xE5\\xBF\\xA7\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and 
+            pe.signatures[i].subject contains "\\xE4\\xB9\\x9D\\xE6\\xB1\\x9F\\xE5\\xAE\\x8F\\xE5\\x9B\\xBE\\xE6\\x97\\xA0\\xE5\\xBF\\xA7\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
             pe.signatures[i].serial == "09:45:0b:8f:73:ea:43:e3:9d:2c:dd:56:04:9d:be:40" and
-            1592961292 <= pe.signatures[i].not_after
+            1561602110 <= pe.signatures[i].not_after
         )
 }
 
@@ -9299,13 +9299,13 @@ rule cert_blocklist_0efd9bd4b4281c6522d96011df46c9c4 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE9\\x9B\\xB7\\xE7\\xA5\\x9E\\xEF\\xBC\\x88\\xE6\\xAD\\xA6\\xE6\\xB1\\x89\\xEF\\xBC\\x89\\xE4\\xBF\\xA1\\xE6\\x81\\xAF\\xE6\\x8A\\x80\\xE6\\x9C\\xAF\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and 
+            pe.signatures[i].subject contains "\\xE9\\x9B\\xB7\\xE7\\xA5\\x9E\\xEF\\xBC\\x88\\xE6\\xAD\\xA6\\xE6\\xB1\\x89\\xEF\\xBC\\x89\\xE4\\xBF\\xA1\\xE6\\x81\\xAF\\xE6\\x8A\\x80\\xE6\\x9C\\xAF\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
             pe.signatures[i].serial == "0e:fd:9b:d4:b4:28:1c:65:22:d9:60:11:df:46:c9:c4" and
-            1592961292 <= pe.signatures[i].not_after
+            1586249095 <= pe.signatures[i].not_after
         )
 }
 
@@ -9317,13 +9317,13 @@ rule cert_blocklist_0dd7d4a785990584d8c0837659173272 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE9\\x9B\\xB7\\xE7\\xA5\\x9E\\xEF\\xBC\\x88\\xE6\\xAD\\xA6\\xE6\\xB1\\x89\\xEF\\xBC\\x89\\xE4\\xBF\\xA1\\xE6\\x81\\xAF\\xE6\\x8A\\x80\\xE6\\x9C\\xAF\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and 
+            pe.signatures[i].subject contains "\\xE9\\x9B\\xB7\\xE7\\xA5\\x9E\\xEF\\xBC\\x88\\xE6\\xAD\\xA6\\xE6\\xB1\\x89\\xEF\\xBC\\x89\\xE4\\xBF\\xA1\\xE6\\x81\\xAF\\xE6\\x8A\\x80\\xE6\\x9C\\xAF\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
             pe.signatures[i].serial == "0d:d7:d4:a7:85:99:05:84:d8:c0:83:76:59:17:32:72" and
-            1592961292 <= pe.signatures[i].not_after
+            1586249095 <= pe.signatures[i].not_after
         )
 }
 
@@ -9335,13 +9335,13 @@ rule cert_blocklist_0c59d46580f039af2c4ab6ba0ffed197 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE5\\xA4\\xA7\\xE8\\xBF\\x9E\\xE7\\xBA\\xB5\\xE6\\xA2\\xA6\\xE7\\xBD\\x91\\xE7\\xBB\\x9C\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and 
+            pe.signatures[i].subject contains "\\xE5\\xA4\\xA7\\xE8\\xBF\\x9E\\xE7\\xBA\\xB5\\xE6\\xA2\\xA6\\xE7\\xBD\\x91\\xE7\\xBB\\x9C\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
             pe.signatures[i].serial == "0c:59:d4:65:80:f0:39:af:2c:4a:b6:ba:0f:fe:d1:97" and
-            1592961292 <= pe.signatures[i].not_after
+            1585108595 <= pe.signatures[i].not_after
         )
 }
 
@@ -9353,13 +9353,13 @@ rule cert_blocklist_0448ec8d26597f99912138500cc41c1b {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE5\\xA4\\xA7\\xE8\\xBF\\x9E\\xE7\\xBA\\xB5\\xE6\\xA2\\xA6\\xE7\\xBD\\x91\\xE7\\xBB\\x9C\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and 
+            pe.signatures[i].subject contains "\\xE5\\xA4\\xA7\\xE8\\xBF\\x9E\\xE7\\xBA\\xB5\\xE6\\xA2\\xA6\\xE7\\xBD\\x91\\xE7\\xBB\\x9C\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
             pe.signatures[i].serial == "04:48:ec:8d:26:59:7f:99:91:21:38:50:0c:c4:1c:1b" and
-            1592961292 <= pe.signatures[i].not_after
+            1585108595 <= pe.signatures[i].not_after
         )
 }
 
@@ -9371,13 +9371,13 @@ rule cert_blocklist_0108cbaee60728f5bf06e45a56d6f170 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE6\\xAD\\xA6\\xE6\\xB1\\x89\\xE4\\xB8\\x9C\\xE6\\xB9\\x96\\xE6\\x96\\xB0\\xE6\\x8A\\x80\\xE6\\x9C\\xAF\\xE5\\xBC\\x80\\xE5\\x8F\\x91\\xE5\\x8C\\xBA" and 
+            pe.signatures[i].subject contains "\\xE6\\xAD\\xA6\\xE6\\xB1\\x89\\xE4\\xB8\\x9C\\xE6\\xB9\\x96\\xE6\\x96\\xB0\\xE6\\x8A\\x80\\xE6\\x9C\\xAF\\xE5\\xBC\\x80\\xE5\\x8F\\x91\\xE5\\x8C\\xBA" and
             pe.signatures[i].serial == "01:08:cb:ae:e6:07:28:f5:bf:06:e4:5a:56:d6:f1:70" and
-            1592961292 <= pe.signatures[i].not_after
+            1605680260 <= pe.signatures[i].not_after
         )
 }
 
@@ -9389,13 +9389,13 @@ rule cert_blocklist_038d56a12153e8b5c74c69bff65cbe3f {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE6\\xAD\\xA6\\xE6\\xB1\\x89\\xE4\\xB8\\x9C\\xE6\\xB9\\x96\\xE6\\x96\\xB0\\xE6\\x8A\\x80\\xE6\\x9C\\xAF\\xE5\\xBC\\x80\\xE5\\x8F\\x91\\xE5\\x8C\\xBA" and 
+            pe.signatures[i].subject contains "\\xE6\\xAD\\xA6\\xE6\\xB1\\x89\\xE5\\x86\\x85\\xE7\\x91\\x9F\\xE6\\x96\\xAF\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
             pe.signatures[i].serial == "03:8d:56:a1:21:53:e8:b5:c7:4c:69:bf:f6:5c:be:3f" and
-            1592961292 <= pe.signatures[i].not_after
+            1605680260 <= pe.signatures[i].not_after
         )
 }
 
@@ -9407,13 +9407,13 @@ rule cert_blocklist_060d94e2ccae84536654d9daf39fef1e {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "HasCred ApS" and 
+            pe.signatures[i].subject contains "HasCred ApS" and
             pe.signatures[i].serial == "06:0d:94:e2:cc:ae:84:53:66:54:d9:da:f3:9f:ef:1e" and
-            1592961292 <= pe.signatures[i].not_after
+            1627948800 <= pe.signatures[i].not_after
         )
 }
 
@@ -9425,13 +9425,13 @@ rule cert_blocklist_0bc9b800f480691bd6b60963466b0c75 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "HasCred ApS" and 
+            pe.signatures[i].subject contains "HasCred ApS" and
             pe.signatures[i].serial == "0b:c9:b8:00:f4:80:69:1b:d6:b6:09:63:46:6b:0c:75" and
-            1592961292 <= pe.signatures[i].not_after
+            1629158400 <= pe.signatures[i].not_after
         )
 }
 
@@ -9443,13 +9443,13 @@ rule cert_blocklist_0c4324ff41f0a7b16ffcc93dffa8fa99 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "\\xE7\\xA6\\x8F\\xE5\\xBB\\xBA\\xE7\\x9C\\x81\\xE4\\xBA\\x94\\xE6\\x98\\x9F\\xE4\\xBF\\xA1\\xE6\\x81\\xAF\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and 
+            pe.signatures[i].subject contains "\\xE7\\xA6\\x8F\\xE5\\xBB\\xBA\\xE7\\x9C\\x81\\xE4\\xBA\\x94\\xE6\\x98\\x9F\\xE4\\xBF\\xA1\\xE6\\x81\\xAF\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
             pe.signatures[i].serial == "0c:43:24:ff:41:f0:a7:b1:6f:fc:c9:3d:ff:a8:fa:99" and
-            1592961292 <= pe.signatures[i].not_after
+            1600300800 <= pe.signatures[i].not_after
         )
 }
 
@@ -9461,13 +9461,13 @@ rule cert_blocklist_0b980fc8783e4f158e41829ab21bab81 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Idris Kanchwala Holding Corp." and 
+            pe.signatures[i].subject contains "Idris Kanchwala Holding Corp." and
             pe.signatures[i].serial == "0b:98:0f:c8:78:3e:4f:15:8e:41:82:9a:b2:1b:ab:81" and
-            1592961292 <= pe.signatures[i].not_after
+            1631750400 <= pe.signatures[i].not_after
         )
 }
 
@@ -9479,15 +9479,15 @@ rule cert_blocklist_d8f515715aeffef0a0e4e37f16c254fa {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "HOLDING LA LTD" and (
                 pe.signatures[i].serial == "00:d8:f5:15:71:5a:ef:fe:f0:a0:e4:e3:7f:16:c2:54:fa" or
-                pe.signatures[i].serial == "d8:f5:15:71:5a:ef:fe:f0:a0:e4:e3:7f:16:c2:54:fa" 
+                pe.signatures[i].serial == "d8:f5:15:71:5a:ef:fe:f0:a0:e4:e3:7f:16:c2:54:fa"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1619136000 <= pe.signatures[i].not_after
         )
 }
 
@@ -9499,15 +9499,15 @@ rule cert_blocklist_d79739187c585e453c00afc11d77b523 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "SAN MARINO INVESTMENTS PTY LTD" and (
                 pe.signatures[i].serial == "00:d7:97:39:18:7c:58:5e:45:3c:00:af:c1:1d:77:b5:23" or
-                pe.signatures[i].serial == "d7:97:39:18:7c:58:5e:45:3c:00:af:c1:1d:77:b5:23" 
+                pe.signatures[i].serial == "d7:97:39:18:7c:58:5e:45:3c:00:af:c1:1d:77:b5:23"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1631059200 <= pe.signatures[i].not_after
         )
 }
 
@@ -9519,15 +9519,15 @@ rule cert_blocklist_961cecb0227845317549e9343a980e91 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "AmiraCo Oy" and (
                 pe.signatures[i].serial == "00:96:1c:ec:b0:22:78:45:31:75:49:e9:34:3a:98:0e:91" or
-                pe.signatures[i].serial == "96:1c:ec:b0:22:78:45:31:75:49:e9:34:3a:98:0e:91" 
+                pe.signatures[i].serial == "96:1c:ec:b0:22:78:45:31:75:49:e9:34:3a:98:0e:91"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1615248000 <= pe.signatures[i].not_after
         )
 }
 
@@ -9539,13 +9539,13 @@ rule cert_blocklist_1ef6392b2993a6f67578299659467ea8 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "ALUSEN d. o. o." and 
+            pe.signatures[i].subject contains "ALUSEN d. o. o." and
             pe.signatures[i].serial == "1e:f6:39:2b:29:93:a6:f6:75:78:29:96:59:46:7e:a8" and
-            1592961292 <= pe.signatures[i].not_after
+            1618531200 <= pe.signatures[i].not_after
         )
 }
 
@@ -9557,15 +9557,15 @@ rule cert_blocklist_a918455c0d4da7ca474f41f11a7cf38c {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "MIDDRA INTERNATIONAL CORP." and (
                 pe.signatures[i].serial == "00:a9:18:45:5c:0d:4d:a7:ca:47:4f:41:f1:1a:7c:f3:8c" or
-                pe.signatures[i].serial == "a9:18:45:5c:0d:4d:a7:ca:47:4f:41:f1:1a:7c:f3:8c" 
+                pe.signatures[i].serial == "a9:18:45:5c:0d:4d:a7:ca:47:4f:41:f1:1a:7c:f3:8c"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1618963200 <= pe.signatures[i].not_after
         )
 }
 
@@ -9577,15 +9577,15 @@ rule cert_blocklist_936bc256d2057ca9b9ec3034c3ed0ee6 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "SALES & MAINTENANCE LIMITED" and (
                 pe.signatures[i].serial == "00:93:6b:c2:56:d2:05:7c:a9:b9:ec:30:34:c3:ed:0e:e6" or
-                pe.signatures[i].serial == "93:6b:c2:56:d2:05:7c:a9:b9:ec:30:34:c3:ed:0e:e6" 
+                pe.signatures[i].serial == "93:6b:c2:56:d2:05:7c:a9:b9:ec:30:34:c3:ed:0e:e6"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1616889600 <= pe.signatures[i].not_after
         )
 }
 
@@ -9597,15 +9597,15 @@ rule cert_blocklist_afe8fee94b41422e01e4897bcd52d0a4 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "TLGM ApS" and (
                 pe.signatures[i].serial == "00:af:e8:fe:e9:4b:41:42:2e:01:e4:89:7b:cd:52:d0:a4" or
-                pe.signatures[i].serial == "af:e8:fe:e9:4b:41:42:2e:01:e4:89:7b:cd:52:d0:a4" 
+                pe.signatures[i].serial == "af:e8:fe:e9:4b:41:42:2e:01:e4:89:7b:cd:52:d0:a4"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1617062400 <= pe.signatures[i].not_after
         )
 }
 
@@ -9617,13 +9617,13 @@ rule cert_blocklist_718e89ddb33257ea77ba74be7f2baf1d {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Trap Capital ApS" and 
+            pe.signatures[i].subject contains "Trap Capital ApS" and
             pe.signatures[i].serial == "71:8e:89:dd:b3:32:57:ea:77:ba:74:be:7f:2b:af:1d" and
-            1592961292 <= pe.signatures[i].not_after
+            1635462927 <= pe.signatures[i].not_after
         )
 }
 
@@ -9635,13 +9635,13 @@ rule cert_blocklist_4d3e38f4aebbc32257450726b29be117 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "POLE & AERIAL FITNESS LIMITED" and 
+            pe.signatures[i].subject contains "POLE & AERIAL FITNESS LIMITED" and
             pe.signatures[i].serial == "4d:3e:38:f4:ae:bb:c3:22:57:45:07:26:b2:9b:e1:17" and
-            1592961292 <= pe.signatures[i].not_after
+            1636123882 <= pe.signatures[i].not_after
         )
 }
 
@@ -9653,15 +9653,15 @@ rule cert_blocklist_8f4c49dae1f1ff0ebe9104c6f73242bd {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Contact Merger Holding ApS" and (
                 pe.signatures[i].serial == "00:8f:4c:49:da:e1:f1:ff:0e:be:91:04:c6:f7:32:42:bd" or
-                pe.signatures[i].serial == "8f:4c:49:da:e1:f1:ff:0e:be:91:04:c6:f7:32:42:bd" 
+                pe.signatures[i].serial == "8f:4c:49:da:e1:f1:ff:0e:be:91:04:c6:f7:32:42:bd"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1636039748 <= pe.signatures[i].not_after
         )
 }
 
@@ -9673,15 +9673,15 @@ rule cert_blocklist_ac3c05f1cb9453de8e7110f589fb32c0 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "TRAIN BUILDING TEAM s.r.o." and (
                 pe.signatures[i].serial == "00:ac:3c:05:f1:cb:94:53:de:8e:71:10:f5:89:fb:32:c0" or
-                pe.signatures[i].serial == "ac:3c:05:f1:cb:94:53:de:8e:71:10:f5:89:fb:32:c0" 
+                pe.signatures[i].serial == "ac:3c:05:f1:cb:94:53:de:8e:71:10:f5:89:fb:32:c0"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1635854205 <= pe.signatures[i].not_after
         )
 }
 
@@ -9693,15 +9693,15 @@ rule cert_blocklist_fbb96a90b6718810311767ca25ab1e48 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Rakurs LLC" and (
                 pe.signatures[i].serial == "00:fb:b9:6a:90:b6:71:88:10:31:17:67:ca:25:ab:1e:48" or
-                pe.signatures[i].serial == "fb:b9:6a:90:b6:71:88:10:31:17:67:ca:25:ab:1e:48" 
+                pe.signatures[i].serial == "fb:b9:6a:90:b6:71:88:10:31:17:67:ca:25:ab:1e:48"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1636046757 <= pe.signatures[i].not_after
         )
 }
 
@@ -9713,15 +9713,15 @@ rule cert_blocklist_cfd38423aef875a10b16644d058297e2 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "TRUST DANMARK ApS" and (
                 pe.signatures[i].serial == "00:cf:d3:84:23:ae:f8:75:a1:0b:16:64:4d:05:82:97:e2" or
-                pe.signatures[i].serial == "cf:d3:84:23:ae:f8:75:a1:0b:16:64:4d:05:82:97:e2" 
+                pe.signatures[i].serial == "cf:d3:84:23:ae:f8:75:a1:0b:16:64:4d:05:82:97:e2"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1632884040 <= pe.signatures[i].not_after
         )
 }
 
@@ -9733,15 +9733,15 @@ rule cert_blocklist_e6c05c5a2222bf92818324a3a7374ad3 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "ANAQA EVENTS LTD" and (
                 pe.signatures[i].serial == "00:e6:c0:5c:5a:22:22:bf:92:81:83:24:a3:a7:37:4a:d3" or
-                pe.signatures[i].serial == "e6:c0:5c:5a:22:22:bf:92:81:83:24:a3:a7:37:4a:d3" 
+                pe.signatures[i].serial == "e6:c0:5c:5a:22:22:bf:92:81:83:24:a3:a7:37:4a:d3"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1634720407 <= pe.signatures[i].not_after
         )
 }
 
@@ -9753,13 +9753,13 @@ rule cert_blocklist_75ce08bdbad44123299dbe9d7c1d20de {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Rose Holm International ApS" and 
+            pe.signatures[i].subject contains "Rose Holm International ApS" and
             pe.signatures[i].serial == "75:ce:08:bd:ba:d4:41:23:29:9d:be:9d:7c:1d:20:de" and
-            1592961292 <= pe.signatures[i].not_after
+            1631007095 <= pe.signatures[i].not_after
         )
 }
 
@@ -9771,13 +9771,13 @@ rule cert_blocklist_333705c20b56e57f60b5eb191eef0d90 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "TASK Holding ApS" and 
+            pe.signatures[i].subject contains "TASK Holding ApS" and
             pe.signatures[i].serial == "33:37:05:c2:0b:56:e5:7f:60:b5:eb:19:1e:ef:0d:90" and
-            1592961292 <= pe.signatures[i].not_after
+            1634233052 <= pe.signatures[i].not_after
         )
 }
 
@@ -9789,15 +9789,15 @@ rule cert_blocklist_a2a0ba281262acce7a00119e25564386 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Sopiteks LLC" and (
                 pe.signatures[i].serial == "00:a2:a0:ba:28:12:62:ac:ce:7a:00:11:9e:25:56:43:86" or
-                pe.signatures[i].serial == "a2:a0:ba:28:12:62:ac:ce:7a:00:11:9e:25:56:43:86" 
+                pe.signatures[i].serial == "a2:a0:ba:28:12:62:ac:ce:7a:00:11:9e:25:56:43:86"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1631908320 <= pe.signatures[i].not_after
         )
 }
 
@@ -9809,13 +9809,13 @@ rule cert_blocklist_338483cc174c16ebc454a3803ffd4217 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Lpr:n Laatu-Ravintolat Oy" and 
+            pe.signatures[i].subject contains "Lpr:n Laatu-Ravintolat Oy" and
             pe.signatures[i].serial == "33:84:83:cc:17:4c:16:eb:c4:54:a3:80:3f:fd:42:17" and
-            1592961292 <= pe.signatures[i].not_after
+            1635208206 <= pe.signatures[i].not_after
         )
 }
 
@@ -9827,15 +9827,15 @@ rule cert_blocklist_be89936c26cd0d845074f6b7b47f480c {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Argus Security Maintenance Systems Inc." and (
                 pe.signatures[i].serial == "00:be:89:93:6c:26:cd:0d:84:50:74:f6:b7:b4:7f:48:0c" or
-                pe.signatures[i].serial == "be:89:93:6c:26:cd:0d:84:50:74:f6:b7:b4:7f:48:0c" 
+                pe.signatures[i].serial == "be:89:93:6c:26:cd:0d:84:50:74:f6:b7:b4:7f:48:0c"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1634235015 <= pe.signatures[i].not_after
         )
 }
 
@@ -9847,13 +9847,13 @@ rule cert_blocklist_0f20a5155e53ce20bb644f646ed6a2fd {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "CB CAM SP Z O O" and 
+            pe.signatures[i].subject contains "CB CAM SP Z O O" and
             pe.signatures[i].serial == "0f:20:a5:15:5e:53:ce:20:bb:64:4f:64:6e:d6:a2:fd" and
-            1592961292 <= pe.signatures[i].not_after
+            1635196200 <= pe.signatures[i].not_after
         )
 }
 
@@ -9865,15 +9865,15 @@ rule cert_blocklist_ea734e1dfb6e69ed2bc55e513bf95b5e {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Postmarket LLC" and (
                 pe.signatures[i].serial == "00:ea:73:4e:1d:fb:6e:69:ed:2b:c5:5e:51:3b:f9:5b:5e" or
-                pe.signatures[i].serial == "ea:73:4e:1d:fb:6e:69:ed:2b:c5:5e:51:3b:f9:5b:5e" 
+                pe.signatures[i].serial == "ea:73:4e:1d:fb:6e:69:ed:2b:c5:5e:51:3b:f9:5b:5e"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1635153791 <= pe.signatures[i].not_after
         )
 }
 
@@ -9885,15 +9885,15 @@ rule cert_blocklist_ba67b0de51ebb9b1179804e75357ab26 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Fjordland Bike Wear ApS" and (
                 pe.signatures[i].serial == "00:ba:67:b0:de:51:eb:b9:b1:17:98:04:e7:53:57:ab:26" or
-                pe.signatures[i].serial == "ba:67:b0:de:51:eb:b9:b1:17:98:04:e7:53:57:ab:26" 
+                pe.signatures[i].serial == "ba:67:b0:de:51:eb:b9:b1:17:98:04:e7:53:57:ab:26"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1636145940 <= pe.signatures[i].not_after
         )
 }
 
@@ -9905,15 +9905,15 @@ rule cert_blocklist_cff2b275ba8a1dde83ac7ff858399a62 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "XL-FORCE ApS" and (
                 pe.signatures[i].serial == "00:cf:f2:b2:75:ba:8a:1d:de:83:ac:7f:f8:58:39:9a:62" or
-                pe.signatures[i].serial == "cf:f2:b2:75:ba:8a:1d:de:83:ac:7f:f8:58:39:9a:62" 
+                pe.signatures[i].serial == "cf:f2:b2:75:ba:8a:1d:de:83:ac:7f:f8:58:39:9a:62"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1636111842 <= pe.signatures[i].not_after
         )
 }
 
@@ -9925,15 +9925,15 @@ rule cert_blocklist_d22e026c5b5966f1cf6ef00a7c06682e {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "AMCERT, LLC" and (
                 pe.signatures[i].serial == "00:d2:2e:02:6c:5b:59:66:f1:cf:6e:f0:0a:7c:06:68:2e" or
-                pe.signatures[i].serial == "d2:2e:02:6c:5b:59:66:f1:cf:6e:f0:0a:7c:06:68:2e" 
+                pe.signatures[i].serial == "d2:2e:02:6c:5b:59:66:f1:cf:6e:f0:0a:7c:06:68:2e"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1636456620 <= pe.signatures[i].not_after
         )
 }
 
@@ -9945,13 +9945,13 @@ rule cert_blocklist_3054f940c931bad7b238a24376c6a5cc {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "POLE CLEAN LTD" and 
+            pe.signatures[i].subject contains "POLE CLEAN LTD" and
             pe.signatures[i].serial == "30:54:f9:40:c9:31:ba:d7:b2:38:a2:43:76:c6:a5:cc" and
-            1592961292 <= pe.signatures[i].not_after
+            1637030220 <= pe.signatures[i].not_after
         )
 }
 
@@ -9963,15 +9963,15 @@ rule cert_blocklist_a617e23d6ca8f34e2f7413cd299fc72b {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "EXPRESS BOOKS LTD" and (
                 pe.signatures[i].serial == "00:a6:17:e2:3d:6c:a8:f3:4e:2f:74:13:cd:29:9f:c7:2b" or
-                pe.signatures[i].serial == "a6:17:e2:3d:6c:a8:f3:4e:2f:74:13:cd:29:9f:c7:2b" 
+                pe.signatures[i].serial == "a6:17:e2:3d:6c:a8:f3:4e:2f:74:13:cd:29:9f:c7:2b"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1636971821 <= pe.signatures[i].not_after
         )
 }
 
@@ -9983,13 +9983,13 @@ rule cert_blocklist_387eeb89b8bf626bbf4c7c9f5b998b40 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "ULTRA ACADEMY LTD" and 
+            pe.signatures[i].subject contains "ULTRA ACADEMY LTD" and
             pe.signatures[i].serial == "38:7e:eb:89:b8:bf:62:6b:bf:4c:7c:9f:5b:99:8b:40" and
-            1592961292 <= pe.signatures[i].not_after
+            1637141034 <= pe.signatures[i].not_after
         )
 }
 
@@ -10001,13 +10001,13 @@ rule cert_blocklist_292eb1133507f42e6f36c5549c189d5e {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Affairs-case s.r.o." and 
+            pe.signatures[i].subject contains "Affairs-case s.r.o." and
             pe.signatures[i].serial == "29:2e:b1:13:35:07:f4:2e:6f:36:c5:54:9c:18:9d:5e" and
-            1592961292 <= pe.signatures[i].not_after
+            1638832273 <= pe.signatures[i].not_after
         )
 }
 
@@ -10019,13 +10019,13 @@ rule cert_blocklist_5fbf16a33d26390a15f046c310030cf0 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "MACHINES SATU MARE SRL" and 
+            pe.signatures[i].subject contains "MACHINES SATU MARE SRL" and
             pe.signatures[i].serial == "5f:bf:16:a3:3d:26:39:0a:15:f0:46:c3:10:03:0c:f0" and
-            1592961292 <= pe.signatures[i].not_after
+            1638390070 <= pe.signatures[i].not_after
         )
 }
 
@@ -10037,13 +10037,13 @@ rule cert_blocklist_0f007898afcba5f8af8ae65d01803617 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "TechnoElek s.r.o." and 
+            pe.signatures[i].subject contains "TechnoElek s.r.o." and
             pe.signatures[i].serial == "0f:00:78:98:af:cb:a5:f8:af:8a:e6:5d:01:80:36:17" and
-            1592961292 <= pe.signatures[i].not_after
+            1638372946 <= pe.signatures[i].not_after
         )
 }
 
@@ -10055,15 +10055,15 @@ rule cert_blocklist_e55be88ddbd93c423220468d430905dd {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "VALVE ACTUATION LTD" and (
                 pe.signatures[i].serial == "00:e5:5b:e8:8d:db:d9:3c:42:32:20:46:8d:43:09:05:dd" or
-                pe.signatures[i].serial == "e5:5b:e8:8d:db:d9:3c:42:32:20:46:8d:43:09:05:dd" 
+                pe.signatures[i].serial == "e5:5b:e8:8d:db:d9:3c:42:32:20:46:8d:43:09:05:dd"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1637712000 <= pe.signatures[i].not_after
         )
 }
 
@@ -10075,13 +10075,13 @@ rule cert_blocklist_06bcb74291d96096577bdb1e165dce85 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Revo Security SRL" and 
+            pe.signatures[i].subject contains "Revo Security SRL" and
             pe.signatures[i].serial == "06:bc:b7:42:91:d9:60:96:57:7b:db:1e:16:5d:ce:85" and
-            1592961292 <= pe.signatures[i].not_after
+            1637971201 <= pe.signatures[i].not_after
         )
 }
 
@@ -10093,15 +10093,15 @@ rule cert_blocklist_c8442a8185082ef1ed7dc3fff2176aa7 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Ambidekstr LLC" and (
                 pe.signatures[i].serial == "00:c8:44:2a:81:85:08:2e:f1:ed:7d:c3:ff:f2:17:6a:a7" or
-                pe.signatures[i].serial == "c8:44:2a:81:85:08:2e:f1:ed:7d:c3:ff:f2:17:6a:a7" 
+                pe.signatures[i].serial == "c8:44:2a:81:85:08:2e:f1:ed:7d:c3:ff:f2:17:6a:a7"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1616976000 <= pe.signatures[i].not_after
         )
 }
 
@@ -10113,13 +10113,13 @@ rule cert_blocklist_0406c4a1521a38c8d0c4aa214388e4dc {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Venezia Design SRL" and 
+            pe.signatures[i].subject contains "Venezia Design SRL" and
             pe.signatures[i].serial == "04:06:c4:a1:52:1a:38:c8:d0:c4:aa:21:43:88:e4:dc" and
-            1592961292 <= pe.signatures[i].not_after
+            1641859201 <= pe.signatures[i].not_after
         )
 }
 
@@ -10131,13 +10131,13 @@ rule cert_blocklist_12705fb66bc22c68372a1c4e5fa662e2 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "APRIL BROTHERS LTD" and 
+            pe.signatures[i].subject contains "APRIL BROTHERS LTD" and
             pe.signatures[i].serial == "12:70:5f:b6:6b:c2:2c:68:37:2a:1c:4e:5f:a6:62:e2" and
-            1592961292 <= pe.signatures[i].not_after
+            1642464000 <= pe.signatures[i].not_after
         )
 }
 
@@ -10149,13 +10149,13 @@ rule cert_blocklist_3b0914e2982be8980aa23f49848555e5 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Office Rat s.r.o." and 
+            pe.signatures[i].subject contains "Office Rat s.r.o." and
             pe.signatures[i].serial == "3b:09:14:e2:98:2b:e8:98:0a:a2:3f:49:84:85:55:e5" and
-            1592961292 <= pe.signatures[i].not_after
+            1643155200 <= pe.signatures[i].not_after
         )
 }
 
@@ -10167,13 +10167,13 @@ rule cert_blocklist_029bf7e1cb09fe277564bd27c267de5a {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "SAMOYAJ LIMITED" and 
+            pe.signatures[i].subject contains "SAMOYAJ LIMITED" and
             pe.signatures[i].serial == "02:9b:f7:e1:cb:09:fe:27:75:64:bd:27:c2:67:de:5a" and
-            1592961292 <= pe.signatures[i].not_after
+            1637712001 <= pe.signatures[i].not_after
         )
 }
 
@@ -10185,15 +10185,15 @@ rule cert_blocklist_d3aee8abb9948844a3ac1c04cc7e6bdf {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "HOUSE 9A s.r.o" and (
                 pe.signatures[i].serial == "00:d3:ae:e8:ab:b9:94:88:44:a3:ac:1c:04:cc:7e:6b:df" or
-                pe.signatures[i].serial == "d3:ae:e8:ab:b9:94:88:44:a3:ac:1c:04:cc:7e:6b:df" 
+                pe.signatures[i].serial == "d3:ae:e8:ab:b9:94:88:44:a3:ac:1c:04:cc:7e:6b:df"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1640822400 <= pe.signatures[i].not_after
         )
 }
 
@@ -10205,13 +10205,13 @@ rule cert_blocklist_734819463c1195bd6e135ce4d5bf49bc {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "videoalarm s. r. o." and 
+            pe.signatures[i].subject contains "videoalarm s. r. o." and
             pe.signatures[i].serial == "73:48:19:46:3c:11:95:bd:6e:13:5c:e4:d5:bf:49:bc" and
-            1592961292 <= pe.signatures[i].not_after
+            1637884800 <= pe.signatures[i].not_after
         )
 }
 
@@ -10223,15 +10223,15 @@ rule cert_blocklist_db95b22362d46a73c39e0ac924883c5b {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "SPSLTD PLYMOUTH LTD" and (
                 pe.signatures[i].serial == "00:db:95:b2:23:62:d4:6a:73:c3:9e:0a:c9:24:88:3c:5b" or
-                pe.signatures[i].serial == "db:95:b2:23:62:d4:6a:73:c3:9e:0a:c9:24:88:3c:5b" 
+                pe.signatures[i].serial == "db:95:b2:23:62:d4:6a:73:c3:9e:0a:c9:24:88:3c:5b"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1621296000 <= pe.signatures[i].not_after
         )
 }
 
@@ -10243,13 +10243,13 @@ rule cert_blocklist_0c48732873ac8ccebaf8f0e1e8329cec {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Hermetica Digital Ltd" and 
+            pe.signatures[i].subject contains "Hermetica Digital Ltd" and
             pe.signatures[i].serial == "0c:48:73:28:73:ac:8c:ce:ba:f8:f0:e1:e8:32:9c:ec" and
-            1592961292 <= pe.signatures[i].not_after
+            1618272000 <= pe.signatures[i].not_after
         )
 }
 
@@ -10261,15 +10261,15 @@ rule cert_blocklist_c51f4cf4d82bc920421e1ad93e39d490 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "CUT AHEAD LTD" and (
                 pe.signatures[i].serial == "00:c5:1f:4c:f4:d8:2b:c9:20:42:1e:1a:d9:3e:39:d4:90" or
-                pe.signatures[i].serial == "c5:1f:4c:f4:d8:2b:c9:20:42:1e:1a:d9:3e:39:d4:90" 
+                pe.signatures[i].serial == "c5:1f:4c:f4:d8:2b:c9:20:42:1e:1a:d9:3e:39:d4:90"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1644624000 <= pe.signatures[i].not_after
         )
 }
 
@@ -10281,15 +10281,15 @@ rule cert_blocklist_c96086f1894e6420d2b4bdeea834c4d7 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "THE FAITH SP Z O O" and (
                 pe.signatures[i].serial == "00:c9:60:86:f1:89:4e:64:20:d2:b4:bd:ee:a8:34:c4:d7" or
-                pe.signatures[i].serial == "c9:60:86:f1:89:4e:64:20:d2:b4:bd:ee:a8:34:c4:d7" 
+                pe.signatures[i].serial == "c9:60:86:f1:89:4e:64:20:d2:b4:bd:ee:a8:34:c4:d7"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1644969600 <= pe.signatures[i].not_after
         )
 }
 
@@ -10301,13 +10301,13 @@ rule cert_blocklist_06fa27a121cc82230c3013ee634b6c62 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Zimmi Consulting Inc" and 
+            pe.signatures[i].subject contains "Zimmi Consulting Inc" and
             pe.signatures[i].serial == "06:fa:27:a1:21:cc:82:23:0c:30:13:ee:63:4b:6c:62" and
-            1592961292 <= pe.signatures[i].not_after
+            1645142401 <= pe.signatures[i].not_after
         )
 }
 
@@ -10319,15 +10319,15 @@ rule cert_blocklist_9dd3b2f7957ba99f4b04fcdbe03b7aac {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "DOD MEDIA LIMITED" and (
                 pe.signatures[i].serial == "00:9d:d3:b2:f7:95:7b:a9:9f:4b:04:fc:db:e0:3b:7a:ac" or
-                pe.signatures[i].serial == "9d:d3:b2:f7:95:7b:a9:9f:4b:04:fc:db:e0:3b:7a:ac" 
+                pe.signatures[i].serial == "9d:d3:b2:f7:95:7b:a9:9f:4b:04:fc:db:e0:3b:7a:ac"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1646438400 <= pe.signatures[i].not_after
         )
 }
 
@@ -10339,13 +10339,13 @@ rule cert_blocklist_061051ff2a8afab10347a6f1ff08ecb6 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "TACHOPARTS SP Z O O" and 
+            pe.signatures[i].subject contains "TACHOPARTS SP Z O O" and
             pe.signatures[i].serial == "06:10:51:ff:2a:8a:fa:b1:03:47:a6:f1:ff:08:ec:b6" and
-            1592961292 <= pe.signatures[i].not_after
+            1606435200 <= pe.signatures[i].not_after
         )
 }
 
@@ -10357,15 +10357,15 @@ rule cert_blocklist_eda2429083bfafb04e6e7bdda1b08834 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "OWLNET LIMITED" and (
                 pe.signatures[i].serial == "00:ed:a2:42:90:83:bf:af:b0:4e:6e:7b:dd:a1:b0:88:34" or
-                pe.signatures[i].serial == "ed:a2:42:90:83:bf:af:b0:4e:6e:7b:dd:a1:b0:88:34" 
+                pe.signatures[i].serial == "ed:a2:42:90:83:bf:af:b0:4e:6e:7b:dd:a1:b0:88:34"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1625011200 <= pe.signatures[i].not_after
         )
 }
 
@@ -10377,13 +10377,13 @@ rule cert_blocklist_0a590154b5980e566314122987dea548 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Maya logistika d.o.o." and 
+            pe.signatures[i].subject contains "Maya logistika d.o.o." and
             pe.signatures[i].serial == "0a:59:01:54:b5:98:0e:56:63:14:12:29:87:de:a5:48" and
-            1592961292 <= pe.signatures[i].not_after
+            1636416000 <= pe.signatures[i].not_after
         )
 }
 
@@ -10395,13 +10395,13 @@ rule cert_blocklist_69a72f5591ad78a0825fbb9402ab9543 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "PUSH BANK LIMITED" and 
+            pe.signatures[i].subject contains "PUSH BANK LIMITED" and
             pe.signatures[i].serial == "69:a7:2f:55:91:ad:78:a0:82:5f:bb:94:02:ab:95:43" and
-            1592961292 <= pe.signatures[i].not_after
+            1581811200 <= pe.signatures[i].not_after
         )
 }
 
@@ -10413,13 +10413,13 @@ rule cert_blocklist_0883db137021b51f3a2a08a76a4bc066 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Divertida Creative Limited" and 
+            pe.signatures[i].subject contains "Divertida Creative Limited" and
             pe.signatures[i].serial == "08:83:db:13:70:21:b5:1f:3a:2a:08:a7:6a:4b:c0:66" and
-            1592961292 <= pe.signatures[i].not_after
+            1627430400 <= pe.signatures[i].not_after
         )
 }
 
@@ -10431,13 +10431,13 @@ rule cert_blocklist_2b921aaaba777b5a99507196c6f1c46c {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Python Software Foundation" and 
+            pe.signatures[i].subject contains "Python Software Foundation" and
             pe.signatures[i].serial == "2b:92:1a:aa:ba:77:7b:5a:99:50:71:96:c6:f1:c4:6c" and
-            1592961292 <= pe.signatures[i].not_after
+            1648425600 <= pe.signatures[i].not_after
         )
 }
 
@@ -10449,13 +10449,13 @@ rule cert_blocklist_0332d5c942869bdcabf5a8266197cd14 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "JAWRO SP Z O O" and 
+            pe.signatures[i].subject contains "JAWRO SP Z O O" and
             pe.signatures[i].serial == "03:32:d5:c9:42:86:9b:dc:ab:f5:a8:26:61:97:cd:14" and
-            1592961292 <= pe.signatures[i].not_after
+            1622160000 <= pe.signatures[i].not_after
         )
 }
 
@@ -10467,13 +10467,13 @@ rule cert_blocklist_4679c5398a279318365fd77a84445699 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "HURT GROUP HOLDINGS LIMITED" and 
+            pe.signatures[i].subject contains "HURT GROUP HOLDINGS LIMITED" and
             pe.signatures[i].serial == "46:79:c5:39:8a:27:93:18:36:5f:d7:7a:84:44:56:99" and
-            1592961292 <= pe.signatures[i].not_after
+            1643846400 <= pe.signatures[i].not_after
         )
 }
 
@@ -10485,13 +10485,13 @@ rule cert_blocklist_101d6a5a29d9a77807553ceac669d853 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "BIC GROUP LIMITED" and 
+            pe.signatures[i].subject contains "BIC GROUP LIMITED" and
             pe.signatures[i].serial == "10:1d:6a:5a:29:d9:a7:78:07:55:3c:ea:c6:69:d8:53" and
-            1592961292 <= pe.signatures[i].not_after
+            1646352000 <= pe.signatures[i].not_after
         )
 }
 
@@ -10503,13 +10503,13 @@ rule cert_blocklist_6000f8c02b0a15b1e53b8399845faddf {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "SAY LIMITED" and 
+            pe.signatures[i].subject contains "SAY LIMITED" and
             pe.signatures[i].serial == "60:00:f8:c0:2b:0a:15:b1:e5:3b:83:99:84:5f:ad:df" and
-            1592961292 <= pe.signatures[i].not_after
+            1644278400 <= pe.signatures[i].not_after
         )
 }
 
@@ -10521,13 +10521,13 @@ rule cert_blocklist_121070be1e782f206985543bc7bc58b6 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Prod Can Holdings Inc." and 
+            pe.signatures[i].subject contains "Prod Can Holdings Inc." and
             pe.signatures[i].serial == "12:10:70:be:1e:78:2f:20:69:85:54:3b:c7:bc:58:b6" and
-            1592961292 <= pe.signatures[i].not_after
+            1647820800 <= pe.signatures[i].not_after
         )
 }
 
@@ -10539,13 +10539,13 @@ rule cert_blocklist_5226a724cfa0b4bc0164ecda3f02a3dc {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "VALENTE SP Z O O" and 
+            pe.signatures[i].subject contains "VALENTE SP Z O O" and
             pe.signatures[i].serial == "52:26:a7:24:cf:a0:b4:bc:01:64:ec:da:3f:02:a3:dc" and
-            1592961292 <= pe.signatures[i].not_after
+            1647302400 <= pe.signatures[i].not_after
         )
 }
 
@@ -10557,13 +10557,13 @@ rule cert_blocklist_0a7be7722b65a866ebcd3bd7f8f10825 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Rebound Infotech Limited" and 
+            pe.signatures[i].subject contains "Rebound Infotech Limited" and
             pe.signatures[i].serial == "0a:7b:e7:72:2b:65:a8:66:eb:cd:3b:d7:f8:f1:08:25" and
-            1592961292 <= pe.signatures[i].not_after
+            1637971200 <= pe.signatures[i].not_after
         )
 }
 
@@ -10575,13 +10575,13 @@ rule cert_blocklist_05634456dbedb3556ca8415e64815c5d {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Walden Intertech Inc." and 
+            pe.signatures[i].subject contains "Walden Intertech Inc." and
             pe.signatures[i].serial == "05:63:44:56:db:ed:b3:55:6c:a8:41:5e:64:81:5c:5d" and
-            1592961292 <= pe.signatures[i].not_after
+            1648425600 <= pe.signatures[i].not_after
         )
 }
 
@@ -10593,13 +10593,13 @@ rule cert_blocklist_2e07a8d6e3b25ae010c8ed2c4ab0fb37 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Emurasoft, Inc." and 
+            pe.signatures[i].subject contains "Emurasoft, Inc." and
             pe.signatures[i].serial == "2e:07:a8:d6:e3:b2:5a:e0:10:c8:ed:2c:4a:b0:fb:37" and
-            1592961292 <= pe.signatures[i].not_after
+            1650499200 <= pe.signatures[i].not_after
         )
 }
 
@@ -10611,13 +10611,13 @@ rule cert_blocklist_30b4eeebd88fd205acc8577bbaed8655 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Enforcer Srl" and 
+            pe.signatures[i].subject contains "Enforcer Srl" and
             pe.signatures[i].serial == "30:b4:ee:eb:d8:8f:d2:05:ac:c8:57:7b:ba:ed:86:55" and
-            1592961292 <= pe.signatures[i].not_after
+            1646179200 <= pe.signatures[i].not_after
         )
 }
 
@@ -10629,15 +10629,15 @@ rule cert_blocklist_b3391a6c1b3c6836533959e2384ab4ca {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "VERIFIED SOFTWARE LLC" and (
                 pe.signatures[i].serial == "00:b3:39:1a:6c:1b:3c:68:36:53:39:59:e2:38:4a:b4:ca" or
-                pe.signatures[i].serial == "b3:39:1a:6c:1b:3c:68:36:53:39:59:e2:38:4a:b4:ca" 
+                pe.signatures[i].serial == "b3:39:1a:6c:1b:3c:68:36:53:39:59:e2:38:4a:b4:ca"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1595462400 <= pe.signatures[i].not_after
         )
 }
 
@@ -10649,13 +10649,13 @@ rule cert_blocklist_05d50a0e09bb9a836ffb90a3 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Toliz Info Tech Solutions INC." and 
+            pe.signatures[i].subject contains "Toliz Info Tech Solutions INC." and
             pe.signatures[i].serial == "05:d5:0a:0e:09:bb:9a:83:6f:fb:90:a3" and
-            1592961292 <= pe.signatures[i].not_after
+            1643892810 <= pe.signatures[i].not_after
         )
 }
 
@@ -10667,13 +10667,13 @@ rule cert_blocklist_0a2787fbb4627c91611573e323584113 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "exxon.com" and 
+            pe.signatures[i].subject contains "exxon.com" and
             pe.signatures[i].serial == "0a:27:87:fb:b4:62:7c:91:61:15:73:e3:23:58:41:13" and
-            1592961292 <= pe.signatures[i].not_after
+            1640822400 <= pe.signatures[i].not_after
         )
 }
 
@@ -10685,13 +10685,13 @@ rule cert_blocklist_1d36c4f439d651503589318f {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "REDWOOD MARKETING SOLUTIONS INC." and 
+            pe.signatures[i].subject contains "REDWOOD MARKETING SOLUTIONS INC." and
             pe.signatures[i].serial == "1d:36:c4:f4:39:d6:51:50:35:89:31:8f" and
-            1592961292 <= pe.signatures[i].not_after
+            1651518469 <= pe.signatures[i].not_after
         )
 }
 
@@ -10703,13 +10703,13 @@ rule cert_blocklist_26f855a25890b749578f13e4b9459768 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Boo\\xE2\\x80\\x99s Q & Sweets Corporation" and 
+            pe.signatures[i].subject contains "Boo\\xE2\\x80\\x99s Q & Sweets Corporation" and
             pe.signatures[i].serial == "26:f8:55:a2:58:90:b7:49:57:8f:13:e4:b9:45:97:68" and
-            1592961292 <= pe.signatures[i].not_after
+            1645401600 <= pe.signatures[i].not_after
         )
 }
 
@@ -10721,13 +10721,13 @@ rule cert_blocklist_0f1ae2239bb96c5aef49d0ae50266912 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Aarav Consulting Inc." and 
+            pe.signatures[i].subject contains "Aarav Consulting Inc." and
             pe.signatures[i].serial == "0f:1a:e2:23:9b:b9:6c:5a:ef:49:d0:ae:50:26:69:12" and
-            1592961292 <= pe.signatures[i].not_after
+            1653004800 <= pe.signatures[i].not_after
         )
 }
 
@@ -10739,13 +10739,13 @@ rule cert_blocklist_1deea179f5757fe529043577762419df {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "SPIRIT CONSULTING s. r. o." and 
+            pe.signatures[i].subject contains "SPIRIT CONSULTING s. r. o." and
             pe.signatures[i].serial == "1d:ee:a1:79:f5:75:7f:e5:29:04:35:77:76:24:19:df" and
-            1592961292 <= pe.signatures[i].not_after
+            1645401600 <= pe.signatures[i].not_after
         )
 }
 
@@ -10757,13 +10757,13 @@ rule cert_blocklist_5b1f9ec88d185631ab032dbfd5166c0d {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "TOPFLIGHT GROUP LIMITED" and 
+            pe.signatures[i].subject contains "TOPFLIGHT GROUP LIMITED" and
             pe.signatures[i].serial == "5b:1f:9e:c8:8d:18:56:31:ab:03:2d:bf:d5:16:6c:0d" and
-            1592961292 <= pe.signatures[i].not_after
+            1656028800 <= pe.signatures[i].not_after
         )
 }
 
@@ -10775,13 +10775,13 @@ rule cert_blocklist_58af00ce542760fc116b41fa92e18589 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "DICKIE MUSDALE WINDFARM LIMITED" and 
+            pe.signatures[i].subject contains "DICKIE MUSDALE WINDFARM LIMITED" and
             pe.signatures[i].serial == "58:af:00:ce:54:27:60:fc:11:6b:41:fa:92:e1:85:89" and
-            1592961292 <= pe.signatures[i].not_after
+            1654819200 <= pe.signatures[i].not_after
         )
 }
 
@@ -10793,13 +10793,13 @@ rule cert_blocklist_25ba18a267d6d8e08ebc6e2457d58d1e {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "5Y TECHNOLOGY LIMITED" and 
+            pe.signatures[i].subject contains "5Y TECHNOLOGY LIMITED" and
             pe.signatures[i].serial == "25:ba:18:a2:67:d6:d8:e0:8e:bc:6e:24:57:d5:8d:1e" and
-            1592961292 <= pe.signatures[i].not_after
+            1648684800 <= pe.signatures[i].not_after
         )
 }
 
@@ -10811,13 +10811,13 @@ rule cert_blocklist_12df5ff3460979cec1288d874a9fbf83 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "FORWARD MUSIC AGENCY SRL" and 
+            pe.signatures[i].subject contains "FORWARD MUSIC AGENCY SRL" and
             pe.signatures[i].serial == "12:df:5f:f3:46:09:79:ce:c1:28:8d:87:4a:9f:bf:83" and
-            1592961292 <= pe.signatures[i].not_after
+            1599091200 <= pe.signatures[i].not_after
         )
 }
 
@@ -10829,15 +10829,15 @@ rule cert_blocklist_df2547b2cab5689a81d61de80eaaa3a2 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "FORWARD MUSIC AGENCY SRL" and (
                 pe.signatures[i].serial == "00:df:25:47:b2:ca:b5:68:9a:81:d6:1d:e8:0e:aa:a3:a2" or
-                pe.signatures[i].serial == "df:25:47:b2:ca:b5:68:9a:81:d6:1d:e8:0e:aa:a3:a2" 
+                pe.signatures[i].serial == "df:25:47:b2:ca:b5:68:9a:81:d6:1d:e8:0e:aa:a3:a2"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1657756800 <= pe.signatures[i].not_after
         )
 }
 
@@ -10849,13 +10849,13 @@ rule cert_blocklist_28b691272719b1ee {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "2021945 Ontario Inc." and 
+            pe.signatures[i].subject contains "2021945 Ontario Inc." and
             pe.signatures[i].serial == "28:b6:91:27:27:19:b1:ee" and
-            1592961292 <= pe.signatures[i].not_after
+            1616410532 <= pe.signatures[i].not_after
         )
 }
 
@@ -10867,13 +10867,13 @@ rule cert_blocklist_1c897216e58e83cbe74ad03284e1fb82 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "M-Trans Maciej Caban" and 
+            pe.signatures[i].subject contains "M-Trans Maciej Caban" and
             pe.signatures[i].serial == "1c:89:72:16:e5:8e:83:cb:e7:4a:d0:32:84:e1:fb:82" and
-            1592961292 <= pe.signatures[i].not_after
+            1639119705 <= pe.signatures[i].not_after
         )
 }
 
@@ -10885,13 +10885,13 @@ rule cert_blocklist_5a364c4957d93406f76321c2316f42f0 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Board Game Bucket Ltd" and 
+            pe.signatures[i].subject contains "Board Game Bucket Ltd" and
             pe.signatures[i].serial == "5a:36:4c:49:57:d9:34:06:f7:63:21:c2:31:6f:42:f0" and
-            1592961292 <= pe.signatures[i].not_after
+            1661337307 <= pe.signatures[i].not_after
         )
 }
 
@@ -10903,15 +10903,15 @@ rule cert_blocklist_e7e7f7180666546ce7a8da32119f5ce1 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "C\\xC3\\x94NG TY TNHH PDF SOFTWARE" and (
                 pe.signatures[i].serial == "00:e7:e7:f7:18:06:66:54:6c:e7:a8:da:32:11:9f:5c:e1" or
-                pe.signatures[i].serial == "e7:e7:f7:18:06:66:54:6c:e7:a8:da:32:11:9f:5c:e1" 
+                pe.signatures[i].serial == "e7:e7:f7:18:06:66:54:6c:e7:a8:da:32:11:9f:5c:e1"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1661558399 <= pe.signatures[i].not_after
         )
 }
 
@@ -10923,13 +10923,13 @@ rule cert_blocklist_062b2827500c5df35a83f661b3af5dd3 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "*.eos.com" and 
+            pe.signatures[i].subject contains "*.eos.com" and
             pe.signatures[i].serial == "06:2b:28:27:50:0c:5d:f3:5a:83:f6:61:b3:af:5d:d3" and
-            1592961292 <= pe.signatures[i].not_after
+            1651449600 <= pe.signatures[i].not_after
         )
 }
 
@@ -10941,13 +10941,13 @@ rule cert_blocklist_7bf27695fd20b588f2b2f173b6caf2ba {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Game Warriors Limited" and 
+            pe.signatures[i].subject contains "Game Warriors Limited" and
             pe.signatures[i].serial == "7b:f2:76:95:fd:20:b5:88:f2:b2:f1:73:b6:ca:f2:ba" and
-            1592961292 <= pe.signatures[i].not_after
+            1662112800 <= pe.signatures[i].not_after
         )
 }
 
@@ -10959,13 +10959,13 @@ rule cert_blocklist_1b248c8508042d36bbd5d92d189c61d8 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Digital Robin Limited" and 
+            pe.signatures[i].subject contains "Digital Robin Limited" and
             pe.signatures[i].serial == "1b:24:8c:85:08:04:2d:36:bb:d5:d9:2d:18:9c:61:d8" and
-            1592961292 <= pe.signatures[i].not_after
+            1663171218 <= pe.signatures[i].not_after
         )
 }
 
@@ -10977,13 +10977,13 @@ rule cert_blocklist_032660ee1d49ad35086027473e2614e5e724 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "sunshine.com" and 
+            pe.signatures[i].subject contains "sunshine.com" and
             pe.signatures[i].serial == "03:26:60:ee:1d:49:ad:35:08:60:27:47:3e:26:14:e5:e7:24" and
-            1592961292 <= pe.signatures[i].not_after
+            1660238245 <= pe.signatures[i].not_after
         )
 }
 
@@ -10995,13 +10995,13 @@ rule cert_blocklist_043052956e1e6dbd5f6ae3d8b82cad2a2ed8 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "ok.com" and 
+            pe.signatures[i].subject contains "ok.com" and
             pe.signatures[i].serial == "04:30:52:95:6e:1e:6d:bd:5f:6a:e3:d8:b8:2c:ad:2a:2e:d8" and
-            1592961292 <= pe.signatures[i].not_after
+            1662149613 <= pe.signatures[i].not_after
         )
 }
 
@@ -11013,15 +11013,15 @@ rule cert_blocklist_dbc03ca7e6ae6db6 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "SPIDER DEVELOPMENTS PTY LTD" and (
                 pe.signatures[i].serial == "00:db:c0:3c:a7:e6:ae:6d:b6" or
-                pe.signatures[i].serial == "db:c0:3c:a7:e6:ae:6d:b6" 
+                pe.signatures[i].serial == "db:c0:3c:a7:e6:ae:6d:b6"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1600826873 <= pe.signatures[i].not_after
         )
 }
 
@@ -11033,13 +11033,13 @@ rule cert_blocklist_7d27332c3cb3a382a4fd232c5c66a2 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "MALVINA RECRUITMENT LIMITED" and 
+            pe.signatures[i].subject contains "MALVINA RECRUITMENT LIMITED" and
             pe.signatures[i].serial == "7d:27:33:2c:3c:b3:a3:82:a4:fd:23:2c:5c:66:a2" and
-            1592961292 <= pe.signatures[i].not_after
+            1655424000 <= pe.signatures[i].not_after
         )
 }
 
@@ -11051,15 +11051,15 @@ rule cert_blocklist_82d224323efa65060b641f51fadfef02 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "SAVAS INVESTMENTS PTY LTD" and (
                 pe.signatures[i].serial == "00:82:d2:24:32:3e:fa:65:06:0b:64:1f:51:fa:df:ef:02" or
-                pe.signatures[i].serial == "82:d2:24:32:3e:fa:65:06:0b:64:1f:51:fa:df:ef:02" 
+                pe.signatures[i].serial == "82:d2:24:32:3e:fa:65:06:0b:64:1f:51:fa:df:ef:02"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1665100800 <= pe.signatures[i].not_after
         )
 }
 
@@ -11071,15 +11071,15 @@ rule cert_blocklist_890570b6b0e2868a53be3f8f904a88ee {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "JESEN LESS d.o.o." and (
                 pe.signatures[i].serial == "00:89:05:70:b6:b0:e2:86:8a:53:be:3f:8f:90:4a:88:ee" or
-                pe.signatures[i].serial == "89:05:70:b6:b0:e2:86:8a:53:be:3f:8f:90:4a:88:ee" 
+                pe.signatures[i].serial == "89:05:70:b6:b0:e2:86:8a:53:be:3f:8f:90:4a:88:ee"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1636588800 <= pe.signatures[i].not_after
         )
 }
 
@@ -11091,13 +11091,13 @@ rule cert_blocklist_2642fe865f7566ce3123a5142c207094 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "C.W.D. INSTAL LTD" and 
+            pe.signatures[i].subject contains "C.W.D. INSTAL LTD" and
             pe.signatures[i].serial == "26:42:fe:86:5f:75:66:ce:31:23:a5:14:2c:20:70:94" and
-            1592961292 <= pe.signatures[i].not_after
+            1666310400 <= pe.signatures[i].not_after
         )
 }
 
@@ -11109,13 +11109,13 @@ rule cert_blocklist_4a2e337fff23e5b2a1321ffde56d1759 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Karolina Klimowska" and 
+            pe.signatures[i].subject contains "Karolina Klimowska" and
             pe.signatures[i].serial == "4a:2e:33:7f:ff:23:e5:b2:a1:32:1f:fd:e5:6d:17:59" and
-            1592961292 <= pe.signatures[i].not_after
+            1660314070 <= pe.signatures[i].not_after
         )
 }
 
@@ -11127,15 +11127,15 @@ rule cert_blocklist_92d9b92f8cf7a1ba8b2c025be730c300 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "UPLagga Systems s.r.o." and (
                 pe.signatures[i].serial == "00:92:d9:b9:2f:8c:f7:a1:ba:8b:2c:02:5b:e7:30:c3:00" or
-                pe.signatures[i].serial == "92:d9:b9:2f:8c:f7:a1:ba:8b:2c:02:5b:e7:30:c3:00" 
+                pe.signatures[i].serial == "92:d9:b9:2f:8c:f7:a1:ba:8b:2c:02:5b:e7:30:c3:00"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1598054400 <= pe.signatures[i].not_after
         )
 }
 
@@ -11147,15 +11147,15 @@ rule cert_blocklist_b8164f7143e1a313003ab0c834562f1f {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Ekitai Data Inc." and (
                 pe.signatures[i].serial == "00:b8:16:4f:71:43:e1:a3:13:00:3a:b0:c8:34:56:2f:1f" or
-                pe.signatures[i].serial == "b8:16:4f:71:43:e1:a3:13:00:3a:b0:c8:34:56:2f:1f" 
+                pe.signatures[i].serial == "b8:16:4f:71:43:e1:a3:13:00:3a:b0:c8:34:56:2f:1f"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1598313600 <= pe.signatures[i].not_after
         )
 }
 
@@ -11167,13 +11167,13 @@ rule cert_blocklist_24e4a2b3db6be1007b9ddc91995bc0c8 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "FLY BETTER s.r.o." and 
+            pe.signatures[i].subject contains "FLY BETTER s.r.o." and
             pe.signatures[i].serial == "24:e4:a2:b3:db:6b:e1:00:7b:9d:dc:91:99:5b:c0:c8" and
-            1592961292 <= pe.signatures[i].not_after
+            1645142400 <= pe.signatures[i].not_after
         )
 }
 
@@ -11185,15 +11185,15 @@ rule cert_blocklist_881573fc67ff7395dde5bccfbce5b088 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Trade in Brasil s.r.o." and (
                 pe.signatures[i].serial == "00:88:15:73:fc:67:ff:73:95:dd:e5:bc:cf:bc:e5:b0:88" or
-                pe.signatures[i].serial == "88:15:73:fc:67:ff:73:95:dd:e5:bc:cf:bc:e5:b0:88" 
+                pe.signatures[i].serial == "88:15:73:fc:67:ff:73:95:dd:e5:bc:cf:bc:e5:b0:88"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1620000000 <= pe.signatures[i].not_after
         )
 }
 
@@ -11205,13 +11205,13 @@ rule cert_blocklist_53e1f226cb77574f8fbeb5682da091bb {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "OdyLab Inc" and 
+            pe.signatures[i].subject contains "OdyLab Inc" and
             pe.signatures[i].serial == "53:e1:f2:26:cb:77:57:4f:8f:be:b5:68:2d:a0:91:bb" and
-            1592961292 <= pe.signatures[i].not_after
+            1654020559 <= pe.signatures[i].not_after
         )
 }
 
@@ -11223,13 +11223,13 @@ rule cert_blocklist_0772b4d1d63233d2b8771997bc8da5c4 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Maya logistika d.o.o." and 
+            pe.signatures[i].subject contains "Maya logistika d.o.o." and
             pe.signatures[i].serial == "07:72:b4:d1:d6:32:33:d2:b8:77:19:97:bc:8d:a5:c4" and
-            1592961292 <= pe.signatures[i].not_after
+            1637971201 <= pe.signatures[i].not_after
         )
 }
 
@@ -11241,13 +11241,13 @@ rule cert_blocklist_02b6656292310b84022db5541bc48faf {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "DILA d.o.o." and 
+            pe.signatures[i].subject contains "DILA d.o.o." and
             pe.signatures[i].serial == "02:b6:65:62:92:31:0b:84:02:2d:b5:54:1b:c4:8f:af" and
-            1592961292 <= pe.signatures[i].not_after
+            1613865600 <= pe.signatures[i].not_after
         )
 }
 
@@ -11259,13 +11259,13 @@ rule cert_blocklist_64c2505c7306639fc8eae544b0305338 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "MANILA Solution as" and 
+            pe.signatures[i].subject contains "MANILA Solution as" and
             pe.signatures[i].serial == "64:c2:50:5c:73:06:63:9f:c8:ea:e5:44:b0:30:53:38" and
-            1592961292 <= pe.signatures[i].not_after
+            1609418043 <= pe.signatures[i].not_after
         )
 }
 
@@ -11277,13 +11277,13 @@ rule cert_blocklist_2f96a89bfec6e44dd224e8fd7e72d9bb {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "NAILS UNLIMITED LIMITED" and 
+            pe.signatures[i].subject contains "NAILS UNLIMITED LIMITED" and
             pe.signatures[i].serial == "2f:96:a8:9b:fe:c6:e4:4d:d2:24:e8:fd:7e:72:d9:bb" and
-            1592961292 <= pe.signatures[i].not_after
+            1625529600 <= pe.signatures[i].not_after
         )
 }
 
@@ -11295,15 +11295,15 @@ rule cert_blocklist_b649a966410f62999c939384af553919 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "F.A.T. SARL" and (
                 pe.signatures[i].serial == "00:b6:49:a9:66:41:0f:62:99:9c:93:93:84:af:55:39:19" or
-                pe.signatures[i].serial == "b6:49:a9:66:41:0f:62:99:9c:93:93:84:af:55:39:19" 
+                pe.signatures[i].serial == "b6:49:a9:66:41:0f:62:99:9c:93:93:84:af:55:39:19"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1590537600 <= pe.signatures[i].not_after
         )
 }
 
@@ -11315,13 +11315,13 @@ rule cert_blocklist_45245eef53fcf38169c715cf68f44452 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "PAPER AND CORE SUPPLIES LTD" and 
+            pe.signatures[i].subject contains "PAPER AND CORE SUPPLIES LTD" and
             pe.signatures[i].serial == "45:24:5e:ef:53:fc:f3:81:69:c7:15:cf:68:f4:44:52" and
-            1592961292 <= pe.signatures[i].not_after
+            1639958400 <= pe.signatures[i].not_after
         )
 }
 
@@ -11333,13 +11333,13 @@ rule cert_blocklist_1895433ee9e2bd48619d75132262616f {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Evetrans Ltd" and 
+            pe.signatures[i].subject contains "Evetrans Ltd" and
             pe.signatures[i].serial == "18:95:43:3e:e9:e2:bd:48:61:9d:75:13:22:62:61:6f" and
-            1592961292 <= pe.signatures[i].not_after
+            1619789516 <= pe.signatures[i].not_after
         )
 }
 
@@ -11351,13 +11351,13 @@ rule cert_blocklist_1ffc9825644caf5b1f521780c5c7f42c {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "ACTIVUS LIMITED" and 
+            pe.signatures[i].subject contains "ACTIVUS LIMITED" and
             pe.signatures[i].serial == "1f:fc:98:25:64:4c:af:5b:1f:52:17:80:c5:c7:f4:2c" and
-            1592961292 <= pe.signatures[i].not_after
+            1615507200 <= pe.signatures[i].not_after
         )
 }
 
@@ -11369,15 +11369,15 @@ rule cert_blocklist_8d52fb12a2511e86bbb0ba75c517eab0 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "VThink Software Consulting Inc." and (
                 pe.signatures[i].serial == "00:8d:52:fb:12:a2:51:1e:86:bb:b0:ba:75:c5:17:ea:b0" or
-                pe.signatures[i].serial == "8d:52:fb:12:a2:51:1e:86:bb:b0:ba:75:c5:17:ea:b0" 
+                pe.signatures[i].serial == "8d:52:fb:12:a2:51:1e:86:bb:b0:ba:75:c5:17:ea:b0"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1599177600 <= pe.signatures[i].not_after
         )
 }
 
@@ -11389,13 +11389,13 @@ rule cert_blocklist_332bd5801e8415585e72c87e0e2ec71d {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Elite Marketing Strategies, Inc." and 
+            pe.signatures[i].subject contains "Elite Marketing Strategies, Inc." and
             pe.signatures[i].serial == "33:2b:d5:80:1e:84:15:58:5e:72:c8:7e:0e:2e:c7:1d" and
-            1592961292 <= pe.signatures[i].not_after
+            1662616824 <= pe.signatures[i].not_after
         )
 }
 
@@ -11407,15 +11407,15 @@ rule cert_blocklist_e3b80c0932b52a708477939b0d32186f {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "BISOYETUTU LTD LIMITED" and (
                 pe.signatures[i].serial == "00:e3:b8:0c:09:32:b5:2a:70:84:77:93:9b:0d:32:18:6f" or
-                pe.signatures[i].serial == "e3:b8:0c:09:32:b5:2a:70:84:77:93:9b:0d:32:18:6f" 
+                pe.signatures[i].serial == "e3:b8:0c:09:32:b5:2a:70:84:77:93:9b:0d:32:18:6f"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1617062400 <= pe.signatures[i].not_after
         )
 }
 
@@ -11427,15 +11427,15 @@ rule cert_blocklist_c79f817f082986bef3209f6723c8da97 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Al-Faris group d.o.o." and (
                 pe.signatures[i].serial == "00:c7:9f:81:7f:08:29:86:be:f3:20:9f:67:23:c8:da:97" or
-                pe.signatures[i].serial == "c7:9f:81:7f:08:29:86:be:f3:20:9f:67:23:c8:da:97" 
+                pe.signatures[i].serial == "c7:9f:81:7f:08:29:86:be:f3:20:9f:67:23:c8:da:97"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1616371200 <= pe.signatures[i].not_after
         )
 }
 
@@ -11447,13 +11447,13 @@ rule cert_blocklist_1e5efa53a14599cc82f56f0790e20b17 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Storeks LLC" and 
+            pe.signatures[i].subject contains "Storeks LLC" and
             pe.signatures[i].serial == "1e:5e:fa:53:a1:45:99:cc:82:f5:6f:07:90:e2:0b:17" and
-            1592961292 <= pe.signatures[i].not_after
+            1623196800 <= pe.signatures[i].not_after
         )
 }
 
@@ -11465,13 +11465,13 @@ rule cert_blocklist_0cf2d0b5bfdd68cf777a0c12f806a569 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "PROTIP d.o.o. - v ste\\xC4\\x8Daju" and 
+            pe.signatures[i].subject contains "PROTIP d.o.o. - v ste\\xC4\\x8Daju" and
             pe.signatures[i].serial == "0c:f2:d0:b5:bf:dd:68:cf:77:7a:0c:12:f8:06:a5:69" and
-            1592961292 <= pe.signatures[i].not_after
+            1611705600 <= pe.signatures[i].not_after
         )
 }
 
@@ -11483,15 +11483,15 @@ rule cert_blocklist_f675139ea68b897a865a98f8e4611f00 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "BS TEHNIK d.o.o." and (
                 pe.signatures[i].serial == "00:f6:75:13:9e:a6:8b:89:7a:86:5a:98:f8:e4:61:1f:00" or
-                pe.signatures[i].serial == "f6:75:13:9e:a6:8b:89:7a:86:5a:98:f8:e4:61:1f:00" 
+                pe.signatures[i].serial == "f6:75:13:9e:a6:8b:89:7a:86:5a:98:f8:e4:61:1f:00"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1606953600 <= pe.signatures[i].not_after
         )
 }
 
@@ -11503,13 +11503,13 @@ rule cert_blocklist_4728189fa0f57793484cdf764f5e283d {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Power Save Systems s.r.o." and 
+            pe.signatures[i].subject contains "Power Save Systems s.r.o." and
             pe.signatures[i].serial == "47:28:18:9f:a0:f5:77:93:48:4c:df:76:4f:5e:28:3d" and
-            1592961292 <= pe.signatures[i].not_after
+            1647302400 <= pe.signatures[i].not_after
         )
 }
 
@@ -11521,15 +11521,15 @@ rule cert_blocklist_9bd81a9adaf71f1ff081c1f4a05d7fd7 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "SMART TOYS AND GAMES, INC" and (
                 pe.signatures[i].serial == "00:9b:d8:1a:9a:da:f7:1f:1f:f0:81:c1:f4:a0:5d:7f:d7" or
-                pe.signatures[i].serial == "9b:d8:1a:9a:da:f7:1f:1f:f0:81:c1:f4:a0:5d:7f:d7" 
+                pe.signatures[i].serial == "9b:d8:1a:9a:da:f7:1f:1f:f0:81:c1:f4:a0:5d:7f:d7"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1601683200 <= pe.signatures[i].not_after
         )
 }
 
@@ -11541,15 +11541,15 @@ rule cert_blocklist_c81319d20c6f1f1aec3398522189d90c {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "AMCERT,LLC" and (
                 pe.signatures[i].serial == "00:c8:13:19:d2:0c:6f:1f:1a:ec:33:98:52:21:89:d9:0c" or
-                pe.signatures[i].serial == "c8:13:19:d2:0c:6f:1f:1a:ec:33:98:52:21:89:d9:0c" 
+                pe.signatures[i].serial == "c8:13:19:d2:0c:6f:1f:1a:ec:33:98:52:21:89:d9:0c"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1643500800 <= pe.signatures[i].not_after
         )
 }
 
@@ -11561,15 +11561,15 @@ rule cert_blocklist_c318d876768258a696ab9dd825e27acd {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "OOO Genezis" and (
                 pe.signatures[i].serial == "00:c3:18:d8:76:76:82:58:a6:96:ab:9d:d8:25:e2:7a:cd" or
-                pe.signatures[i].serial == "c3:18:d8:76:76:82:58:a6:96:ab:9d:d8:25:e2:7a:cd" 
+                pe.signatures[i].serial == "c3:18:d8:76:76:82:58:a6:96:ab:9d:d8:25:e2:7a:cd"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1615161600 <= pe.signatures[i].not_after
         )
 }
 
@@ -11581,13 +11581,13 @@ rule cert_blocklist_06df5c318759d6ea9d090bfb2faf1d94 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "SpiffyTech Inc." and 
+            pe.signatures[i].subject contains "SpiffyTech Inc." and
             pe.signatures[i].serial == "06:df:5c:31:87:59:d6:ea:9d:09:0b:fb:2f:af:1d:94" and
-            1592961292 <= pe.signatures[i].not_after
+            1634515201 <= pe.signatures[i].not_after
         )
 }
 
@@ -11599,13 +11599,13 @@ rule cert_blocklist_02de1cc6c487954592f1bf574ca2b000 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Orca System" and 
+            pe.signatures[i].subject contains "Orca System" and
             pe.signatures[i].serial == "02:de:1c:c6:c4:87:95:45:92:f1:bf:57:4c:a2:b0:00" and
-            1592961292 <= pe.signatures[i].not_after
+            1613735394 <= pe.signatures[i].not_after
         )
 }
 
@@ -11617,15 +11617,15 @@ rule cert_blocklist_a32b8b4f1be43c23eb2848ab4ef06bb2 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Pak El AB" and (
                 pe.signatures[i].serial == "00:a3:2b:8b:4f:1b:e4:3c:23:eb:28:48:ab:4e:f0:6b:b2" or
-                pe.signatures[i].serial == "a3:2b:8b:4f:1b:e4:3c:23:eb:28:48:ab:4e:f0:6b:b2" 
+                pe.signatures[i].serial == "a3:2b:8b:4f:1b:e4:3c:23:eb:28:48:ab:4e:f0:6b:b2"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1673395200 <= pe.signatures[i].not_after
         )
 }
 
@@ -11637,13 +11637,13 @@ rule cert_blocklist_626735ed30e50e3e0553986d806bfc54 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "FISH ACCOUNTING & TRANSLATING LIMITED" and 
+            pe.signatures[i].subject contains "FISH ACCOUNTING & TRANSLATING LIMITED" and
             pe.signatures[i].serial == "62:67:35:ed:30:e5:0e:3e:05:53:98:6d:80:6b:fc:54" and
-            1592961292 <= pe.signatures[i].not_after
+            1666742400 <= pe.signatures[i].not_after
         )
 }
 
@@ -11655,13 +11655,13 @@ rule cert_blocklist_34d42e871ddb1c92fa20b55b384e1259 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "VENS CORP" and 
+            pe.signatures[i].subject contains "VENS CORP" and
             pe.signatures[i].serial == "34:d4:2e:87:1d:db:1c:92:fa:20:b5:5b:38:4e:12:59" and
-            1592961292 <= pe.signatures[i].not_after
+            1630368000 <= pe.signatures[i].not_after
         )
 }
 
@@ -11673,13 +11673,13 @@ rule cert_blocklist_08d4dc90047b8470ccaf3924dfbd8b5f {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "OOO Dibies" and 
+            pe.signatures[i].subject contains "OOO Dibies" and
             pe.signatures[i].serial == "08:d4:dc:90:04:7b:84:70:cc:af:39:24:df:bd:8b:5f" and
-            1592961292 <= pe.signatures[i].not_after
+            1619136000 <= pe.signatures[i].not_after
         )
 }
 
@@ -11691,15 +11691,15 @@ rule cert_blocklist_c2fc83d458e653837fcfc132c9b03062 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "OOO Vertical" and (
                 pe.signatures[i].serial == "00:c2:fc:83:d4:58:e6:53:83:7f:cf:c1:32:c9:b0:30:62" or
-                pe.signatures[i].serial == "c2:fc:83:d4:58:e6:53:83:7f:cf:c1:32:c9:b0:30:62" 
+                pe.signatures[i].serial == "c2:fc:83:d4:58:e6:53:83:7f:cf:c1:32:c9:b0:30:62"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1602201600 <= pe.signatures[i].not_after
         )
 }
 
@@ -11711,13 +11711,13 @@ rule cert_blocklist_54c793d2224bdd6ca527bb2b7b9dfe9d {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "CODE - HANDLE, s. r. o." and 
+            pe.signatures[i].subject contains "CODE - HANDLE, s. r. o." and
             pe.signatures[i].serial == "54:c7:93:d2:22:4b:dd:6c:a5:27:bb:2b:7b:9d:fe:9d" and
-            1592961292 <= pe.signatures[i].not_after
+            1629676800 <= pe.signatures[i].not_after
         )
 }
 
@@ -11729,15 +11729,15 @@ rule cert_blocklist_8cece6df54cf6ad63596546d77ba3581 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Mikael LLC" and (
                 pe.signatures[i].serial == "00:8c:ec:e6:df:54:cf:6a:d6:35:96:54:6d:77:ba:35:81" or
-                pe.signatures[i].serial == "8c:ec:e6:df:54:cf:6a:d6:35:96:54:6d:77:ba:35:81" 
+                pe.signatures[i].serial == "8c:ec:e6:df:54:cf:6a:d6:35:96:54:6d:77:ba:35:81"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1613088000 <= pe.signatures[i].not_after
         )
 }
 
@@ -11749,15 +11749,15 @@ rule cert_blocklist_984e84cfe362e278f558e2c70aaafac2 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Arctic Nights \\xC3\\x84k\\xC3\\xA4slompolo Oy" and (
                 pe.signatures[i].serial == "00:98:4e:84:cf:e3:62:e2:78:f5:58:e2:c7:0a:aa:fa:c2" or
-                pe.signatures[i].serial == "98:4e:84:cf:e3:62:e2:78:f5:58:e2:c7:0a:aa:fa:c2" 
+                pe.signatures[i].serial == "98:4e:84:cf:e3:62:e2:78:f5:58:e2:c7:0a:aa:fa:c2"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1640304000 <= pe.signatures[i].not_after
         )
 }
 
@@ -11769,15 +11769,15 @@ rule cert_blocklist_ff52eb011bb748fee75153cbe1e50dd6 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "TASK ANNA LIMITED" and (
                 pe.signatures[i].serial == "00:ff:52:eb:01:1b:b7:48:fe:e7:51:53:cb:e1:e5:0d:d6" or
-                pe.signatures[i].serial == "ff:52:eb:01:1b:b7:48:fe:e7:51:53:cb:e1:e5:0d:d6" 
+                pe.signatures[i].serial == "ff:52:eb:01:1b:b7:48:fe:e7:51:53:cb:e1:e5:0d:d6"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1647388800 <= pe.signatures[i].not_after
         )
 }
 
@@ -11789,15 +11789,15 @@ rule cert_blocklist_84a4a0d0657e217b176b455e2465aee0 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "AATB ApS" and (
                 pe.signatures[i].serial == "00:84:a4:a0:d0:65:7e:21:7b:17:6b:45:5e:24:65:ae:e0" or
-                pe.signatures[i].serial == "84:a4:a0:d0:65:7e:21:7b:17:6b:45:5e:24:65:ae:e0" 
+                pe.signatures[i].serial == "84:a4:a0:d0:65:7e:21:7b:17:6b:45:5e:24:65:ae:e0"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1616457600 <= pe.signatures[i].not_after
         )
 }
 
@@ -11809,15 +11809,15 @@ rule cert_blocklist_b8f726508cf1d7b7913bf4bbd1e5c19c {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Merkuri LLC" and (
                 pe.signatures[i].serial == "00:b8:f7:26:50:8c:f1:d7:b7:91:3b:f4:bb:d1:e5:c1:9c" or
-                pe.signatures[i].serial == "b8:f7:26:50:8c:f1:d7:b7:91:3b:f4:bb:d1:e5:c1:9c" 
+                pe.signatures[i].serial == "b8:f7:26:50:8c:f1:d7:b7:91:3b:f4:bb:d1:e5:c1:9c"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1619568000 <= pe.signatures[i].not_after
         )
 }
 
@@ -11829,13 +11829,13 @@ rule cert_blocklist_6a241ffe96a6349df608d22c02942268 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "HELP, d.o.o." and 
+            pe.signatures[i].subject contains "HELP, d.o.o." and
             pe.signatures[i].serial == "6a:24:1f:fe:96:a6:34:9d:f6:08:d2:2c:02:94:22:68" and
-            1592961292 <= pe.signatures[i].not_after
+            1605052800 <= pe.signatures[i].not_after
         )
 }
 
@@ -11847,15 +11847,15 @@ rule cert_blocklist_aa1d84779792b57f91fe7a4bde041942 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "AXIUM NORTHWESTERN HYDRO INC." and (
                 pe.signatures[i].serial == "00:aa:1d:84:77:97:92:b5:7f:91:fe:7a:4b:de:04:19:42" or
-                pe.signatures[i].serial == "aa:1d:84:77:97:92:b5:7f:91:fe:7a:4b:de:04:19:42" 
+                pe.signatures[i].serial == "aa:1d:84:77:97:92:b5:7f:91:fe:7a:4b:de:04:19:42"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1639872000 <= pe.signatures[i].not_after
         )
 }
 
@@ -11867,13 +11867,13 @@ rule cert_blocklist_3c98b6872fbb1f4ae37a4caa749d24c2 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "OOO SMART" and 
+            pe.signatures[i].subject contains "OOO SMART" and
             pe.signatures[i].serial == "3c:98:b6:87:2f:bb:1f:4a:e3:7a:4c:aa:74:9d:24:c2" and
-            1592961292 <= pe.signatures[i].not_after
+            1613370100 <= pe.signatures[i].not_after
         )
 }
 
@@ -11885,15 +11885,15 @@ rule cert_blocklist_e4e795fd1fd25595b869ce22aa7dc49f {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "OASIS COURT LIMITED" and (
                 pe.signatures[i].serial == "00:e4:e7:95:fd:1f:d2:55:95:b8:69:ce:22:aa:7d:c4:9f" or
-                pe.signatures[i].serial == "e4:e7:95:fd:1f:d2:55:95:b8:69:ce:22:aa:7d:c4:9f" 
+                pe.signatures[i].serial == "e4:e7:95:fd:1f:d2:55:95:b8:69:ce:22:aa:7d:c4:9f"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1608508800 <= pe.signatures[i].not_after
         )
 }
 
@@ -11905,15 +11905,15 @@ rule cert_blocklist_e953ada7e8f1438e5f7680ff599ae43e {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "KULBYT LLC" and (
                 pe.signatures[i].serial == "00:e9:53:ad:a7:e8:f1:43:8e:5f:76:80:ff:59:9a:e4:3e" or
-                pe.signatures[i].serial == "e9:53:ad:a7:e8:f1:43:8e:5f:76:80:ff:59:9a:e4:3e" 
+                pe.signatures[i].serial == "e9:53:ad:a7:e8:f1:43:8e:5f:76:80:ff:59:9a:e4:3e"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1614729600 <= pe.signatures[i].not_after
         )
 }
 
@@ -11925,13 +11925,13 @@ rule cert_blocklist_28c57df09ce7cc3fde2243beb4d00101 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "WATER, s.r.o." and 
+            pe.signatures[i].subject contains "WATER, s.r.o." and
             pe.signatures[i].serial == "28:c5:7d:f0:9c:e7:cc:3f:de:22:43:be:b4:d0:01:01" and
-            1592961292 <= pe.signatures[i].not_after
+            1622678400 <= pe.signatures[i].not_after
         )
 }
 
@@ -11943,13 +11943,13 @@ rule cert_blocklist_2d8cfcf04209dc7f771d8d18e462c35a {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "AA PLUS INVEST d.o.o." and 
+            pe.signatures[i].subject contains "AA PLUS INVEST d.o.o." and
             pe.signatures[i].serial == "2d:8c:fc:f0:42:09:dc:7f:77:1d:8d:18:e4:62:c3:5a" and
-            1592961292 <= pe.signatures[i].not_after
+            1631491200 <= pe.signatures[i].not_after
         )
 }
 
@@ -11961,13 +11961,13 @@ rule cert_blocklist_016836311fc39fbb8e6f308bb03cc2b3 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "SERVICE STREAM LIMITED" and 
+            pe.signatures[i].subject contains "SERVICE STREAM LIMITED" and
             pe.signatures[i].serial == "01:68:36:31:1f:c3:9f:bb:8e:6f:30:8b:b0:3c:c2:b3" and
-            1592961292 <= pe.signatures[i].not_after
+            1602547200 <= pe.signatures[i].not_after
         )
 }
 
@@ -11979,13 +11979,13 @@ rule cert_blocklist_435abf46053a0a445c54217a8c233a7f {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "OOO Kodemika" and 
+            pe.signatures[i].subject contains "OOO Kodemika" and
             pe.signatures[i].serial == "43:5a:bf:46:05:3a:0a:44:5c:54:21:7a:8c:23:3a:7f" and
-            1592961292 <= pe.signatures[i].not_after
+            1616976000 <= pe.signatures[i].not_after
         )
 }
 
@@ -11997,15 +11997,15 @@ rule cert_blocklist_b2f9c693a2e6634565f63c79b01dd8f8 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "PHL E STATE ApS" and (
                 pe.signatures[i].serial == "00:b2:f9:c6:93:a2:e6:63:45:65:f6:3c:79:b0:1d:d8:f8" or
-                pe.signatures[i].serial == "b2:f9:c6:93:a2:e6:63:45:65:f6:3c:79:b0:1d:d8:f8" 
+                pe.signatures[i].serial == "b2:f9:c6:93:a2:e6:63:45:65:f6:3c:79:b0:1d:d8:f8"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1620000000 <= pe.signatures[i].not_after
         )
 }
 
@@ -12017,13 +12017,13 @@ rule cert_blocklist_54a6d33f73129e0ef059ccf51be0c35e {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "STAFFORD MEAT COMPANY, INC." and 
+            pe.signatures[i].subject contains "STAFFORD MEAT COMPANY, INC." and
             pe.signatures[i].serial == "54:a6:d3:3f:73:12:9e:0e:f0:59:cc:f5:1b:e0:c3:5e" and
-            1592961292 <= pe.signatures[i].not_after
+            1607100127 <= pe.signatures[i].not_after
         )
 }
 
@@ -12035,13 +12035,13 @@ rule cert_blocklist_142aac4217e22b525c8587589773ba9b {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "A.B. gostinstvo trgovina posredni\\xC5\\xA1tvo in druge storitve, d.o.o." and 
+            pe.signatures[i].subject contains "A.B. gostinstvo trgovina posredni\\xC5\\xA1tvo in druge storitve, d.o.o." and
             pe.signatures[i].serial == "14:2a:ac:42:17:e2:2b:52:5c:85:87:58:97:73:ba:9b" and
-            1592961292 <= pe.signatures[i].not_after
+            1614124800 <= pe.signatures[i].not_after
         )
 }
 
@@ -12053,13 +12053,13 @@ rule cert_blocklist_239664c12baeb5a6d787912888051392 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "FORTH PROPERTY LTD" and 
+            pe.signatures[i].subject contains "FORTH PROPERTY LTD" and
             pe.signatures[i].serial == "23:96:64:c1:2b:ae:b5:a6:d7:87:91:28:88:05:13:92" and
-            1592961292 <= pe.signatures[i].not_after
+            1618272000 <= pe.signatures[i].not_after
         )
 }
 
@@ -12071,13 +12071,13 @@ rule cert_blocklist_0218ebfd5a9bfd55d2f661f0d18d1d71 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "REI LUX UK LIMITED" and 
+            pe.signatures[i].subject contains "REI LUX UK LIMITED" and
             pe.signatures[i].serial == "02:18:eb:fd:5a:9b:fd:55:d2:f6:61:f0:d1:8d:1d:71" and
-            1592961292 <= pe.signatures[i].not_after
+            1608508800 <= pe.signatures[i].not_after
         )
 }
 
@@ -12089,13 +12089,13 @@ rule cert_blocklist_35590ebe4a02dc23317d8ce47a947a9b {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "OOO Largos" and 
+            pe.signatures[i].subject contains "OOO Largos" and
             pe.signatures[i].serial == "35:59:0e:be:4a:02:dc:23:31:7d:8c:e4:7a:94:7a:9b" and
-            1592961292 <= pe.signatures[i].not_after
+            1602201600 <= pe.signatures[i].not_after
         )
 }
 
@@ -12107,15 +12107,15 @@ rule cert_blocklist_aa07d4f2857119cee514a0bd412f8201 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "HANGA GIP d.o.o." and (
                 pe.signatures[i].serial == "00:aa:07:d4:f2:85:71:19:ce:e5:14:a0:bd:41:2f:82:01" or
-                pe.signatures[i].serial == "aa:07:d4:f2:85:71:19:ce:e5:14:a0:bd:41:2f:82:01" 
+                pe.signatures[i].serial == "aa:07:d4:f2:85:71:19:ce:e5:14:a0:bd:41:2f:82:01"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1615766400 <= pe.signatures[i].not_after
         )
 }
 
@@ -12127,13 +12127,13 @@ rule cert_blocklist_40f5660a90301e7a8a8c3b42 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Booz Allen Hamilton Inc." and 
+            pe.signatures[i].subject contains "Booz Allen Hamilton Inc." and
             pe.signatures[i].serial == "40:f5:66:0a:90:30:1e:7a:8a:8c:3b:42" and
-            1592961292 <= pe.signatures[i].not_after
+            1641833688 <= pe.signatures[i].not_after
         )
 }
 
@@ -12145,13 +12145,13 @@ rule cert_blocklist_0400c7614f86d75fe4ee3f6192b6feda {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "StackUp ApS" and 
+            pe.signatures[i].subject contains "StackUp ApS" and
             pe.signatures[i].serial == "04:00:c7:61:4f:86:d7:5f:e4:ee:3f:61:92:b6:fe:da" and
-            1592961292 <= pe.signatures[i].not_after
+            1626393601 <= pe.signatures[i].not_after
         )
 }
 
@@ -12163,15 +12163,15 @@ rule cert_blocklist_e573d9c8b403c41bd59ffa0a8efd4168 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "\"VERONIKA 2\" OOO" and (
                 pe.signatures[i].serial == "00:e5:73:d9:c8:b4:03:c4:1b:d5:9f:fa:0a:8e:fd:41:68" or
-                pe.signatures[i].serial == "e5:73:d9:c8:b4:03:c4:1b:d5:9f:fa:0a:8e:fd:41:68" 
+                pe.signatures[i].serial == "e5:73:d9:c8:b4:03:c4:1b:d5:9f:fa:0a:8e:fd:41:68"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1563148800 <= pe.signatures[i].not_after
         )
 }
 
@@ -12183,15 +12183,15 @@ rule cert_blocklist_b06bc166fc765dacd2f7448c8cdd9205 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "GAS Avto, d.o.o." and (
                 pe.signatures[i].serial == "00:b0:6b:c1:66:fc:76:5d:ac:d2:f7:44:8c:8c:dd:92:05" or
-                pe.signatures[i].serial == "b0:6b:c1:66:fc:76:5d:ac:d2:f7:44:8c:8c:dd:92:05" 
+                pe.signatures[i].serial == "b0:6b:c1:66:fc:76:5d:ac:d2:f7:44:8c:8c:dd:92:05"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1615507200 <= pe.signatures[i].not_after
         )
 }
 
@@ -12203,15 +12203,15 @@ rule cert_blocklist_e9268ed63a7d7e9dfd40a664ddfbaf18 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Casta, s.r.o." and (
                 pe.signatures[i].serial == "00:e9:26:8e:d6:3a:7d:7e:9d:fd:40:a6:64:dd:fb:af:18" or
-                pe.signatures[i].serial == "e9:26:8e:d6:3a:7d:7e:9d:fd:40:a6:64:dd:fb:af:18" 
+                pe.signatures[i].serial == "e9:26:8e:d6:3a:7d:7e:9d:fd:40:a6:64:dd:fb:af:18"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1647302400 <= pe.signatures[i].not_after
         )
 }
 
@@ -12223,13 +12223,13 @@ rule cert_blocklist_425dc3e0ca8bcdce19d00d87e3f0ba28 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Protover LLC" and 
+            pe.signatures[i].subject contains "Protover LLC" and
             pe.signatures[i].serial == "42:5d:c3:e0:ca:8b:cd:ce:19:d0:0d:87:e3:f0:ba:28" and
-            1592961292 <= pe.signatures[i].not_after
+            1621900800 <= pe.signatures[i].not_after
         )
 }
 
@@ -12241,15 +12241,15 @@ rule cert_blocklist_afc0ddb7bdc8207e8c3b7204018eecd3 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "\\xE9\\x83\\xB4\\xE5\\xB7\\x9E\\xE8\\x9C\\x97\\xE7\\x89\\x9B\\xE7\\xBD\\x91\\xE7\\xBB\\x9C\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and (
                 pe.signatures[i].serial == "00:af:c0:dd:b7:bd:c8:20:7e:8c:3b:72:04:01:8e:ec:d3" or
-                pe.signatures[i].serial == "af:c0:dd:b7:bd:c8:20:7e:8c:3b:72:04:01:8e:ec:d3" 
+                pe.signatures[i].serial == "af:c0:dd:b7:bd:c8:20:7e:8c:3b:72:04:01:8e:ec:d3"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1629676800 <= pe.signatures[i].not_after
         )
 }
 
@@ -12261,13 +12261,13 @@ rule cert_blocklist_38989ec61ecdb7391ff5647f7d58ad18 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "RotA Games ApS" and 
+            pe.signatures[i].subject contains "RotA Games ApS" and
             pe.signatures[i].serial == "38:98:9e:c6:1e:cd:b7:39:1f:f5:64:7f:7d:58:ad:18" and
-            1592961292 <= pe.signatures[i].not_after
+            1613088000 <= pe.signatures[i].not_after
         )
 }
 
@@ -12279,15 +12279,15 @@ rule cert_blocklist_bc6c43d206a360f2d6b58537c456b709 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "ANKADA GROUP, d.o.o." and (
                 pe.signatures[i].serial == "00:bc:6c:43:d2:06:a3:60:f2:d6:b5:85:37:c4:56:b7:09" or
-                pe.signatures[i].serial == "bc:6c:43:d2:06:a3:60:f2:d6:b5:85:37:c4:56:b7:09" 
+                pe.signatures[i].serial == "bc:6c:43:d2:06:a3:60:f2:d6:b5:85:37:c4:56:b7:09"
             ) and
-            1592961292 <= pe.signatures[i].not_after
+            1616630400 <= pe.signatures[i].not_after
         )
 }
 
@@ -12299,13 +12299,13 @@ rule cert_blocklist_4929ab561c812af93ddb9758b545f546 {
         sharing     = "TLP:WHITE"
         category    = "INFO"
         description = "Certificate used for digitally signing malware."
-    
+
     condition:
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
-            pe.signatures[i].subject contains "Everything Wow s.r.o." and 
+            pe.signatures[i].subject contains "Everything Wow s.r.o." and
             pe.signatures[i].serial == "49:29:ab:56:1c:81:2a:f9:3d:db:97:58:b5:45:f5:46" and
-            1592961292 <= pe.signatures[i].not_after
+            1594252800 <= pe.signatures[i].not_after
         )
 }
 
@@ -12340,9 +12340,9 @@ rule cert_blocklist_bc6a1812e001362469541108973bbd52 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "AMCERT,LLC" and (
-                    pe.signatures[i].serial == "00:bc:6a:18:12:e0:01:36:24:69:54:11:08:97:3b:bd:52" or
-                    pe.signatures[i].serial == "bc:6a:18:12:e0:01:36:24:69:54:11:08:97:3b:bd:52"
-                ) and
+                pe.signatures[i].serial == "00:bc:6a:18:12:e0:01:36:24:69:54:11:08:97:3b:bd:52" or
+                pe.signatures[i].serial == "bc:6a:18:12:e0:01:36:24:69:54:11:08:97:3b:bd:52"
+            ) and
             1623801600 <= pe.signatures[i].not_after
         )
 }
@@ -12360,9 +12360,9 @@ rule cert_blocklist_bde1d6dc3622724f427a39e6a34f5124 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "AMCERT,LLC" and (
-                    pe.signatures[i].serial == "00:bd:e1:d6:dc:36:22:72:4f:42:7a:39:e6:a3:4f:51:24" or
-                    pe.signatures[i].serial == "bd:e1:d6:dc:36:22:72:4f:42:7a:39:e6:a3:4f:51:24"
-                ) and
+                pe.signatures[i].serial == "00:bd:e1:d6:dc:36:22:72:4f:42:7a:39:e6:a3:4f:51:24" or
+                pe.signatures[i].serial == "bd:e1:d6:dc:36:22:72:4f:42:7a:39:e6:a3:4f:51:24"
+            ) and
             1628553600 <= pe.signatures[i].not_after
         )
 }
@@ -12452,9 +12452,9 @@ rule cert_blocklist_98ab9585c04d7f0e4cf4de98c14b684d {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "AMCERT,LLC" and (
-                    pe.signatures[i].serial == "00:98:ab:95:85:c0:4d:7f:0e:4c:f4:de:98:c1:4b:68:4d" or
-                    pe.signatures[i].serial == "98:ab:95:85:c0:4d:7f:0e:4c:f4:de:98:c1:4b:68:4d"
-                ) and
+                pe.signatures[i].serial == "00:98:ab:95:85:c0:4d:7f:0e:4c:f4:de:98:c1:4b:68:4d" or
+                pe.signatures[i].serial == "98:ab:95:85:c0:4d:7f:0e:4c:f4:de:98:c1:4b:68:4d"
+            ) and
             1656547200 <= pe.signatures[i].not_after
         )
 }
@@ -12490,9 +12490,9 @@ rule cert_blocklist_e963f8983d21b4c1a69c66a9d37498e5 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Max Steinhard" and (
-                    pe.signatures[i].serial == "00:e9:63:f8:98:3d:21:b4:c1:a6:9c:66:a9:d3:74:98:e5" or
-                    pe.signatures[i].serial == "e9:63:f8:98:3d:21:b4:c1:a6:9c:66:a9:d3:74:98:e5"
-                ) and
+                pe.signatures[i].serial == "00:e9:63:f8:98:3d:21:b4:c1:a6:9c:66:a9:d3:74:98:e5" or
+                pe.signatures[i].serial == "e9:63:f8:98:3d:21:b4:c1:a6:9c:66:a9:d3:74:98:e5"
+            ) and
             1656288000 <= pe.signatures[i].not_after
         )
 }
@@ -12600,9 +12600,9 @@ rule cert_blocklist_f5f9c8f8c33e4ce84dd48fcb03ccb075 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Abdulkadir \\xC5\\x9Eahin" and (
-                    pe.signatures[i].serial == "00:f5:f9:c8:f8:c3:3e:4c:e8:4d:d4:8f:cb:03:cc:b0:75" or
-                    pe.signatures[i].serial == "f5:f9:c8:f8:c3:3e:4c:e8:4d:d4:8f:cb:03:cc:b0:75"
-                ) and
+                pe.signatures[i].serial == "00:f5:f9:c8:f8:c3:3e:4c:e8:4d:d4:8f:cb:03:cc:b0:75" or
+                pe.signatures[i].serial == "f5:f9:c8:f8:c3:3e:4c:e8:4d:d4:8f:cb:03:cc:b0:75"
+            ) and
             1545004800 <= pe.signatures[i].not_after
         )
 }
@@ -12638,9 +12638,9 @@ rule cert_blocklist_eeefec4308abe63323600e1608f5e6f2 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "YUPITER-STROI, OOO" and (
-                    pe.signatures[i].serial == "00:ee:ef:ec:43:08:ab:e6:33:23:60:0e:16:08:f5:e6:f2" or
-                    pe.signatures[i].serial == "ee:ef:ec:43:08:ab:e6:33:23:60:0e:16:08:f5:e6:f2"
-                ) and
+                pe.signatures[i].serial == "00:ee:ef:ec:43:08:ab:e6:33:23:60:0e:16:08:f5:e6:f2" or
+                pe.signatures[i].serial == "ee:ef:ec:43:08:ab:e6:33:23:60:0e:16:08:f5:e6:f2"
+            ) and
             1491177600 <= pe.signatures[i].not_after
         )
 }
@@ -12694,9 +12694,9 @@ rule cert_blocklist_d5690d94f15315e143db10af35497dc5 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "PET SERVICES d.o.o." and (
-                    pe.signatures[i].serial == "00:d5:69:0d:94:f1:53:15:e1:43:db:10:af:35:49:7d:c5" or
-                    pe.signatures[i].serial == "d5:69:0d:94:f1:53:15:e1:43:db:10:af:35:49:7d:c5"
-                ) and
+                pe.signatures[i].serial == "00:d5:69:0d:94:f1:53:15:e1:43:db:10:af:35:49:7d:c5" or
+                pe.signatures[i].serial == "d5:69:0d:94:f1:53:15:e1:43:db:10:af:35:49:7d:c5"
+            ) and
             1576195200 <= pe.signatures[i].not_after
         )
 }
@@ -12714,9 +12714,9 @@ rule cert_blocklist_8223c74185add0927246f5e33ebac467 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "TOV Virikton" and (
-                    pe.signatures[i].serial == "00:82:23:c7:41:85:ad:d0:92:72:46:f5:e3:3e:ba:c4:67" or
-                    pe.signatures[i].serial == "82:23:c7:41:85:ad:d0:92:72:46:f5:e3:3e:ba:c4:67"
-                ) and
+                pe.signatures[i].serial == "00:82:23:c7:41:85:ad:d0:92:72:46:f5:e3:3e:ba:c4:67" or
+                pe.signatures[i].serial == "82:23:c7:41:85:ad:d0:92:72:46:f5:e3:3e:ba:c4:67"
+            ) and
             1463616000 <= pe.signatures[i].not_after
         )
 }
@@ -12734,9 +12734,9 @@ rule cert_blocklist_dd9e9e1d7c573714e3f567c5380ae6d0 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "CREA&COM d.o.o." and (
-                    pe.signatures[i].serial == "00:dd:9e:9e:1d:7c:57:37:14:e3:f5:67:c5:38:0a:e6:d0" or
-                    pe.signatures[i].serial == "dd:9e:9e:1d:7c:57:37:14:e3:f5:67:c5:38:0a:e6:d0"
-                ) and
+                pe.signatures[i].serial == "00:dd:9e:9e:1d:7c:57:37:14:e3:f5:67:c5:38:0a:e6:d0" or
+                pe.signatures[i].serial == "dd:9e:9e:1d:7c:57:37:14:e3:f5:67:c5:38:0a:e6:d0"
+            ) and
             1575849600 <= pe.signatures[i].not_after
         )
 }
@@ -12772,9 +12772,9 @@ rule cert_blocklist_c33187fe848a65e8484ea492cb2cbb18 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "SELCUK GUNDOGDU" and (
-                    pe.signatures[i].serial == "00:c3:31:87:fe:84:8a:65:e8:48:4e:a4:92:cb:2c:bb:18" or
-                    pe.signatures[i].serial == "c3:31:87:fe:84:8a:65:e8:48:4e:a4:92:cb:2c:bb:18"
-                ) and
+                pe.signatures[i].serial == "00:c3:31:87:fe:84:8a:65:e8:48:4e:a4:92:cb:2c:bb:18" or
+                pe.signatures[i].serial == "c3:31:87:fe:84:8a:65:e8:48:4e:a4:92:cb:2c:bb:18"
+            ) and
             1426204800 <= pe.signatures[i].not_after
         )
 }
@@ -12846,9 +12846,9 @@ rule cert_blocklist_e01407871e2146c9baab1ae7ab8ab172 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "TOV Intalev Ukraina" and (
-                    pe.signatures[i].serial == "00:e0:14:07:87:1e:21:46:c9:ba:ab:1a:e7:ab:8a:b1:72" or
-                    pe.signatures[i].serial == "e0:14:07:87:1e:21:46:c9:ba:ab:1a:e7:ab:8a:b1:72"
-                ) and
+                pe.signatures[i].serial == "00:e0:14:07:87:1e:21:46:c9:ba:ab:1a:e7:ab:8a:b1:72" or
+                pe.signatures[i].serial == "e0:14:07:87:1e:21:46:c9:ba:ab:1a:e7:ab:8a:b1:72"
+            ) and
             1464220800 <= pe.signatures[i].not_after
         )
 }
@@ -12866,9 +12866,9 @@ rule cert_blocklist_effc6d19d6fc85872e4e5b3ccee6d301 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "C\\xC3\\x93IR IP LIMITED" and (
-                    pe.signatures[i].serial == "00:ef:fc:6d:19:d6:fc:85:87:2e:4e:5b:3c:ce:e6:d3:01" or
-                    pe.signatures[i].serial == "ef:fc:6d:19:d6:fc:85:87:2e:4e:5b:3c:ce:e6:d3:01"
-                ) and
+                pe.signatures[i].serial == "00:ef:fc:6d:19:d6:fc:85:87:2e:4e:5b:3c:ce:e6:d3:01" or
+                pe.signatures[i].serial == "ef:fc:6d:19:d6:fc:85:87:2e:4e:5b:3c:ce:e6:d3:01"
+            ) and
             1572307200 <= pe.signatures[i].not_after
         )
 }
@@ -12994,9 +12994,9 @@ rule cert_blocklist_9a727e200ea76570 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Alexsandro Da Rosa - ME" and (
-                    pe.signatures[i].serial == "00:9a:72:7e:20:0e:a7:65:70" or
-                    pe.signatures[i].serial == "9a:72:7e:20:0e:a7:65:70"
-                ) and
+                pe.signatures[i].serial == "00:9a:72:7e:20:0e:a7:65:70" or
+                pe.signatures[i].serial == "9a:72:7e:20:0e:a7:65:70"
+            ) and
             1539056530 <= pe.signatures[i].not_after
         )
 }
@@ -13140,9 +13140,9 @@ rule cert_blocklist_cbd37c0a651913ee25a6860d7d5ccdf2 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Amma" and (
-                    pe.signatures[i].serial == "00:cb:d3:7c:0a:65:19:13:ee:25:a6:86:0d:7d:5c:cd:f2" or
-                    pe.signatures[i].serial == "cb:d3:7c:0a:65:19:13:ee:25:a6:86:0d:7d:5c:cd:f2"
-                ) and
+                pe.signatures[i].serial == "00:cb:d3:7c:0a:65:19:13:ee:25:a6:86:0d:7d:5c:cd:f2" or
+                pe.signatures[i].serial == "cb:d3:7c:0a:65:19:13:ee:25:a6:86:0d:7d:5c:cd:f2"
+            ) and
             1431734400 <= pe.signatures[i].not_after
         )
 }
@@ -13358,9 +13358,9 @@ rule cert_blocklist_876c00bd665df98b35554f67a5c1c32a {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Lossera-M, OOO" and (
-                    pe.signatures[i].serial == "00:87:6c:00:bd:66:5d:f9:8b:35:55:4f:67:a5:c1:c3:2a" or
-                    pe.signatures[i].serial == "87:6c:00:bd:66:5d:f9:8b:35:55:4f:67:a5:c1:c3:2a"
-                ) and
+                pe.signatures[i].serial == "00:87:6c:00:bd:66:5d:f9:8b:35:55:4f:67:a5:c1:c3:2a" or
+                pe.signatures[i].serial == "87:6c:00:bd:66:5d:f9:8b:35:55:4f:67:a5:c1:c3:2a"
+            ) and
             1493078400 <= pe.signatures[i].not_after
         )
 }
@@ -13828,9 +13828,9 @@ rule cert_blocklist_a9c1523cb2c73a82771d318124963e87 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "ULTERA" and (
-                    pe.signatures[i].serial == "00:a9:c1:52:3c:b2:c7:3a:82:77:1d:31:81:24:96:3e:87" or
-                    pe.signatures[i].serial == "a9:c1:52:3c:b2:c7:3a:82:77:1d:31:81:24:96:3e:87"
-                ) and
+                pe.signatures[i].serial == "00:a9:c1:52:3c:b2:c7:3a:82:77:1d:31:81:24:96:3e:87" or
+                pe.signatures[i].serial == "a9:c1:52:3c:b2:c7:3a:82:77:1d:31:81:24:96:3e:87"
+            ) and
             1499731200 <= pe.signatures[i].not_after
         )
 }
@@ -13902,9 +13902,9 @@ rule cert_blocklist_f57df6a6eee3854d513d0ba8585049b7 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "smnetworks" and (
-                    pe.signatures[i].serial == "00:f5:7d:f6:a6:ee:e3:85:4d:51:3d:0b:a8:58:50:49:b7" or
-                    pe.signatures[i].serial == "f5:7d:f6:a6:ee:e3:85:4d:51:3d:0b:a8:58:50:49:b7"
-                ) and
+                pe.signatures[i].serial == "00:f5:7d:f6:a6:ee:e3:85:4d:51:3d:0b:a8:58:50:49:b7" or
+                pe.signatures[i].serial == "f5:7d:f6:a6:ee:e3:85:4d:51:3d:0b:a8:58:50:49:b7"
+            ) and
             1277769600 <= pe.signatures[i].not_after
         )
 }
@@ -13976,9 +13976,9 @@ rule cert_blocklist_83320d93dd8cf16d11f99b1078b0a7cb {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "TRANS LTD" and (
-                    pe.signatures[i].serial == "00:83:32:0d:93:dd:8c:f1:6d:11:f9:9b:10:78:b0:a7:cb" or
-                    pe.signatures[i].serial == "83:32:0d:93:dd:8c:f1:6d:11:f9:9b:10:78:b0:a7:cb"
-                ) and
+                pe.signatures[i].serial == "00:83:32:0d:93:dd:8c:f1:6d:11:f9:9b:10:78:b0:a7:cb" or
+                pe.signatures[i].serial == "83:32:0d:93:dd:8c:f1:6d:11:f9:9b:10:78:b0:a7:cb"
+            ) and
             1524614400 <= pe.signatures[i].not_after
         )
 }
@@ -14158,9 +14158,9 @@ rule cert_blocklist_ed9caeb7911b31bd {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "\\xE4\\xB8\\x8A\\xE6\\xB5\\xB7\\xE5\\xA4\\xA9\\xE6\\xB8\\xB8\\xE8\\xBD\\xAF\\xE4\\xBB\\xB6\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and (
-                    pe.signatures[i].serial == "00:ed:9c:ae:b7:91:1b:31:bd" or
-                    pe.signatures[i].serial == "ed:9c:ae:b7:91:1b:31:bd"
-                ) and
+                pe.signatures[i].serial == "00:ed:9c:ae:b7:91:1b:31:bd" or
+                pe.signatures[i].serial == "ed:9c:ae:b7:91:1b:31:bd"
+            ) and
             1506001740 <= pe.signatures[i].not_after
         )
 }
@@ -14232,9 +14232,9 @@ rule cert_blocklist_cecedd2efc985c2dbf0019669d270079 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "TRANS LTD" and (
-                    pe.signatures[i].serial == "00:ce:ce:dd:2e:fc:98:5c:2d:bf:00:19:66:9d:27:00:79" or
-                    pe.signatures[i].serial == "ce:ce:dd:2e:fc:98:5c:2d:bf:00:19:66:9d:27:00:79"
-                ) and
+                pe.signatures[i].serial == "00:ce:ce:dd:2e:fc:98:5c:2d:bf:00:19:66:9d:27:00:79" or
+                pe.signatures[i].serial == "ce:ce:dd:2e:fc:98:5c:2d:bf:00:19:66:9d:27:00:79"
+            ) and
             1527811200 <= pe.signatures[i].not_after
         )
 }
@@ -14684,9 +14684,9 @@ rule cert_blocklist_e0134c41e7eda6863c4eee5b003976dd {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "5000 LIMITED" and (
-                    pe.signatures[i].serial == "00:e0:13:4c:41:e7:ed:a6:86:3c:4e:ee:5b:00:39:76:dd" or
-                    pe.signatures[i].serial == "e0:13:4c:41:e7:ed:a6:86:3c:4e:ee:5b:00:39:76:dd"
-                ) and
+                pe.signatures[i].serial == "00:e0:13:4c:41:e7:ed:a6:86:3c:4e:ee:5b:00:39:76:dd" or
+                pe.signatures[i].serial == "e0:13:4c:41:e7:ed:a6:86:3c:4e:ee:5b:00:39:76:dd"
+            ) and
             1528070400 <= pe.signatures[i].not_after
         )
 }
@@ -14776,9 +14776,9 @@ rule cert_blocklist_e9756b3f38b1172ea89fdbdfdba5f979 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Kreamer Ltd" and (
-                    pe.signatures[i].serial == "00:e9:75:6b:3f:38:b1:17:2e:a8:9f:db:df:db:a5:f9:79" or
-                    pe.signatures[i].serial == "e9:75:6b:3f:38:b1:17:2e:a8:9f:db:df:db:a5:f9:79"
-                ) and
+                pe.signatures[i].serial == "00:e9:75:6b:3f:38:b1:17:2e:a8:9f:db:df:db:a5:f9:79" or
+                pe.signatures[i].serial == "e9:75:6b:3f:38:b1:17:2e:a8:9f:db:df:db:a5:f9:79"
+            ) and
             1492732800 <= pe.signatures[i].not_after
         )
 }
@@ -14904,9 +14904,9 @@ rule cert_blocklist_b63e4299d0b0e2dcdaeb976167a23235 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Baltservis LLC" and (
-                    pe.signatures[i].serial == "00:b6:3e:42:99:d0:b0:e2:dc:da:eb:97:61:67:a2:32:35" or
-                    pe.signatures[i].serial == "b6:3e:42:99:d0:b0:e2:dc:da:eb:97:61:67:a2:32:35"
-                ) and
+                pe.signatures[i].serial == "00:b6:3e:42:99:d0:b0:e2:dc:da:eb:97:61:67:a2:32:35" or
+                pe.signatures[i].serial == "b6:3e:42:99:d0:b0:e2:dc:da:eb:97:61:67:a2:32:35"
+            ) and
             1604102400 <= pe.signatures[i].not_after
         )
 }
@@ -15068,9 +15068,9 @@ rule cert_blocklist_e61b0366d940896430bcfe3e93baac5b {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "TRANS LTD" and (
-                    pe.signatures[i].serial == "00:e6:1b:03:66:d9:40:89:64:30:bc:fe:3e:93:ba:ac:5b" or
-                    pe.signatures[i].serial == "e6:1b:03:66:d9:40:89:64:30:bc:fe:3e:93:ba:ac:5b"
-                ) and
+                pe.signatures[i].serial == "00:e6:1b:03:66:d9:40:89:64:30:bc:fe:3e:93:ba:ac:5b" or
+                pe.signatures[i].serial == "e6:1b:03:66:d9:40:89:64:30:bc:fe:3e:93:ba:ac:5b"
+            ) and
             1528156800 <= pe.signatures[i].not_after
         )
 }
@@ -15124,9 +15124,9 @@ rule cert_blocklist_d0312f9177cd46b943df3ef22db4608b {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "United Systems Technology, Inc." and (
-                    pe.signatures[i].serial == "00:d0:31:2f:91:77:cd:46:b9:43:df:3e:f2:2d:b4:60:8b" or
-                    pe.signatures[i].serial == "d0:31:2f:91:77:cd:46:b9:43:df:3e:f2:2d:b4:60:8b"
-                ) and
+                pe.signatures[i].serial == "00:d0:31:2f:91:77:cd:46:b9:43:df:3e:f2:2d:b4:60:8b" or
+                pe.signatures[i].serial == "d0:31:2f:91:77:cd:46:b9:43:df:3e:f2:2d:b4:60:8b"
+            ) and
             1341273600 <= pe.signatures[i].not_after
         )
 }
@@ -15396,9 +15396,9 @@ rule cert_blocklist_954d0577d5ce8999e0387a5364829f66 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Soblosol Limited" and (
-                    pe.signatures[i].serial == "00:95:4d:05:77:d5:ce:89:99:e0:38:7a:53:64:82:9f:66" or
-                    pe.signatures[i].serial == "95:4d:05:77:d5:ce:89:99:e0:38:7a:53:64:82:9f:66"
-                ) and
+                pe.signatures[i].serial == "00:95:4d:05:77:d5:ce:89:99:e0:38:7a:53:64:82:9f:66" or
+                pe.signatures[i].serial == "95:4d:05:77:d5:ce:89:99:e0:38:7a:53:64:82:9f:66"
+            ) and
             1543968000 <= pe.signatures[i].not_after
         )
 }
@@ -15416,9 +15416,9 @@ rule cert_blocklist_df5121dc99d1ab6b7e5229f6832123ef {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "INC SALYUT" and (
-                    pe.signatures[i].serial == "00:df:51:21:dc:99:d1:ab:6b:7e:52:29:f6:83:21:23:ef" or
-                    pe.signatures[i].serial == "df:51:21:dc:99:d1:ab:6b:7e:52:29:f6:83:21:23:ef"
-                ) and
+                pe.signatures[i].serial == "00:df:51:21:dc:99:d1:ab:6b:7e:52:29:f6:83:21:23:ef" or
+                pe.signatures[i].serial == "df:51:21:dc:99:d1:ab:6b:7e:52:29:f6:83:21:23:ef"
+            ) and
             1613433600 <= pe.signatures[i].not_after
         )
 }
@@ -15508,9 +15508,9 @@ rule cert_blocklist_90e33c1068f54913315b6ce9311141b9 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "GERMES, OOO" and (
-                    pe.signatures[i].serial == "00:90:e3:3c:10:68:f5:49:13:31:5b:6c:e9:31:11:41:b9" or
-                    pe.signatures[i].serial == "90:e3:3c:10:68:f5:49:13:31:5b:6c:e9:31:11:41:b9"
-                ) and
+                pe.signatures[i].serial == "00:90:e3:3c:10:68:f5:49:13:31:5b:6c:e9:31:11:41:b9" or
+                pe.signatures[i].serial == "90:e3:3c:10:68:f5:49:13:31:5b:6c:e9:31:11:41:b9"
+            ) and
             1487635200 <= pe.signatures[i].not_after
         )
 }
@@ -15618,9 +15618,9 @@ rule cert_blocklist_dc992ea8e6bb4926931df656d5eef8a0 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "MEGAPOLISELIT, OOO" and (
-                    pe.signatures[i].serial == "00:dc:99:2e:a8:e6:bb:49:26:93:1d:f6:56:d5:ee:f8:a0" or
-                    pe.signatures[i].serial == "dc:99:2e:a8:e6:bb:49:26:93:1d:f6:56:d5:ee:f8:a0"
-                ) and
+                pe.signatures[i].serial == "00:dc:99:2e:a8:e6:bb:49:26:93:1d:f6:56:d5:ee:f8:a0" or
+                pe.signatures[i].serial == "dc:99:2e:a8:e6:bb:49:26:93:1d:f6:56:d5:ee:f8:a0"
+            ) and
             1497916800 <= pe.signatures[i].not_after
         )
 }
@@ -15656,9 +15656,9 @@ rule cert_blocklist_a8d40da6708679c08aebddea6d3f6b8a {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "VELES LTD." and (
-                    pe.signatures[i].serial == "00:a8:d4:0d:a6:70:86:79:c0:8a:eb:dd:ea:6d:3f:6b:8a" or
-                    pe.signatures[i].serial == "a8:d4:0d:a6:70:86:79:c0:8a:eb:dd:ea:6d:3f:6b:8a"
-                ) and
+                pe.signatures[i].serial == "00:a8:d4:0d:a6:70:86:79:c0:8a:eb:dd:ea:6d:3f:6b:8a" or
+                pe.signatures[i].serial == "a8:d4:0d:a6:70:86:79:c0:8a:eb:dd:ea:6d:3f:6b:8a"
+            ) and
             1547424000 <= pe.signatures[i].not_after
         )
 }
@@ -16090,9 +16090,9 @@ rule cert_blocklist_be2f22c152bb218b898c4029056816a9 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "Marts GmbH" and (
-                    pe.signatures[i].serial == "00:be:2f:22:c1:52:bb:21:8b:89:8c:40:29:05:68:16:a9" or
-                    pe.signatures[i].serial == "be:2f:22:c1:52:bb:21:8b:89:8c:40:29:05:68:16:a9"
-                ) and
+                pe.signatures[i].serial == "00:be:2f:22:c1:52:bb:21:8b:89:8c:40:29:05:68:16:a9" or
+                pe.signatures[i].serial == "be:2f:22:c1:52:bb:21:8b:89:8c:40:29:05:68:16:a9"
+            ) and
             1676246400 <= pe.signatures[i].not_after
         )
 }
@@ -16110,9 +16110,9 @@ rule cert_blocklist_fc7065abf8303fb472b8af85918f5c24 {
         uint16(0) == 0x5A4D and
         for any i in (0..pe.number_of_signatures): (
             pe.signatures[i].subject contains "DIG IN VISION SP Z O O" and (
-                    pe.signatures[i].serial == "00:fc:70:65:ab:f8:30:3f:b4:72:b8:af:85:91:8f:5c:24" or
-                    pe.signatures[i].serial == "fc:70:65:ab:f8:30:3f:b4:72:b8:af:85:91:8f:5c:24"
-                ) and
+                pe.signatures[i].serial == "00:fc:70:65:ab:f8:30:3f:b4:72:b8:af:85:91:8f:5c:24" or
+                pe.signatures[i].serial == "fc:70:65:ab:f8:30:3f:b4:72:b8:af:85:91:8f:5c:24"
+            ) and
             1604361600 <= pe.signatures[i].not_after
         )
 }
@@ -16132,5 +16132,1157 @@ rule cert_blocklist_698ff388adb50b88afb832e76b0a0ad1 {
             pe.signatures[i].subject contains "BELLAP LIMITED" and
             pe.signatures[i].serial == "69:8f:f3:88:ad:b5:0b:88:af:b8:32:e7:6b:0a:0a:d1" and
             1675070541 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_391ae38670ab188a5de26e07 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "DVERI FADO, TOV" and
+            pe.signatures[i].serial == "39:1a:e3:86:70:ab:18:8a:5d:e2:6e:07" and
+            1540832872 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_d08d83ff118df3777e371c5c482cce7b {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "AMO-K Limited Liability Company" and (
+                pe.signatures[i].serial == "00:d0:8d:83:ff:11:8d:f3:77:7e:37:1c:5c:48:2c:ce:7b" or
+                pe.signatures[i].serial == "d0:8d:83:ff:11:8d:f3:77:7e:37:1c:5c:48:2c:ce:7b"
+            ) and
+            1444780800 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_06ce209477f1ac19a2049bdc5846a831 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Select'Assistance Pro" and
+            pe.signatures[i].serial == "06:ce:20:94:77:f1:ac:19:a2:04:9b:dc:58:46:a8:31" and
+            1426710344 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_447f449121b883211663b7b7e2ead868 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "3 AM CHP" and
+            pe.signatures[i].serial == "44:7f:44:91:21:b8:83:21:16:63:b7:b7:e2:ea:d8:68" and
+            1443052800 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_6366a9ac97df4de17366943c9b291aaa {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "xlgames" and
+            pe.signatures[i].serial == "63:66:a9:ac:97:df:4d:e1:73:66:94:3c:9b:29:1a:aa" and
+            1326796477 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_66e3f0b4459f15ac7f2a2b44990dd709 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "KOG Co., Ltd." and
+            pe.signatures[i].serial == "66:e3:f0:b4:45:9f:15:ac:7f:2a:2b:44:99:0d:d7:09" and
+            1320288125 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_610039d6349ee531e4caa3a65d100c7d {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Wemade Entertainment" and
+            pe.signatures[i].serial == "61:00:39:d6:34:9e:e5:31:e4:ca:a3:a6:5d:10:0c:7d" and
+            1341792000 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_1caa0d0dadf32a2404a75195ae47820a {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "LivePlex Corp" and
+            pe.signatures[i].serial == "1c:aa:0d:0d:ad:f3:2a:24:04:a7:51:95:ae:47:82:0a" and
+            1324425600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_140d2c515e8ee9739bb5f1b2637dc478 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Guangzhou YuanLuo Technology Co.,Ltd" and
+            pe.signatures[i].serial == "14:0d:2c:51:5e:8e:e9:73:9b:b5:f1:b2:63:7d:c4:78" and
+            1386806400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_58015acd501fc9c344264eace2ce5730 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Nanjing Ranyi Technology Co., Ltd. " and
+            pe.signatures[i].serial == "58:01:5a:cd:50:1f:c9:c3:44:26:4e:ac:e2:ce:57:30" and
+            1352246400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_0b7279068beb15ffe8060d2c56153c35 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Guangzhou YuanLuo Technology Co.,Ltd" and
+            pe.signatures[i].serial == "0b:72:79:06:8b:eb:15:ff:e8:06:0d:2c:56:15:3c:35" and
+            1350864000 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_0bc0f18da36702e302db170d91dc9202 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Foresee Consulting Inc." and
+            pe.signatures[i].serial == "0b:c0:f1:8d:a3:67:02:e3:02:db:17:0d:91:dc:92:02" and
+            1637712000 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_ca9b6f49b8b41204a174c751c73dc393 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "CodeDance Ltd" and (
+                pe.signatures[i].serial == "00:ca:9b:6f:49:b8:b4:12:04:a1:74:c7:51:c7:3d:c3:93" or
+                pe.signatures[i].serial == "ca:9b:6f:49:b8:b4:12:04:a1:74:c7:51:c7:3d:c3:93"
+            ) and
+            1654646400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_aaf65b8e7a2e68bc8c9e8f27331b795c {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "ALISA L LIMITED" and (
+                pe.signatures[i].serial == "00:aa:f6:5b:8e:7a:2e:68:bc:8c:9e:8f:27:33:1b:79:5c" or
+                pe.signatures[i].serial == "aa:f6:5b:8e:7a:2e:68:bc:8c:9e:8f:27:33:1b:79:5c"
+            ) and
+            1549324800 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_c6ed0efe2844fa44aae350c6845c3331 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "THE COMPANY OF WORDS LTD" and (
+                pe.signatures[i].serial == "00:c6:ed:0e:fe:28:44:fa:44:aa:e3:50:c6:84:5c:33:31" or
+                pe.signatures[i].serial == "c6:ed:0e:fe:28:44:fa:44:aa:e3:50:c6:84:5c:33:31"
+            ) and
+            1549324800 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_ede6cfbf9fa18337b0fdb49c1f693020 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "START ARCHITECTURE LTD" and (
+                pe.signatures[i].serial == "00:ed:e6:cf:bf:9f:a1:83:37:b0:fd:b4:9c:1f:69:30:20" or
+                pe.signatures[i].serial == "ed:e6:cf:bf:9f:a1:83:37:b0:fd:b4:9c:1f:69:30:20"
+            ) and
+            1554940800 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_eda0f47b3b38e781cdf6ef6be5d3f6ee {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "ADVANCED ACCESS SERVICES LTD" and (
+                pe.signatures[i].serial == "00:ed:a0:f4:7b:3b:38:e7:81:cd:f6:ef:6b:e5:d3:f6:ee" or
+                pe.signatures[i].serial == "ed:a0:f4:7b:3b:38:e7:81:cd:f6:ef:6b:e5:d3:f6:ee"
+            ) and
+            1650931200 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_5da173eb1ac76340ac058e1ff4bf5e1b {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "ALISA LTD" and
+            pe.signatures[i].serial == "5d:a1:73:eb:1a:c7:63:40:ac:05:8e:1f:f4:bf:5e:1b" and
+            1550793600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_1380a7ccf2bf36bc496b00d8 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "VANKY TECHNOLOGY LIMITED" and
+            pe.signatures[i].serial == "13:80:a7:cc:f2:bf:36:bc:49:6b:00:d8" and
+            1478069976 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_02eaf27e6f1575e365fc7fe4e0be43f7 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Theravada Solutions Ltd" and
+            pe.signatures[i].serial == "02:ea:f2:7e:6f:15:75:e3:65:fc:7f:e4:e0:be:43:f7" and
+            1562889600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_6eb02ac2beb9611ed57eb12e {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "\\xE6\\x9D\\xA8\\xE5\\x87\\x8C\\xE4\\xBC\\xAF\\xE4\\xB9\\x90\\xE7\\xBD\\x91\\xE7\\xBB\\x9C\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
+            pe.signatures[i].serial == "6e:b0:2a:c2:be:b9:61:1e:d5:7e:b1:2e" and
+            1585023767 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_010000000001297dba69dd {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "ROSSO INDEX K.K." and
+            pe.signatures[i].serial == "01:00:00:00:00:01:29:7d:ba:69:dd" and
+            1277713154 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_7def22ef4c645b1decfb36b6d3539dbf {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Beijing Caiyunshidai Technology Co., Ltd." and
+            pe.signatures[i].serial == "7d:ef:22:ef:4c:64:5b:1d:ec:fb:36:b6:d3:53:9d:bf" and
+            1474416000 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_3e39c2ccc494438bb8c2560f {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "VANKY TECHNOLOGY LIMITED" and
+            pe.signatures[i].serial == "3e:39:c2:cc:c4:94:43:8b:b8:c2:56:0f" and
+            1466142876 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_6e3b09f43c3a0fd53b7d600f08fae2b5 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Divisible Limited" and
+            pe.signatures[i].serial == "6e:3b:09:f4:3c:3a:0f:d5:3b:7d:60:0f:08:fa:e2:b5" and
+            1507248000 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_21220646c639d62c16992f46 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Sivi Technology Limited" and
+            pe.signatures[i].serial == "21:22:06:46:c6:39:d6:2c:16:99:2f:46" and
+            1466130984 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_738663f2c9e4adb3ad5306aa5e7cc548 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "GIN-Konsalt" and
+            pe.signatures[i].serial == "73:86:63:f2:c9:e4:ad:b3:ad:53:06:aa:5e:7c:c5:48" and
+            1498435200 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_4280f2c8ce1d98e5f8da7ecb005eeae5 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Beijing Caiyunshidai Technology Co., Ltd." and
+            pe.signatures[i].serial == "42:80:f2:c8:ce:1d:98:e5:f8:da:7e:cb:00:5e:ea:e5" and
+            1476316800 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_2946397be9c5ae44e95c99af {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "VANKY TECHNOLOGY LIMITED" and
+            pe.signatures[i].serial == "29:46:39:7b:e9:c5:ae:44:e9:5c:99:af" and
+            1476092708 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_2df453588177cf1c0c297ff4 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Shenzhen Yunhuitianxia Technology Co.,Ltd." and
+            pe.signatures[i].serial == "2d:f4:53:58:81:77:cf:1c:0c:29:7f:f4" and
+            1479735173 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_0619c5e39a4fc60a32f9b07f6a4ca328 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Yuanyuan Zhang" and
+            pe.signatures[i].serial == "06:19:c5:e3:9a:4f:c6:0a:32:f9:b0:7f:6a:4c:a3:28" and
+            1475884800 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_2bffef48e6a321b418041310fdb9b0d0 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "A&D DOMUS LIMITED" and
+            pe.signatures[i].serial == "2b:ff:ef:48:e6:a3:21:b4:18:04:13:10:fd:b9:b0:d0" and
+            1554681600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_34ec9565805f34204c6966fb81e36ba1 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Xin Zhou" and
+            pe.signatures[i].serial == "34:ec:95:65:80:5f:34:20:4c:69:66:fb:81:e3:6b:a1" and
+            1476921600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_b2b934b7f01e0ac1e577814992243709 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "MS CORP SOFTWARE LTD" and (
+                pe.signatures[i].serial == "00:b2:b9:34:b7:f0:1e:0a:c1:e5:77:81:49:92:24:37:09" or
+                pe.signatures[i].serial == "b2:b9:34:b7:f0:1e:0a:c1:e5:77:81:49:92:24:37:09"
+            ) and
+            1590710400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_3a1b397fd9451e3b5891fc69681ed73d {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Yongli Zhang" and
+            pe.signatures[i].serial == "3a:1b:39:7f:d9:45:1e:3b:58:91:fc:69:68:1e:d7:3d" and
+            1470614400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_1eb816aa49e4894d9e9f78729e53cd48 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "\\xE5\\x96\\x84\\xE5\\x90\\x9B \\xE9\\x9F\\xA6" and
+            pe.signatures[i].serial == "1e:b8:16:aa:49:e4:89:4d:9e:9f:78:72:9e:53:cd:48" and
+            1429056000 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_383ca88d6d9379c740609560 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "VANKY TECHNOLOGY LIMITED" and
+            pe.signatures[i].serial == "38:3c:a8:8d:6d:93:79:c7:40:60:95:60" and
+            1478250214 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_6731cb1430f18b8c0c43ab40e1154169 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "3 AM CHP" and
+            pe.signatures[i].serial == "67:31:cb:14:30:f1:8b:8c:0c:43:ab:40:e1:15:41:69" and
+            1436313600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_159505e6456b9a9352f7c47168d89b96 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Shan Feng" and
+            pe.signatures[i].serial == "15:95:05:e6:45:6b:9a:93:52:f7:c4:71:68:d8:9b:96" and
+            1469404800 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_04a0e92b0b9ebbb797df6ef52bd5ad05 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Beijing Caiyunshidai Technology Co., Ltd." and
+            pe.signatures[i].serial == "04:a0:e9:2b:0b:9e:bb:b7:97:df:6e:f5:2b:d5:ad:05" and
+            1479081600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_25f222ab2613dc4270b2aabc2519a101 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Aeroscan TOV" and
+            pe.signatures[i].serial == "25:f2:22:ab:26:13:dc:42:70:b2:aa:bc:25:19:a1:01" and
+            1445299200 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_212ca239866f88c3d5b000b3004a569c {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "XECURE LAB CO., LTD." and
+            pe.signatures[i].serial == "21:2c:a2:39:86:6f:88:c3:d5:b0:00:b3:00:4a:56:9c" and
+            1347840000 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_18b700a319aa98ae71b279d4e8030b82 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Yu Bao" and
+            pe.signatures[i].serial == "18:b7:00:a3:19:aa:98:ae:71:b2:79:d4:e8:03:0b:82" and
+            1479686400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_169138a86954be1d9b264f47 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "BIG JOURNEY TECHNOLOGY LIMITED" and
+            pe.signatures[i].serial == "16:91:38:a8:69:54:be:1d:9b:26:4f:47" and
+            1477636474 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_33412168eeb3c0e4c7dd0508a9ffecd5 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Beijing Caiyunshidai Technology Co., Ltd." and
+            pe.signatures[i].serial == "33:41:21:68:ee:b3:c0:e4:c7:dd:05:08:a9:ff:ec:d5" and
+            1467590400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_422ab71ac7fb125ad7171b0c99510b0e {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Xin Zhou" and
+            pe.signatures[i].serial == "42:2a:b7:1a:c7:fb:12:5a:d7:17:1b:0c:99:51:0b:0e" and
+            1475193600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_6f18946e5b773b7e32d9e7b4fb8d434c {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "VECTOR LLC (VEKTOR, OOO)" and
+            pe.signatures[i].serial == "6f:18:94:6e:5b:77:3b:7e:32:d9:e7:b4:fb:8d:43:4c" and
+            1454716800 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_3596dfc23b9a42c66700982250da2906 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Open Source Developer, Song WU" and
+            pe.signatures[i].serial == "35:96:df:c2:3b:9a:42:c6:67:00:98:22:50:da:29:06" and
+            1397219344 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_486bbddc8c5ee99f051ecaeb3f99d2a3 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Xin Zhou" and
+            pe.signatures[i].serial == "48:6b:bd:dc:8c:5e:e9:9f:05:1e:ca:eb:3f:99:d2:a3" and
+            1473292800 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_11211eea9d0d1d1a325b5eae1b2b1951120f {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "LLC HERMES" and
+            pe.signatures[i].serial == "11:21:1e:ea:9d:0d:1d:1a:32:5b:5e:ae:1b:2b:19:51:12:0f" and
+            1460147212 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_172fea8cb06ffced6bfac7f2f6b77754 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Xin Zhou" and
+            pe.signatures[i].serial == "17:2f:ea:8c:b0:6f:fc:ed:6b:fa:c7:f2:f6:b7:77:54" and
+            1467936000 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_3ee50bb98fadca2d662a0920e76685a2 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "ABDULKADIR SAHIN" and
+            pe.signatures[i].serial == "3e:e5:0b:b9:8f:ad:ca:2d:66:2a:09:20:e7:66:85:a2" and
+            1330041600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_21bfddb6a66435d1adce2ceb23ed7c9a {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "\\xE6\\x9D\\xA8\\xE6\\xB7\\x87\\xE6\\x99\\xBA" and
+            pe.signatures[i].serial == "21:bf:dd:b6:a6:64:35:d1:ad:ce:2c:eb:23:ed:7c:9a" and
+            1395297334 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_5b1c3f7bbaa91ca49b06a5c1004ee5be {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Jin Yuguang" and
+            pe.signatures[i].serial == "5b:1c:3f:7b:ba:a9:1c:a4:9b:06:a5:c1:00:4e:e5:be" and
+            1440643213 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_0a2089 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "RocketMedia S.r.l." and
+            pe.signatures[i].serial == "0a:20:89" and
+            1050073884 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_1f84e030a0ed10d5ffe2b81b {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "VANKY TECHNOLOGY LIMITED" and
+            pe.signatures[i].serial == "1f:84:e0:30:a0:ed:10:d5:ff:e2:b8:1b" and
+            1476869735 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_88346267057c0a82e2f39851d1b9694c {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Hudson LLC" and (
+                pe.signatures[i].serial == "00:88:34:62:67:05:7c:0a:82:e2:f3:98:51:d1:b9:69:4c" or
+                pe.signatures[i].serial == "88:34:62:67:05:7c:0a:82:e2:f3:98:51:d1:b9:69:4c"
+            ) and
+            1595376000 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_a46f9d8784778baa48167c48bbc56f30 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Mapping OOO" and (
+                pe.signatures[i].serial == "00:a4:6f:9d:87:84:77:8b:aa:48:16:7c:48:bb:c5:6f:30" or
+                pe.signatures[i].serial == "a4:6f:9d:87:84:77:8b:aa:48:16:7c:48:bb:c5:6f:30"
+            ) and
+            1618963200 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_525b5529db20d17a85be284d6b7952ea {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Buster Ind Com Imp e Exp de Acessorios P Autos Ltda" and
+            pe.signatures[i].serial == "52:5b:55:29:db:20:d1:7a:85:be:28:4d:6b:79:52:ea" and
+            1508198400 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_70ae0e517d2ef6d5eed06b56730a1a9a {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Yu Bao" and
+            pe.signatures[i].serial == "70:ae:0e:51:7d:2e:f6:d5:ee:d0:6b:56:73:0a:1a:9a" and
+            1475193600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_57c3717c5e2ce9a2e0cf0340c03f458e {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "Citizen Travel Ltd" and
+            pe.signatures[i].serial == "57:c3:71:7c:5e:2c:e9:a2:e0:cf:03:40:c0:3f:45:8e" and
+            1450915200 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_0761110efe0b688c469d687512828c1f {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "ENP Games Co., Ltd." and
+            pe.signatures[i].serial == "07:61:11:0e:fe:0b:68:8c:46:9d:68:75:12:82:8c:1f" and
+            1433721600 <= pe.signatures[i].not_after
+        )
+}
+
+rule cert_blocklist_08aa03f385f870e3a6d243b74b1dadf6 {
+    meta:
+        author      = "ReversingLabs"
+        source      = "ReversingLabs"
+        status      = "RELEASED"
+        sharing     = "TLP:WHITE"
+        category    = "INFO"
+        description = "Certificate used for digitally signing malware."
+
+    condition:
+        uint16(0) == 0x5A4D and
+        for any i in (0..pe.number_of_signatures): (
+            pe.signatures[i].subject contains "\\xE4\\xB8\\x9C\\xE8\\x8E\\x9E\\xE5\\xB8\\x82\\xE8\\x85\\xBE\\xE4\\xBA\\x91\\xE8\\xAE\\xA1\\xE7\\xAE\\x97\\xE6\\x9C\\xBA\\xE7\\xA7\\x91\\xE6\\x8A\\x80\\xE6\\x9C\\x89\\xE9\\x99\\x90\\xE5\\x85\\xAC\\xE5\\x8F\\xB8" and
+            pe.signatures[i].serial == "08:aa:03:f3:85:f8:70:e3:a6:d2:43:b7:4b:1d:ad:f6" and
+            1352678400 <= pe.signatures[i].not_after
         )
 }
